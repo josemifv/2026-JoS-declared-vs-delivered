@@ -1,0 +1,217 @@
+{
+  "schema": "level1/1",
+  "run_id": "lat-2736930-xula5602-1",
+  "started_at": "2026-10-16T23:04:47Z",
+  "node": "xula5602",
+  "cluster": "xula",
+  "dry_run": false,
+  "mode": {
+    "level1": "unprivileged",
+    "source": "env"
+  },
+  "interval_s": 1.0,
+  "capabilities": {
+    "turbostat": true,
+    "perfquery": true,
+    "taskset": true,
+    "sysfs_cpufreq": true,
+    "sysfs_rapl": true,
+    "sysfs_infiniband": true
+  },
+  "affinity": {
+    "cpus_allowed_list": "0",
+    "taskset": "pid 1959989's current affinity list: 0",
+    "observable": true
+  },
+  "fingerprint": {
+    "observable": true,
+    "source": "discovery-json",
+    "node": "xula5602",
+    "path": "<scratch>/cc/raw/xula/equivalence/medida-2736930/lat-3/xula5602-rank-1/discovery/xula/xula5602.json",
+    "fingerprint": "0ee3d23d0967fb03cabfaa539ab87b2c159a766439cfbace0118fffa0d6c2976"
+  },
+  "env": {
+    "OMPI_FIRST_RANKS": "0",
+    "OMPI_MCA_orte_top_session_dir": "/tmp/ompi.xula5602.5707",
+    "OMPI_MCA_orte_num_nodes": "2",
+    "OMPI_COMMAND": "bash",
+    "OMPI_MCA_pml_base_verbose": "10",
+    "OMPI_MCA_ess_base_vpid": "1",
+    "OMPI_MCA_initial_wdir": "<home>",
+    "OMPI_COMM_WORLD_NODE_RANK": "0",
+    "OMPI_MCA_orte_precondition_transports": "54304421c339f6d1-6dd150dc6a84a329",
+    "OMPI_MCA_orte_ess_node_rank": "0",
+    "OMPI_MCA_shmem_RUNTIME_QUERY_hint": "mmap",
+    "OMPI_COMM_WORLD_RANK": "1",
+    "OMPI_MCA_mpi_oversubscribe": "0",
+    "OMPI_ARGV": "<home>/experiments/portable/equiv-v2.sbatch _rank lat <scratch>/cc/raw/xula/equivalence/medida-2736930/lat-3 1",
+    "OMPI_FILE_LOCATION": "/tmp/ompi.xula5602.5707/jf.15359/0/1",
+    "OMPI_MCA_orte_local_daemon_uri": "1006567424.1;tcp://<ip>,<ip>:39523",
+    "OMPI_MCA_ess_base_num_procs": "2",
+    "UCX_LOG_LEVEL": "info",
+    "OMPI_MCA_orte_bound_at_launch": "1",
+    "OMPI_MCA_orte_launch": "1",
+    "OMPI_MCA_orte_tmpdir_base": "/tmp",
+    "OMPI_APP_CTX_NUM_PROCS": "2",
+    "OMPI_MCA_orte_app_num": "0",
+    "OMPI_MCA_rmaps_base_mapping_policy": "ppr:1:node",
+    "OMPI_MCA_orte_hnp_uri": "1006567424.0;tcp://<ip>,<ip>:38355",
+    "OMPI_COMM_WORLD_LOCAL_SIZE": "1",
+    "OMPI_COMM_WORLD_SIZE": "2",
+    "OMPI_NUM_APP_CTX": "1",
+    "OMPI_MCA_pmix": "^s1,s2,cray,isolated",
+    "OMPI_MCA_orte_node_regex": "xula[4:5504,5602]@0(2)",
+    "OMPI_MCA_btl_base_verbose": "10",
+    "OMPI_MCA_ess": "^singleton",
+    "OMPI_MCA_orte_ess_num_procs": "2",
+    "OMPI_MCA_ess_base_jobid": "1006567425",
+    "OMPI_COMM_WORLD_LOCAL_RANK": "0",
+    "OMPI_UNIVERSE_SIZE": "2",
+    "OMPI_MCA_orte_jobfam_session_dir": "/tmp/ompi.xula5602.5707/jf.15359"
+  },
+  "modules": {
+    "observable": true,
+    "list": "\nCurrently Loaded Modules:\n  1) gcc-13.1.0-gcc-8.5.0-ueufrru       3) ucx-1.14.0-gcc-13.1.0-4t6t2iw\n  2) openmpi-4.1.8-gcc-13.1.0-mtnpd5o\n\n \n\n"
+  },
+  "transport_log": {
+    "env_vars": {
+      "UCX_LOG_LEVEL": "info"
+    },
+    "log_path": "<scratch>/cc/raw/xula/equivalence/medida-2736930/lat-3/run.log",
+    "observable": true
+  },
+  "mpip": {
+    "available": false,
+    "lib": null,
+    "reason": "MPIP_LIB no definido o inexistente"
+  },
+  "stopped_at": "2026-10-16T23:04:59Z",
+  "job_log": {
+    "observable": true,
+    "log_path": "<scratch>/cc/raw/xula/equivalence/medida-2736930/lat-3/run.log",
+    "preserved_path": "<scratch>/cc/raw/xula/equivalence/medida-2736930/lat-3/xula5602-rank-1/context/lat-2736930-xula5602-1.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "ib_counters": {
+    "settle_s": 2.0,
+    "source": "sysfs",
+    "observable": true,
+    "pre": {
+      "ts": "2026-10-16T23:04:47Z",
+      "source": "sysfs",
+      "observable": true,
+      "devices": {
+        "mlx5_0": {
+          "1": {
+            "VL15_dropped": 0,
+            "excessive_buffer_overrun_errors": 0,
+            "link_downed": 0,
+            "link_error_recovery": 0,
+            "local_link_integrity_errors": 0,
+            "multicast_rcv_packets": 28724,
+            "multicast_xmit_packets": 3212,
+            "port_rcv_constraint_errors": 0,
+            "port_rcv_data": 5082926684488,
+            "port_rcv_errors": 0,
+            "port_rcv_packets": 8690421940,
+            "port_rcv_remote_physical_errors": 0,
+            "port_rcv_switch_relay_errors": 0,
+            "port_xmit_constraint_errors": 0,
+            "port_xmit_data": 1476136674095,
+            "port_xmit_discards": 0,
+            "port_xmit_packets": 5546685170,
+            "port_xmit_wait": 4294967295,
+            "symbol_error": 0,
+            "unicast_rcv_packets": 8690393216,
+            "unicast_xmit_packets": 5546681958
+          }
+        }
+      },
+      "raw": null
+    },
+    "post": {
+      "ts": "2026-10-16T23:04:58Z",
+      "source": "sysfs",
+      "observable": true,
+      "devices": {
+        "mlx5_0": {
+          "1": {
+            "VL15_dropped": 0,
+            "excessive_buffer_overrun_errors": 0,
+            "link_downed": 0,
+            "link_error_recovery": 0,
+            "local_link_integrity_errors": 0,
+            "multicast_rcv_packets": 28724,
+            "multicast_xmit_packets": 3212,
+            "port_rcv_constraint_errors": 0,
+            "port_rcv_data": 5084883156722,
+            "port_rcv_errors": 0,
+            "port_rcv_packets": 8694256034,
+            "port_rcv_remote_physical_errors": 0,
+            "port_rcv_switch_relay_errors": 0,
+            "port_xmit_constraint_errors": 0,
+            "port_xmit_data": 1478091501679,
+            "port_xmit_discards": 0,
+            "port_xmit_packets": 5550530723,
+            "port_xmit_wait": 4294967295,
+            "symbol_error": 0,
+            "unicast_rcv_packets": 8694227310,
+            "unicast_xmit_packets": 5550527511
+          }
+        }
+      },
+      "raw": null
+    },
+    "delta": {
+      "mlx5_0": {
+        "1": {
+          "VL15_dropped": 0,
+          "excessive_buffer_overrun_errors": 0,
+          "link_downed": 0,
+          "link_error_recovery": 0,
+          "local_link_integrity_errors": 0,
+          "multicast_rcv_packets": 0,
+          "multicast_xmit_packets": 0,
+          "port_rcv_constraint_errors": 0,
+          "port_rcv_data": 1956472234,
+          "port_rcv_errors": 0,
+          "port_rcv_packets": 3834094,
+          "port_rcv_remote_physical_errors": 0,
+          "port_rcv_switch_relay_errors": 0,
+          "port_xmit_constraint_errors": 0,
+          "port_xmit_data": 1954827584,
+          "port_xmit_discards": 0,
+          "port_xmit_packets": 3845553,
+          "port_xmit_wait": 0,
+          "symbol_error": 0,
+          "unicast_rcv_packets": 3834094,
+          "unicast_xmit_packets": 3845553
+        }
+      }
+    }
+  },
+  "sampling": {
+    "interval_s": 1.0,
+    "n_samples": 5,
+    "freq_khz": {
+      "observable": true,
+      "min": 2984924,
+      "max": 3015075,
+      "median": 3000000.0,
+      "n": 560
+    },
+    "energy_uj": {
+      "observable": true,
+      "min": 50320183557,
+      "max": 52424830147,
+      "median": 51376086494,
+      "n": 5
+    },
+    "samples_path": "<scratch>/cc/raw/xula/equivalence/medida-2736930/lat-3/xula5602-rank-1/context/lat-2736930-xula5602-1.freq.jsonl",
+    "samples_sha256": "77027ec6af7a9046f368953a853b9ae979af99ee588835b737942ef190a52db4"
+  },
+  "not_observable": [
+    "mpip"
+  ]
+}

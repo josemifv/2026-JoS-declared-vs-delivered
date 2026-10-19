@@ -1,0 +1,36 @@
+pin-pedido: host=aac102 hca_numa=0 core=0 origen=sysfs(node0)
+pin-real: host=aac102 cpus=0
+pin-pedido: host=aac103 hca_numa=0 core=0 origen=sysfs(node0)
+pin-real: host=aac103 cpus=0
+[1791139349.619811] [aac102:1931212:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791139349.634104] [aac103:1213188:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791139349.749327] [aac102:1931212:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=dc,sm,self UCX_LOG_LEVEL=info
+[1791139349.760089] [aac103:1213188:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=dc,sm,self UCX_LOG_LEVEL=info
+[1791139349.761199] [aac103:1213188:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory dc_mlx5/mlx5_0:1)
+[1791139349.761225] [aac102:1931212:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory dc_mlx5/mlx5_0:1)
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+[1791139349.763757] [aac103:1213188:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(dc_mlx5/mlx5_0:1)
+[1791139349.763898] [aac102:1931212:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(dc_mlx5/mlx5_0:1)
+8                       1.25
+16                      1.05
+32                      1.06
+64                      1.12
+128                     1.15
+256                     1.63
+512                     1.72
+1024                    1.92
+2048                    2.28
+4096                    3.01
+8192                    4.23
+16384                   5.79
+32768                   7.51
+65536                  10.80
+131072                 17.88
+262144                 33.34
+524288                 60.20
+1048576               100.10
+2097152               189.57
+4194304               366.33

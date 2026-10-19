@@ -1,0 +1,799 @@
+{
+  "schema_version": 1,
+  "cluster": "turgalium",
+  "node": "acp02",
+  "role": "node",
+  "partition": "volta",
+  "collected_at": "2026-09-27T00:07:23Z",
+  "run_id": "disc-turgalium-20260925T220239Z-3871861",
+  "collector": {
+    "wrapper": "<home>/instrumentation/cmdlog.sh",
+    "dry_run": false
+  },
+  "fingerprint": "aa64b2a7427d4909851e27deeb65b4969024e8503398f1be7f2bed3075e33edd",
+  "fingerprint_attrs": [
+    "cpu_model",
+    "sockets",
+    "cores_per_socket",
+    "threads_per_core",
+    "logical_cpus_online",
+    "microcode",
+    "scaling_governor",
+    "no_turbo",
+    "freq_min_khz",
+    "freq_max_khz",
+    "numa_nodes",
+    "memory_total_kb",
+    "dimm_population",
+    "thp_enabled",
+    "numa_balancing",
+    "os",
+    "kernel",
+    "bios_version",
+    "bios_date",
+    "package_hash",
+    "hca_model",
+    "hca_firmware",
+    "port_state",
+    "port_rate",
+    "ofed_version",
+    "ucx_version",
+    "ucx_transports",
+    "libfabric_version",
+    "libfabric_providers",
+    "gcc_version",
+    "icx_version",
+    "openmpi_version",
+    "intelmpi_version",
+    "gpu_list",
+    "gpu_driver_cuda",
+    "gpu_topology",
+    "gpu_settings"
+  ],
+  "fingerprint_values": {
+    "cpu_model": "Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz",
+    "sockets": 2,
+    "cores_per_socket": 18,
+    "threads_per_core": 1,
+    "logical_cpus_online": 36,
+    "microcode": "0x500002c",
+    "scaling_governor": [
+      "performance"
+    ],
+    "no_turbo": 0,
+    "freq_min_khz": 1000000,
+    "freq_max_khz": 3900000,
+    "numa_nodes": 2,
+    "memory_total_kb": 791221444,
+    "dimm_population": null,
+    "thp_enabled": "always",
+    "numa_balancing": 1,
+    "os": "rocky-9.5",
+    "kernel": "5.14.0-611.30.1.el9_7.x86_64",
+    "bios_version": "3.2",
+    "bios_date": "11/07/2019",
+    "package_hash": {
+      "sha256": "6bf84d3eabd4d566894622a509bbb2ff2a484eb68d948025796991c2085706c6",
+      "count": 932
+    },
+    "hca_model": "MT4119",
+    "hca_firmware": [
+      "16.28.2006"
+    ],
+    "port_state": [
+      "Active"
+    ],
+    "port_rate": [
+      100
+    ],
+    "ofed_version": "OFED-internal-24.10-4.1.4:",
+    "ucx_version": "# Library version: 1.18.0",
+    "ucx_transports": [
+      "cma",
+      "dc_mlx5",
+      "posix",
+      "rc_mlx5",
+      "rc_verbs",
+      "self",
+      "sysv",
+      "tcp",
+      "ud_mlx5",
+      "ud_verbs"
+    ],
+    "libfabric_version": null,
+    "libfabric_providers": null,
+    "gcc_version": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+    "icx_version": null,
+    "openmpi_version": null,
+    "intelmpi_version": null,
+    "gpu_list": [
+      "GPU 0: Tesla V100-PCIE-32GB (UUID: GPU-bb7d5c12-2f54-6a3b-2f1b-25e13547c2a2)",
+      "GPU 1: Tesla V100-PCIE-32GB (UUID: GPU-38e77cd8-2334-317f-4861-56fa4461a206)"
+    ],
+    "gpu_driver_cuda": {
+      "driver": "580.126.16",
+      "cuda": "13.0"
+    },
+    "gpu_topology": "\u001b[4mGPU0\tGPU1\tNIC0\tNIC1\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m",
+    "gpu_settings": {
+      "ecc_current": "Disabled",
+      "max_clocks_mhz": {
+        "sm": 1380,
+        "memory": 877,
+        "graphics": 1380
+      }
+    }
+  },
+  "attributes": {
+    "cpu_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz",
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "214640e9a3799d268eed5c84441cfa6f307947d31f6c8a63e54205b18a180298",
+        "out_path": "<scratch>/discovery/volta/outputs/214640e9a3799d268eed5c84441cfa6f307947d31f6c8a63e54205b18a180298.out"
+      }
+    },
+    "sockets": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "214640e9a3799d268eed5c84441cfa6f307947d31f6c8a63e54205b18a180298",
+        "out_path": "<scratch>/discovery/volta/outputs/214640e9a3799d268eed5c84441cfa6f307947d31f6c8a63e54205b18a180298.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp02"
+        ],
+        "out_hash": "53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be",
+        "out_path": "<scratch>/discovery/volta/outputs/53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be.out"
+      }
+    },
+    "cores_per_socket": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 18,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "214640e9a3799d268eed5c84441cfa6f307947d31f6c8a63e54205b18a180298",
+        "out_path": "<scratch>/discovery/volta/outputs/214640e9a3799d268eed5c84441cfa6f307947d31f6c8a63e54205b18a180298.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 18,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp02"
+        ],
+        "out_hash": "53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be",
+        "out_path": "<scratch>/discovery/volta/outputs/53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be.out"
+      }
+    },
+    "threads_per_core": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "214640e9a3799d268eed5c84441cfa6f307947d31f6c8a63e54205b18a180298",
+        "out_path": "<scratch>/discovery/volta/outputs/214640e9a3799d268eed5c84441cfa6f307947d31f6c8a63e54205b18a180298.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp02"
+        ],
+        "out_hash": "53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be",
+        "out_path": "<scratch>/discovery/volta/outputs/53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be.out"
+      }
+    },
+    "logical_cpus_online": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 36,
+        "cmd": [
+          "nproc",
+          "--all"
+        ],
+        "out_hash": "a4b2c5db15348c29451e18b8307e5ef81625ea638e807935f39ceaa8d9ac7758",
+        "out_path": "<scratch>/discovery/volta/outputs/a4b2c5db15348c29451e18b8307e5ef81625ea638e807935f39ceaa8d9ac7758.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 36,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp02"
+        ],
+        "out_hash": "53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be",
+        "out_path": "<scratch>/discovery/volta/outputs/53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be.out"
+      }
+    },
+    "microcode": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "0x500002c",
+        "cmd": [
+          "cat",
+          "/proc/cpuinfo"
+        ],
+        "out_hash": "fee26292aa6e50a7b203c9b7a12bd92926664dc8e6f1ccbd21999c86d674dfa9",
+        "out_path": "<scratch>/discovery/volta/outputs/fee26292aa6e50a7b203c9b7a12bd92926664dc8e6f1ccbd21999c86d674dfa9.out"
+      }
+    },
+    "scaling_governor": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "performance"
+        ],
+        "cmd": [
+          "bash",
+          "-c",
+          "grep -H . /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
+        ],
+        "out_hash": "f92c0c6f71172c76e00bf6de359392ddea1c2b98a5ff5bc13917b0c76dd3a0ec",
+        "out_path": "<scratch>/discovery/volta/outputs/f92c0c6f71172c76e00bf6de359392ddea1c2b98a5ff5bc13917b0c76dd3a0ec.out"
+      }
+    },
+    "no_turbo": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 0,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/intel_pstate/no_turbo"
+        ],
+        "out_hash": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "out_path": "<scratch>/discovery/volta/outputs/9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa.out"
+      }
+    },
+    "freq_min_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1000000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq"
+        ],
+        "out_hash": "085c348f64a3b543e973a33749e90ba20847b99016a87e5228847597d61ce582",
+        "out_path": "<scratch>/discovery/volta/outputs/085c348f64a3b543e973a33749e90ba20847b99016a87e5228847597d61ce582.out"
+      }
+    },
+    "freq_max_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 3900000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq"
+        ],
+        "out_hash": "8daf7042b0f8dc94d5d9751d4de5a2744a4af0e852e1bcf35e593b2ac3c6c6ee",
+        "out_path": "<scratch>/discovery/volta/outputs/8daf7042b0f8dc94d5d9751d4de5a2744a4af0e852e1bcf35e593b2ac3c6c6ee.out"
+      }
+    },
+    "numa_nodes": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "214640e9a3799d268eed5c84441cfa6f307947d31f6c8a63e54205b18a180298",
+        "out_path": "<scratch>/discovery/volta/outputs/214640e9a3799d268eed5c84441cfa6f307947d31f6c8a63e54205b18a180298.out"
+      }
+    },
+    "memory_total_kb": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 791221444,
+        "cmd": [
+          "cat",
+          "/proc/meminfo"
+        ],
+        "out_hash": "a6383558b863bdb481d91cdd0d27c376f9b7a271bca233d76c45ec1be4046bf1",
+        "out_path": "<scratch>/discovery/volta/outputs/a6383558b863bdb481d91cdd0d27c376f9b7a271bca233d76c45ec1be4046bf1.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 790528000,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp02"
+        ],
+        "out_hash": "53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be",
+        "out_path": "<scratch>/discovery/volta/outputs/53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be.out"
+      }
+    },
+    "dimm_population": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "dmidecode_mem: exit 1"
+      }
+    },
+    "thp_enabled": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "always",
+        "cmd": [
+          "cat",
+          "/sys/kernel/mm/transparent_hugepage/enabled"
+        ],
+        "out_hash": "092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d",
+        "out_path": "<scratch>/discovery/volta/outputs/092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d.out"
+      }
+    },
+    "numa_balancing": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "cat",
+          "/proc/sys/kernel/numa_balancing"
+        ],
+        "out_hash": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+        "out_path": "<scratch>/discovery/volta/outputs/4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865.out"
+      }
+    },
+    "os": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "rocky-9.5",
+        "cmd": [
+          "cat",
+          "/etc/os-release"
+        ],
+        "out_hash": "cdf4bbbd4451e30dfa6893e0550a27f2863d98bc611565a7af0202610754b972",
+        "out_path": "<scratch>/discovery/volta/outputs/cdf4bbbd4451e30dfa6893e0550a27f2863d98bc611565a7af0202610754b972.out"
+      }
+    },
+    "kernel": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "5.14.0-611.30.1.el9_7.x86_64",
+        "cmd": [
+          "uname",
+          "-r"
+        ],
+        "out_hash": "e43cab5cd8a664440b64ee3367e40d5603602e58cfd09e515b669ea84e28eed1",
+        "out_path": "<scratch>/discovery/volta/outputs/e43cab5cd8a664440b64ee3367e40d5603602e58cfd09e515b669ea84e28eed1.out"
+      }
+    },
+    "bios_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "3.2",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_version"
+        ],
+        "out_hash": "81824dba6d71d2996baef3cc5f77008ebc34656848b502292277b3feffab5d82",
+        "out_path": "<scratch>/discovery/volta/outputs/81824dba6d71d2996baef3cc5f77008ebc34656848b502292277b3feffab5d82.out"
+      }
+    },
+    "bios_date": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "11/07/2019",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_date"
+        ],
+        "out_hash": "b497f135c3025811d7454b05ef0a3e9e1b0f4d1bf5b6ef0461cd6f79d23db5e6",
+        "out_path": "<scratch>/discovery/volta/outputs/b497f135c3025811d7454b05ef0a3e9e1b0f4d1bf5b6ef0461cd6f79d23db5e6.out"
+      }
+    },
+    "server_model": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "BullSequana X410-E5",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/product_name"
+        ],
+        "out_hash": "01eac7dd4b6e717562974668d838f6da50978e17261d6cadc3ce779f4590d330",
+        "out_path": "<scratch>/discovery/volta/outputs/01eac7dd4b6e717562974668d838f6da50978e17261d6cadc3ce779f4590d330.out"
+      }
+    },
+    "package_hash": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "6bf84d3eabd4d566894622a509bbb2ff2a484eb68d948025796991c2085706c6",
+          "count": 932
+        },
+        "cmd": [
+          "rpm",
+          "-qa",
+          "--qf",
+          "%{NAME}-%{VERSION}-%{RELEASE}\\n"
+        ],
+        "out_hash": "63321233563210149120f7433ad55aad72c8ded9c58f837503305bb45e604d03",
+        "out_path": "<scratch>/discovery/volta/outputs/63321233563210149120f7433ad55aad72c8ded9c58f837503305bb45e604d03.out"
+      }
+    },
+    "hca_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "MT4119",
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "169bd944667b72482a16ca0eb7d8989c9e718393cd08e6156dedd081de66448b",
+        "out_path": "<scratch>/discovery/volta/outputs/169bd944667b72482a16ca0eb7d8989c9e718393cd08e6156dedd081de66448b.out"
+      }
+    },
+    "hca_firmware": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "16.28.2006"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "169bd944667b72482a16ca0eb7d8989c9e718393cd08e6156dedd081de66448b",
+        "out_path": "<scratch>/discovery/volta/outputs/169bd944667b72482a16ca0eb7d8989c9e718393cd08e6156dedd081de66448b.out"
+      }
+    },
+    "port_state": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "Active"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "169bd944667b72482a16ca0eb7d8989c9e718393cd08e6156dedd081de66448b",
+        "out_path": "<scratch>/discovery/volta/outputs/169bd944667b72482a16ca0eb7d8989c9e718393cd08e6156dedd081de66448b.out"
+      }
+    },
+    "port_rate": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          100
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "169bd944667b72482a16ca0eb7d8989c9e718393cd08e6156dedd081de66448b",
+        "out_path": "<scratch>/discovery/volta/outputs/169bd944667b72482a16ca0eb7d8989c9e718393cd08e6156dedd081de66448b.out"
+      }
+    },
+    "ofed_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "OFED-internal-24.10-4.1.4:",
+        "cmd": [
+          "ofed_info",
+          "-s"
+        ],
+        "out_hash": "4392390707b072a658fc98b3c66b42d949b994f3b524ffd2744932f03f24fa4b",
+        "out_path": "<scratch>/discovery/volta/outputs/4392390707b072a658fc98b3c66b42d949b994f3b524ffd2744932f03f24fa4b.out"
+      }
+    },
+    "ucx_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "# Library version: 1.18.0",
+        "cmd": [
+          "ucx_info",
+          "-v"
+        ],
+        "out_hash": "8cad25904658bca545a2473da9a2dfac0701b7bd61f548b24a3375ba84817639",
+        "out_path": "<scratch>/discovery/volta/outputs/8cad25904658bca545a2473da9a2dfac0701b7bd61f548b24a3375ba84817639.out"
+      }
+    },
+    "ucx_transports": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "cma",
+          "dc_mlx5",
+          "posix",
+          "rc_mlx5",
+          "rc_verbs",
+          "self",
+          "sysv",
+          "tcp",
+          "ud_mlx5",
+          "ud_verbs"
+        ],
+        "cmd": [
+          "ucx_info",
+          "-d"
+        ],
+        "out_hash": "94c3ee6ca82e03302cebd70b8d4c7122eace985a4c6fe7a5d608fa4bea0ee6c1",
+        "out_path": "<scratch>/discovery/volta/outputs/94c3ee6ca82e03302cebd70b8d4c7122eace985a4c6fe7a5d608fa4bea0ee6c1.out"
+      }
+    },
+    "libfabric_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "fi_info_version: exit 127"
+      }
+    },
+    "libfabric_providers": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "fi_info_list: exit 127"
+      }
+    },
+    "modules_avail": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "766906d7806c0bed14d26c0d6be18a1d772ece0654bc459ddce360638eabbdcf",
+          "count": 34
+        },
+        "cmd": [
+          "bash",
+          "-lc",
+          "module avail"
+        ],
+        "out_hash": "70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26",
+        "out_path": "<scratch>/discovery/volta/outputs/70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26.out"
+      }
+    },
+    "gcc_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+        "cmd": [
+          "gcc",
+          "--version"
+        ],
+        "out_hash": "06916117479fa673e716e8ca91dad1b78e49ca5843d64cedfa68f12a9d82f112",
+        "out_path": "<scratch>/discovery/volta/outputs/06916117479fa673e716e8ca91dad1b78e49ca5843d64cedfa68f12a9d82f112.out"
+      }
+    },
+    "icx_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "icx_version: exit 127"
+      }
+    },
+    "openmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpirun_version: exit 127; ompi_info_version: exit 127"
+      }
+    },
+    "intelmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpiexec_version: exit 127"
+      }
+    },
+    "mpi_cuda_aware": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "ompi_info_parsable: exit 127"
+      }
+    },
+    "cmmse_stack": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "module_avail: sin dato"
+      }
+    },
+    "slurm_features": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": [
+          "2.60GHz",
+          "6240",
+          "768GB_RAM",
+          "CPU_CascadeLake",
+          "Infiniband_EDR",
+          "gpu_volta_V100"
+        ],
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp02"
+        ],
+        "out_hash": "53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be",
+        "out_path": "<scratch>/discovery/volta/outputs/53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be.out"
+      }
+    },
+    "slurm_gres": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": "gpu:volta:2",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp02"
+        ],
+        "out_hash": "53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be",
+        "out_path": "<scratch>/discovery/volta/outputs/53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be.out"
+      }
+    },
+    "lustre_version": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "lfs 2.17.0",
+        "cmd": [
+          "lfs",
+          "--version"
+        ],
+        "out_hash": "485d6665429178fe15167e8004ceea26216561719cf420b20ffce4b9fc03e797",
+        "out_path": "<scratch>/discovery/volta/outputs/485d6665429178fe15167e8004ceea26216561719cf420b20ffce4b9fc03e797.out"
+      }
+    },
+    "mounts": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "TARGET    SOURCE                                            FSTYPE OPTIONS\n/ws       <ip>@o2ib:<ip>@o2ib:/cetafs2/ws    lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose\n/opt/apps <ip>@o2ib:<ip>@o2ib:/cetafs2/apps  lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose\n/home     <ip>@o2ib:<ip>@o2ib:/cetafs2/homes lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose",
+        "cmd": [
+          "findmnt",
+          "-t",
+          "lustre,nfs,gpfs"
+        ],
+        "out_hash": "12d2d4e8605a520e43a2e990a1731581142095f18716d8e6fe5eac4177524944",
+        "out_path": "<scratch>/discovery/volta/outputs/12d2d4e8605a520e43a2e990a1731581142095f18716d8e6fe5eac4177524944.out"
+      }
+    },
+    "lustre_errors": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "[Wed Feb 18 11:19:57 2026] Lustre: Lustre: Build Version: 2.17.0\n[Wed Feb 18 11:19:59 2026] Lustre: 1604:0:(ldlm_lib.c:562:client_obd_setup()) MGC<ip>@o2ib: config has no valid NIDs, force dynamic NIDs\n[Wed Feb 18 11:19:59 2026] Lustre: 1604:0:(obd_mount.c:245:lustre_add_mgc_failnodes()) MGC<ip>@o2ib: can't add failover peer <ip>@o2ib, rc = -2\n[Wed Feb 18 11:19:59 2026] LustreError: 1604:0:(import.c:490:import_select_connection()) MGC<ip>@o2ib: no connections available: rc = -22\n[Wed Feb 18 11:19:59 2026] LustreError: 1604:0:(obd_mount.c:514:lustre_start_mgc()) connect failed -22\n[Wed Feb 18 11:19:59 2026] LustreError: 1604:0:(obd_class.h:478:obd_check_dev()) Device 0 not setup\n[Wed Feb 18 11:19:59 2026] LustreError: 1604:0:(super25.c:198:lustre_fill_super()) llite: Unable to mount <unknown>: rc = -22\n[Wed Feb 18 11:27:03 2026] LustreError: 1960:0:(mgc_request.c:232:do_config_log_add()) MGC<ip>@o2ib: failed processing log, type 1: rc = -110\n[Wed Feb 18 11:27:19 2026] Lustre: Mounted cetafs2-client\n[Wed Feb 18 11:27:29 2026] Lustre: Mounted cetafs2-client\n[Wed Feb 18 11:27:40 2026] Lustre: Mounted cetafs2-client\n[Mon Feb 23 13:14:53 2026] LustreError: 214021:0:(statahead.c:2408:start_statahead_thread()) cetafs2: invalid pattern 0X0.\n[Wed Feb 25 02:24:28 2026] LustreError: 424917:0:(statahead.c:2408:start_statahead_thread()) cetafs2: invalid pattern 0X0.\n[Wed Feb 25 18:33:49 2026] LustreError: 512188:0:(statahead.c:2408:start_statahead_thread()) cetafs2: invalid pattern 0X0.\n[Wed Feb 25 23:29:33 2026] LustreError: 543590:0:(statahead.c:2408:start_statahead_thread()) cetafs2: invalid pattern 0X0.\n[Thu Feb 26 09:11:23 2026] LustreError: 595857:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Wed Mar 11 11:47:31 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5\n[Wed Mar 11 11:47:31 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 11:47:36 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 11:47:41 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5\n[Wed Mar 11 11:47:41 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 11:47:46 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 11:47:46 2026] LustreError: Skipped 1 previous similar message\n[Wed Mar 11 11:47:51 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5\n[Wed Mar 11 11:47:51 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 11:47:51 2026] LustreError: Skipped 1 previous similar message\n[Wed Mar 11 11:48:01 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5\n[Wed Mar 11 11:48:01 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 11:48:01 2026] LustreError: Skipped 5 previous similar messages\n[Wed Mar 11 11:48:11 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5\n[Wed Mar 11 11:48:21 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5\n[Wed Mar 11 11:48:21 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 11:48:21 2026] LustreError: Skipped 17 previous similar messages\n[Wed Mar 11 11:48:41 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5\n[Wed Mar 11 11:48:41 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) Skipped 1 previous similar message\n[Wed Mar 11 11:48:56 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 11:48:56 2026] LustreError: Skipped 49 previous similar messages\n[Wed Mar 11 11:50:02 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 11:50:02 2026] LustreError: Skipped 103 previous similar messages\n[Wed Mar 11 11:52:15 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 11:52:15 2026] LustreError: Skipped 207 previous similar messages\n[Wed Mar 11 11:56:36 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 11:56:36 2026] LustreError: Skipped 407 previous similar messages\n[Wed Mar 11 12:05:13 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 12:05:13 2026] LustreError: Skipped 807 previous similar messages\n[Wed Mar 11 12:15:17 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 12:15:17 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 12:25:21 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 12:25:21 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 12:35:25 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 12:35:25 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 12:45:30 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 12:45:30 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 12:55:34 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 12:55:34 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 13:05:38 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 13:05:38 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 13:15:42 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 13:15:42 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 13:25:46 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 13:25:46 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 13:35:50 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 13:35:50 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 13:45:54 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 13:45:54 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 13:55:59 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 13:55:59 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 14:06:03 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 14:06:03 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 14:16:07 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 14:16:07 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 14:26:11 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 14:26:11 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 14:36:15 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 14:36:15 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 14:46:19 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 14:46:19 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 14:56:24 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 14:56:24 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 15:06:28 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 15:06:28 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 15:16:32 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 15:16:32 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 15:26:36 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 15:26:36 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 15:36:40 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 15:36:40 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 15:46:44 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 15:46:44 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 15:56:49 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 15:56:49 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 16:06:53 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 16:06:53 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 16:16:57 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 16:16:57 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 16:27:01 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 16:27:01 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 16:37:05 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 16:37:05 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 16:47:09 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 16:47:09 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 16:57:13 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 16:57:13 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 17:07:18 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 17:07:18 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 17:17:22 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 17:17:22 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 17:27:26 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 17:27:26 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 17:37:30 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 17:37:30 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 17:47:34 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 17:47:34 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 17:57:38 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 17:57:38 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 18:07:43 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 18:07:43 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 18:17:47 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 18:17:47 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 18:27:51 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 18:27:51 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 18:37:55 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 18:37:55 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 18:47:59 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 18:47:59 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 18:58:03 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 18:58:03 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 19:08:07 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 19:08:07 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 19:18:12 2026] LustreError: cetafs2-OST0005-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 19:18:12 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 19:28:16 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 19:28:16 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 19:38:20 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 19:38:20 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 19:48:24 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 19:48:24 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 19:58:28 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 19:58:28 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 20:08:32 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 20:08:32 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 20:18:37 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 20:18:37 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 20:28:41 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 20:28:41 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 20:38:45 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 20:38:45 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 20:48:49 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 20:48:49 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 20:58:53 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 20:58:53 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 21:08:57 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 21:08:57 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 21:19:01 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 21:19:01 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 21:29:06 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 21:29:06 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 21:39:10 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 21:39:10 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 21:49:14 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 21:49:14 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 21:59:18 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 21:59:18 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 22:09:22 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 22:09:22 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 22:19:26 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 22:19:26 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 22:29:31 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 22:29:31 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 22:39:35 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 22:39:35 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 22:49:39 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 22:49:39 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 22:59:43 2026] LustreError: cetafs2-OST0004-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 22:59:43 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 23:09:47 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 23:09:47 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 23:19:51 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 23:19:51 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 23:29:56 2026] LustreError: cetafs2-OST0004-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 23:29:56 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 23:40:00 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 23:40:00 2026] LustreError: Skipped 943 previous similar messages\n[Wed Mar 11 23:50:04 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Wed Mar 11 23:50:04 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 00:00:08 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 00:00:08 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 00:10:12 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 00:10:12 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 00:20:16 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 00:20:16 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 00:30:20 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 00:30:20 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 00:40:25 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 00:40:25 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 00:50:29 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 00:50:29 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 01:00:33 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 01:00:33 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 01:10:37 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 01:10:37 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 01:20:41 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 01:20:41 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 01:30:45 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 01:30:45 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 01:40:50 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 01:40:50 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 01:50:54 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 01:50:54 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 02:00:58 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 02:00:58 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 02:11:02 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 02:11:02 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 02:21:06 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 02:21:06 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 02:31:10 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 02:31:10 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 02:41:14 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 02:41:14 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 02:51:19 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 02:51:19 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 03:01:23 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 03:01:23 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 03:11:27 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 03:11:27 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 03:21:31 2026] LustreError: cetafs2-OST0005-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 03:21:31 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 03:31:35 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 03:31:35 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 03:41:39 2026] LustreError: cetafs2-OST0002-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 03:41:39 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 03:51:44 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 03:51:44 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 04:01:48 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 04:01:48 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 04:11:52 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 04:11:52 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 04:21:56 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 04:21:56 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 04:32:00 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 04:32:00 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 04:42:04 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 04:42:04 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 04:52:08 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 04:52:08 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 05:02:13 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 05:02:13 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 05:12:17 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 05:12:17 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 05:22:21 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 05:22:21 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 05:32:25 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 05:32:25 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 05:42:29 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 05:42:29 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 05:52:33 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 05:52:33 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 06:02:38 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 06:02:38 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 06:12:42 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 06:12:42 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 06:22:46 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 06:22:46 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 06:32:50 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 06:32:50 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 06:42:54 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 06:42:54 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 06:52:58 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 06:52:58 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 07:03:03 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 07:03:03 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 07:13:07 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 07:13:07 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 07:23:11 2026] LustreError: cetafs2-OST0004-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 07:23:11 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 07:33:15 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 07:33:15 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 07:43:19 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 07:43:19 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 07:53:23 2026] LustreError: cetafs2-OST0002-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 07:53:23 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 08:03:27 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 08:03:27 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 08:13:32 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 08:13:32 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 08:23:36 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 08:23:36 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 08:33:40 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 08:33:40 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 08:43:44 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 08:43:44 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 08:53:48 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 08:53:48 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 09:03:52 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 09:03:52 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 09:13:57 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 09:13:57 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 09:24:01 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 09:24:01 2026] LustreError: Skipped 943 previous similar messages\n[Thu Mar 12 09:34:05 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 09:34:05 2026] LustreError: Skipped 920 previous similar messages\n[Thu Mar 12 09:44:08 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 09:44:08 2026] LustreError: Skipped 641 previous similar messages\n[Thu Mar 12 09:54:11 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -16\n[Thu Mar 12 09:54:11 2026] LustreError: Skipped 487 previous similar messages\n[Thu Mar 12 10:04:15 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -16\n[Thu Mar 12 10:04:15 2026] LustreError: Skipped 650 previous similar messages\n[Thu Mar 12 10:14:19 2026] LustreError: cetafs2-OST0002-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -16\n[Thu Mar 12 10:14:19 2026] LustreError: Skipped 616 previous similar messages\n[Thu Mar 12 10:24:23 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 10:24:23 2026] LustreError: Skipped 678 previous similar messages\n[Thu Mar 12 10:34:26 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 10:34:26 2026] LustreError: Skipped 529 previous similar messages\n[Thu Mar 12 10:44:30 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 10:44:30 2026] LustreError: Skipped 471 previous similar messages\n[Thu Mar 12 10:54:35 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 10:54:35 2026] LustreError: Skipped 471 previous similar messages\n[Thu Mar 12 11:04:39 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 11:04:39 2026] LustreError: Skipped 471 previous similar messages\n[Thu Mar 12 11:14:43 2026] LustreError: cetafs2-OST0004-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114\n[Thu Mar 12 11:14:43 2026] LustreError: Skipped 465 previous similar messages\n[Thu Mar 12 11:26:20 2026] LustreError: cetafs2-OST000d-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -19\n[Thu Mar 12 11:26:20 2026] LustreError: Skipped 106 previous similar messages\n[Thu Mar 12 11:36:23 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -16\n[Thu Mar 12 11:36:23 2026] LustreError: Skipped 145 previous similar messages\n[Thu Mar 12 11:46:27 2026] LustreError: cetafs2-OST0004-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -16\n[Thu Mar 12 11:46:27 2026] LustreError: Skipped 237 previous similar messages\n[Thu Mar 12 11:48:25 2026] LustreError: 4015522:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5\n[Thu Mar 12 11:48:30 2026] LustreError: 4015522:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5\n[Thu Mar 12 11:56:31 2026] LustreError: cetafs2-OST000d-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -16\n[Thu Mar 12 11:56:31 2026] LustreError: Skipped 191 previous similar messages\n[Wed Apr  1 09:27:01 2026] LustreError: 880267:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Apr  2 02:34:30 2026] LustreError: 880854:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Apr  2 02:34:30 2026] LustreError: 880854:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Wed Apr  8 16:54:28 2026] LustreError: 268140:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Apr  8 16:54:28 2026] LustreError: 268140:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 7 previous similar messages\n[Wed Apr  8 16:54:33 2026] LustreError: 2522050:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Apr  8 16:54:33 2026] LustreError: 2522050:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Apr  8 16:54:34 2026] LustreError: 267898:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Apr  8 16:54:34 2026] LustreError: 267898:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 31 previous similar messages\n[Wed Apr  8 16:54:37 2026] LustreError: 267898:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Apr  8 16:54:37 2026] LustreError: 267898:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 18 previous similar messages\n[Wed Apr  8 16:54:41 2026] LustreError: 267898:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Apr  8 16:54:41 2026] LustreError: 267898:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 326 previous similar messages\n[Wed Apr  8 16:55:34 2026] LustreError: 873507:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Apr  8 16:55:34 2026] LustreError: 873507:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 214 previous similar messages\n[Wed Apr  8 16:59:08 2026] LustreError: 873507:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Apr  8 16:59:08 2026] LustreError: 873507:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Apr  8 16:59:44 2026] LustreError: 873507:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Apr  8 16:59:44 2026] LustreError: 873507:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Apr  8 17:06:15 2026] LustreError: 24449:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Apr  8 17:06:15 2026] LustreError: 24449:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Tue May 19 13:07:03 2026] LustreError: 940142:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Tue May 19 13:07:03 2026] LustreError: 940142:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 23 previous similar messages\n[Wed May 20 22:16:48 2026] LustreError: 936279:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed May 20 22:16:48 2026] LustreError: 936279:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed May 20 22:18:57 2026] LustreError: 1558798:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed May 20 22:18:57 2026] LustreError: 1558798:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed May 20 22:57:56 2026] LustreError: 1486367:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed May 20 22:57:56 2026] LustreError: 1486367:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 20 previous similar messages\n[Wed May 20 22:58:09 2026] LustreError: 937059:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed May 20 22:58:09 2026] LustreError: 937059:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri May 22 00:59:20 2026] LustreError: 785228:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri May 22 00:59:20 2026] LustreError: 785228:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri May 22 01:00:46 2026] LustreError: 785228:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri May 22 01:00:46 2026] LustreError: 785228:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri May 22 01:05:43 2026] LustreError: 785228:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri May 22 01:05:43 2026] LustreError: 785228:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sat May 23 16:38:11 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 17:07:28 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 17:07:28 2026] Lustre: Skipped 1 previous similar message\n[Sat May 23 17:07:52 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 208840.\n[Sat May 23 17:07:52 2026] Lustre: Skipped 3 previous similar messages\n[Sat May 23 17:11:31 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 17:11:31 2026] Lustre: Skipped 12 previous similar messages\n[Sat May 23 18:25:55 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 208840.\n[Sat May 23 18:25:55 2026] Lustre: Skipped 17 previous similar messages\n[Sat May 23 18:29:56 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 18:29:56 2026] Lustre: Skipped 12 previous similar messages\n[Sat May 23 18:30:26 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 18:30:26 2026] Lustre: Skipped 1 previous similar message\n[Sat May 23 18:33:06 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 18:33:06 2026] Lustre: Skipped 1 previous similar message\n[Sat May 23 18:34:26 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 18:37:30 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 18:39:56 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 18:39:56 2026] Lustre: Skipped 2 previous similar messages\n[Sat May 23 18:41:57 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 18:41:57 2026] Lustre: Skipped 4 previous similar messages\n[Sat May 23 18:43:12 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 18:45:36 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 18:50:21 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 18:50:21 2026] Lustre: Skipped 4 previous similar messages\n[Sat May 23 18:58:53 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 208840.\n[Sat May 23 18:58:53 2026] Lustre: Skipped 28 previous similar messages\n[Sat May 23 19:21:25 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 19:21:25 2026] Lustre: Skipped 27 previous similar messages\n[Sat May 23 19:28:37 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (2 current) to proc with flag: 220840.\n[Sat May 23 19:31:20 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 19:37:39 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 208840.\n[Sat May 23 19:50:27 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 19:50:27 2026] Lustre: Skipped 5 previous similar messages\n[Sat May 23 20:17:26 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 20:17:26 2026] Lustre: Skipped 1 previous similar message\n[Sat May 23 20:18:45 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 20:23:54 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 20:23:54 2026] Lustre: Skipped 1 previous similar message\n[Sat May 23 20:29:15 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 200840.\n[Sat May 23 21:07:53 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 21:07:53 2026] Lustre: Skipped 1 previous similar message\n[Sat May 23 21:26:58 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 21:34:45 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 21:40:11 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 21:47:17 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 22:23:43 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 22:28:02 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 22:46:18 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 22:56:12 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 22:57:20 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.\n[Sat May 23 22:57:20 2026] Lustre: Skipped 8 previous similar messages\n[Thu Jun 18 02:38:22 2026] LustreError: 3331039:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jun 18 02:38:22 2026] LustreError: 3331039:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 21 09:01:50 2026] LustreError: 3827705:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 21 09:01:50 2026] LustreError: 3827705:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Mon Jun 29 11:40:57 2026] LustreError: 50981:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Mon Jun 29 11:40:57 2026] LustreError: 50981:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Mon Jun 29 11:41:17 2026] LustreError: 50981:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Mon Jun 29 11:41:17 2026] LustreError: 50981:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Mon Jun 29 11:41:50 2026] LustreError: 50981:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Mon Jun 29 11:41:50 2026] LustreError: 50981:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Mon Jun 29 11:46:57 2026] LustreError: 4040436:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Mon Jun 29 11:46:57 2026] LustreError: 4040436:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Mon Jun 29 11:50:25 2026] LustreError: 4183950:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Mon Jun 29 11:50:25 2026] LustreError: 4183950:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Jul  1 22:54:46 2026] LustreError: 4040436:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jul  1 22:54:46 2026] LustreError: 4040436:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  2 10:00:29 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  2 10:00:29 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  2 10:00:53 2026] LustreError: 164175:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  2 10:00:53 2026] LustreError: 164175:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  2 10:02:42 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  2 10:02:42 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  2 10:02:57 2026] LustreError: 35127:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  2 10:02:57 2026] LustreError: 35127:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  2 10:03:11 2026] LustreError: 3776948:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  2 10:03:11 2026] LustreError: 3776948:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  2 10:04:56 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  2 10:04:56 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  2 10:16:51 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  2 10:16:51 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  2 10:18:14 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  2 10:18:14 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  2 10:20:00 2026] LustreError: 158667:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  2 10:20:00 2026] LustreError: 158667:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  2 10:22:21 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  2 10:22:21 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sat Aug 29 15:33:22 2026] LustreError: 786588:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 15:33:22 2026] LustreError: 786588:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sat Aug 29 15:35:20 2026] LustreError: 851692:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 15:35:20 2026] LustreError: 851692:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Sat Aug 29 15:55:42 2026] LustreError: 933271:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 15:55:42 2026] LustreError: 933271:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Sat Aug 29 16:07:39 2026] LustreError: 775884:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Aug 30 19:35:31 2026] LustreError: 786588:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Aug 30 19:35:31 2026] LustreError: 786588:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Sun Aug 30 19:48:11 2026] LustreError: 917286:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Aug 30 19:48:11 2026] LustreError: 917286:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Fri Sep 11 00:52:53 2026] LustreError: 1036385:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep 11 00:52:53 2026] LustreError: 1036385:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Thu Sep 17 10:20:27 2026] LustreError: 1130493:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Sep 17 10:20:27 2026] LustreError: 1130493:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Sep 17 13:37:10 2026] LustreError: 1036385:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep 18 14:55:30 2026] LustreError: 1123682:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Sep 19 17:33:09 2026] LustreError: 1191707:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Sep 19 21:50:24 2026] LustreError: 1183282:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Mon Sep 21 22:56:43 2026] LustreError: 1233145:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Fri Sep 25 14:37:56 2026]  ? __pfx_ll_put_link+0x10/0x10 [lustre]",
+        "cmd": [
+          "bash",
+          "-c",
+          "dmesg -T | grep -iE 'lustre|LustreError'"
+        ],
+        "out_hash": "b85f58936de0546a9033ae3b2bf776c5247fd407b96cb484f66cc5c2729adfe2",
+        "out_path": "<scratch>/discovery/volta/outputs/b85f58936de0546a9033ae3b2bf776c5247fd407b96cb484f66cc5c2729adfe2.out"
+      }
+    },
+    "gpu_list": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "GPU 0: Tesla V100-PCIE-32GB (UUID: GPU-bb7d5c12-2f54-6a3b-2f1b-25e13547c2a2)",
+          "GPU 1: Tesla V100-PCIE-32GB (UUID: GPU-38e77cd8-2334-317f-4861-56fa4461a206)"
+        ],
+        "cmd": [
+          "nvidia-smi",
+          "-L"
+        ],
+        "out_hash": "4ab25f893e940740eab6fd6a6943ed046027091b994162dd7c709e067b4aed0d",
+        "out_path": "<scratch>/discovery/volta/outputs/4ab25f893e940740eab6fd6a6943ed046027091b994162dd7c709e067b4aed0d.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": "gpu:volta:2",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp02"
+        ],
+        "out_hash": "53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be",
+        "out_path": "<scratch>/discovery/volta/outputs/53adecda2ea93444eec61dfb470affc7334dcb94c4771bf210b296c742b5d0be.out"
+      }
+    },
+    "gpu_driver_cuda": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "driver": "580.126.16",
+          "cuda": "13.0"
+        },
+        "cmd": [
+          "nvidia-smi"
+        ],
+        "out_hash": "6bf18b05a426902618348faa4e39d266c14b7730adce3279c6838e08b4f1469d",
+        "out_path": "<scratch>/discovery/volta/outputs/6bf18b05a426902618348faa4e39d266c14b7730adce3279c6838e08b4f1469d.out"
+      }
+    },
+    "gpu_topology": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "\u001b[4mGPU0\tGPU1\tNIC0\tNIC1\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m",
+        "cmd": [
+          "nvidia-smi",
+          "topo",
+          "-m"
+        ],
+        "out_hash": "fb52757d39ba5cf07871f24ef921e69cb485ba00f9f15b001c085c6cb951e517",
+        "out_path": "<scratch>/discovery/volta/outputs/fb52757d39ba5cf07871f24ef921e69cb485ba00f9f15b001c085c6cb951e517.out"
+      }
+    },
+    "gpu_settings": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "ecc_current": "Disabled",
+          "max_clocks_mhz": {
+            "sm": 1380,
+            "memory": 877,
+            "graphics": 1380
+          }
+        },
+        "cmd": [
+          "nvidia-smi",
+          "-q",
+          "-d",
+          "CLOCK,ECC,PERFORMANCE"
+        ],
+        "out_hash": "1a651cbfe3c4bbe210f2e78b353829b1f02d0d2f3085a3b843af734915bd021b",
+        "out_path": "<scratch>/discovery/volta/outputs/1a651cbfe3c4bbe210f2e78b353829b1f02d0d2f3085a3b843af734915bd021b.out"
+      }
+    }
+  }
+}

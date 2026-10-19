@@ -1,0 +1,32 @@
+pin-pedido: host=b9p03 hca_numa=0 core=0 origen=sysfs(node0)
+pin-pedido: host=b9p04 hca_numa=0 core=0 origen=sysfs(node0)
+pin-real: host=b9p03 cpus=0
+pin-real: host=b9p04 cpus=0
+[1791873852.587857] [b9p03:560159:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791873852.597483] [b9p04:3739067:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791873852.618220] [b9p04:3739067:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_NET_DEVICES=ib0 UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791873852.635769] [b9p03:560159:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_NET_DEVICES=ib0 UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791873852.636520] [b9p03:560159:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+[1791873852.636938] [b9p04:3739067:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+[1791873852.638670] [b9p03:560159:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791873852.638970] [b9p04:3739067:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791873852.646674] [b9p03:560159:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0xb09660: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+[1791873852.647001] [b9p04:3739067:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0x126eec0: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+1                      10.97
+2                       9.94
+4                       9.78
+8                       9.65
+16                      9.71
+32                      9.71
+64                      9.99
+128                     9.75
+256                     9.95
+512                    10.00
+1024                   10.07
+2048                   10.52
+4096                   11.17
+8192                   12.25

@@ -1,0 +1,39 @@
+pin-pedido: host=s02r1b01 rank=0 core=0 origen=sysfs(node0)
+pin-pedido: host=s02r1b02 rank=1 core=0 origen=sysfs(node0)
+pin-real: host=s02r1b02 rank=1 cpus=0
+	linux-vdso.so.1 (0x00007ffc12731000)
+	libmpi.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libmpi.so.40 (0x00007f5d175ce000)
+	libstdc++.so.6 => /lusitania_apps/gcc-11.2.0/lib64/libstdc++.so.6 (0x00007f5d171be000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f5d16eb1000)
+	libgcc_s.so.1 => /lusitania_apps/gcc-11.2.0/lib64/libgcc_s.so.1 (0x00007f5d16c98000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f5d16a7a000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f5d166d7000)
+	libopen-rte.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-rte.so.40 (0x00007f5d1661b000)
+	libopen-pal.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-pal.so.40 (0x00007f5d1650c000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f5d16308000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f5d16100000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007f5d15efc000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f5d15ce6000)
+	/lib64/ld-linux-x86-64.so.2 (0x00005567e7117000)
+--------------------------------------------------------------------------
+WARNING: There is at least non-excluded one OpenFabrics device found,
+but there are no active ports detected (or Open MPI was unable to use
+them).  This is most certainly not what you wanted.  Check your
+cables, subnet manager configuration, etc.  The openib BTL will be
+ignored for this job.
+
+  Local host: s02r1b02
+--------------------------------------------------------------------------
+[1792102648.179442] [s02r1b02:10591:0]     ucp_context.c:1778 UCX  INFO  UCP version is 1.12 (release 0)
+--------------------------------------------------------------------------
+No components were able to be opened in the pml framework.
+
+This typically means that either no components of this type were
+installed, or none of the installed components can be loaded.
+Sometimes this means that shared libraries required by these
+components are unable to be found/loaded.
+
+  Host:      s02r1b02
+  Framework: pml
+--------------------------------------------------------------------------
+[s02r1b02:10591] PML ucx cannot be selected

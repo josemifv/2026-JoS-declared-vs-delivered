@@ -1,0 +1,19 @@
+BabelStream
+Version: 5.0
+Implementation: CUDA
+Running kernels 100 times
+Precision: double
+Array size: 2048.0 MiB (=2.0 GiB)
+Total size: 6144.0 MiB (=6.0 GiB)
+Using CUDA device Tesla V100-PCIE-32GB
+Driver: 13000
+Memory: DEFAULT
+Reduction kernel config: 320 groups of (fixed) size 1024
+Init: 1.615435 s (=3803.309610 MiBytes/sec)
+Read: 0.007479 s (=821454.399454 MiBytes/sec)
+Function    MiBytes/sec Min (sec)   Max         Average     
+Copy        757504.865  0.00541     0.00541     0.00541     
+Mul         763411.989  0.00537     0.00537     0.00537     
+Add         777581.850  0.00790     0.00791     0.00791     
+Triad       777218.983  0.00791     0.00794     0.00791     
+Dot         833408.786  0.00491     0.00496     0.00494     

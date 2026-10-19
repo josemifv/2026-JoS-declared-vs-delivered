@@ -1,0 +1,20 @@
+== ancla HPCG job=83737 (una sesión: cmmse vs actual, 11 rondas intercaladas) sha256=668ab68a1ee70a76bcdb33d85df2bc0db93d695c49abbbf9d053bb557ac59b37 2026-10-06T04:13:22+02:00
+== commit(desplegado): fd9c7366075a6298af032067d6e0ec80a21f0841
+== nodos asignados (R4.5: nodos del CMMSE no identificados — se declara):
+b9p08 SMT=1 b9p09 SMT=1 b9p10 SMT=1 b9p11 SMT=1 b9p13 SMT=1 b9p14 SMT=1 b9p15 SMT=1 b9p16 SMT=1 
+== hpcg.dat del CMMSE: sha256=090341b7f686066be1429c16edca19bff1dee614647b18e94b7fb68ff6bc0d82
+level1 start: run_id=83737 node=b9p08 mode=unprivileged estado=<home>/.level1_state/83737
+level1 pre: contadores IB capturados (unprivileged)
+--- control D-B (inicio): osu_allreduce -m 65536 (512 ranks, gcc por defecto)
+Lmod has detected the following error: The following module(s) are unknown:
+"gcc/11.2.0"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "gcc/11.2.0"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+

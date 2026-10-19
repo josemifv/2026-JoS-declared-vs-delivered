@@ -1,0 +1,702 @@
+{
+  "schema_version": 1,
+  "cluster": "lusitania",
+  "node": "s02r2b03",
+  "role": "node",
+  "partition": "us63",
+  "collected_at": "2026-10-15T22:23:01Z",
+  "run_id": "disc-lusitania-20261015T221415Z-6171",
+  "collector": {
+    "wrapper": "<home>/instrumentation/cmdlog.sh",
+    "dry_run": false
+  },
+  "fingerprint": "02ae87635454becf7fe2e57a7c97abae4a6dd73ed4a3d46d7a4a26e9d6a48a7e",
+  "fingerprint_attrs": [
+    "cpu_model",
+    "sockets",
+    "cores_per_socket",
+    "threads_per_core",
+    "logical_cpus_online",
+    "microcode",
+    "scaling_governor",
+    "no_turbo",
+    "freq_min_khz",
+    "freq_max_khz",
+    "numa_nodes",
+    "memory_total_kb",
+    "dimm_population",
+    "thp_enabled",
+    "numa_balancing",
+    "os",
+    "kernel",
+    "bios_version",
+    "bios_date",
+    "package_hash",
+    "hca_model",
+    "hca_firmware",
+    "port_state",
+    "port_rate",
+    "ofed_version",
+    "ucx_version",
+    "ucx_transports",
+    "libfabric_version",
+    "libfabric_providers",
+    "gcc_version",
+    "icx_version",
+    "openmpi_version",
+    "intelmpi_version",
+    "gpu_list",
+    "gpu_driver_cuda",
+    "gpu_topology",
+    "gpu_settings"
+  ],
+  "fingerprint_values": {
+    "cpu_model": "Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz",
+    "sockets": 2,
+    "cores_per_socket": 8,
+    "threads_per_core": 1,
+    "logical_cpus_online": 16,
+    "microcode": "0x710",
+    "scaling_governor": [
+      "powersave"
+    ],
+    "no_turbo": 0,
+    "freq_min_khz": 1200000,
+    "freq_max_khz": 3300000,
+    "numa_nodes": 2,
+    "memory_total_kb": 65947660,
+    "dimm_population": null,
+    "thp_enabled": "always",
+    "numa_balancing": 1,
+    "os": "sles-12.3",
+    "kernel": "4.4.73-5-default",
+    "bios_version": "-[TDE136RUS-1.40]-",
+    "bios_date": "12/05/2013",
+    "package_hash": {
+      "sha256": "f7bca1afea851536593ad92eb04af3b15b01aed6fd6f224687ec8de1a759fd68",
+      "count": 645
+    },
+    "hca_model": null,
+    "hca_firmware": [
+      "2.36.5000"
+    ],
+    "port_state": [
+      "ACTIVE",
+      "DOWN"
+    ],
+    "port_rate": [
+      10,
+      40
+    ],
+    "ofed_version": "MLNX_OFED_LINUX-4.1-1.0.2.0:",
+    "ucx_version": null,
+    "ucx_transports": null,
+    "libfabric_version": null,
+    "libfabric_providers": null,
+    "gcc_version": "gcc (SUSE Linux) 4.8.5",
+    "icx_version": null,
+    "openmpi_version": null,
+    "intelmpi_version": null,
+    "gpu_list": null,
+    "gpu_driver_cuda": null,
+    "gpu_topology": null,
+    "gpu_settings": null
+  },
+  "attributes": {
+    "cpu_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz",
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "33dd51944a0f8133eaa04fdb3eb8464426f13e2c341fbf5c8e1431b7c57cfd64",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/33dd51944a0f8133eaa04fdb3eb8464426f13e2c341fbf5c8e1431b7c57cfd64.out"
+      }
+    },
+    "sockets": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "33dd51944a0f8133eaa04fdb3eb8464426f13e2c341fbf5c8e1431b7c57cfd64",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/33dd51944a0f8133eaa04fdb3eb8464426f13e2c341fbf5c8e1431b7c57cfd64.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "s02r2b03"
+        ],
+        "out_hash": "4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639.out"
+      }
+    },
+    "cores_per_socket": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 8,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "33dd51944a0f8133eaa04fdb3eb8464426f13e2c341fbf5c8e1431b7c57cfd64",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/33dd51944a0f8133eaa04fdb3eb8464426f13e2c341fbf5c8e1431b7c57cfd64.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 8,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "s02r2b03"
+        ],
+        "out_hash": "4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639.out"
+      }
+    },
+    "threads_per_core": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "33dd51944a0f8133eaa04fdb3eb8464426f13e2c341fbf5c8e1431b7c57cfd64",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/33dd51944a0f8133eaa04fdb3eb8464426f13e2c341fbf5c8e1431b7c57cfd64.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "s02r2b03"
+        ],
+        "out_hash": "4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639.out"
+      }
+    },
+    "logical_cpus_online": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 16,
+        "cmd": [
+          "nproc",
+          "--all"
+        ],
+        "out_hash": "e6c21e8d260fe71882debdb339d2402a2ca7648529bc2303f48649bce0380017",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/e6c21e8d260fe71882debdb339d2402a2ca7648529bc2303f48649bce0380017.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 16,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "s02r2b03"
+        ],
+        "out_hash": "4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639.out"
+      }
+    },
+    "microcode": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "0x710",
+        "cmd": [
+          "cat",
+          "/proc/cpuinfo"
+        ],
+        "out_hash": "2e40f463add7dff22f003d9d54bc337f66506bdf3f0abf7dfddee74064956d23",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/2e40f463add7dff22f003d9d54bc337f66506bdf3f0abf7dfddee74064956d23.out"
+      }
+    },
+    "scaling_governor": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "powersave"
+        ],
+        "cmd": [
+          "bash",
+          "-c",
+          "grep -H . /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
+        ],
+        "out_hash": "f30a691b2a2b9b33aa785882c6d065c56641abf682070f63714e691768cd1467",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/f30a691b2a2b9b33aa785882c6d065c56641abf682070f63714e691768cd1467.out"
+      }
+    },
+    "no_turbo": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 0,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/intel_pstate/no_turbo"
+        ],
+        "out_hash": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa.out"
+      }
+    },
+    "freq_min_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1200000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq"
+        ],
+        "out_hash": "55cd3e65c3d972cef88ad6c016d1cd4f91138c0da18344d7ec8c35e38755d330",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/55cd3e65c3d972cef88ad6c016d1cd4f91138c0da18344d7ec8c35e38755d330.out"
+      }
+    },
+    "freq_max_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 3300000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq"
+        ],
+        "out_hash": "90685c7ce5defa05a81c366a33d50ecfa4082ce5098aab314a2da8542de41da9",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/90685c7ce5defa05a81c366a33d50ecfa4082ce5098aab314a2da8542de41da9.out"
+      }
+    },
+    "numa_nodes": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "numactl",
+          "-H"
+        ],
+        "out_hash": "b006290d5439f9c8f27bf74041293d7c6caa2cd1c70e64c609a73c5d37c2881b",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/b006290d5439f9c8f27bf74041293d7c6caa2cd1c70e64c609a73c5d37c2881b.out"
+      }
+    },
+    "memory_total_kb": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 65947660,
+        "cmd": [
+          "cat",
+          "/proc/meminfo"
+        ],
+        "out_hash": "b187191dcf709824ff13ed9d0ca93a2a62f808151e27628ecc172c826cc7eec8",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/b187191dcf709824ff13ed9d0ca93a2a62f808151e27628ecc172c826cc7eec8.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 63488000,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "s02r2b03"
+        ],
+        "out_hash": "4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639.out"
+      }
+    },
+    "dimm_population": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "dmidecode_mem: exit 127"
+      }
+    },
+    "thp_enabled": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "always",
+        "cmd": [
+          "cat",
+          "/sys/kernel/mm/transparent_hugepage/enabled"
+        ],
+        "out_hash": "092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d.out"
+      }
+    },
+    "numa_balancing": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "cat",
+          "/proc/sys/kernel/numa_balancing"
+        ],
+        "out_hash": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865.out"
+      }
+    },
+    "os": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "sles-12.3",
+        "cmd": [
+          "cat",
+          "/etc/os-release"
+        ],
+        "out_hash": "8262b9604c657814e685b14d3d711f6a74e151b91d5fbd2aa140901db9adf225",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/8262b9604c657814e685b14d3d711f6a74e151b91d5fbd2aa140901db9adf225.out"
+      }
+    },
+    "kernel": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "4.4.73-5-default",
+        "cmd": [
+          "uname",
+          "-r"
+        ],
+        "out_hash": "ab516eaf6594774eed1b08f91e29db2ef7807cc910370f7fb6ab4b26e74eab6a",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/ab516eaf6594774eed1b08f91e29db2ef7807cc910370f7fb6ab4b26e74eab6a.out"
+      }
+    },
+    "bios_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "-[TDE136RUS-1.40]-",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_version"
+        ],
+        "out_hash": "71da08e2cb3bec492460b16862f74f6ce4d931c23cb28f8dbb105a48bdc7c7b8",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/71da08e2cb3bec492460b16862f74f6ce4d931c23cb28f8dbb105a48bdc7c7b8.out"
+      }
+    },
+    "bios_date": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "12/05/2013",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_date"
+        ],
+        "out_hash": "622eed8126146a3b9b75bf48601439c9a75e3e7a439335fde3ab4fb996f245e0",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/622eed8126146a3b9b75bf48601439c9a75e3e7a439335fde3ab4fb996f245e0.out"
+      }
+    },
+    "server_model": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "IBM System X iDataPlex dx360 M4 Server -[7912FT1]-",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/product_name"
+        ],
+        "out_hash": "4692b79f308e086d8178a22443115760c9814485fda6e66b4a1347f1808232e0",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/4692b79f308e086d8178a22443115760c9814485fda6e66b4a1347f1808232e0.out"
+      }
+    },
+    "package_hash": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "f7bca1afea851536593ad92eb04af3b15b01aed6fd6f224687ec8de1a759fd68",
+          "count": 645
+        },
+        "cmd": [
+          "rpm",
+          "-qa",
+          "--qf",
+          "%{NAME}-%{VERSION}-%{RELEASE}\\n"
+        ],
+        "out_hash": "1d10925cb988114dc1e7c634f52d2eadea46d7bb63f95642c44fd3351cebb3f1",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/1d10925cb988114dc1e7c634f52d2eadea46d7bb63f95642c44fd3351cebb3f1.out"
+      }
+    },
+    "hca_model": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "ibstat: exit 127; ibv_devinfo: sin dato"
+      }
+    },
+    "hca_firmware": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "2.36.5000"
+        ],
+        "cmd": [
+          "ibv_devinfo"
+        ],
+        "out_hash": "2e64ae8f16f843e752c5ea5f9ee6e5a25b5db5d5573132aa5ecc0b00d9c43b33",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/2e64ae8f16f843e752c5ea5f9ee6e5a25b5db5d5573132aa5ecc0b00d9c43b33.out"
+      }
+    },
+    "port_state": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "ACTIVE",
+          "DOWN"
+        ],
+        "cmd": [
+          "bash",
+          "-c",
+          "grep -H . /sys/class/infiniband/*/ports/*/state"
+        ],
+        "out_hash": "92b34d6078bc229ee2e4fb88fda00a187dccc8d4b32bd1fd0763217e624c278d",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/92b34d6078bc229ee2e4fb88fda00a187dccc8d4b32bd1fd0763217e624c278d.out"
+      }
+    },
+    "port_rate": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          10,
+          40
+        ],
+        "cmd": [
+          "bash",
+          "-c",
+          "grep -H . /sys/class/infiniband/*/ports/*/rate"
+        ],
+        "out_hash": "540212458f9da13ee3ec741c13c6482a046cdef1bb24c6e38900cac5054bbdf2",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/540212458f9da13ee3ec741c13c6482a046cdef1bb24c6e38900cac5054bbdf2.out"
+      }
+    },
+    "ofed_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "MLNX_OFED_LINUX-4.1-1.0.2.0:",
+        "cmd": [
+          "ofed_info",
+          "-s"
+        ],
+        "out_hash": "2a14f0fc044518fd8608919e98a39b50eb8e65e758224e1a01d40b53af5bf3b0",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/2a14f0fc044518fd8608919e98a39b50eb8e65e758224e1a01d40b53af5bf3b0.out"
+      }
+    },
+    "ucx_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "ucx_info_v: exit 127"
+      }
+    },
+    "ucx_transports": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "ucx_info_d: exit 127"
+      }
+    },
+    "libfabric_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "fi_info_version: exit 127"
+      }
+    },
+    "libfabric_providers": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "fi_info_list: exit 127"
+      }
+    },
+    "modules_avail": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "2b3393ecb5aa8bd5796b2fa7af4e4132028b91aee492779aa527ffbd9dcdae8c",
+          "count": 250
+        },
+        "cmd": [
+          "bash",
+          "-lc",
+          "module avail"
+        ],
+        "out_hash": "45eaba3afc1f04bb112715047aff8ca003bb89fcfe6ff264c176b7d8686efdb4",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/45eaba3afc1f04bb112715047aff8ca003bb89fcfe6ff264c176b7d8686efdb4.out"
+      }
+    },
+    "gcc_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "gcc (SUSE Linux) 4.8.5",
+        "cmd": [
+          "gcc",
+          "--version"
+        ],
+        "out_hash": "8c3a04e5581948c47fb96dcd5aea42fdbdcf8b8226ccd6190d792ef9bb768f1e",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/8c3a04e5581948c47fb96dcd5aea42fdbdcf8b8226ccd6190d792ef9bb768f1e.out"
+      }
+    },
+    "icx_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "icx_version: exit 127"
+      }
+    },
+    "openmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpirun_version: exit 127; ompi_info_version: exit 127"
+      }
+    },
+    "intelmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpiexec_version: exit 127"
+      }
+    },
+    "mpi_cuda_aware": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "ompi_info_parsable: exit 127"
+      }
+    },
+    "cmmse_stack": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "module_avail: sin dato"
+      }
+    },
+    "slurm_features": {
+      "F": false,
+      "declared": {
+        "observable": false,
+        "reason": "scontrol_node: sin dato"
+      }
+    },
+    "slurm_gres": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": "(null)",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "s02r2b03"
+        ],
+        "out_hash": "4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639.out"
+      }
+    },
+    "lustre_version": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "lfs 2.11.52",
+        "cmd": [
+          "lfs",
+          "--version"
+        ],
+        "out_hash": "10ca0cdb1ce498c85e2a15755a432ca2f0577729874eccdcdfb795d3f914aa33",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/10ca0cdb1ce498c85e2a15755a432ca2f0577729874eccdcdfb795d3f914aa33.out"
+      }
+    },
+    "mounts": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "TARGET                   SOURCE                                                                           FSTYPE OPTIONS\n/                        <ip>:/install/netboot/sles12.3/x86_64/compute/rootimg                      nfs    ro,relatime,vers=3,rsize=1048576,wsize=1048576,namlen=255,hard,nolock,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=<ip>,mountvers=3,mountport=20048,mountproto=udp,local_lock=all,addr=<ip>\n├─/.statelite/persistent <ip>:/statelite/s02r2b03                                                   nfs    rw,relatime,vers=3,rsize=32768,wsize=1048576,namlen=255,hard,nolock,proto=tcp,timeo=14,retrans=2,sec=sys,mountaddr=<ip>,mountvers=3,mountport=20048,mountproto=tcp,local_lock=all,addr=<ip>\n├─/lustre                <ip>@o2ib1:<ip>@o2ib1:/LUSTRE                                        lustre rw,flock,lazystatfs\n├─/var/lib/rpm           <ip>:/install/netboot/sles12.3/x86_64/compute/rootimg/.default/var/lib/rpm nfs    ro,relatime,vers=3,rsize=1048576,wsize=1048576,namlen=255,hard,nolock,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=<ip>,mountvers=3,mountport=20048,mountproto=udp,local_lock=all,addr=<ip>\n└─/var/log               <ip>:/statelite/s02r2b03/var/log                                           nfs    rw,relatime,vers=3,rsize=32768,wsize=1048576,namlen=255,hard,nolock,proto=tcp,timeo=14,retrans=2,sec=sys,mountaddr=<ip>,mountvers=3,mountport=20048,mountproto=tcp,local_lock=all,addr=<ip>",
+        "cmd": [
+          "findmnt",
+          "-t",
+          "lustre,nfs,gpfs"
+        ],
+        "out_hash": "7a7e8173d9529103fe9800ce737bfdbbbcf020cbc48a173fc8138767d489b07a",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/7a7e8173d9529103fe9800ce737bfdbbbcf020cbc48a173fc8138767d489b07a.out"
+      }
+    },
+    "lustre_errors": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "dmesg: read kernel buffer failed: Operation not permitted",
+        "cmd": [
+          "bash",
+          "-c",
+          "dmesg -T | grep -iE 'lustre|LustreError'"
+        ],
+        "out_hash": "eb7773ca6beb7854c1984fe13ca1a9c96b7c92861c48ec1f6e2c881c19f3084f",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/eb7773ca6beb7854c1984fe13ca1a9c96b7c92861c48ec1f6e2c881c19f3084f.out"
+      }
+    },
+    "gpu_list": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_L: exit 127"
+      },
+      "declared": {
+        "observable": true,
+        "value": "(null)",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "s02r2b03"
+        ],
+        "out_hash": "4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639",
+        "out_path": "<scratch>/cc/raw/lusitania/us63/discovery/outputs/4ee58c74a082d063e08c4ae22b8bf520124d57105b61b7fac83b9ffb99d0c639.out"
+      }
+    },
+    "gpu_driver_cuda": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi: exit 127"
+      }
+    },
+    "gpu_topology": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_topo: exit 127"
+      }
+    },
+    "gpu_settings": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_q: exit 127"
+      }
+    }
+  }
+}

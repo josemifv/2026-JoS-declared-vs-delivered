@@ -1,0 +1,934 @@
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.17  Build 20251215 (id: 2ac2f63)
+[0] MPI startup(): Copyright (C) 2003-2025 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 2.2.0-impi_2021.17.2
+[1791123781.509815] [b9p06:3238173:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.509810] [b9p06:3238194:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.509811] [b9p06:3238204:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.509856] [b9p06:3238166:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.509869] [b9p06:3238167:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.509872] [b9p06:3238200:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510051] [b9p06:3238160:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510050] [b9p06:3238198:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510135] [b9p06:3238201:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510328] [b9p06:3238186:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510336] [b9p06:3238176:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510339] [b9p06:3238181:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510419] [b9p06:3238177:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510433] [b9p06:3238182:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510453] [b9p06:3238205:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510428] [b9p06:3238211:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510438] [b9p06:3238158:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510521] [b9p06:3238164:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510548] [b9p06:3238174:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510557] [b9p06:3238193:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510527] [b9p06:3238208:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510562] [b9p06:3238212:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510536] [b9p06:3238215:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510608] [b9p06:3238157:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510563] [b9p06:3238169:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510632] [b9p06:3238172:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510661] [b9p06:3238180:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510654] [b9p06:3238185:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510657] [b9p06:3238196:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510659] [b9p06:3238203:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510668] [b9p06:3238162:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[0] MPI startup(): libfabric provider: mlx
+[1791123781.510718] [b9p06:3238188:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510719] [b9p06:3238191:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510714] [b9p06:3238195:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510722] [b9p06:3238213:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510739] [b9p06:3238154:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510731] [b9p06:3238207:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510733] [b9p06:3238209:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510747] [b9p06:3238216:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510804] [b9p06:3238214:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510821] [b9p06:3238155:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510825] [b9p06:3238183:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510838] [b9p06:3238192:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510842] [b9p06:3238159:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510844] [b9p06:3238168:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510838] [b9p06:3238175:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510922] [b9p06:3238189:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510964] [b9p06:3238161:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510971] [b9p06:3238197:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510953] [b9p06:3238217:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.511006] [b9p06:3238178:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510993] [b9p06:3238179:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.510993] [b9p06:3238190:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.511009] [b9p06:3238206:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.511045] [b9p06:3238156:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.511030] [b9p06:3238163:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.511030] [b9p06:3238170:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.511028] [b9p06:3238171:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.511038] [b9p06:3238184:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.511042] [b9p06:3238187:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.511040] [b9p06:3238202:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.511055] [b9p06:3238199:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.511056] [b9p06:3238210:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.511254] [b9p06:3238165:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.514943] [b9p07:3312822:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.514964] [b9p07:3312835:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.514965] [b9p07:3312799:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515001] [b9p07:3312855:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515042] [b9p07:3312793:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515064] [b9p07:3312817:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515081] [b9p07:3312840:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515084] [b9p07:3312829:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515106] [b9p07:3312792:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515124] [b9p07:3312847:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515131] [b9p07:3312851:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515156] [b9p07:3312852:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515144] [b9p07:3312853:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515161] [b9p07:3312801:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515178] [b9p07:3312844:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515201] [b9p07:3312808:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515197] [b9p07:3312828:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515199] [b9p07:3312843:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515227] [b9p07:3312816:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515219] [b9p07:3312841:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515226] [b9p07:3312842:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515227] [b9p07:3312845:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515244] [b9p07:3312824:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515245] [b9p07:3312825:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515269] [b9p07:3312805:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515268] [b9p07:3312810:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515295] [b9p07:3312796:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515312] [b9p07:3312798:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515331] [b9p07:3312809:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515410] [b9p07:3312849:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515363] [b9p07:3312850:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515412] [b9p07:3312807:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515408] [b9p07:3312823:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515500] [b9p07:3312834:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515526] [b9p07:3312826:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515561] [b9p07:3312813:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515581] [b9p07:3312819:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515567] [b9p07:3312838:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515616] [b9p07:3312804:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515600] [b9p07:3312827:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515635] [b9p07:3312848:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515648] [b9p07:3312803:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515661] [b9p07:3312812:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515674] [b9p07:3312833:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515690] [b9p07:3312837:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515720] [b9p07:3312814:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515723] [b9p07:3312821:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515724] [b9p07:3312846:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515727] [b9p07:3312854:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515734] [b9p07:3312802:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515751] [b9p07:3312811:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515760] [b9p07:3312820:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515740] [b9p07:3312832:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515784] [b9p07:3312815:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515787] [b9p07:3312830:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515785] [b9p07:3312839:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515807] [b9p07:3312794:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515788] [b9p07:3312797:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515802] [b9p07:3312806:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515818] [b9p07:3312800:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515836] [b9p07:3312818:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515832] [b9p07:3312831:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515835] [b9p07:3312836:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.515849] [b9p07:3312795:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791123781.716077] [b9p07:3312796:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.716041] [b9p07:3312836:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.716900] [b9p07:3312843:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.717048] [b9p07:3312850:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.717550] [b9p07:3312845:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.717719] [b9p07:3312828:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.717793] [b9p07:3312848:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.717840] [b9p07:3312853:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.718239] [b9p07:3312849:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.718440] [b9p07:3312817:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.718481] [b9p07:3312823:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.718919] [b9p07:3312854:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719038] [b9p07:3312855:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719067] [b9p07:3312822:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719112] [b9p07:3312819:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719126] [b9p07:3312804:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719164] [b9p07:3312829:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719243] [b9p07:3312798:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719257] [b9p07:3312841:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719299] [b9p07:3312826:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719442] [b9p07:3312813:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719769] [b9p07:3312851:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719814] [b9p07:3312825:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719890] [b9p07:3312840:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719901] [b9p07:3312824:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.719968] [b9p07:3312793:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720018] [b9p07:3312831:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720064] [b9p07:3312844:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720106] [b9p07:3312838:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720139] [b9p07:3312847:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720233] [b9p07:3312807:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720262] [b9p07:3312814:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720333] [b9p07:3312833:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720372] [b9p07:3312846:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720385] [b9p07:3312834:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720436] [b9p07:3312792:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720504] [b9p07:3312820:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720521] [b9p07:3312812:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720674] [b9p07:3312818:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720707] [b9p07:3312795:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720699] [b9p07:3312808:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720717] [b9p07:3312842:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720742] [b9p07:3312830:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720747] [b9p07:3312806:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720768] [b9p07:3312837:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720824] [b9p07:3312805:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720889] [b9p07:3312832:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720881] [b9p07:3312852:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.720932] [b9p07:3312835:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721087] [b9p07:3312809:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721113] [b9p07:3312794:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721171] [b9p07:3312799:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721212] [b9p07:3312802:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721225] [b9p07:3312816:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721272] [b9p07:3312811:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721356] [b9p07:3312810:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721404] [b9p07:3312797:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721437] [b9p07:3312821:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721460] [b9p07:3312803:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721482] [b9p07:3312815:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721539] [b9p07:3312801:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721546] [b9p07:3312839:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721577] [b9p07:3312827:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.721618] [b9p07:3312800:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.798652] [b9p06:3238160:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.798589] [b9p06:3238178:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.798697] [b9p06:3238183:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.798756] [b9p06:3238212:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.798830] [b9p06:3238158:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.798883] [b9p06:3238188:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.798787] [b9p06:3238203:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.798915] [b9p06:3238208:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.798961] [b9p06:3238192:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799037] [b9p06:3238164:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799162] [b9p06:3238167:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799152] [b9p06:3238175:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799220] [b9p06:3238181:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799283] [b9p06:3238216:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799426] [b9p06:3238176:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799326] [b9p06:3238182:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799332] [b9p06:3238204:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799520] [b9p06:3238185:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799448] [b9p06:3238213:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799532] [b9p06:3238186:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799570] [b9p06:3238217:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799618] [b9p06:3238157:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799641] [b9p06:3238209:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799741] [b9p06:3238159:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799769] [b9p06:3238174:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799786] [b9p06:3238215:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799840] [b9p06:3238180:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799846] [b9p06:3238200:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799861] [b9p06:3238194:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.799959] [b9p06:3238199:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800004] [b9p06:3238211:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800032] [b9p06:3238179:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800051] [b9p06:3238168:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800191] [b9p06:3238214:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800195] [b9p06:3238165:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800239] [b9p06:3238193:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800268] [b9p06:3238177:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800389] [b9p06:3238172:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800390] [b9p06:3238173:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800415] [b9p06:3238190:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800426] [b9p06:3238171:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800454] [b9p06:3238162:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800588] [b9p06:3238207:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800588] [b9p06:3238163:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800644] [b9p06:3238206:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800692] [b9p06:3238189:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800713] [b9p06:3238195:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800748] [b9p06:3238187:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800773] [b9p06:3238201:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800949] [b9p06:3238156:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.800974] [b9p06:3238197:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801040] [b9p06:3238170:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801072] [b9p06:3238196:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801135] [b9p06:3238169:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801155] [b9p06:3238205:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801195] [b9p06:3238198:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801203] [b9p06:3238202:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801280] [b9p06:3238161:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801334] [b9p06:3238155:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801435] [b9p06:3238210:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801456] [b9p06:3238166:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801454] [b9p06:3238184:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801464] [b9p06:3238191:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.801605] [b9p06:3238154:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info UCX_HANDLE_ERRORS=none UCX_WARN_UNUSED_ENV_VARS=n UCX_NUM_PPN=64 UCX_NUM_EPS=128
+[1791123781.803518] [b9p06:3238217:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803572] [b9p06:3238192:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803655] [b9p06:3238207:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803811] [b9p06:3238168:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803827] [b9p06:3238202:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803850] [b9p06:3238196:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803853] [b9p06:3238210:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803880] [b9p06:3238215:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803905] [b9p06:3238189:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803929] [b9p06:3238155:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803950] [b9p06:3238205:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803949] [b9p06:3238211:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803973] [b9p06:3238193:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803970] [b9p06:3238206:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803965] [b9p06:3238216:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804002] [b9p06:3238179:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803996] [b9p06:3238187:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803989] [b9p06:3238203:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.803992] [b9p06:3238204:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804011] [b9p06:3238208:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804047] [b9p06:3238154:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.804028] [b9p06:3238157:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804051] [b9p06:3238166:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804054] [b9p06:3238173:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804045] [b9p06:3238188:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804093] [b9p06:3238156:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804069] [b9p06:3238158:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804086] [b9p06:3238159:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804086] [b9p06:3238160:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804072] [b9p06:3238161:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804092] [b9p06:3238162:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804083] [b9p06:3238163:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804092] [b9p06:3238164:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804095] [b9p06:3238165:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804093] [b9p06:3238167:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804093] [b9p06:3238169:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804090] [b9p06:3238170:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804093] [b9p06:3238171:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804063] [b9p06:3238172:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804091] [b9p06:3238174:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804074] [b9p06:3238175:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804069] [b9p06:3238176:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804067] [b9p06:3238177:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804071] [b9p06:3238178:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804076] [b9p06:3238180:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804067] [b9p06:3238181:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804091] [b9p06:3238182:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804085] [b9p06:3238183:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804092] [b9p06:3238184:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804071] [b9p06:3238185:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804081] [b9p06:3238186:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804085] [b9p06:3238190:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804084] [b9p06:3238191:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804087] [b9p06:3238194:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804078] [b9p06:3238195:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804078] [b9p06:3238197:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804090] [b9p06:3238198:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804069] [b9p06:3238199:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804088] [b9p06:3238200:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804081] [b9p06:3238201:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804092] [b9p06:3238209:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804080] [b9p06:3238212:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804090] [b9p06:3238213:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804089] [b9p06:3238214:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#0 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.804357] [b9p06:3238192:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804334] [b9p06:3238217:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804433] [b9p06:3238207:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804575] [b9p07:3312848:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804590] [b9p06:3238202:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804612] [b9p07:3312828:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804632] [b9p06:3238196:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804590] [b9p07:3312849:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804633] [b9p06:3238210:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804662] [b9p07:3312816:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804660] [b9p06:3238215:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804663] [b9p07:3312844:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804686] [b9p06:3238189:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804663] [b9p07:3312851:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804692] [b9p07:3312797:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804711] [b9p06:3238168:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804670] [b9p07:3312798:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804691] [b9p07:3312853:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804711] [b9p07:3312811:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804719] [b9p07:3312835:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804720] [b9p07:3312841:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804726] [b9p06:3238205:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804732] [b9p06:3238211:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804751] [b9p06:3238193:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804759] [b9p06:3238206:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804761] [b9p06:3238216:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804778] [b9p06:3238187:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804786] [b9p06:3238203:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804799] [b9p06:3238204:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804807] [b9p06:3238154:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804823] [b9p06:3238155:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804818] [b9p06:3238208:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804754] [b9p07:3312801:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804804] [b9p07:3312846:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804890] [b9p06:3238179:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804886] [b9p06:3238195:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804888] [b9p06:3238197:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804915] [b9p06:3238157:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804897] [b9p07:3312793:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804894] [b9p06:3238188:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804867] [b9p07:3312794:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804909] [b9p06:3238194:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804869] [b9p07:3312800:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804910] [b9p06:3238198:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804833] [b9p07:3312815:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804918] [b9p06:3238212:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804833] [b9p07:3312818:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804916] [b9p06:3238213:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804849] [b9p07:3312825:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804928] [b9p06:3238214:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804814] [b9p07:3312831:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804944] [b9p07:3312792:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804945] [b9p07:3312807:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804920] [b9p07:3312855:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804979] [b9p06:3238172:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804970] [b9p06:3238173:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804978] [b9p06:3238177:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804961] [b9p07:3312806:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804937] [b9p06:3238186:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804956] [b9p07:3312823:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804961] [b9p06:3238190:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804994] [b9p07:3312840:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804960] [b9p06:3238191:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805020] [b9p07:3312832:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804940] [b9p06:3238199:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805015] [b9p07:3312845:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804972] [b9p06:3238200:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804942] [b9p06:3238201:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805025] [b9p07:3312821:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804967] [b9p06:3238209:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805039] [b9p07:3312854:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805053] [b9p06:3238156:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805055] [b9p07:3312803:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805022] [b9p06:3238158:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805074] [b9p07:3312826:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805010] [b9p06:3238159:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805039] [b9p06:3238160:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804989] [b9p06:3238161:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805049] [b9p06:3238162:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805034] [b9p06:3238163:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805029] [b9p06:3238164:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805075] [b9p07:3312838:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805052] [b9p06:3238165:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805075] [b9p07:3312843:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804983] [b9p06:3238166:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805076] [b9p07:3312850:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805047] [b9p06:3238169:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805091] [b9p07:3312799:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805054] [b9p06:3238170:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805094] [b9p07:3312833:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805007] [b9p06:3238171:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805085] [b9p07:3312852:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805039] [b9p06:3238174:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805114] [b9p07:3312802:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805002] [b9p06:3238175:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805119] [b9p07:3312820:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805043] [b9p06:3238176:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805114] [b9p07:3312822:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804990] [b9p06:3238178:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805122] [b9p07:3312836:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805006] [b9p06:3238180:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805140] [b9p07:3312805:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804992] [b9p06:3238181:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805135] [b9p07:3312847:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805051] [b9p06:3238182:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805148] [b9p07:3312804:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805149] [b9p07:3312808:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805013] [b9p06:3238183:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805157] [b9p07:3312813:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805046] [b9p06:3238184:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805158] [b9p07:3312824:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.804993] [b9p06:3238185:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805153] [b9p07:3312830:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805152] [b9p07:3312839:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805164] [b9p07:3312796:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805178] [b9p07:3312812:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805181] [b9p07:3312829:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805169] [b9p07:3312834:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805066] [b9p06:3238167:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805206] [b9p07:3312817:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805203] [b9p07:3312795:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805212] [b9p07:3312810:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805211] [b9p07:3312842:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805233] [b9p07:3312814:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805248] [b9p07:3312809:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805238] [b9p07:3312819:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805240] [b9p07:3312827:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.805245] [b9p07:3312837:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#0 tag(rc_mlx5/mlx5_0:1)  rma(rc_mlx5/mlx5_0:1)
+[1791123781.835604] [b9p07:3312851:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.836077] [b9p07:3312848:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.836090] [b9p07:3312846:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.836216] [b9p07:3312841:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.836423] [b9p07:3312811:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.836586] [b9p07:3312828:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.836633] [b9p07:3312853:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.836861] [b9p07:3312816:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.836964] [b9p07:3312801:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837161] [b9p07:3312798:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837153] [b9p07:3312844:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837233] [b9p07:3312835:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837319] [b9p07:3312818:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837417] [b9p07:3312815:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837473] [b9p07:3312825:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837512] [b9p07:3312855:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837640] [b9p07:3312849:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837655] [b9p07:3312797:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837688] [b9p07:3312799:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837723] [b9p07:3312845:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837777] [b9p07:3312823:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837819] [b9p07:3312800:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837844] [b9p07:3312806:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838002] [b9p07:3312840:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.837979] [b9p07:3312852:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838034] [b9p07:3312838:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838062] [b9p07:3312827:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838099] [b9p07:3312850:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838125] [b9p07:3312794:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838130] [b9p07:3312854:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838207] [b9p07:3312831:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838207] [b9p07:3312832:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838292] [b9p07:3312807:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838295] [b9p07:3312826:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838323] [b9p07:3312843:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838339] [b9p07:3312819:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838344] [b9p07:3312836:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838343] [b9p07:3312839:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838370] [b9p07:3312830:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838403] [b9p07:3312834:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838413] [b9p07:3312847:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838460] [b9p07:3312805:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838474] [b9p07:3312824:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838498] [b9p07:3312837:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838530] [b9p07:3312821:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838532] [b9p07:3312842:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838544] [b9p07:3312796:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838575] [b9p07:3312808:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838577] [b9p07:3312833:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838621] [b9p07:3312803:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838642] [b9p07:3312793:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838666] [b9p07:3312829:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838695] [b9p07:3312820:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838747] [b9p07:3312795:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838756] [b9p07:3312812:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838777] [b9p07:3312813:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838785] [b9p07:3312804:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838803] [b9p07:3312810:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838813] [b9p07:3312802:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838811] [b9p07:3312817:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838828] [b9p07:3312809:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838836] [b9p07:3312814:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.838851] [b9p07:3312822:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#1 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.846934] [b9p07:3312792:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#1 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.919832] [b9p06:3238154:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#2 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.920063] [b9p06:3238155:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.920635] [b9p07:3312792:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 intra-node cfg#2 tag(xpmem/memory sysv/memory knem/memory)  rma(xpmem/memory)
+[1791123781.920850] [b9p06:3238157:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.920966] [b9p06:3238156:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.921119] [b9p06:3238159:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.921498] [b9p06:3238158:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.921842] [b9p06:3238161:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.922106] [b9p06:3238160:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.922117] [b9p06:3238162:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.922361] [b9p06:3238163:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.923227] [b9p06:3238165:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.923287] [b9p06:3238164:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.923536] [b9p06:3238167:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.923668] [b9p06:3238170:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.923692] [b9p06:3238166:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.924136] [b9p06:3238168:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.924185] [b9p06:3238172:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.924289] [b9p06:3238173:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.924353] [b9p06:3238169:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.924790] [b9p06:3238171:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.924960] [b9p06:3238176:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.925107] [b9p06:3238177:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.925243] [b9p06:3238175:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.925350] [b9p06:3238174:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.925633] [b9p06:3238179:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.925828] [b9p06:3238178:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.926215] [b9p06:3238182:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.926324] [b9p06:3238180:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.926527] [b9p06:3238186:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.926611] [b9p06:3238188:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.926730] [b9p06:3238181:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.926805] [b9p06:3238187:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.926951] [b9p06:3238184:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.926946] [b9p06:3238190:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.927144] [b9p06:3238183:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.927315] [b9p06:3238192:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.927428] [b9p06:3238193:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.927438] [b9p06:3238185:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.927648] [b9p06:3238191:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.927683] [b9p06:3238189:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.927971] [b9p06:3238195:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.928088] [b9p06:3238194:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.928167] [b9p06:3238196:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.928288] [b9p06:3238197:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.928736] [b9p06:3238200:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.928808] [b9p06:3238198:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.928906] [b9p06:3238201:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.929103] [b9p06:3238202:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.929218] [b9p06:3238199:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.929280] [b9p06:3238203:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.929433] [b9p06:3238204:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.929597] [b9p06:3238205:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.929940] [b9p06:3238207:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.930245] [b9p06:3238209:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.930367] [b9p06:3238208:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.930449] [b9p06:3238206:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.930531] [b9p06:3238210:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.930607] [b9p06:3238211:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.930755] [b9p06:3238212:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.931291] [b9p06:3238215:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.931487] [b9p06:3238213:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.931608] [b9p06:3238217:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.931806] [b9p06:3238216:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123781.931895] [b9p06:3238214:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.341856] [b9p07:3312830:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.342250] [b9p07:3312793:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.344768] [b9p07:3312794:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.344770] [b9p07:3312795:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.345041] [b9p07:3312825:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.345058] [b9p07:3312831:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.345070] [b9p07:3312796:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.345123] [b9p07:3312822:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.345324] [b9p07:3312806:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.345703] [b9p07:3312801:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.345764] [b9p07:3312797:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.345982] [b9p07:3312803:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.346617] [b9p07:3312811:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.346674] [b9p07:3312800:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.346829] [b9p07:3312805:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.347171] [b9p07:3312802:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.347246] [b9p07:3312804:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.347570] [b9p07:3312798:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.347807] [b9p07:3312832:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.347976] [b9p07:3312828:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.348171] [b9p07:3312799:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.348234] [b9p07:3312818:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.348270] [b9p07:3312829:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.348512] [b9p07:3312808:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.348819] [b9p07:3312813:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.349113] [b9p07:3312840:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.349126] [b9p07:3312810:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.349344] [b9p07:3312844:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.349375] [b9p07:3312852:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.349483] [b9p07:3312809:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.349762] [b9p07:3312807:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.350257] [b9p07:3312816:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.350372] [b9p07:3312815:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.350508] [b9p07:3312812:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.350519] [b9p07:3312819:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.350555] [b9p07:3312820:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.350656] [b9p07:3312814:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.351210] [b9p07:3312821:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.351410] [b9p07:3312817:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.352039] [b9p07:3312835:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.352052] [b9p07:3312826:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.352151] [b9p07:3312842:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.352389] [b9p07:3312834:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.352612] [b9p07:3312845:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.352678] [b9p07:3312847:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.352918] [b9p07:3312824:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.352962] [b9p07:3312823:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.353228] [b9p07:3312827:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.353361] [b9p07:3312836:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.353687] [b9p07:3312846:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.354086] [b9p07:3312833:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.354848] [b9p07:3312837:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.355033] [b9p07:3312838:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.355072] [b9p07:3312853:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.355216] [b9p07:3312841:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.355599] [b9p07:3312843:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.356518] [b9p07:3312850:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_spr_ofi_mlx_200_x1.dat" not found
+[1791123782.362527] [b9p07:3312839:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_spr_ofi_mlx_200.dat" not found
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_spr_ofi_mlx.dat" not found
+[0] MPI startup(): Load tuning file: "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_spr_ofi.dat"
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_spr_ofi.dat" not found
+[1791123782.364059] [b9p07:3312849:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.364172] [b9p07:3312848:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.364390] [b9p07:3312851:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.365019] [b9p07:3312855:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[1791123782.365075] [b9p07:3312854:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#2 tag(self/memory knem/memory)  rma(self/memory)
+[0] MPI startup(): Load tuning file: "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc//tuning_clx-ap_ofi.dat"
+[0] MPI startup(): Number of NICs:  1 
+[0] MPI startup(): ===== NIC pinning on b9p06 =====
+[0] MPI startup(): Rank    Thread id  Pin nic
+[0] MPI startup(): 0       0          mlx
+[0] MPI startup(): 1       0          mlx
+[0] MPI startup(): 2       0          mlx
+[0] MPI startup(): 3       0          mlx
+[0] MPI startup(): 4       0          mlx
+[0] MPI startup(): 5       0          mlx
+[0] MPI startup(): 6       0          mlx
+[0] MPI startup(): 7       0          mlx
+[0] MPI startup(): 8       0          mlx
+[0] MPI startup(): 9       0          mlx
+[0] MPI startup(): 10      0          mlx
+[0] MPI startup(): 11      0          mlx
+[0] MPI startup(): 12      0          mlx
+[0] MPI startup(): 13      0          mlx
+[0] MPI startup(): 14      0          mlx
+[0] MPI startup(): 15      0          mlx
+[0] MPI startup(): 16      0          mlx
+[0] MPI startup(): 17      0          mlx
+[0] MPI startup(): 18      0          mlx
+[0] MPI startup(): 19      0          mlx
+[0] MPI startup(): 20      0          mlx
+[0] MPI startup(): 21      0          mlx
+[0] MPI startup(): 22      0          mlx
+[0] MPI startup(): 23      0          mlx
+[0] MPI startup(): 24      0          mlx
+[0] MPI startup(): 25      0          mlx
+[0] MPI startup(): 26      0          mlx
+[0] MPI startup(): 27      0          mlx
+[0] MPI startup(): 28      0          mlx
+[0] MPI startup(): 29      0          mlx
+[0] MPI startup(): 30      0          mlx
+[0] MPI startup(): 31      0          mlx
+[0] MPI startup(): 32      0          mlx
+[0] MPI startup(): 33      0          mlx
+[0] MPI startup(): 34      0          mlx
+[0] MPI startup(): 35      0          mlx
+[0] MPI startup(): 36      0          mlx
+[0] MPI startup(): 37      0          mlx
+[0] MPI startup(): 38      0          mlx
+[0] MPI startup(): 39      0          mlx
+[0] MPI startup(): 40      0          mlx
+[0] MPI startup(): 41      0          mlx
+[0] MPI startup(): 42      0          mlx
+[0] MPI startup(): 43      0          mlx
+[0] MPI startup(): 44      0          mlx
+[0] MPI startup(): 45      0          mlx
+[0] MPI startup(): 46      0          mlx
+[0] MPI startup(): 47      0          mlx
+[0] MPI startup(): 48      0          mlx
+[0] MPI startup(): 49      0          mlx
+[0] MPI startup(): 50      0          mlx
+[0] MPI startup(): 51      0          mlx
+[0] MPI startup(): 52      0          mlx
+[0] MPI startup(): 53      0          mlx
+[0] MPI startup(): 54      0          mlx
+[0] MPI startup(): 55      0          mlx
+[0] MPI startup(): 56      0          mlx
+[0] MPI startup(): 57      0          mlx
+[0] MPI startup(): 58      0          mlx
+[0] MPI startup(): 59      0          mlx
+[0] MPI startup(): 60      0          mlx
+[0] MPI startup(): 61      0          mlx
+[0] MPI startup(): 62      0          mlx
+[0] MPI startup(): 63      0          mlx
+[0] MPI startup(): ===== CPU pinning =====
+[0] MPI startup(): Rank    Pid      Node name  Pin cpu
+[0] MPI startup(): 0       3238154  b9p06      {0}
+[0] MPI startup(): 1       3238155  b9p06      {1}
+[0] MPI startup(): 2       3238156  b9p06      {2}
+[0] MPI startup(): 3       3238157  b9p06      {3}
+[0] MPI startup(): 4       3238158  b9p06      {4}
+[0] MPI startup(): 5       3238159  b9p06      {5}
+[0] MPI startup(): 6       3238160  b9p06      {6}
+[0] MPI startup(): 7       3238161  b9p06      {7}
+[0] MPI startup(): 8       3238162  b9p06      {8}
+[0] MPI startup(): 9       3238163  b9p06      {9}
+[0] MPI startup(): 10      3238164  b9p06      {10}
+[0] MPI startup(): 11      3238165  b9p06      {11}
+[0] MPI startup(): 12      3238166  b9p06      {12}
+[0] MPI startup(): 13      3238167  b9p06      {13}
+[0] MPI startup(): 14      3238168  b9p06      {14}
+[0] MPI startup(): 15      3238169  b9p06      {15}
+[0] MPI startup(): 16      3238170  b9p06      {16}
+[0] MPI startup(): 17      3238171  b9p06      {17}
+[0] MPI startup(): 18      3238172  b9p06      {18}
+[0] MPI startup(): 19      3238173  b9p06      {19}
+[0] MPI startup(): 20      3238174  b9p06      {20}
+[0] MPI startup(): 21      3238175  b9p06      {21}
+[0] MPI startup(): 22      3238176  b9p06      {22}
+[0] MPI startup(): 23      3238177  b9p06      {23}
+[0] MPI startup(): 24      3238178  b9p06      {24}
+[0] MPI startup(): 25      3238179  b9p06      {25}
+[0] MPI startup(): 26      3238180  b9p06      {26}
+[0] MPI startup(): 27      3238181  b9p06      {27}
+[0] MPI startup(): 28      3238182  b9p06      {28}
+[0] MPI startup(): 29      3238183  b9p06      {29}
+[0] MPI startup(): 30      3238184  b9p06      {30}
+[0] MPI startup(): 31      3238185  b9p06      {31}
+[0] MPI startup(): 32      3238186  b9p06      {56}
+[0] MPI startup(): 33      3238187  b9p06      {57}
+[0] MPI startup(): 34      3238188  b9p06      {58}
+[0] MPI startup(): 35      3238189  b9p06      {59}
+[0] MPI startup(): 36      3238190  b9p06      {60}
+[0] MPI startup(): 37      3238191  b9p06      {61}
+[0] MPI startup(): 38      3238192  b9p06      {62}
+[0] MPI startup(): 39      3238193  b9p06      {63}
+[0] MPI startup(): 40      3238194  b9p06      {64}
+[0] MPI startup(): 41      3238195  b9p06      {65}
+[0] MPI startup(): 42      3238196  b9p06      {66}
+[0] MPI startup(): 43      3238197  b9p06      {67}
+[0] MPI startup(): 44      3238198  b9p06      {68}
+[0] MPI startup(): 45      3238199  b9p06      {69}
+[0] MPI startup(): 46      3238200  b9p06      {70}
+[0] MPI startup(): 47      3238201  b9p06      {71}
+[0] MPI startup(): 48      3238202  b9p06      {72}
+[0] MPI startup(): 49      3238203  b9p06      {73}
+[0] MPI startup(): 50      3238204  b9p06      {74}
+[0] MPI startup(): 51      3238205  b9p06      {75}
+[0] MPI startup(): 52      3238206  b9p06      {76}
+[0] MPI startup(): 53      3238207  b9p06      {77}
+[0] MPI startup(): 54      3238208  b9p06      {78}
+[0] MPI startup(): 55      3238209  b9p06      {79}
+[0] MPI startup(): 56      3238210  b9p06      {80}
+[0] MPI startup(): 57      3238211  b9p06      {81}
+[0] MPI startup(): 58      3238212  b9p06      {82}
+[0] MPI startup(): 59      3238213  b9p06      {83}
+[0] MPI startup(): 60      3238214  b9p06      {84}
+[0] MPI startup(): 61      3238215  b9p06      {85}
+[0] MPI startup(): 62      3238216  b9p06      {86}
+[0] MPI startup(): 63      3238217  b9p06      {87}
+[0] MPI startup(): 64      3312792  b9p07      {0}
+[0] MPI startup(): 65      3312793  b9p07      {1}
+[0] MPI startup(): 66      3312794  b9p07      {2}
+[0] MPI startup(): 67      3312795  b9p07      {3}
+[0] MPI startup(): 68      3312796  b9p07      {4}
+[0] MPI startup(): 69      3312797  b9p07      {5}
+[0] MPI startup(): 70      3312798  b9p07      {6}
+[0] MPI startup(): 71      3312799  b9p07      {7}
+[0] MPI startup(): 72      3312800  b9p07      {8}
+[0] MPI startup(): 73      3312801  b9p07      {9}
+[0] MPI startup(): 74      3312802  b9p07      {10}
+[0] MPI startup(): 75      3312803  b9p07      {11}
+[0] MPI startup(): 76      3312804  b9p07      {12}
+[0] MPI startup(): 77      3312805  b9p07      {13}
+[0] MPI startup(): 78      3312806  b9p07      {14}
+[0] MPI startup(): 79      3312807  b9p07      {15}
+[0] MPI startup(): 80      3312808  b9p07      {16}
+[0] MPI startup(): 81      3312809  b9p07      {17}
+[0] MPI startup(): 82      3312810  b9p07      {18}
+[0] MPI startup(): 83      3312811  b9p07      {19}
+[0] MPI startup(): 84      3312812  b9p07      {20}
+[0] MPI startup(): 85      3312813  b9p07      {21}
+[0] MPI startup(): 86      3312814  b9p07      {22}
+[0] MPI startup(): 87      3312815  b9p07      {23}
+[0] MPI startup(): 88      3312816  b9p07      {24}
+[0] MPI startup(): 89      3312817  b9p07      {25}
+[0] MPI startup(): 90      3312818  b9p07      {26}
+[0] MPI startup(): 91      3312819  b9p07      {27}
+[0] MPI startup(): 92      3312820  b9p07      {28}
+[0] MPI startup(): 93      3312821  b9p07      {29}
+[0] MPI startup(): 94      3312822  b9p07      {30}
+[0] MPI startup(): 95      3312823  b9p07      {31}
+[0] MPI startup(): 96      3312824  b9p07      {56}
+[0] MPI startup(): 97      3312825  b9p07      {57}
+[0] MPI startup(): 98      3312826  b9p07      {58}
+[0] MPI startup(): 99      3312827  b9p07      {59}
+[0] MPI startup(): 100     3312828  b9p07      {60}
+[0] MPI startup(): 101     3312829  b9p07      {61}
+[0] MPI startup(): 102     3312830  b9p07      {62}
+[0] MPI startup(): 103     3312831  b9p07      {63}
+[0] MPI startup(): 104     3312832  b9p07      {64}
+[0] MPI startup(): 105     3312833  b9p07      {65}
+[0] MPI startup(): 106     3312834  b9p07      {66}
+[0] MPI startup(): 107     3312835  b9p07      {67}
+[0] MPI startup(): 108     3312836  b9p07      {68}
+[0] MPI startup(): 109     3312837  b9p07      {69}
+[0] MPI startup(): 110     3312838  b9p07      {70}
+[0] MPI startup(): 111     3312839  b9p07      {71}
+[0] MPI startup(): 112     3312840  b9p07      {72}
+[0] MPI startup(): 113     3312841  b9p07      {73}
+[0] MPI startup(): 114     3312842  b9p07      {74}
+[0] MPI startup(): 115     3312843  b9p07      {75}
+[0] MPI startup(): 116     3312844  b9p07      {76}
+[0] MPI startup(): 117     3312845  b9p07      {77}
+[0] MPI startup(): 118     3312846  b9p07      {78}
+[0] MPI startup(): 119     3312847  b9p07      {79}
+[0] MPI startup(): 120     3312848  b9p07      {80}
+[0] MPI startup(): 121     3312849  b9p07      {81}
+[0] MPI startup(): 122     3312850  b9p07      {82}
+[0] MPI startup(): 123     3312851  b9p07      {83}
+[0] MPI startup(): 124     3312852  b9p07      {84}
+[0] MPI startup(): 125     3312853  b9p07      {85}
+[0] MPI startup(): 126     3312854  b9p07      {86}
+[0] MPI startup(): 127     3312855  b9p07      {87}
+[0] MPI startup(): I_MPI_ROOT=/opt/apps/intel/2025.3.2/mpi/latest
+[0] MPI startup(): ONEAPI_ROOT=/opt/apps/intel/2025.3.2
+[0] MPI startup(): I_MPI_MPIRUN=mpirun
+[0] MPI startup(): I_MPI_BIND_WIN_ALLOCATE=localalloc
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS=--external-launcher
+[0] MPI startup(): I_MPI_HYDRA_TOPOLIB=ipl2
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP=slurm
+[0] MPI startup(): I_MPI_PIN_DOMAIN_SIZE=1
+[0] MPI startup(): I_MPI_PIN_DOMAIN_SIZE=1
+[0] MPI startup(): I_MPI_RETURN_WIN_MEM_NUMA=0
+[0] MPI startup(): I_MPI_PIN_PROCESSOR_LIST=0-31,56-87
+[0] MPI startup(): I_MPI_PIN_ORDER=compact
+[0] MPI startup(): I_MPI_INTERNAL_MEM_POLICY=default
+[0] MPI startup(): I_MPI_FABRICS=ofi
+[0] MPI startup(): I_MPI_DEBUG=5
+
+
+ NAS Parallel Benchmarks 3.4 -- FT Benchmark
+
+ No input file inputft.data. Using compiled defaults
+ Size                : 2048x1024x1024  (class D)
+ Iterations          :             25
+ Number of processes :            128
+ Processor array     :         1x 128
+ Layout type         :             1D
+
+ Initialization time =      2.5327
+
+ T =    1     Checksum =    5.122230065252D+02    5.118534037109D+02
+ T =    2     Checksum =    5.120463975765D+02    5.117061181082D+02
+ T =    3     Checksum =    5.119865766760D+02    5.117096364601D+02
+ T =    4     Checksum =    5.119518799488D+02    5.117373863950D+02
+ T =    5     Checksum =    5.119269088223D+02    5.117680347632D+02
+ T =    6     Checksum =    5.119082416858D+02    5.117967875532D+02
+ T =    7     Checksum =    5.118943814638D+02    5.118225281841D+02
+ T =    8     Checksum =    5.118842385057D+02    5.118451629348D+02
+ T =    9     Checksum =    5.118769435632D+02    5.118649119387D+02
+ T =   10     Checksum =    5.118718203448D+02    5.118820803844D+02
+ T =   11     Checksum =    5.118683569061D+02    5.118969781011D+02
+ T =   12     Checksum =    5.118661708593D+02    5.119098918835D+02
+ T =   13     Checksum =    5.118649768950D+02    5.119210777066D+02
+ T =   14     Checksum =    5.118645605626D+02    5.119307604484D+02
+ T =   15     Checksum =    5.118647586618D+02    5.119391362671D+02
+ T =   16     Checksum =    5.118654451572D+02    5.119463757241D+02
+ T =   17     Checksum =    5.118665212451D+02    5.119526269238D+02
+ T =   18     Checksum =    5.118679083821D+02    5.119580184108D+02
+ T =   19     Checksum =    5.118695433664D+02    5.119626617538D+02
+ T =   20     Checksum =    5.118713748264D+02    5.119666538138D+02
+ T =   21     Checksum =    5.118733606701D+02    5.119700787219D+02
+ T =   22     Checksum =    5.118754661974D+02    5.119730095953D+02
+ T =   23     Checksum =    5.118776626738D+02    5.119755100241D+02
+ T =   24     Checksum =    5.118799262314D+02    5.119776353561D+02
+ T =   25     Checksum =    5.118822370068D+02    5.119794338060D+02
+ Result verification successful
+
+
+ FT Benchmark Completed.
+ Class           =                        D
+ Size            =           2048x1024x1024
+ Iterations      =                       25
+ Time in seconds =                    57.86
+ Total processes =                      128
+ Active processes=                      128
+ Mop/s total     =                154924.04
+ Mop/s/process   =                  1210.34
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.1
+ Compile date    =              04 Oct 2026
+
+ Compile options:
+    MPIFC        = /opt/apps/intel/2025.3.2/mpi/latest/bin/mpi...
+    FLINK        = $(FC)
+    FMPI_LIB     = (none)
+    FMPI_INC     = (none)
+    FFLAGS       = -O3 -march=sapphirerapids -fallow-argument-...
+    FLINKFLAGS   = (none)
+    RAND         = randi8
+
+
+ Please send feedbacks and/or the results of this run to:
+
+ NPB Development Team 
+ Internet: npb@nas.nasa.gov
+
+

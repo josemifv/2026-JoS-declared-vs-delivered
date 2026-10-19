@@ -1,0 +1,34 @@
+[1791035049.814870] [b9p04:3461141:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791035049.831912] [b9p05:601616:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791035049.834110] [b9p04:3461141:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_NET_DEVICES=ib0 UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791035049.852125] [b9p05:601616:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_NET_DEVICES=ib0 UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791035049.852975] [b9p05:601616:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+[1791035049.852729] [b9p04:3461141:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+
+# OSU MPI Bi-Directional Bandwidth Test v7.4
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+[1791035049.854987] [b9p05:601616:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791035049.854782] [b9p04:3461141:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791035049.862776] [b9p04:3461141:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0xce85f0: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+[1791035049.863289] [b9p05:601616:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0x1bd9f60: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+8                      10.71
+16                     33.15
+32                     61.79
+64                     81.70
+128                   192.67
+256                   349.42
+512                   470.86
+1024                  909.71
+2048                 2129.99
+4096                 2890.84
+8192                 3875.85
+16384                4480.70
+32768                4739.04
+65536                5083.66
+131072               5321.98
+262144               5434.68
+524288               5910.00
+1048576              5525.40
+2097152              5170.36
+4194304              5177.34

@@ -1,0 +1,69 @@
+pin-pedido: host=s02r1b01 rank=0 core=0 origen=sysfs(node0)
+pin-pedido: host=s02r1b02 rank=1 core=0 origen=sysfs(node0)
+pin-real: host=s02r1b02 rank=1 cpus=0
+	linux-vdso.so.1 (0x00007fff92c76000)
+	libmpi.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libmpi.so.40 (0x00007f8186074000)
+	libstdc++.so.6 => /lusitania_apps/gcc-11.2.0/lib64/libstdc++.so.6 (0x00007f8185c64000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f8185957000)
+	libgcc_s.so.1 => /lusitania_apps/gcc-11.2.0/lib64/libgcc_s.so.1 (0x00007f818573e000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f8185520000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f818517d000)
+	libopen-rte.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-rte.so.40 (0x00007f81850c1000)
+	libopen-pal.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-pal.so.40 (0x00007f8184fb2000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f8184dae000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f8184ba6000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007f81849a2000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f818478c000)
+	/lib64/ld-linux-x86-64.so.2 (0x000055abf86b8000)
+--------------------------------------------------------------------------
+WARNING: There is at least non-excluded one OpenFabrics device found,
+but there are no active ports detected (or Open MPI was unable to use
+them).  This is most certainly not what you wanted.  Check your
+cables, subnet manager configuration, etc.  The openib BTL will be
+ignored for this job.
+
+  Local host: s02r1b02
+--------------------------------------------------------------------------
+[1792102674.301871] [s02r1b02:10773:0]     ucp_context.c:1778 UCX  INFO  UCP version is 1.12 (release 0)
+[1792102674.334340] [s02r1b02:10773:0]          parser.c:1914 UCX  INFO  UCX_* env variables: UCX_TLS=tcp,sm,self UCX_NET_DEVICES=ib0 UCX_LOG_LEVEL=info
+pin-real: host=s02r1b01 rank=0 cpus=0
+	linux-vdso.so.1 (0x00007ffe95f8c000)
+	libmpi.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libmpi.so.40 (0x00007f8f17af5000)
+	libstdc++.so.6 => /lusitania_apps/gcc-11.2.0/lib64/libstdc++.so.6 (0x00007f8f176e5000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f8f173d8000)
+	libgcc_s.so.1 => /lusitania_apps/gcc-11.2.0/lib64/libgcc_s.so.1 (0x00007f8f171bf000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f8f16fa1000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f8f16bfe000)
+	libopen-rte.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-rte.so.40 (0x00007f8f16b42000)
+	libopen-pal.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-pal.so.40 (0x00007f8f16a33000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f8f1682f000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f8f16627000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007f8f16423000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f8f1620d000)
+	/lib64/ld-linux-x86-64.so.2 (0x000055cf554b9000)
+[1792102677.221771] [s02r1b01:4939 :0]     ucp_context.c:1778 UCX  INFO  UCP version is 1.12 (release 0)
+[1792102678.018437] [s02r1b01:4939 :0]          parser.c:1914 UCX  INFO  UCX_* env variables: UCX_TLS=tcp,sm,self UCX_NET_DEVICES=ib0 UCX_LOG_LEVEL=info
+[1792102678.193846] [s02r1b02:10773:0]      ucp_worker.c:1866 UCX  INFO    ep_cfg[0]: tag(self/memory0 cma/memory); 
+[1792102678.026357] [s02r1b01:4939 :0]      ucp_worker.c:1866 UCX  INFO    ep_cfg[0]: tag(self/memory0 cma/memory); 
+[1792102678.212982] [s02r1b02:10773:0]      ucp_worker.c:1866 UCX  INFO    ep_cfg[1]: tag(tcp/ib0); 
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+[1792102678.086071] [s02r1b01:4939 :0]      ucp_worker.c:1866 UCX  INFO    ep_cfg[1]: tag(tcp/ib0); 
+[s02r1b01:04925] 1 more process has sent help message help-mpi-btl-openib.txt / no active ports found
+[s02r1b01:04925] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+1                     205.98
+2                     211.65
+4                     206.22
+8                     209.76
+16                    222.24
+32                    232.92
+64                    264.06
+128                   262.18
+256                   306.93
+512                   301.29
+1024                  309.33
+2048                  333.24
+4096                  416.32
+8192                  621.20

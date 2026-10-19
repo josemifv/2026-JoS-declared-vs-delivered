@@ -1,0 +1,738 @@
+Making all in c
+make[1]: Entering directory '/lustre<scratch>/src/osu-gnu-lusitania-753513/c'
+Making all in mpi
+make[2]: Entering directory '/lustre<scratch>/src/osu-gnu-lusitania-753513/c/mpi'
+Making all in pt2pt
+make[3]: Entering directory '/lustre<scratch>/src/osu-gnu-lusitania-753513/c/mpi/pt2pt'
+Making all in standard
+make[4]: Entering directory '/lustre<scratch>/src/osu-gnu-lusitania-753513/c/mpi/pt2pt/standard'
+depbase=`echo osu_bibw.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"7.4\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 7.4\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE_URL=\"\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"7.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.    -I../../../../c/util  -g -O2 -MT osu_bibw.o -MD -MP -MF $depbase.Tpo -c -o osu_bibw.o osu_bibw.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ../../../util/osu_util.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"7.4\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 7.4\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE_URL=\"\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"7.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.    -I../../../../c/util  -g -O2 -MT ../../../util/osu_util.o -MD -MP -MF $depbase.Tpo -c -o ../../../util/osu_util.o ../../../util/osu_util.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ../../../util/osu_util_mpi.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"7.4\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 7.4\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE_URL=\"\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"7.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.    -I../../../../c/util  -g -O2 -MT ../../../util/osu_util_mpi.o -MD -MP -MF $depbase.Tpo -c -o ../../../util/osu_util_mpi.o ../../../util/osu_util_mpi.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ../../../util/osu_util_graph.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"7.4\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 7.4\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE_URL=\"\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"7.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.    -I../../../../c/util  -g -O2 -MT ../../../util/osu_util_graph.o -MD -MP -MF $depbase.Tpo -c -o ../../../util/osu_util_graph.o ../../../util/osu_util_graph.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ../../../util/osu_util_papi.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+mpicc -DPACKAGE_NAME=\"OSU-Micro-Benchmarks\" -DPACKAGE_TARNAME=\"osu-micro-benchmarks\" -DPACKAGE_VERSION=\"7.4\" -DPACKAGE_STRING=\"OSU-Micro-Benchmarks\ 7.4\" -DPACKAGE_BUGREPORT=\"mvapich-discuss@cse.ohio-state.edu\" -DPACKAGE_URL=\"\" -DPACKAGE=\"osu-micro-benchmarks\" -DVERSION=\"7.4\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DHAVE_MATH_H=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GETTIMEOFDAY=1 -DHAVE_MEMSET=1 -DHAVE_SQRT=1 -DFIELD_WIDTH=18 -DFLOAT_PRECISION=2 -I.    -I../../../../c/util  -g -O2 -MT ../../../util/osu_util_papi.o -MD -MP -MF $depbase.Tpo -c -o ../../../util/osu_util_papi.o ../../../util/osu_util_papi.c &&\
+mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../../../../libtool  --tag=CXX   --mode=link /lusitania_apps/gcc-11.2.0/bin/g++  -g -O2   -o osu_bibw osu_bibw.o ../../../util/osu_util.o ../../../util/osu_util_mpi.o ../../../util/osu_util_graph.o ../../../util/osu_util_papi.o   -lm 
+libtool: link: /lusitania_apps/gcc-11.2.0/bin/g++ -g -O2 -o osu_bibw osu_bibw.o ../../../util/osu_util.o ../../../util/osu_util_mpi.o ../../../util/osu_util_graph.o ../../../util/osu_util_papi.o  -lm
+/usr/bin/ld: Dwarf Error: found dwarf version '5', this reader only handles version 2, 3 and 4 information.
+osu_bibw.o: In function `main':
+osu_bibw.c:(.text.startup+0x70): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x119): undefined reference to `ompi_mpi_comm_null'
+/usr/bin/ld: Dwarf Error: found dwarf version '7424', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x12f): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x147): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x28f): undefined reference to `MPI_Type_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x2bc): undefined reference to `MPI_Type_get_name'
+/usr/bin/ld: Dwarf Error: found dwarf version '49412', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x48b): undefined reference to `MPI_Barrier'
+/usr/bin/ld: Dwarf Error: found dwarf version '3072', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x52a): undefined reference to `MPI_Barrier'
+/usr/bin/ld: Dwarf Error: found dwarf version '679', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x586): undefined reference to `MPI_Irecv'
+/usr/bin/ld: Dwarf Error: found dwarf version '17685', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x5d3): undefined reference to `MPI_Irecv'
+/usr/bin/ld: Dwarf Error: found dwarf version '512', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x639): undefined reference to `MPI_Irecv'
+/usr/bin/ld: Dwarf Error: found dwarf version '68', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x68c): undefined reference to `MPI_Irecv'
+/usr/bin/ld: Dwarf Error: found dwarf version '2060', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x6b7): undefined reference to `MPI_Waitall'
+/usr/bin/ld: Dwarf Error: found dwarf version '7', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x6d2): undefined reference to `MPI_Waitall'
+/usr/bin/ld: Dwarf Error: found dwarf version '1284', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x910): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '116', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x922): undefined reference to `MPI_Bcast'
+/usr/bin/ld: Dwarf Error: found dwarf version '23301', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x95f): undefined reference to `MPI_Waitall'
+/usr/bin/ld: Dwarf Error: found dwarf version '3072', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x97a): undefined reference to `MPI_Waitall'
+/usr/bin/ld: Dwarf Error: found dwarf version '3048', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0x9b6): undefined reference to `MPI_Isend'
+/usr/bin/ld: Dwarf Error: found dwarf version '17942', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0xa00): undefined reference to `MPI_Isend'
+/usr/bin/ld: Dwarf Error: found dwarf version '768', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0xa41): undefined reference to `MPI_Isend'
+/usr/bin/ld: Dwarf Error: found dwarf version '27941', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0xa91): undefined reference to `MPI_Isend'
+/usr/bin/ld: Dwarf Error: found dwarf version '1792', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0xac8): undefined reference to `MPI_Wtime'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_bibw.c:(.text.startup+0xbb6): undefined reference to `MPI_Wtime'
+/usr/bin/ld: Dwarf Error: found dwarf version '5', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `set_buffer_dtype_reduce.part.0':
+osu_util_mpi.c:(.text+0x128): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x131): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '7424', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x13a): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x183): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x190): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '64', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1d2): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x233): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x23c): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '11780', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x256): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '8960', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `print_header_one_sided':
+osu_util_mpi.c:(.text+0xb0c): undefined reference to `MPI_Type_get_name'
+/usr/bin/ld: Dwarf Error: found dwarf version '4644', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `omb_mpi_init':
+osu_util_mpi.c:(.text+0x167a): undefined reference to `ompi_mpi_comm_null'
+/usr/bin/ld: Dwarf Error: found dwarf version '1109', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1685): undefined reference to `MPI_Init'
+/usr/bin/ld: Dwarf Error: found dwarf version '29806', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x168e): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '3615', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `omb_mpi_finalize':
+osu_util_mpi.c:(.text+0x16e5): undefined reference to `MPI_Finalize'
+/usr/bin/ld: Dwarf Error: found dwarf version '36611', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `check_mem_limit':
+osu_util_mpi.c:(.text+0x1724): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x173a): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '1288', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `omb_get_stats':
+osu_util_mpi.c:(.text+0x19f4): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x19f9): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1a0a): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '6097', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1a0f): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1a2c): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1a31): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '1288', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1a3d): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1a42): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '25604', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `calculate_and_print_stats':
+osu_util_mpi.c:(.text+0x1f1a): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '9216', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1f1f): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1f24): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '7169', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1f36): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1f4f): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '30', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1f54): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '422', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1f59): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1f6b): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '148', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1f84): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '11561', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1f89): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '9216', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1f8e): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1fa0): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '8449', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1fb3): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1fc0): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1fc6): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '667', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1fd3): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '55588', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1fea): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '1024', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1fef): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '48413', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x1ff4): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '4352', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2006): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x201f): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '40', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2024): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '1316', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2029): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '44036', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x203b): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '212', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2054): undefined reference to `ompi_mpi_op_min'
+/usr/bin/ld: Dwarf Error: found dwarf version '55569', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2059): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '10496', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x205e): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2072): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '26', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2085): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '429', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2092): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2098): undefined reference to `ompi_mpi_op_max'
+/usr/bin/ld: Dwarf Error: found dwarf version '240', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x20a7): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '54569', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x20e9): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '9216', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x20ee): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x20f3): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '9473', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2107): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2120): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '8', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2125): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '47364', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x212a): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '343', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x213e): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '46091', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x215c): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '1024', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2161): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '15369', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2166): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2175): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '15', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2188): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '445', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2195): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x219b): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '54795', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x21aa): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '1024', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x21c1): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '15369', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x21c6): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '2048', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x21cb): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '7', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x21df): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '451', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x21f8): undefined reference to `ompi_mpi_op_sum'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x21fd): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '13579', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2202): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '1024', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2216): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '22028', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2234): undefined reference to `ompi_mpi_op_min'
+/usr/bin/ld: Dwarf Error: found dwarf version '4096', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2239): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '3249', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x223e): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '45060', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x224d): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '356', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2260): undefined reference to `ompi_mpi_double'
+/usr/bin/ld: Dwarf Error: found dwarf version '26897', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x226d): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '10496', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2273): undefined reference to `ompi_mpi_op_max'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2282): undefined reference to `MPI_Reduce'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2291): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '4360', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2296): undefined reference to `MPI_Barrier'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `omb_populate_mpi_type_list':
+osu_util_mpi.c:(.text+0x2833): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2851): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '343', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2864): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '39185', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `omb_ddt_append_stats':
+osu_util_mpi.c:(.text+0x28b6): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '4352', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x28c4): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `omb_assign_to_type':
+osu_util_mpi.c:(.text+0x29f3): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '41735', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x29fc): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '10496', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2a05): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `set_buffer_dtype.part.0':
+osu_util_mpi.c:(.text+0x2ad5): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '10', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2ade): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '982', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2ae7): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '1', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2afb): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '8060', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2b10): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '55300', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2b1a): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '405', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2b1f): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '2857', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `set_buffer_validation':
+osu_util_mpi.c:(.text+0x2d0d): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '7424', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2d32): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2d73): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '12803', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2d80): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2d89): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '33', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2ed6): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '996', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2edb): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '1', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2eed): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '7114', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2ef2): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '58628', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2f66): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '436', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2f6b): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '13609', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2f7d): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '7424', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x2f82): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x3016): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '14339', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x301b): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x302d): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '22', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x3032): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '1019', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x30a6): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '1', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x30ab): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '1067', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x30bd): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '260', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x30c2): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '480', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x3166): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '62237', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x316b): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '1024', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x317d): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '57400', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x3182): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '7424', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x3206): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x320b): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '14340', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x321d): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x3222): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '35', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x3286): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '3298', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x328b): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '21252', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x329d): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '550', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x32a2): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '291', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `omb_get_num_elements':
+osu_util_mpi.c:(.text+0x3553): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '9', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x355c): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '1794', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x3565): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `omb_neighborhood_create':
+osu_util_mpi.c:(.text+0x35ec): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found address size '205', this reader can not handle sizes greater than '8'.
+osu_util_mpi.c:(.text+0x35fc): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '1537', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x36cf): undefined reference to `MPI_Dims_create'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x36fc): undefined reference to `MPI_Cart_create'
+/usr/bin/ld: Dwarf Error: found dwarf version '64005', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x3709): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '13056', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x370e): undefined reference to `MPI_Barrier'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x377a): undefined reference to `MPI_Comm_free'
+/usr/bin/ld: Dwarf Error: found dwarf version '36378', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x377f): undefined reference to `MPI_Finalize'
+/usr/bin/ld: Dwarf Error: found dwarf version '13056', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x39b9): undefined reference to `MPI_Cart_coords'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x3a31): undefined reference to `MPI_Cart_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '20249', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x3b00): undefined reference to `MPI_Comm_free'
+/usr/bin/ld: Dwarf Error: found dwarf version '13056', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x3d8c): undefined reference to `MPI_Cart_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `set_buffer_nhbr_validation':
+osu_util_mpi.c:(.text+0x405c): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '20251', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4067): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '4352', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4071): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4076): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found address size '197', this reader can not handle sizes greater than '8'.
+osu_util_mpi.c:(.text+0x4183): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '1537', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4190): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x41b8): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found address size '0', this reader can only handle address sizes '2', '4' and '8'.
+osu_util_mpi.c:(.text+0x422e): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '637', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x42c7): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '37688', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x42d0): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '18688', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x42d9): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `validation_log':
+osu_util_mpi.c:(.text+0x4467): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '46083', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x446c): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '768', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x44d0): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x44dd): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '120', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x44ea): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '769', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `omb_validate_neighborhood_col':
+osu_util_mpi.c:(.text+0x4854): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4859): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '10228', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4887): undefined reference to `MPI_Dist_graph_neighbors'
+/usr/bin/ld: Dwarf Error: found dwarf version '771', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x48e0): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x48ea): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '6361', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x48f8): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '773', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4934): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4954): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '453', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4959): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '775', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4964): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4978): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '7035', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x498b): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '777', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4994): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x49cb): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '9508', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4a42): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '779', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4ae6): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `validate_reduce_scatter':
+osu_util_mpi.c:(.text+0x4db3): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '8525', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4dc0): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '781', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4e06): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `validate_reduction':
+osu_util_mpi.c:(.text+0x4fa9): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '9532', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4fbd): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '783', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4fc6): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x4ffb): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '7286', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5008): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '785', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5050): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5088): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '1429', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x50e3): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '787', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `validate_collective':
+osu_util_mpi.c:(.text+0x5221): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5236): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '4925', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x523f): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '789', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x52cb): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x52d8): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '1031', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x52ff): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '791', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5323): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `validate_data':
+osu_util_mpi.c:(.text+0x5456): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '1373', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5488): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '793', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x54ce): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x54d7): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '1716', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x54e0): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '795', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5563): undefined reference to `ompi_mpi_int'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5570): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '4059', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x559f): undefined reference to `ompi_mpi_char'
+/usr/bin/ld: Dwarf Error: found dwarf version '797', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x55d8): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x56ce): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '5412', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x56d3): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '799', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x570e): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5713): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '9471', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5725): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '801', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x572a): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x576e): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '4313', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5773): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '803', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x579e): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x57a3): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '1873', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x57e6): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '805', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x57eb): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5826): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '6713', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x582b): undefined reference to `MPI_Comm_size'
+/usr/bin/ld: Dwarf Error: found dwarf version '807', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x583d): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5842): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '10450', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x5893): undefined reference to `ompi_mpi_float'
+/usr/bin/ld: Dwarf Error: found dwarf version '809', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `allocate_memory_one_sided':
+osu_util_mpi.c:(.text+0x616c): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6171): undefined reference to `ompi_mpi_info_null'
+/usr/bin/ld: Dwarf Error: found dwarf version '5240', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6176): undefined reference to `MPI_Win_create_dynamic'
+/usr/bin/ld: Dwarf Error: found dwarf version '811', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x618d): undefined reference to `MPI_Win_attach'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x61a3): undefined reference to `MPI_Get_address'
+/usr/bin/ld: Dwarf Error: found dwarf version '3559', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x61ba): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '813', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x61ca): undefined reference to `ompi_mpi_aint'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x61d9): undefined reference to `MPI_Send'
+/usr/bin/ld: Dwarf Error: found dwarf version '10932', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x61f5): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '815', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x620a): undefined reference to `ompi_mpi_aint'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6210): undefined reference to `MPI_Recv'
+/usr/bin/ld: Dwarf Error: found dwarf version '3504', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6289): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '817', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6291): undefined reference to `ompi_mpi_info_null'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x629b): undefined reference to `MPI_Win_create'
+/usr/bin/ld: Dwarf Error: found dwarf version '6993', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x62c7): undefined reference to `ompi_mpi_aint'
+/usr/bin/ld: Dwarf Error: found dwarf version '819', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x62d7): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x62e8): undefined reference to `MPI_Recv'
+/usr/bin/ld: Dwarf Error: found dwarf version '1365', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x62fa): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '821', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6305): undefined reference to `ompi_mpi_aint'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6314): undefined reference to `MPI_Send'
+/usr/bin/ld: Dwarf Error: found dwarf version '755', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x63bd): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '823', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x63c2): undefined reference to `ompi_mpi_info_null'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x63cf): undefined reference to `MPI_Win_allocate'
+/usr/bin/ld: Dwarf Error: found dwarf version '7298', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x645e): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '825', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6466): undefined reference to `ompi_mpi_info_null'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6470): undefined reference to `MPI_Win_create'
+/usr/bin/ld: Dwarf Error: found dwarf version '9619', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `omb_ddt_assign':
+osu_util_mpi.c:(.text+0x6626): undefined reference to `MPI_Type_contiguous'
+/usr/bin/ld: Dwarf Error: found dwarf version '827', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6636): undefined reference to `MPI_Type_commit'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6715): undefined reference to `MPI_Type_indexed'
+/usr/bin/ld: Dwarf Error: found dwarf version '5609', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6725): undefined reference to `MPI_Type_commit'
+/usr/bin/ld: Dwarf Error: found dwarf version '828', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x676a): undefined reference to `MPI_Type_vector'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6776): undefined reference to `MPI_Type_commit'
+/usr/bin/ld: Dwarf Error: found dwarf version '3760', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `omb_ddt_free':
+osu_util_mpi.c:(.text+0x6834): undefined reference to `MPI_Type_free'
+/usr/bin/ld: Dwarf Error: found dwarf version '830', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `free_memory_one_sided':
+osu_util_mpi.c:(.text+0x69e9): undefined reference to `MPI_Win_free'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6a18): undefined reference to `MPI_Win_free'
+/usr/bin/ld: Dwarf Error: found dwarf version '2617', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `do_compute_and_probe':
+osu_util_mpi.c:(.text+0x6b7f): undefined reference to `MPI_Wtime'
+/usr/bin/ld: Dwarf Error: found dwarf version '832', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6b90): undefined reference to `MPI_Wtime'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6baf): undefined reference to `MPI_Wtime'
+/usr/bin/ld: Dwarf Error: found dwarf version '8490', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6bc6): undefined reference to `MPI_Test'
+/usr/bin/ld: Dwarf Error: found dwarf version '834', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6bd3): undefined reference to `MPI_Wtime'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6c55): undefined reference to `MPI_Wtime'
+/usr/bin/ld: Dwarf Error: found dwarf version '4381', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6c66): undefined reference to `MPI_Wtime'
+/usr/bin/ld: Dwarf Error: found dwarf version '836', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `allocate_atomic_memory':
+osu_util_mpi.c:(.text+0x6e07): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6e0c): undefined reference to `ompi_mpi_info_null'
+/usr/bin/ld: Dwarf Error: found dwarf version '10617', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6e19): undefined reference to `MPI_Win_allocate'
+/usr/bin/ld: Dwarf Error: found dwarf version '838', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6eb9): undefined reference to `ompi_mpi_info_null'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6ec2): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '9664', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6ecc): undefined reference to `MPI_Win_create'
+/usr/bin/ld: Dwarf Error: found dwarf version '840', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6ef6): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6efb): undefined reference to `ompi_mpi_info_null'
+/usr/bin/ld: Dwarf Error: found dwarf version '6112', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6f00): undefined reference to `MPI_Win_create_dynamic'
+/usr/bin/ld: Dwarf Error: found dwarf version '842', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6f1b): undefined reference to `MPI_Win_attach'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6f30): undefined reference to `MPI_Get_address'
+/usr/bin/ld: Dwarf Error: found dwarf version '1532', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6f47): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '844', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6f57): undefined reference to `ompi_mpi_aint'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6f66): undefined reference to `MPI_Send'
+/usr/bin/ld: Dwarf Error: found dwarf version '10976', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6f82): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '846', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6f97): undefined reference to `ompi_mpi_aint'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6f9d): undefined reference to `MPI_Recv'
+/usr/bin/ld: Dwarf Error: found dwarf version '10683', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6fcc): undefined reference to `ompi_mpi_info_null'
+/usr/bin/ld: Dwarf Error: found dwarf version '848', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6fda): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x6fdf): undefined reference to `MPI_Win_create'
+/usr/bin/ld: Dwarf Error: found dwarf version '1198', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x700f): undefined reference to `ompi_mpi_aint'
+/usr/bin/ld: Dwarf Error: found dwarf version '850', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x701f): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x7030): undefined reference to `MPI_Recv'
+/usr/bin/ld: Dwarf Error: found dwarf version '5093', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x7042): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '852', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x704d): undefined reference to `ompi_mpi_aint'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_mpi.c:(.text+0x705c): undefined reference to `MPI_Send'
+/usr/bin/ld: Dwarf Error: found dwarf version '8029', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_mpi.o: In function `free_atomic_memory':
+osu_util_mpi.c:(.text+0x736d): undefined reference to `MPI_Win_free'
+/usr/bin/ld: Dwarf Error: found dwarf version '5', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_graph.o: In function `omb_graph_allocate_data_buffer':
+osu_util_graph.c:(.text+0xd0): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_graph.c:(.text+0xe6): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '7424', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_graph.o: In function `omb_graph_free_data_buffers':
+osu_util_graph.c:(.text+0x255): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_graph.c:(.text+0x26c): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_graph.o: In function `omb_graph_combined_plot':
+osu_util_graph.c:(.text+0x696): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '64', this reader only handles version 2, 3 and 4 information.
+osu_util_graph.c:(.text+0x6ba): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_graph.o: In function `omb_graph_allocate_and_get_data_buffer':
+osu_util_graph.c:(.text+0xc6f): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '0', this reader only handles version 2, 3 and 4 information.
+osu_util_graph.c:(.text+0xc89): undefined reference to `MPI_Comm_rank'
+/usr/bin/ld: Dwarf Error: found dwarf version '61445', this reader only handles version 2, 3 and 4 information.
+../../../util/osu_util_graph.o: In function `omb_graph_allocate_and_get_data_buffer_cus_rank':
+osu_util_graph.c:(.text+0xd20): undefined reference to `ompi_mpi_comm_world'
+/usr/bin/ld: Dwarf Error: found dwarf version '4864', this reader only handles version 2, 3 and 4 information.
+osu_util_graph.c:(.text+0xd3e): undefined reference to `MPI_Comm_rank'
+collect2: error: ld returned 1 exit status
+Makefile:528: recipe for target 'osu_bibw' failed
+make[4]: *** [osu_bibw] Error 1
+make[4]: Leaving directory '/lustre<scratch>/src/osu-gnu-lusitania-753513/c/mpi/pt2pt/standard'
+Makefile:353: recipe for target 'all-recursive' failed
+make[3]: *** [all-recursive] Error 1
+make[3]: Leaving directory '/lustre<scratch>/src/osu-gnu-lusitania-753513/c/mpi/pt2pt'
+Makefile:354: recipe for target 'all-recursive' failed
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory '/lustre<scratch>/src/osu-gnu-lusitania-753513/c/mpi'
+Makefile:429: recipe for target 'all-recursive' failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory '/lustre<scratch>/src/osu-gnu-lusitania-753513/c'
+Makefile:382: recipe for target 'all-recursive' failed
+make: *** [all-recursive] Error 1

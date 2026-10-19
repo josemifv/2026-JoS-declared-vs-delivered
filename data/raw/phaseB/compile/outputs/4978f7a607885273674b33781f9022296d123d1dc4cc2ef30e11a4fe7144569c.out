@@ -1,0 +1,62 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.4      =
+   =      MPI/Fortran/C                    =
+   =========================================
+
+cd MG; make CLASS=D
+make[1]: Entering directory '<scratch>/src/phaseB/npb-intel-spr/MG'
+make[2]: Entering directory '<scratch>/src/phaseB/npb-intel-spr/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '<scratch>/src/phaseB/npb-intel-spr/sys'
+../sys/setparams mg D 
+make.def modified. Rebuilding npbparams.h just in case
+rm -f npbparams.h
+../sys/setparams mg D 
+/opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 -march=sapphirerapids -c  -O3 -march=sapphirerapids -fallow-argument-mismatch -fallow-invalid-boz mg_data.f90
+/opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 -march=sapphirerapids -c  -O3 -march=sapphirerapids -fallow-argument-mismatch -fallow-invalid-boz mg.f90
+mg.f90:2241:28:
+
+ 1089 |       call mpi_allreduce(rnmu,ss,1,dp_type,  &
+      |                         2   
+......
+ 2241 |          call mpi_allreduce(jg(0,i,1), jg_temp,4,MPI_INTEGER,  &
+      |                            1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (INTEGER(4)/REAL(8)).
+mg.f90:167:21:
+
+  160 |       call mpi_bcast(lt, 1, MPI_INTEGER, 0, comm_work, ierr)
+      |                     2
+......
+  167 |       call mpi_bcast(timeron, 1, MPI_LOGICAL, 0, comm_work, ierr)
+      |                     1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
+mg.f90:380:22:
+
+  299 |       call mpi_reduce(t0,t,1,dp_type,  &
+      |                      2
+......
+  380 |       call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
+      |                      1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+mg.f90:382:22:
+
+  299 |       call mpi_reduce(t0,t,1,dp_type,  &
+      |                      2
+......
+  382 |       call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
+      |                      1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+mg.f90:384:22:
+
+  299 |       call mpi_reduce(t0,t,1,dp_type,  &
+      |                      2
+......
+  384 |       call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
+      |                      1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+/opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 -march=sapphirerapids  -o bin/mg.D.x mg.o mg_data.o mpinpb.o ../common/print_results.o ../common/get_active_nprocs.o ../common/randi8.o ../common/timers.o 
+/usr/bin/ld: cannot open output file bin/mg.D.x: No such file or directory
+collect2: error: ld returned 1 exit status
+make[1]: *** [Makefile:14: bin/mg.D.x] Error 1
+make[1]: Leaving directory '<scratch>/src/phaseB/npb-intel-spr/MG'
+make: *** [Makefile:24: mg] Error 2

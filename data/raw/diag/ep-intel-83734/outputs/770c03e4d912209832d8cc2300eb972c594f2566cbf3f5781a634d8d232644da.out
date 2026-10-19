@@ -1,0 +1,27 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.4      =
+   =      MPI/Fortran/C                    =
+   =========================================
+
+cd EP; make CLASS=C
+make[1]: Entering directory '<scratch>/src/diag-ep-intel/EP'
+make[2]: Entering directory '<scratch>/src/diag-ep-intel/sys'
+mpicc  -o setparams setparams.c
+make[2]: Leaving directory '<scratch>/src/diag-ep-intel/sys'
+../sys/setparams ep C 
+/opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz ep_data.f90
+/opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz mpinpb.f90
+/opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz ep.f90
+ep.f90:254:25:
+
+  248 |       call mpi_allreduce(sx, x, 1, dp_type,  &
+      |                         2
+......
+  254 |       call mpi_allreduce(q, x, nq, dp_type,  &
+      |                         1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+cd ../common; /opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz print_results.f90
+cd ../common; /opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz randi8.f90
+cd ../common; /opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz timers.f90
+/opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90  -o ../bin/ep.C.x ep.o ep_data.o mpinpb.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+make[1]: Leaving directory '<scratch>/src/diag-ep-intel/EP'

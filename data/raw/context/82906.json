@@ -1,0 +1,174 @@
+{
+  "schema": "level1/1",
+  "run_id": "82906",
+  "started_at": "2026-09-30T21:00:41Z",
+  "node": "acc119",
+  "cluster": null,
+  "dry_run": false,
+  "mode": {
+    "level1": "unprivileged",
+    "source": "env"
+  },
+  "interval_s": 1.0,
+  "capabilities": {
+    "turbostat": false,
+    "perfquery": true,
+    "taskset": true,
+    "sysfs_cpufreq": true,
+    "sysfs_rapl": false,
+    "sysfs_infiniband": true
+  },
+  "affinity": {
+    "cpus_allowed_list": "0-71",
+    "taskset": "pid 1813900's current affinity list: 0-71",
+    "observable": true
+  },
+  "fingerprint": {
+    "observable": false,
+    "node": "acc119",
+    "reason": "sin fichero de descubrimiento"
+  },
+  "env": {
+    "I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS": "--external-launcher",
+    "OMPI_MCA_plm_slurm_args": "--external-launcher",
+    "I_MPI_HYDRA_BOOTSTRAP": "slurm"
+  },
+  "modules": {
+    "observable": true,
+    "list": "\nCurrently Loaded Modules:\n  1) openmpi_gcc/5.0.5   2) ucx/1.9.0\n\n \n\n"
+  },
+  "transport_log": {
+    "env_vars": {},
+    "log_path": null,
+    "observable": false
+  },
+  "mpip": {
+    "available": false,
+    "lib": null,
+    "reason": "MPIP_LIB no definido o inexistente"
+  },
+  "stopped_at": "2026-09-30T21:00:49Z",
+  "job_log": {
+    "observable": false
+  },
+  "ib_counters": {
+    "settle_s": 2.0,
+    "source": "sysfs",
+    "observable": true,
+    "pre": {
+      "ts": "2026-09-30T21:00:41Z",
+      "source": "sysfs",
+      "observable": true,
+      "devices": {
+        "mlx5_0": {
+          "1": {
+            "VL15_dropped": 0,
+            "excessive_buffer_overrun_errors": 0,
+            "link_downed": 0,
+            "link_error_recovery": 0,
+            "local_link_integrity_errors": 0,
+            "multicast_rcv_packets": 24812741,
+            "multicast_xmit_packets": 22,
+            "port_rcv_constraint_errors": 0,
+            "port_rcv_data": 3950733542874,
+            "port_rcv_errors": 0,
+            "port_rcv_packets": 6206773605,
+            "port_rcv_remote_physical_errors": 0,
+            "port_rcv_switch_relay_errors": 0,
+            "port_xmit_constraint_errors": 0,
+            "port_xmit_data": 4381529429848,
+            "port_xmit_discards": 0,
+            "port_xmit_packets": 6568249714,
+            "port_xmit_wait": 4294967295,
+            "symbol_error": 0,
+            "unicast_rcv_packets": 6181960864,
+            "unicast_xmit_packets": 6568249692
+          }
+        }
+      },
+      "raw": null
+    },
+    "post": {
+      "ts": "2026-09-30T21:00:48Z",
+      "source": "sysfs",
+      "observable": true,
+      "devices": {
+        "mlx5_0": {
+          "1": {
+            "VL15_dropped": 0,
+            "excessive_buffer_overrun_errors": 0,
+            "link_downed": 0,
+            "link_error_recovery": 0,
+            "local_link_integrity_errors": 0,
+            "multicast_rcv_packets": 24812741,
+            "multicast_xmit_packets": 22,
+            "port_rcv_constraint_errors": 0,
+            "port_rcv_data": 3950733590385,
+            "port_rcv_errors": 0,
+            "port_rcv_packets": 6206774166,
+            "port_rcv_remote_physical_errors": 0,
+            "port_rcv_switch_relay_errors": 0,
+            "port_xmit_constraint_errors": 0,
+            "port_xmit_data": 4381529484182,
+            "port_xmit_discards": 0,
+            "port_xmit_packets": 6568250276,
+            "port_xmit_wait": 4294967295,
+            "symbol_error": 0,
+            "unicast_rcv_packets": 6181961425,
+            "unicast_xmit_packets": 6568250254
+          }
+        }
+      },
+      "raw": null
+    },
+    "delta": {
+      "mlx5_0": {
+        "1": {
+          "VL15_dropped": 0,
+          "excessive_buffer_overrun_errors": 0,
+          "link_downed": 0,
+          "link_error_recovery": 0,
+          "local_link_integrity_errors": 0,
+          "multicast_rcv_packets": 0,
+          "multicast_xmit_packets": 0,
+          "port_rcv_constraint_errors": 0,
+          "port_rcv_data": 47511,
+          "port_rcv_errors": 0,
+          "port_rcv_packets": 561,
+          "port_rcv_remote_physical_errors": 0,
+          "port_rcv_switch_relay_errors": 0,
+          "port_xmit_constraint_errors": 0,
+          "port_xmit_data": 54334,
+          "port_xmit_discards": 0,
+          "port_xmit_packets": 562,
+          "port_xmit_wait": 0,
+          "symbol_error": 0,
+          "unicast_rcv_packets": 561,
+          "unicast_xmit_packets": 562
+        }
+      }
+    }
+  },
+  "sampling": {
+    "interval_s": 1.0,
+    "n_samples": 7,
+    "freq_khz": {
+      "observable": true,
+      "min": 1264505,
+      "max": 4000001,
+      "median": 3900004.0,
+      "n": 504
+    },
+    "energy_uj": {
+      "observable": false
+    },
+    "samples_path": "data/raw/context/82906.freq.jsonl",
+    "samples_sha256": "335a671ad096a990e2fe8b4c78c19e94783586a0bda9d59d5cfb3f5ab0ed760e"
+  },
+  "not_observable": [
+    "fingerprint",
+    "transport_log",
+    "mpip",
+    "energy_uj"
+  ]
+}

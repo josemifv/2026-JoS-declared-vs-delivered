@@ -1,0 +1,19 @@
+## module list
+
+Currently Loaded Modules:
+  1) openmpi_gcc/5.0.5   2) ucx/1.9.0
+
+ 
+
+## ldd <scratch>/cc/raw/diag/ep-intel-83800/ep.C.gcc.x
+	libmpi_usempif08.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_usempif08.so.40 (0x00007fb06953f000)
+	libmpi_usempi_ignore_tkr.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_usempi_ignore_tkr.so.40 (0x00007fb06952d000)
+	libmpi_mpifh.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_mpifh.so.40 (0x00007fb0694c0000)
+	libmpi.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi.so.40 (0x00007fb069137000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x00007fb068e75000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fb068d98000)
+	libucp.so.0 => /lib64/libucp.so.0 (0x00007fb068943000)
+## env del módulo
+I_MPI_HYDRA_BOOTSTRAP=slurm
+I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS=--external-launcher
+LD_LIBRARY_PATH=/opt/ucx/1.9.0/lib:/opt/apps/openmpi_gcc/5.0.5/lib

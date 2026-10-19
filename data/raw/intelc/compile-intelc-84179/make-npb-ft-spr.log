@@ -1,0 +1,27 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.4      =
+   =      MPI/Fortran/C                    =
+   =========================================
+
+cd FT; make CLASS=D
+make[1]: Entering directory '<scratch>/src/intelc/npb-intelc-spr/FT'
+make[2]: Entering directory '<scratch>/src/intelc/npb-intelc-spr/sys'
+mpicc -march=sapphirerapids  -o setparams setparams.c
+make[2]: Leaving directory '<scratch>/src/intelc/npb-intelc-spr/sys'
+../sys/setparams ft D 
+mpiifx -march=sapphirerapids -c  -O3 -march=sapphirerapids mpinpb.f90
+ifx: command line warning #10121: overriding '-march=sapphirerapids' with '-march=sapphirerapids'
+mpiifx -march=sapphirerapids -c  -O3 -march=sapphirerapids ft_data.f90
+ifx: command line warning #10121: overriding '-march=sapphirerapids' with '-march=sapphirerapids'
+mpiifx -march=sapphirerapids -c  -O3 -march=sapphirerapids ft.f90
+ifx: command line warning #10121: overriding '-march=sapphirerapids' with '-march=sapphirerapids'
+cd ../common; mpiifx -march=sapphirerapids -c  -O3 -march=sapphirerapids get_active_nprocs.f90
+ifx: command line warning #10121: overriding '-march=sapphirerapids' with '-march=sapphirerapids'
+cd ../common; mpiifx -march=sapphirerapids -c  -O3 -march=sapphirerapids randi8.f90
+ifx: command line warning #10121: overriding '-march=sapphirerapids' with '-march=sapphirerapids'
+cd ../common; mpiifx -march=sapphirerapids -c  -O3 -march=sapphirerapids print_results.f90
+ifx: command line warning #10121: overriding '-march=sapphirerapids' with '-march=sapphirerapids'
+cd ../common; mpiifx -march=sapphirerapids -c  -O3 -march=sapphirerapids timers.f90
+ifx: command line warning #10121: overriding '-march=sapphirerapids' with '-march=sapphirerapids'
+mpiifx -march=sapphirerapids  -o ../bin/ft.D.x ft.o ft_data.o mpinpb.o ../common/get_active_nprocs.o ../common/randi8.o ../common/print_results.o ../common/timers.o 
+make[1]: Leaving directory '<scratch>/src/intelc/npb-intelc-spr/FT'

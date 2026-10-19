@@ -1,0 +1,186 @@
+{
+  "schema": "level1/1",
+  "run_id": "stream-2736914-xula5101-0",
+  "started_at": "2026-10-15T13:34:24Z",
+  "node": "xula5101",
+  "cluster": "xula",
+  "dry_run": false,
+  "mode": {
+    "level1": "unprivileged",
+    "source": "env"
+  },
+  "interval_s": 1.0,
+  "capabilities": {
+    "turbostat": true,
+    "perfquery": true,
+    "taskset": true,
+    "sysfs_cpufreq": true,
+    "sysfs_rapl": true,
+    "sysfs_infiniband": true
+  },
+  "affinity": {
+    "cpus_allowed_list": "0-111",
+    "taskset": "pid 1295592's current affinity list: 0-111",
+    "observable": true
+  },
+  "fingerprint": {
+    "observable": true,
+    "source": "discovery-json",
+    "node": "xula5101",
+    "path": "<scratch>/cc/raw/xula/equivalence/medida-2736914/stream-xula5101-9/xula5101-rank-0/discovery/xula/xula5101.json",
+    "fingerprint": "9bff6fd6e1ca580177e74d12ccb38c28d8add138317ccabcda2a646fbc66ec97"
+  },
+  "env": {
+    "OMP_DISPLAY_AFFINITY": "TRUE",
+    "OMPI_MCA_pml_base_verbose": "10",
+    "OMP_AFFINITY_FORMAT": "thread=%n cpus=%A",
+    "UCX_LOG_LEVEL": "info",
+    "OMPI_MCA_btl_base_verbose": "10",
+    "OMP_NUM_THREADS": "112"
+  },
+  "modules": {
+    "observable": true,
+    "list": "\nCurrently Loaded Modules:\n  1) gcc-13.1.0-gcc-8.5.0-ueufrru       3) ucx-1.14.0-gcc-13.1.0-4t6t2iw\n  2) openmpi-4.1.8-gcc-13.1.0-mtnpd5o\n\n \n\n"
+  },
+  "transport_log": {
+    "env_vars": {
+      "UCX_LOG_LEVEL": "info"
+    },
+    "log_path": "<scratch>/cc/raw/xula/equivalence/medida-2736914/stream-xula5101-9/run.log",
+    "observable": true
+  },
+  "mpip": {
+    "available": false,
+    "lib": null,
+    "reason": "MPIP_LIB no definido o inexistente"
+  },
+  "stopped_at": "2026-10-15T13:34:28Z",
+  "job_log": {
+    "observable": true,
+    "log_path": "<scratch>/cc/raw/xula/equivalence/medida-2736914/stream-xula5101-9/run.log",
+    "preserved_path": "<scratch>/cc/raw/xula/equivalence/medida-2736914/stream-xula5101-9/xula5101-rank-0/context/stream-2736914-xula5101-0.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  "ib_counters": {
+    "settle_s": 2.0,
+    "source": "sysfs",
+    "observable": true,
+    "pre": {
+      "ts": "2026-10-15T13:34:25Z",
+      "source": "sysfs",
+      "observable": true,
+      "devices": {
+        "mlx5_0": {
+          "1": {
+            "VL15_dropped": 0,
+            "excessive_buffer_overrun_errors": 0,
+            "link_downed": 0,
+            "link_error_recovery": 0,
+            "local_link_integrity_errors": 0,
+            "multicast_rcv_packets": 28724,
+            "multicast_xmit_packets": 3174,
+            "port_rcv_constraint_errors": 0,
+            "port_rcv_data": 28289014458056,
+            "port_rcv_errors": 0,
+            "port_rcv_packets": 52048020303,
+            "port_rcv_remote_physical_errors": 0,
+            "port_rcv_switch_relay_errors": 0,
+            "port_xmit_constraint_errors": 0,
+            "port_xmit_data": 18528188557099,
+            "port_xmit_discards": 0,
+            "port_xmit_packets": 61575976121,
+            "port_xmit_wait": 4294967295,
+            "symbol_error": 0,
+            "unicast_rcv_packets": 52047991579,
+            "unicast_xmit_packets": 61575972947
+          }
+        }
+      },
+      "raw": null
+    },
+    "post": {
+      "ts": "2026-10-15T13:34:27Z",
+      "source": "sysfs",
+      "observable": true,
+      "devices": {
+        "mlx5_0": {
+          "1": {
+            "VL15_dropped": 0,
+            "excessive_buffer_overrun_errors": 0,
+            "link_downed": 0,
+            "link_error_recovery": 0,
+            "local_link_integrity_errors": 0,
+            "multicast_rcv_packets": 28724,
+            "multicast_xmit_packets": 3174,
+            "port_rcv_constraint_errors": 0,
+            "port_rcv_data": 28289014477509,
+            "port_rcv_errors": 0,
+            "port_rcv_packets": 52048020562,
+            "port_rcv_remote_physical_errors": 0,
+            "port_rcv_switch_relay_errors": 0,
+            "port_xmit_constraint_errors": 0,
+            "port_xmit_data": 18528188604811,
+            "port_xmit_discards": 0,
+            "port_xmit_packets": 61575976402,
+            "port_xmit_wait": 4294967295,
+            "symbol_error": 0,
+            "unicast_rcv_packets": 52047991838,
+            "unicast_xmit_packets": 61575973228
+          }
+        }
+      },
+      "raw": null
+    },
+    "delta": {
+      "mlx5_0": {
+        "1": {
+          "VL15_dropped": 0,
+          "excessive_buffer_overrun_errors": 0,
+          "link_downed": 0,
+          "link_error_recovery": 0,
+          "local_link_integrity_errors": 0,
+          "multicast_rcv_packets": 0,
+          "multicast_xmit_packets": 0,
+          "port_rcv_constraint_errors": 0,
+          "port_rcv_data": 19453,
+          "port_rcv_errors": 0,
+          "port_rcv_packets": 259,
+          "port_rcv_remote_physical_errors": 0,
+          "port_rcv_switch_relay_errors": 0,
+          "port_xmit_constraint_errors": 0,
+          "port_xmit_data": 47712,
+          "port_xmit_discards": 0,
+          "port_xmit_packets": 281,
+          "port_xmit_wait": 0,
+          "symbol_error": 0,
+          "unicast_rcv_packets": 259,
+          "unicast_xmit_packets": 281
+        }
+      }
+    }
+  },
+  "sampling": {
+    "interval_s": 1.0,
+    "n_samples": 1,
+    "freq_khz": {
+      "observable": true,
+      "min": 2986899,
+      "max": 3013636,
+      "median": 3000000.0,
+      "n": 112
+    },
+    "energy_uj": {
+      "observable": true,
+      "min": 102061450941,
+      "max": 102061450941,
+      "median": 102061450941,
+      "n": 1
+    },
+    "samples_path": "<scratch>/cc/raw/xula/equivalence/medida-2736914/stream-xula5101-9/xula5101-rank-0/context/stream-2736914-xula5101-0.freq.jsonl",
+    "samples_sha256": "1e2dbf780800f7138d69444bbecff77fe834c3f4a9ce54dd97edca702ea501b5"
+  },
+  "not_observable": [
+    "mpip"
+  ]
+}

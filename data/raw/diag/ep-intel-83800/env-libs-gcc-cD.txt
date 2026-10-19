@@ -1,0 +1,19 @@
+## module list
+
+Currently Loaded Modules:
+  1) openmpi_gcc/5.0.5   2) ucx/1.9.0
+
+ 
+
+## ldd <scratch>/benchmarks/npb/gcc/spr/ep.D.x
+	libmpi_usempif08.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_usempif08.so.40 (0x00007f5f60b04000)
+	libmpi_usempi_ignore_tkr.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_usempi_ignore_tkr.so.40 (0x00007f5f60af2000)
+	libmpi_mpifh.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_mpifh.so.40 (0x00007f5f60a85000)
+	libmpi.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi.so.40 (0x00007f5f606fc000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x00007f5f6043a000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f5f6035d000)
+	libucp.so.0 => /lib64/libucp.so.0 (0x00007f5f5ff08000)
+## env del módulo
+I_MPI_HYDRA_BOOTSTRAP=slurm
+I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS=--external-launcher
+LD_LIBRARY_PATH=/opt/ucx/1.9.0/lib:/opt/apps/openmpi_gcc/5.0.5/lib

@@ -1,0 +1,232 @@
+[Mon Jun  1 16:21:30 2026] Lustre: Lustre: Build Version: 2.15.4
+[Mon Jun  1 16:21:36 2026] LustreError: 3039:0:(mgc_request.c:253:do_config_log_add()) MGC<ip>@o2ib: failed processing log, type 1: rc = -5
+[Mon Jun  1 16:21:45 2026] LustreError: 3297:0:(mgc_request.c:612:do_requeue()) failed processing log: -5
+[Mon Jun  1 16:21:56 2026] Lustre: Mounted lustre-client
+[Mon Jun  1 16:22:13 2026] Lustre: lustre-OST0003-osc-ff20d8efd1193800: Connection to lustre-OST0003 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Jun  1 16:22:13 2026] Lustre: Skipped 1 previous similar message
+[Mon Jun  1 16:22:17 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Tue Jun 23 07:19:28 2026] LustreError: 11-0: lustre-OST0003-osc-ff20d8efd1193800: operation ldlm_enqueue to node <ip>@o2ib failed: rc = -107
+[Tue Jun 23 07:19:28 2026] Lustre: lustre-OST0003-osc-ff20d8efd1193800: Connection to lustre-OST0003 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Tue Jun 23 07:19:29 2026] LustreError: 11-0: lustre-OST0002-osc-ff20d8efd1193800: operation ldlm_enqueue to node <ip>@o2ib failed: rc = -107
+[Tue Jun 23 07:19:29 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection to lustre-OST0002 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Tue Jun 23 07:24:38 2026] LustreError: 11-0: lustre-OST0002-osc-ff20d8efd1193800: operation ost_punch to node <ip>@o2ib failed: rc = -107
+[Tue Jun 23 07:24:38 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection to lustre-OST0002 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Tue Jun 23 07:26:47 2026]  ll_write_begin+0x21f/0xfb0 [lustre]
+[Tue Jun 23 07:26:47 2026]  vvp_io_write_start+0x54f/0xc50 [lustre]
+[Tue Jun 23 07:26:47 2026]  ll_file_io_generic+0x4b6/0xd70 [lustre]
+[Tue Jun 23 07:26:47 2026]  ll_file_write_iter+0x558/0x7a0 [lustre]
+[Tue Jun 23 07:26:47 2026]  cl_setattr_ost+0x2b5/0x340 [lustre]
+[Tue Jun 23 07:26:47 2026]  ll_setattr_raw+0x8d6/0xf00 [lustre]
+[Tue Jun 23 07:26:48 2026]  ll_write_begin+0x21f/0xfb0 [lustre]
+[Tue Jun 23 07:26:48 2026]  vvp_io_write_start+0x54f/0xc50 [lustre]
+[Tue Jun 23 07:26:48 2026]  ll_file_io_generic+0x4b6/0xd70 [lustre]
+[Tue Jun 23 07:26:48 2026]  ll_file_write_iter+0x558/0x7a0 [lustre]
+[Tue Jun 23 07:26:48 2026]  ll_write_begin+0x21f/0xfb0 [lustre]
+[Tue Jun 23 07:26:48 2026]  vvp_io_write_start+0x54f/0xc50 [lustre]
+[Tue Jun 23 07:26:48 2026]  ll_file_io_generic+0x4b6/0xd70 [lustre]
+[Tue Jun 23 07:26:48 2026]  ll_file_write_iter+0x558/0x7a0 [lustre]
+[Tue Jun 23 07:26:48 2026]  ll_write_begin+0x21f/0xfb0 [lustre]
+[Tue Jun 23 07:26:48 2026]  vvp_io_write_start+0x54f/0xc50 [lustre]
+[Tue Jun 23 07:26:48 2026]  ll_file_io_generic+0x4b6/0xd70 [lustre]
+[Tue Jun 23 07:26:48 2026]  ll_file_write_iter+0x558/0x7a0 [lustre]
+[Tue Jun 23 07:32:20 2026] Lustre: lustre-OST0003-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Tue Jun 23 07:32:20 2026] Lustre: Skipped 1 previous similar message
+[Tue Jun 23 07:33:28 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Tue Jun 23 07:34:45 2026] LustreError: 11-0: lustre-OST0001-osc-ff20d8efd1193800: operation ost_punch to node <ip>@o2ib failed: rc = -19
+[Tue Jun 23 07:34:45 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Tue Jun 23 07:34:45 2026] LustreError: Skipped 2 previous similar messages
+[Tue Jun 23 07:34:45 2026] Lustre: Skipped 1 previous similar message
+[Tue Jun 23 07:40:23 2026] LustreError: 11-0: lustre-OST0000-osc-ff20d8efd1193800: operation ost_punch to node <ip>@o2ib failed: rc = -107
+[Tue Jun 23 07:40:24 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Tue Jun 23 07:40:24 2026] Lustre: Skipped 1 previous similar message
+[Tue Jun 23 07:42:21 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Tue Jun 23 07:42:59 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Thu Jun 25 07:29:51 2026] LustreError: 11-0: lustre-OST0000-osc-ff20d8efd1193800: operation ldlm_enqueue to node <ip>@o2ib failed: rc = -107
+[Thu Jun 25 07:29:51 2026] LustreError: Skipped 1 previous similar message
+[Thu Jun 25 07:29:51 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Thu Jun 25 07:29:51 2026] Lustre: Skipped 2 previous similar messages
+[Thu Jun 25 07:30:37 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Thu Jun 25 07:35:00 2026] LustreError: 11-0: lustre-OST0001-osc-ff20d8efd1193800: operation ost_punch to node <ip>@o2ib failed: rc = -107
+[Thu Jun 25 07:35:00 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Thu Jun 25 07:35:00 2026] LustreError: Skipped 2 previous similar messages
+[Thu Jun 25 07:35:17 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Thu Jun 25 07:35:17 2026] Lustre: Skipped 1 previous similar message
+[Thu Jun 25 07:36:36 2026] LustreError: 11-0: lustre-OST0002-osc-ff20d8efd1193800: operation ldlm_enqueue to node <ip>@o2ib failed: rc = -19
+[Thu Jun 25 07:36:36 2026] LustreError: Skipped 1 previous similar message
+[Thu Jun 25 07:36:36 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection to lustre-OST0002 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Thu Jun 25 07:36:36 2026] Lustre: Skipped 1 previous similar message
+[Thu Jun 25 07:37:12 2026] Lustre: lustre-OST0003-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Thu Jun 25 07:37:12 2026] Lustre: Skipped 1 previous similar message
+[Thu Jun 25 07:37:21 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Thu Jun 25 07:41:15 2026] LustreError: 11-0: lustre-OST0002-osc-ff20d8efd1193800: operation ost_punch to node <ip>@o2ib failed: rc = -107
+[Thu Jun 25 07:41:15 2026] LustreError: Skipped 1 previous similar message
+[Thu Jun 25 07:41:15 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection to lustre-OST0002 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Thu Jun 25 07:41:15 2026] Lustre: Skipped 1 previous similar message
+[Thu Jun 25 07:46:40 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Tue Jun 30 09:20:06 2026] LustreError: 11-0: lustre-OST0001-osc-ff20d8efd1193800: operation ldlm_enqueue to node <ip>@o2ib failed: rc = -107
+[Tue Jun 30 09:20:06 2026] LustreError: Skipped 1 previous similar message
+[Tue Jun 30 09:20:06 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Tue Jun 30 09:20:06 2026] Lustre: Skipped 1 previous similar message
+[Tue Jun 30 09:21:06 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Tue Jun 30 09:21:06 2026] Lustre: Skipped 1 previous similar message
+[Tue Jun 30 09:25:05 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Tue Jun 30 09:25:05 2026] Lustre: Skipped 1 previous similar message
+[Tue Jun 30 09:25:19 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Tue Jun 30 09:25:19 2026] Lustre: Skipped 1 previous similar message
+[Tue Jun 30 09:26:25 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Thu Jul  2 09:44:14 2026] LustreError: 11-0: lustre-OST0000-osc-ff20d8efd1193800: operation ldlm_enqueue to node <ip>@o2ib failed: rc = -19
+[Thu Jul  2 09:44:14 2026] LustreError: Skipped 1 previous similar message
+[Thu Jul  2 09:44:14 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Thu Jul  2 09:44:14 2026] Lustre: Skipped 1 previous similar message
+[Thu Jul  2 09:45:01 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Thu Jul  2 09:49:19 2026] LustreError: 11-0: lustre-OST0000-osc-ff20d8efd1193800: operation ldlm_enqueue to node <ip>@o2ib failed: rc = -107
+[Thu Jul  2 09:49:19 2026] LustreError: Skipped 1 previous similar message
+[Thu Jul  2 09:49:19 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Thu Jul  2 09:49:19 2026] Lustre: Skipped 1 previous similar message
+[Thu Jul  2 09:49:38 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Thu Jul  2 09:49:38 2026] Lustre: Skipped 1 previous similar message
+[Thu Jul  2 09:50:32 2026] LustreError: 11-0: lustre-OST0002-osc-ff20d8efd1193800: operation ldlm_enqueue to node <ip>@o2ib failed: rc = -19
+[Thu Jul  2 09:50:32 2026] LustreError: Skipped 1 previous similar message
+[Thu Jul  2 09:50:32 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection to lustre-OST0002 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Thu Jul  2 09:50:32 2026] Lustre: Skipped 1 previous similar message
+[Thu Jul  2 09:51:17 2026] Lustre: lustre-OST0003-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Thu Jul  2 09:51:17 2026] Lustre: Skipped 1 previous similar message
+[Thu Jul  2 09:55:24 2026] LustreError: 11-0: lustre-OST0002-osc-ff20d8efd1193800: operation ldlm_enqueue to node <ip>@o2ib failed: rc = -19
+[Thu Jul  2 09:55:24 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection to lustre-OST0002 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Thu Jul  2 09:55:24 2026] LustreError: Skipped 3 previous similar messages
+[Thu Jul  2 09:55:24 2026] Lustre: Skipped 1 previous similar message
+[Thu Jul  2 09:55:43 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Thu Jul  2 09:55:43 2026] Lustre: Skipped 1 previous similar message
+[Fri Jul  3 13:17:36 2026] LustreError: 11-0: lustre-OST0000-osc-ff20d8efd1193800: operation ost_punch to node <ip>@o2ib failed: rc = -107
+[Fri Jul  3 13:17:36 2026] LustreError: Skipped 2 previous similar messages
+[Fri Jul  3 13:17:36 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Fri Jul  3 13:17:36 2026] Lustre: Skipped 1 previous similar message
+[Fri Jul  3 13:18:24 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Fri Jul  3 13:18:24 2026] Lustre: Skipped 1 previous similar message
+[Fri Jul  3 13:18:36 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Fri Jul  3 13:22:37 2026] LustreError: 11-0: lustre-OST0001-osc-ff20d8efd1193800: operation ost_punch to node <ip>@o2ib failed: rc = -107
+[Fri Jul  3 13:22:37 2026] LustreError: Skipped 1 previous similar message
+[Fri Jul  3 13:22:37 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Fri Jul  3 13:22:37 2026] Lustre: Skipped 1 previous similar message
+[Fri Jul  3 13:23:58 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Mon Jul  6 18:00:51 2026] LustreError: 11-0: lustre-OST0000-osc-ff20d8efd1193800: operation ldlm_enqueue to node <ip>@o2ib failed: rc = -107
+[Mon Jul  6 18:00:51 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Jul  6 18:00:51 2026] LustreError: Skipped 2 previous similar messages
+[Mon Jul  6 18:00:51 2026] Lustre: Skipped 1 previous similar message
+[Mon Jul  6 18:01:37 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Mon Jul  6 18:01:37 2026] Lustre: Skipped 1 previous similar message
+[Mon Jul  6 18:06:02 2026] LustreError: 11-0: lustre-OST0000-osc-ff20d8efd1193800: operation ost_punch to node <ip>@o2ib failed: rc = -107
+[Mon Jul  6 18:06:02 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Jul  6 18:06:02 2026] Lustre: Skipped 1 previous similar message
+[Mon Jul  6 18:06:03 2026] LustreError: 11-0: lustre-OST0001-osc-ff20d8efd1193800: operation ost_punch to node <ip>@o2ib failed: rc = -107
+[Mon Jul  6 18:06:03 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Jul  6 18:06:17 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Mon Jul  6 18:06:17 2026] Lustre: Skipped 1 previous similar message
+[Wed Jul 15 11:58:48 2026] LustreError: 11-0: lustre-OST0001-osc-ff20d8efd1193800: operation ldlm_enqueue to node <ip>@o2ib failed: rc = -107
+[Wed Jul 15 11:58:48 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Wed Jul 15 11:59:50 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Wed Jul 15 11:59:50 2026] Lustre: Skipped 1 previous similar message
+[Wed Jul 15 11:59:52 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Wed Jul 15 11:59:52 2026] Lustre: Skipped 1 previous similar message
+[Wed Jul 15 12:01:04 2026] Lustre: 3186:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1784109675/real 1784109675]  req@000000005aba130b x1867206920680256/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1784109682 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''
+[Wed Jul 15 12:01:04 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail
+[Wed Jul 15 12:02:11 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xa4b315312fe6b4b9 to 0xa4b3154829429425
+[Wed Jul 15 12:02:11 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Wed Jul 15 12:02:43 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@00000000833d2af7 x1866950976046912/t691845144035(691845144035) o101->lustre-MDT0000-mdc-ff20d8efd1193800@<ip>@o2ib:12/10 lens 584/568 e 0 to 0 dl 1784109788 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''
+[Wed Jul 15 12:02:43 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@00000000d938d63d x1867206154540032/t692762388894(692762388894) o101->lustre-MDT0000-mdc-ff20d8efd1193800@<ip>@o2ib:12/10 lens 592/568 e 0 to 0 dl 1784109788 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''
+[Wed Jul 15 12:02:43 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 58 previous similar messages
+[Wed Jul 15 12:02:44 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@000000002feda5f4 x1867206911500672/t692807055595(692807055595) o101->lustre-MDT0000-mdc-ff20d8efd1193800@<ip>@o2ib:12/10 lens 576/568 e 0 to 0 dl 1784109789 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''
+[Wed Jul 15 12:02:44 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 572 previous similar messages
+[Wed Jul 15 12:02:46 2026] Lustre: lustre-MDT0001-mdc-ff20d8efd1193800: Connection to lustre-MDT0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Wed Jul 15 12:02:46 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@00000000c5d4fb59 x1867206911642112/t692807056717(692807056717) o101->lustre-MDT0000-mdc-ff20d8efd1193800@<ip>@o2ib:12/10 lens 576/568 e 0 to 0 dl 1784109791 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''
+[Wed Jul 15 12:02:46 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 1101 previous similar messages
+[Wed Jul 15 12:03:13 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Wed Jul 15 12:04:02 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Wed Jul 15 12:04:02 2026] Lustre: Skipped 1 previous similar message
+[Wed Jul 15 12:04:06 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Wed Jul 15 12:04:06 2026] Lustre: Skipped 1 previous similar message
+[Tue Jul 21 07:14:35 2026] Lustre: lustre-OST0003-osc-ff20d8efd1193800: Connection to lustre-OST0003 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Tue Jul 21 07:14:35 2026] Lustre: Skipped 1 previous similar message
+[Tue Jul 21 07:19:40 2026] Lustre: lustre-OST0003-osc-ff20d8efd1193800: Connection to lustre-OST0003 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Tue Jul 21 07:22:25 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Tue Jul 21 07:22:25 2026] Lustre: Skipped 1 previous similar message
+[Mon Jul 27 07:40:23 2026] Lustre: lustre-MDT0001-mdc-ff20d8efd1193800: Connection to lustre-MDT0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Jul 27 07:40:23 2026] Lustre: Skipped 1 previous similar message
+[Mon Jul 27 07:40:28 2026] Lustre: 3268:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1785130844/real 1785130844]  req@00000000a6384397 x1867208308438016/t0(0) o400->lustre-MDT0001-mdc-ff20d8efd1193800@<ip>@o2ib:12/10 lens 224/224 e 0 to 1 dl 1785130851 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''
+[Mon Jul 27 07:40:48 2026] Lustre: lustre-MDT0001-mdc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Mon Jul 27 07:40:48 2026] Lustre: Skipped 1 previous similar message
+[Mon Jul 27 07:43:12 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Jul 27 07:43:40 2026] Lustre: 3222:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1785131035/real 1785131035]  req@00000000f91634ff x1867208308440512/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1785131042 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''
+[Mon Jul 27 07:43:40 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail
+[Mon Jul 27 07:44:45 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xa4b3154829429425 to 0xa4b31550784590fb
+[Mon Jul 27 07:44:45 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Mon Jul 27 07:44:56 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Fri Jul 31 13:33:49 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Fri Jul 31 13:35:29 2026] Lustre: 3189:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1785497746/real 1785497746]  req@000000009cf29c60 x1867209319760384/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1785497753 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''
+[Fri Jul 31 13:35:29 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail
+[Fri Jul 31 13:36:56 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xa4b31550784590fb to 0xb011bbb21c602013
+[Fri Jul 31 13:36:56 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Fri Jul 31 13:38:00 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@00000000c7a67c7d x1867209191521024/t700187534394(700187534394) o101->lustre-MDT0000-mdc-ff20d8efd1193800@<ip>@o2ib:12/10 lens 576/568 e 0 to 0 dl 1785497911 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''
+[Fri Jul 31 13:38:00 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 296 previous similar messages
+[Fri Jul 31 13:38:00 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@000000007faa96f5 x1867209310661568/t700197871255(700197871255) o101->lustre-MDT0000-mdc-ff20d8efd1193800@<ip>@o2ib:12/10 lens 592/568 e 0 to 0 dl 1785497912 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''
+[Fri Jul 31 13:38:00 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 99 previous similar messages
+[Fri Jul 31 13:38:02 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Fri Jul 31 13:38:19 2026] Lustre: 3203:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1785497917/real 1785497917]  req@000000008a5d191c x1867209319765504/t0(0) o400->lustre-OST0001-osc-ff20d8efd1193800@<ip>@o2ib:28/4 lens 224/224 e 0 to 1 dl 1785497924 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''
+[Fri Jul 31 13:38:19 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Fri Jul 31 13:40:30 2026] LustreError: 11-0: lustre-OST0000-osc-ff20d8efd1193800: operation ost_read to node <ip>@o2ib failed: rc = -107
+[Fri Jul 31 13:40:30 2026] LustreError: Skipped 1 previous similar message
+[Fri Jul 31 13:40:30 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Fri Jul 31 13:40:30 2026] Lustre: Skipped 1 previous similar message
+[Fri Jul 31 13:40:43 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Fri Jul 31 13:40:52 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Fri Jul 31 13:41:36 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Fri Jul 31 13:41:37 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@00000000c7a67c7d x1867209191521024/t700187534394(700187534394) o101->lustre-MDT0000-mdc-ff20d8efd1193800@<ip>@o2ib:12/10 lens 576/568 e 0 to 0 dl 1785498128 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''
+[Fri Jul 31 13:41:37 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 246 previous similar messages
+[Fri Jul 31 13:41:38 2026] Lustre: 3215:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1785498116/real 1785498116]  req@00000000305df7e7 x1867209320137024/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1785498123 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''
+[Fri Jul 31 13:41:38 2026] Lustre: 3215:0:(client.c:2295:ptlrpc_expire_one_request()) Skipped 1 previous similar message
+[Fri Jul 31 13:41:38 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail
+[Fri Jul 31 13:41:45 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xb011bbb21c602013 to 0x32e865c835b1c62e
+[Fri Jul 31 13:41:45 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Fri Jul 31 13:41:45 2026] Lustre: Skipped 1 previous similar message
+[Fri Jul 31 13:43:39 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Mon Aug 10 11:01:29 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Aug 10 11:02:22 2026] Lustre: 3173:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1786352563/real 1786352563]  req@00000000ae85c436 x1867209775952320/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1786352570 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''
+[Mon Aug 10 11:02:22 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail
+[Mon Aug 10 11:03:12 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0x32e865c835b1c62e to 0xb011bbb21c9c657f
+[Mon Aug 10 11:03:12 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Mon Aug 10 11:03:47 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@00000000e75db2b1 x1867209739676096/t708854235470(708854235470) o101->lustre-MDT0000-mdc-ff20d8efd1193800@<ip>@o2ib:12/10 lens 592/568 e 0 to 0 dl 1786352662 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''
+[Mon Aug 10 11:03:47 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 346 previous similar messages
+[Mon Aug 10 11:04:54 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Mon Aug 10 11:05:03 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Aug 10 11:05:03 2026] Lustre: Skipped 1 previous similar message
+[Mon Aug 10 11:07:35 2026] Lustre: lustre-OST0002-osc-ff20d8efd1193800: Connection to lustre-OST0002 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Aug 10 11:07:52 2026] Lustre: 3172:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1786352893/real 1786352893]  req@00000000d92dab2e x1867209775961600/t0(0) o400->lustre-OST0003-osc-ff20d8efd1193800@<ip>@o2ib:28/4 lens 224/224 e 0 to 1 dl 1786352900 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''
+[Mon Aug 10 11:07:52 2026] Lustre: lustre-OST0003-osc-ff20d8efd1193800: Connection to lustre-OST0003 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Aug 10 11:08:35 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Aug 10 11:08:58 2026] Lustre: 3178:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1786352960/real 1786352960]  req@00000000f9a63238 x1867209776363776/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1786352967 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''
+[Mon Aug 10 11:08:59 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail
+[Mon Aug 10 11:09:05 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xb011bbb21c9c657f to 0xd11172ef599f1d74
+[Mon Aug 10 11:09:05 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Mon Aug 10 11:09:08 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@00000000e75db2b1 x1867209739676096/t708854235470(708854235470) o101->lustre-MDT0000-mdc-ff20d8efd1193800@<ip>@o2ib:12/10 lens 592/568 e 0 to 0 dl 1786352983 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''
+[Mon Aug 10 11:09:08 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 35 previous similar messages
+[Mon Aug 10 11:09:58 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Thu Sep 24 16:23:53 2026] Lustre: 1042206:0:(llite_mmap.c:430:ll_fault()) lustre: FID [0x20004af54:0xd4bd:0x0] under heavy mmap contention by 'julia', consider revising IO pattern
+[Wed Oct  7 11:36:19 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Wed Oct  7 11:37:17 2026] Lustre: 3189:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1791365881/real 1791365881]  req@0000000047403d56 x1867283914875008/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1791365888 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''
+[Wed Oct  7 11:37:17 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail
+[Wed Oct  7 11:38:44 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xd11172ef599f1d74 to 0xb011bbb21cdfe568
+[Wed Oct  7 11:38:44 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Wed Oct  7 11:39:05 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@00000000f3a99324 x1867283912996864/t719233433712(719233433712) o101->lustre-MDT0000-mdc-ff20d8efd1193800@<ip>@o2ib:12/10 lens 592/568 e 0 to 0 dl 1791366003 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''
+[Wed Oct  7 11:39:05 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 49 previous similar messages
+[Wed Oct  7 11:40:10 2026] Lustre: lustre-OST0001-osc-ff20d8efd1193800: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Wed Oct  7 11:40:14 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Wed Oct  7 11:40:33 2026] Lustre: 3226:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1791366077/real 1791366077]  req@000000006e9f0fd1 x1867283914894592/t0(0) o400->lustre-OST0000-osc-ff20d8efd1193800@<ip>@o2ib:28/4 lens 224/224 e 0 to 1 dl 1791366084 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''
+[Wed Oct  7 11:40:33 2026] Lustre: lustre-OST0000-osc-ff20d8efd1193800: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Wed Oct  7 11:43:57 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Wed Oct  7 11:44:04 2026] Lustre: 3235:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1791366288/real 1791366288]  req@00000000bda6157d x1867283914934592/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1791366295 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''
+[Wed Oct  7 11:44:04 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail
+[Wed Oct  7 11:44:15 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@00000000f3a99324 x1867283912996864/t719233433712(719233433712) o101->lustre-MDT0000-mdc-ff20d8efd1193800@<ip>@o2ib:12/10 lens 592/568 e 0 to 0 dl 1791366474 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''
+[Wed Oct  7 11:44:15 2026] LustreError: 3156:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 22 previous similar messages
+[Wed Oct  7 11:44:27 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xb011bbb21cdfe568 to 0xa93bb3db9c3278d9
+[Wed Oct  7 11:44:27 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Wed Oct  7 11:44:40 2026] Lustre: lustre-MDT0000-mdc-ff20d8efd1193800: Connection restored to <ip>@o2ib (at <ip>@o2ib)

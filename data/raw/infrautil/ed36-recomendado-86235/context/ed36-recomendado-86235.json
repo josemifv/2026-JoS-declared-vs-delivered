@@ -1,0 +1,126 @@
+{
+  "schema": "level1/1",
+  "run_id": "ed36-recomendado-86235",
+  "started_at": "2026-10-15T00:15:45Z",
+  "node": "aac103",
+  "cluster": "turgalium",
+  "dry_run": false,
+  "mode": {
+    "level1": "unprivileged",
+    "source": "env"
+  },
+  "interval_s": 1.0,
+  "capabilities": {
+    "turbostat": false,
+    "perfquery": true,
+    "taskset": true,
+    "sysfs_cpufreq": true,
+    "sysfs_rapl": false,
+    "sysfs_infiniband": true
+  },
+  "affinity": {
+    "cpus_allowed_list": "0-35",
+    "taskset": "pid 1308753's current affinity list: 0-35",
+    "observable": true
+  },
+  "fingerprint": {
+    "observable": false,
+    "node": "aac103",
+    "reason": "sin fichero de descubrimiento"
+  },
+  "env": {
+    "I_MPI_FABRICS": "ofi",
+    "I_MPI_DEBUG": "5",
+    "I_MPI_PIN_PROCESSOR_LIST": "0-15,18-33",
+    "I_MPI_ROOT": "/opt/apps/intel/2025.3.2/mpi/latest",
+    "FI_PROVIDER_PATH": "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/libfabric/lib/prov",
+    "FI_PROVIDER": "mlx",
+    "I_MPI_PIN": "1"
+  },
+  "modules": {
+    "observable": true,
+    "list": "\nCurrently Loaded Modules:\n  1) intel/2025.3.2\n\n \n\n"
+  },
+  "transport_log": {
+    "env_vars": {
+      "I_MPI_DEBUG": "5"
+    },
+    "log_path": null,
+    "observable": false
+  },
+  "mpip": {
+    "available": false,
+    "lib": null,
+    "reason": "MPIP_LIB no definido o inexistente"
+  },
+  "stopped_at": "2026-10-15T00:26:04Z",
+  "job_log": {
+    "observable": false
+  },
+  "ib_counters": {
+    "settle_s": 2.0,
+    "source": "none",
+    "observable": true,
+    "pre": {
+      "ts": "2026-10-15T00:15:46Z",
+      "source": "sysfs",
+      "observable": true,
+      "devices": {
+        "mlx5_0": {
+          "1": {
+            "VL15_dropped": 0,
+            "excessive_buffer_overrun_errors": 0,
+            "link_downed": 0,
+            "link_error_recovery": 0,
+            "local_link_integrity_errors": 0,
+            "multicast_rcv_packets": 24813849,
+            "multicast_xmit_packets": 17,
+            "port_rcv_constraint_errors": 0,
+            "port_rcv_data": 138012717949175,
+            "port_rcv_errors": 0,
+            "port_rcv_packets": 595000746353,
+            "port_rcv_remote_physical_errors": 0,
+            "port_rcv_switch_relay_errors": 0,
+            "port_xmit_constraint_errors": 0,
+            "port_xmit_data": 137570464747011,
+            "port_xmit_discards": 0,
+            "port_xmit_packets": 590796696225,
+            "port_xmit_wait": 4294967295,
+            "symbol_error": 0,
+            "unicast_rcv_packets": 594975932504,
+            "unicast_xmit_packets": 590796696208
+          }
+        }
+      },
+      "raw": null
+    },
+    "post": {
+      "source": "none",
+      "observable": false,
+      "devices": {}
+    },
+    "delta": {}
+  },
+  "sampling": {
+    "interval_s": 1.0,
+    "n_samples": 616,
+    "freq_khz": {
+      "observable": true,
+      "min": 1197978,
+      "max": 4000000,
+      "median": 4000000.0,
+      "n": 22176
+    },
+    "energy_uj": {
+      "observable": false
+    },
+    "samples_path": "<scratch>/cc/raw/infrautil/ed36-recomendado-86235/context/ed36-recomendado-86235.freq.jsonl",
+    "samples_sha256": "7b31071db76b664c479dea4ab0ea42674e5f237fbb77617dcb19944a7c257728"
+  },
+  "not_observable": [
+    "fingerprint",
+    "transport_log",
+    "mpip",
+    "energy_uj"
+  ]
+}

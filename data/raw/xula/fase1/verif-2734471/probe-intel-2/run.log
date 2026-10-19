@@ -1,0 +1,224 @@
+pin-pedido: host=xula5102 rank=0 core=28 origen=sysfs(node2)
+pin-pedido: host=xula5103 rank=1 core=28 origen=sysfs(node2)
+pin-real: host=xula5102 rank=0 cpus=28
+pin-real: host=xula5103 rank=1 cpus=28
+	linux-vdso.so.1 (0x00007ffd43de1000)
+	libmpicxx.so.12 => <home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/libmpicxx.so.12 (0x000014f6167ad000)
+	libmpifort.so.12 => <home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/libmpifort.so.12 (0x000014f6163f9000)
+	libmpi.so.12 => <home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release/libmpi.so.12 (0x000014f614aae000)
+	librt.so.1 => /lib64/librt.so.1 (0x000014f6148a6000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x000014f614686000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x000014f614482000)
+	libstdc++.so.6 => <home>/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/gcc-13.1.0-ueufrruyi45xmyinkjueyhg7oeywfaf7/lib64/libstdc++.so.6 (0x000014f61401f000)
+	libm.so.6 => /lib64/libm.so.6 (0x000014f613c9d000)
+	libgcc_s.so.1 => <home>/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/gcc-13.1.0-ueufrruyi45xmyinkjueyhg7oeywfaf7/lib64/libgcc_s.so.1 (0x000014f613a79000)
+	libc.so.6 => /lib64/libc.so.6 (0x000014f6136b4000)
+	/lib64/ld-linux-x86-64.so.2 (0x000014f6169cd000)
+	linux-vdso.so.1 (0x00007ffdf8bbf000)
+	libmpicxx.so.12 => <home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/libmpicxx.so.12 (0x000014919417f000)
+	libmpifort.so.12 => <home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/libmpifort.so.12 (0x0000149193dcb000)
+	libmpi.so.12 => <home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release/libmpi.so.12 (0x0000149192480000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000149192278000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x0000149192058000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000149191e54000)
+	libstdc++.so.6 => <home>/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/gcc-13.1.0-ueufrruyi45xmyinkjueyhg7oeywfaf7/lib64/libstdc++.so.6 (0x00001491919f1000)
+	libm.so.6 => /lib64/libm.so.6 (0x000014919166f000)
+	libgcc_s.so.1 => <home>/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/gcc-13.1.0-ueufrruyi45xmyinkjueyhg7oeywfaf7/lib64/libgcc_s.so.1 (0x000014919144b000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000149191086000)
+	/lib64/ld-linux-x86-64.so.2 (0x000014919439f000)
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.9  Build 20230307 (id: d82b3071db)
+[0] MPI startup(): Copyright (C) 2003-2023 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.13.2rc1-impi
+libfabric:1789405:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:1789405:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:1789405:core:core:ze_hmem_dl_init():422<warn> Failed to dlopen libze_loader.so
+libfabric:1789405:core:core:ofi_hmem_init():214<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:2214926:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:2214926:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:1789405:core:mr:ofi_default_cache_size():78<info> default cache size=4829648969
+libfabric:2214926:core:core:ze_hmem_dl_init():422<warn> Failed to dlopen libze_loader.so
+libfabric:2214926:core:core:ofi_hmem_init():214<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:2214926:core:mr:ofi_default_cache_size():78<info> default cache size=4829648932
+libfabric:1789405:core:core:ofi_register_provider():474<info> registering provider: verbs (113.20)
+libfabric:1789405:core:core:ofi_register_provider():502<info> "verbs" filtered by provider include/exclude list, skipping
+libfabric:2214926:core:core:ofi_register_provider():474<info> registering provider: verbs (113.20)
+libfabric:2214926:core:core:ofi_register_provider():502<info> "verbs" filtered by provider include/exclude list, skipping
+libfabric:1789405:core:core:ofi_register_provider():474<info> registering provider: tcp (113.20)
+libfabric:1789405:core:core:ofi_register_provider():502<info> "tcp" filtered by provider include/exclude list, skipping
+libfabric:2214926:core:core:ofi_register_provider():474<info> registering provider: tcp (113.20)
+libfabric:2214926:core:core:ofi_register_provider():502<info> "tcp" filtered by provider include/exclude list, skipping
+libfabric:1789405:core:core:ofi_register_provider():474<info> registering provider: sockets (113.20)
+libfabric:1789405:core:core:ofi_register_provider():502<info> "sockets" filtered by provider include/exclude list, skipping
+libfabric:2214926:core:core:ofi_register_provider():474<info> registering provider: sockets (113.20)
+libfabric:2214926:core:core:ofi_register_provider():502<info> "sockets" filtered by provider include/exclude list, skipping
+libfabric:1789405:core:core:ofi_hmem_init():249<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:1789405:core:core:ofi_hmem_init():249<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:1789405:core:core:ofi_hmem_init():249<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:1789405:core:core:ofi_hmem_init():249<info> Hmem iface Unknown not supported
+libfabric:1789405:core:core:ofi_hmem_init():249<info> Hmem iface Unknown not supported
+libfabric:1789405:core:core:ofi_register_provider():474<info> registering provider: shm (116.10)
+libfabric:1789405:core:core:ofi_register_provider():502<info> "shm" filtered by provider include/exclude list, skipping
+libfabric:2214926:core:core:ofi_hmem_init():249<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:2214926:core:core:ofi_hmem_init():249<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:2214926:core:core:ofi_hmem_init():249<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:2214926:core:core:ofi_hmem_init():249<info> Hmem iface Unknown not supported
+libfabric:2214926:core:core:ofi_hmem_init():249<info> Hmem iface Unknown not supported
+libfabric:2214926:core:core:ofi_register_provider():474<info> registering provider: shm (116.10)
+libfabric:2214926:core:core:ofi_register_provider():502<info> "shm" filtered by provider include/exclude list, skipping
+libfabric:1789405:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:1789405:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:2214926:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:2214926:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:1789405:core:core:ze_hmem_dl_init():422<warn> Failed to dlopen libze_loader.so
+libfabric:1789405:core:core:ofi_hmem_init():214<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:1789405:core:core:ofi_register_provider():474<info> registering provider: ofi_rxm (113.20)
+libfabric:2214926:core:core:ze_hmem_dl_init():422<warn> Failed to dlopen libze_loader.so
+libfabric:2214926:core:core:ofi_hmem_init():214<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:2214926:core:core:ofi_register_provider():474<info> registering provider: ofi_rxm (113.20)
+libfabric:2214926:psm3:core:fi_prov_ini():915<info> xula5103:rank1: build options: VERSION=1104.1000=11.4.1.0, HAVE_PSM3_SRC=1, PSM3_CUDA=0
+libfabric:2214926:psm3:core:psmx3_param_get_bool():92<info> xula5103:rank1: variable FI_PSM3_NAME_SERVER=<not set>
+libfabric:2214926:psm3:core:psmx3_param_get_bool():92<info> xula5103:rank1: variable FI_PSM3_TAGGED_RMA=<not set>
+libfabric:2214926:psm3:core:psmx3_param_get_str():126<info> xula5103:rank1: read string var FI_PSM3_UUID=c64d1b00-9663-e3ae-a95d-0600c6d95466
+libfabric:2214926:psm3:core:psmx3_param_get_int():111<info> xula5103:rank1: read int var FI_PSM3_DELAY=0
+libfabric:2214926:psm3:core:psmx3_param_get_int():107<info> xula5103:rank1: variable FI_PSM3_TIMEOUT=<not set>
+libfabric:2214926:psm3:core:psmx3_param_get_int():107<info> xula5103:rank1: variable FI_PSM3_PROG_INTERVAL=<not set>
+libfabric:2214926:psm3:core:psmx3_param_get_str():122<info> xula5103:rank1: variable FI_PSM3_PROG_AFFINITY=<not set>
+libfabric:2214926:psm3:core:psmx3_param_get_int():111<info> xula5103:rank1: read int var FI_PSM3_INJECT_SIZE=32768
+libfabric:2214926:psm3:core:psmx3_param_get_int():111<info> xula5103:rank1: read int var FI_PSM3_LOCK_LEVEL=0
+libfabric:2214926:psm3:core:psmx3_param_get_bool():92<info> xula5103:rank1: variable FI_PSM3_LAZY_CONN=<not set>
+libfabric:2214926:psm3:core:psmx3_param_get_int():107<info> xula5103:rank1: variable FI_PSM3_CONN_TIMEOUT=<not set>
+libfabric:2214926:psm3:core:psmx3_param_get_bool():92<info> xula5103:rank1: variable FI_PSM3_DISCONNECT=<not set>
+libfabric:2214926:psm3:core:psmx3_param_get_str():122<info> xula5103:rank1: variable FI_PSM3_TAG_LAYOUT=<not set>
+libfabric:1789405:psm3:core:fi_prov_ini():915<info> xula5102:rank0: build options: VERSION=1104.1000=11.4.1.0, HAVE_PSM3_SRC=1, PSM3_CUDA=0
+libfabric:2214926:core:core:ofi_register_provider():474<info> registering provider: psm3 (1104.1000)
+libfabric:1789405:psm3:core:psmx3_param_get_bool():92<info> xula5102:rank0: variable FI_PSM3_NAME_SERVER=<not set>
+libfabric:1789405:psm3:core:psmx3_param_get_bool():92<info> xula5102:rank0: variable FI_PSM3_TAGGED_RMA=<not set>
+libfabric:1789405:psm3:core:psmx3_param_get_str():126<info> xula5102:rank0: read string var FI_PSM3_UUID=c64d1b00-9663-e3ae-a95d-0600c6d95466
+libfabric:1789405:psm3:core:psmx3_param_get_int():111<info> xula5102:rank0: read int var FI_PSM3_DELAY=0
+libfabric:1789405:psm3:core:psmx3_param_get_int():107<info> xula5102:rank0: variable FI_PSM3_TIMEOUT=<not set>
+libfabric:1789405:psm3:core:psmx3_param_get_int():107<info> xula5102:rank0: variable FI_PSM3_PROG_INTERVAL=<not set>
+libfabric:1789405:psm3:core:psmx3_param_get_str():122<info> xula5102:rank0: variable FI_PSM3_PROG_AFFINITY=<not set>
+libfabric:1789405:psm3:core:psmx3_param_get_int():111<info> xula5102:rank0: read int var FI_PSM3_INJECT_SIZE=32768
+libfabric:1789405:psm3:core:psmx3_param_get_int():111<info> xula5102:rank0: read int var FI_PSM3_LOCK_LEVEL=0
+libfabric:1789405:psm3:core:psmx3_param_get_bool():92<info> xula5102:rank0: variable FI_PSM3_LAZY_CONN=<not set>
+libfabric:1789405:psm3:core:psmx3_param_get_int():107<info> xula5102:rank0: variable FI_PSM3_CONN_TIMEOUT=<not set>
+libfabric:1789405:psm3:core:psmx3_param_get_bool():92<info> xula5102:rank0: variable FI_PSM3_DISCONNECT=<not set>
+libfabric:1789405:psm3:core:psmx3_param_get_str():122<info> xula5102:rank0: variable FI_PSM3_TAG_LAYOUT=<not set>
+libfabric:1789405:core:core:ofi_register_provider():474<info> registering provider: psm3 (1104.1000)
+libfabric:2214926:core:core:ofi_register_provider():474<info> registering provider: mlx (1.4)
+libfabric:2214926:core:core:ofi_register_provider():502<info> "mlx" filtered by provider include/exclude list, skipping
+libfabric:1789405:core:core:ofi_register_provider():474<info> registering provider: mlx (1.4)
+libfabric:1789405:core:core:ofi_register_provider():502<info> "mlx" filtered by provider include/exclude list, skipping
+libfabric:2214926:core:core:ofi_register_provider():474<info> registering provider: ofi_hook_noop (113.20)
+libfabric:2214926:core:core:fi_getinfo_():1141<info> Found provider with the highest priority psm3, must_use_util_prov = 0
+libfabric:2214926:psm3:core:psmx3_getinfo():708<info> xula5103:rank1: 
+libfabric:1789405:core:core:ofi_register_provider():474<info> registering provider: ofi_hook_noop (113.20)
+libfabric:1789405:core:core:fi_getinfo_():1141<info> Found provider with the highest priority psm3, must_use_util_prov = 0
+libfabric:1789405:psm3:core:psmx3_getinfo():708<info> xula5102:rank0: 
+libfabric:1789405:psm3:core:psmx3_init_prov_info():396<info> xula5102:rank0: RMA only instance included
+libfabric:1789405:psm3:core:psmx3_init_prov_info():410<info> xula5102:rank0: TAG60 instance included
+libfabric:1789405:psm3:core:psmx3_init_prov_info():423<info> xula5102:rank0: TAG64 instance included
+libfabric:2214926:psm3:core:psmx3_init_prov_info():396<info> xula5103:rank1: RMA only instance included
+libfabric:2214926:psm3:core:psmx3_init_prov_info():410<info> xula5103:rank1: TAG60 instance included
+libfabric:2214926:psm3:core:psmx3_init_prov_info():423<info> xula5103:rank1: TAG64 instance included
+libfabric:1789405:psm3:core:psmx3_init_lib():369<info> xula5102:rank0: PSM3 header version = (3, 0)
+libfabric:1789405:psm3:core:psmx3_init_lib():371<info> xula5102:rank0: PSM3 library version = (3, 0)
+libfabric:1789405:psm3:core:psmx3_init_lib():376<info> xula5102:rank0: PSM3 multi-ep feature not available or disabled.
+libfabric:1789405:psm3:core:psmx3_update_hfi_info():554<info> xula5102:rank0: hfi1 units: total 1, reported 1, active 1; hfi1 contexts: total 1024, free 1024
+libfabric:1789405:psm3:core:psmx3_update_hfi_info():566<info> xula5102:rank0: Tx/Rx contexts: 1 in total, 1 available.
+libfabric:1789405:psm3:core:psmx3_alter_prov_info():694<info> xula5102:rank0: 3 instances available, 2 with CQ data flag set
+libfabric:2214926:psm3:core:psmx3_init_lib():369<info> xula5103:rank1: PSM3 header version = (3, 0)
+libfabric:2214926:psm3:core:psmx3_init_lib():371<info> xula5103:rank1: PSM3 library version = (3, 0)
+libfabric:2214926:psm3:core:psmx3_init_lib():376<info> xula5103:rank1: PSM3 multi-ep feature not available or disabled.
+libfabric:1789405:core:core:fi_getinfo_():1141<info> Found provider with the highest priority psm3, must_use_util_prov = 0
+libfabric:1789405:psm3:core:psmx3_getinfo():708<info> xula5102:rank0: 
+libfabric:1789405:psm3:core:psmx3_init_prov_info():410<info> xula5102:rank0: TAG60 instance included
+libfabric:1789405:psm3:core:psmx3_alter_prov_info():694<info> xula5102:rank0: 1 instances available, 1 with CQ data flag set
+libfabric:2214926:psm3:core:psmx3_update_hfi_info():554<info> xula5103:rank1: hfi1 units: total 1, reported 1, active 1; hfi1 contexts: total 1024, free 1024
+libfabric:2214926:psm3:core:psmx3_update_hfi_info():566<info> xula5103:rank1: Tx/Rx contexts: 1 in total, 1 available.
+[0] MPI startup(): libfabric provider: psm3
+libfabric:1789405:psm3:core:psmx3_fabric():89<info> xula5102:rank0: 
+libfabric:2214926:psm3:core:psmx3_alter_prov_info():694<info> xula5103:rank1: 3 instances available, 2 with CQ data flag set
+libfabric:1789405:core:core:fi_fabric_():1426<info> Opened fabric: IB/OPA-0xfe80000000000000
+libfabric:1789405:psm3:domain:psmx3_domain_open():307<info> xula5102:rank0: 
+libfabric:1789405:psm3:core:psmx3_param_get_int():111<info> xula5102:rank0: read int var FI_PSM3_LOCK_LEVEL=0
+libfabric:1789405:psm3:core:psmx3_init_tag_layout():310<info> xula5102:rank0: use tag60: tag_mask: 0FFFFFFFFFFFFFFF, data_mask: FFFFFFFF
+libfabric:1789405:psm3:av:psmx3_av_open():995<info> xula5102:rank0: FI_AV_MAP asked, but force FI_AV_TABLE for shared AV
+libfabric:1789405:core:core:ofi_shm_map():173<warn> shm_open failed
+libfabric:1789405:psm3:av:psmx3_av_open():1050<warn> xula5102:rank0: failed to map shared AV: FI_NAMED_AV_0
+
+libfabric:1789405:psm3:av:psmx3_av_open():998<info> xula5102:rank0: FI_AV_MAP asked, and granted
+libfabric:1789405:psm3:core:psmx3_trx_ctxt_alloc():301<info> xula5102:rank0: uuid: C64D1B00-9663-E3AE-A95D-0600C6D95466
+libfabric:1789405:psm3:core:psmx3_trx_ctxt_alloc():315<info> xula5102:rank0: ep_open_opts: unit=0 port=0 addr_index=0
+libfabric:2214926:core:core:fi_getinfo_():1141<info> Found provider with the highest priority psm3, must_use_util_prov = 0
+libfabric:2214926:psm3:core:psmx3_getinfo():708<info> xula5103:rank1: 
+libfabric:2214926:psm3:core:psmx3_init_prov_info():410<info> xula5103:rank1: TAG60 instance included
+libfabric:2214926:psm3:core:psmx3_alter_prov_info():694<info> xula5103:rank1: 1 instances available, 1 with CQ data flag set
+libfabric:2214926:psm3:core:psmx3_fabric():89<info> xula5103:rank1: 
+libfabric:2214926:core:core:fi_fabric_():1426<info> Opened fabric: IB/OPA-0xfe80000000000000
+libfabric:2214926:psm3:domain:psmx3_domain_open():307<info> xula5103:rank1: 
+libfabric:2214926:psm3:core:psmx3_param_get_int():111<info> xula5103:rank1: read int var FI_PSM3_LOCK_LEVEL=0
+libfabric:2214926:psm3:core:psmx3_init_tag_layout():310<info> xula5103:rank1: use tag60: tag_mask: 0FFFFFFFFFFFFFFF, data_mask: FFFFFFFF
+libfabric:2214926:psm3:av:psmx3_av_open():995<info> xula5103:rank1: FI_AV_MAP asked, but force FI_AV_TABLE for shared AV
+libfabric:2214926:core:core:ofi_shm_map():173<warn> shm_open failed
+libfabric:2214926:psm3:av:psmx3_av_open():1050<warn> xula5103:rank1: failed to map shared AV: FI_NAMED_AV_0
+
+libfabric:2214926:psm3:av:psmx3_av_open():998<info> xula5103:rank1: FI_AV_MAP asked, and granted
+libfabric:2214926:psm3:core:psmx3_trx_ctxt_alloc():301<info> xula5103:rank1: uuid: C64D1B00-9663-E3AE-A95D-0600C6D95466
+libfabric:2214926:psm3:core:psmx3_trx_ctxt_alloc():315<info> xula5103:rank1: ep_open_opts: unit=0 port=0 addr_index=0
+libfabric:1789405:psm3:core:psmx3_trx_ctxt_alloc():327<info> xula5102:rank0: epid: 0xdf0006d103:fe80000000000000:e8ebd303001040be (tx+rx)
+libfabric:1789405:psm3:core:psmx3_am_init():66<info> xula5102:rank0: epid 0xdf0006d103:fe80000000000000:e8ebd303001040be
+libfabric:1789405:psm3:ep_data:psmx3_ep_optimize_ops():92<info> xula5102:rank0: tagged ops optimized for op_flags=0 and directed receive
+libfabric:1789405:psm3:ep_ctrl:psmx3_ep_open_internal():577<info> xula5102:rank0: skip initialization of op context list.
+libfabric:1789405:core:core:ofi_ns_add_local_name():372<warn> Cannot add local name - name server uninitialized
+libfabric:1789405:psm3:ep_data:psmx3_ep_optimize_ops():87<info> xula5102:rank0: tagged ops optimized for op_flags=0 and directed receive and av map
+libfabric:1789405:psm3:ep_data:psmx3_ep_optimize_ops():87<info> xula5102:rank0: tagged ops optimized for op_flags=0 and directed receive and av map
+libfabric:2214926:psm3:core:psmx3_trx_ctxt_alloc():327<info> xula5103:rank1: epid: 0xf200c85303:fe80000000000000:e8ebd30300103fee (tx+rx)
+libfabric:2214926:psm3:core:psmx3_am_init():66<info> xula5103:rank1: epid 0xf200c85303:fe80000000000000:e8ebd30300103fee
+libfabric:2214926:psm3:ep_data:psmx3_ep_optimize_ops():92<info> xula5103:rank1: tagged ops optimized for op_flags=0 and directed receive
+libfabric:2214926:psm3:ep_ctrl:psmx3_ep_open_internal():577<info> xula5103:rank1: skip initialization of op context list.
+libfabric:2214926:core:core:ofi_ns_add_local_name():372<warn> Cannot add local name - name server uninitialized
+libfabric:2214926:psm3:ep_data:psmx3_ep_optimize_ops():87<info> xula5103:rank1: tagged ops optimized for op_flags=0 and directed receive and av map
+libfabric:2214926:psm3:ep_data:psmx3_ep_optimize_ops():87<info> xula5103:rank1: tagged ops optimized for op_flags=0 and directed receive and av map
+[0] MPI startup(): File "<home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/etc/tuning_spr_ofi_psm3_200.dat" not found
+[0] MPI startup(): Load tuning file: "<home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/etc/tuning_spr_ofi.dat"
+[0] MPI startup(): File "<home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/etc/tuning_spr_ofi.dat" not found
+[0] MPI startup(): Load tuning file: "<home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/etc/tuning_skx_ofi_psm3.dat"
+[0] MPI startup(): Rank    Pid      Node name  Pin cpu
+[0] MPI startup(): 0       1789405  xula5102   {28}
+[0] MPI startup(): 1       2214926  xula5103   {28}
+[0] MPI startup(): I_MPI_ROOT=<home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0
+[0] MPI startup(): I_MPI_MPIRUN=mpirun
+[0] MPI startup(): I_MPI_HYDRA_TOPOLIB=hwloc
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP=slurm
+[0] MPI startup(): I_MPI_PIN=0
+[0] MPI startup(): I_MPI_INTERNAL_MEM_POLICY=default
+[0] MPI startup(): I_MPI_FABRICS=ofi
+[0] MPI startup(): I_MPI_DEBUG=5
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       1.44
+2                       1.38
+4                       1.36
+8                       1.36
+16                      1.58
+32                      1.68
+64                      1.61
+128                     2.14
+256                     2.18
+512                     2.32
+1024                    2.45
+2048                    2.68
+4096                    3.32
+8192                    4.54
+libfabric:1789405:psm3:core:psmx3_trx_ctxt_free():194<info> xula5102:rank0: epid: 0xdf0006d103:fe80000000000000:e8ebd303001040be (tx+rx)
+libfabric:2214926:psm3:core:psmx3_trx_ctxt_free():194<info> xula5103:rank1: epid: 0xf200c85303:fe80000000000000:e8ebd30300103fee (tx+rx)
+libfabric:2214926:psm3:domain:psmx3_domain_close():185<info> xula5103:rank1: refcnt=0
+libfabric:2214926:psm3:core:psmx3_fabric_close():48<info> xula5103:rank1: refcnt=0
+libfabric:1789405:psm3:domain:psmx3_domain_close():185<info> xula5102:rank0: refcnt=0
+libfabric:1789405:psm3:core:psmx3_fabric_close():48<info> xula5102:rank0: refcnt=0
+libfabric:2214926:psm3:core:psmx3_fini():869<info> xula5103:rank1: 
+libfabric:1789405:psm3:core:psmx3_fini():869<info> xula5102:rank0: 

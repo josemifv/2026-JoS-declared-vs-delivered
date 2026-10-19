@@ -1,0 +1,18 @@
+{
+  "cluster": "xula",
+  "nota": "Fuente declarativa del login, 2026-10-09; informes/tareas/T22/R08.txt-R13.txt. Espejo de clusters/xula.md. Pilas candidatas, no seleccionadas ni cargadas: el nombre de un módulo no demuestra compatibilidad ni versión enlazada. attr_sufijo vacío: aún no hay un combo medido @modN de discovery; no se atribuye ninguno.",
+  "pilas": {
+    "gcc": {
+      "modulos": ["gcc-13.1.0-gcc-8.5.0-ueufrru", "openmpi-4.1.8-gcc-13.1.0-mtnpd5o", "ucx-1.14.0-gcc-13.1.0-4t6t2iw"],
+      "attr_sufijo": "",
+      "versiones_declaradas": {"openmpi": "4.1.8", "ucx": "1.14.0", "gcc": "13.1.0"},
+      "notas": "R08.txt, R09.txt, R12.txt, R13.txt: target icelake declarado por Spack; no identifica la CPU de una partición ni garantiza funcionamiento conjunto. Alternativas Open MPI: 2.0.4/3.1.6/4.0.5/4.1.0/4.1.1/4.1.5/4.1.8, con otros compiladores y hashes. Transportes no comprobados."
+    },
+    "oneapi": {
+      "modulos": ["intel-oneapi-compilers-2023.1.0-gcc-8.5.0-6g2jkiv", "intel-oneapi-mpi-2021.9.0-oneapi-2023.1.0-alz6lst"],
+      "attr_sufijo": "",
+      "versiones_declaradas": {"intelmpi": "2021.9.0", "libfabric": null, "icx": "2023.1.0"},
+      "notas": "R10.txt y R11.txt: el módulo de compiladores anuncia icc/icpc/ifort/icx/icpx/ifx/dpcpp, sin verificar binarios. R08.txt anuncia libfabric 1.18.0 como módulos separados (gcc y oneapi), pero no prueba qué libfabric empaqueta/enlaza Intel MPI: null. Proveedores y transporte efectivo no observados."
+    }
+  }
+}

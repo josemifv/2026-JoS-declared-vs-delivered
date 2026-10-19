@@ -1,0 +1,111 @@
+[s02r1b01:12832] mca: base: components_register: registering framework btl components
+[s02r1b01:12832] mca: base: components_register: found loaded component tcp
+[s02r1b01:12832] mca: base: components_register: component tcp register function successful
+[s02r1b01:12832] mca: base: components_register: found loaded component sm
+[s02r1b01:12832] mca: base: components_register: found loaded component openib
+[s02r1b01:12832] mca: base: components_register: component openib register function successful
+[s02r1b01:12832] mca: base: components_register: found loaded component self
+[s02r1b01:12832] mca: base: components_register: component self register function successful
+[s02r1b01:12832] mca: base: components_register: found loaded component vader
+[s02r1b01:12832] mca: base: components_register: component vader register function successful
+[s02r1b01:12832] mca: base: components_open: opening btl components
+[s02r1b01:12832] mca: base: components_open: found loaded component tcp
+[s02r1b01:12832] mca: base: components_open: component tcp open function successful
+[s02r1b01:12832] mca: base: components_open: found loaded component openib
+[s02r1b01:12832] mca: base: components_open: component openib open function successful
+[s02r1b01:12832] mca: base: components_open: found loaded component self
+[s02r1b01:12832] mca: base: components_open: component self open function successful
+[s02r1b01:12832] mca: base: components_open: found loaded component vader
+[s02r1b01:12832] mca: base: components_open: component vader open function successful
+[s02r1b01:12832] select: initializing btl component tcp
+[s02r1b01:12832] select: init of component tcp returned success
+[s02r1b01:12832] select: initializing btl component openib
+[s02r1b01:12832] Checking distance from this process to device=mlx4_0
+[s02r1b01:12832] hwloc_distances->nbobjs=2
+[s02r1b01:12832] hwloc_distances->values[0]=10
+[s02r1b01:12832] hwloc_distances->values[1]=11
+[s02r1b01:12832] Process is bound: distance to device is 0.000000
+[s02r1b01:12832] select: init of component openib returned failure
+[s02r1b01:12832] mca: base: close: component openib closed
+[s02r1b01:12832] mca: base: close: unloading component openib
+[s02r1b01:12832] select: initializing btl component self
+[s02r1b01:12832] select: init of component self returned success
+[s02r1b01:12832] select: initializing btl component vader
+[s02r1b01:12832] select: init of component vader returned failure
+[s02r1b01:12832] mca: base: close: component vader closed
+[s02r1b01:12832] mca: base: close: unloading component vader
+[s02r1b01:12832] mca: base: components_register: registering framework pml components
+[s02r1b01:12832] mca: base: components_register: found loaded component v
+[s02r1b01:12832] mca: base: components_register: component v register function successful
+[s02r1b01:12832] mca: base: components_register: found loaded component cm
+[s02r1b01:12832] mca: base: components_register: component cm register function successful
+[s02r1b01:12832] mca: base: components_register: found loaded component ucx
+[s02r1b01:12832] mca: base: components_register: component ucx register function successful
+[s02r1b01:12832] mca: base: components_register: found loaded component monitoring
+[s02r1b01:12832] mca: base: components_register: component monitoring register function successful
+[s02r1b01:12832] mca: base: components_register: found loaded component ob1
+[s02r1b01:12832] mca: base: components_register: component ob1 register function successful
+[s02r1b01:12832] mca: base: components_open: opening pml components
+[s02r1b01:12832] mca: base: components_open: found loaded component v
+[s02r1b01:12832] mca: base: components_open: component v open function successful
+[s02r1b01:12832] mca: base: components_open: found loaded component cm
+[s02r1b01:12832] mca: base: close: component cm closed
+[s02r1b01:12832] mca: base: close: unloading component cm
+[s02r1b01:12832] mca: base: components_open: found loaded component ucx
+[s02r1b01:12832] mca: base: components_open: component ucx open function successful
+[s02r1b01:12832] mca: base: components_open: found loaded component monitoring
+[s02r1b01:12832] mca: base: components_open: component monitoring open function successful
+[s02r1b01:12832] mca: base: components_open: found loaded component ob1
+[s02r1b01:12832] mca: base: components_open: component ob1 open function successful
+[s02r1b01:12832] select: component v not in the include list
+[s02r1b01:12832] select: initializing pml component ucx
+[s02r1b01:12832] select: init returned priority 51
+[s02r1b01:12832] select: component monitoring not in the include list
+[s02r1b01:12832] select: initializing pml component ob1
+[s02r1b01:12832] select: init returned priority 20
+[s02r1b01:12832] selected ucx best priority 51
+[s02r1b01:12832] select: component ucx selected
+[s02r1b01:12832] select: component ob1 not selected / finalized
+[s02r1b01:12832] mca: base: close: component v closed
+[s02r1b01:12832] mca: base: close: unloading component v
+[s02r1b01:12832] mca: base: close: component monitoring closed
+[s02r1b01:12832] mca: base: close: unloading component monitoring
+[s02r1b01:12832] mca: base: close: component ob1 closed
+[s02r1b01:12832] mca: base: close: unloading component ob1
+[1792106656.508247] [s02r1b01:12832:0]     ucp_context.c:1778 UCX  INFO  UCP version is 1.12 (release 0)
+[1792106657.271636] [s02r1b01:12832:0]          parser.c:1914 UCX  INFO  UCX_* env variable: UCX_LOG_LEVEL=info
+[1792106657.344277] [s02r1b01:12832:0]      ucp_worker.c:1866 UCX  INFO    ep_cfg[0]: tag(self/memory0 cma/memory rc_verbs/mlx4_0:1); 
+[1792106657.587498] [s02r1b01:12832:a]      ucp_worker.c:1866 UCX  INFO    ep_cfg[1]: tag(rc_verbs/mlx4_0:1); 
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                      30.21
+2                      76.82
+4                      60.86
+8                      45.15
+16                     46.10
+32                     69.18
+64                     47.77
+128                    60.40
+256                    92.96
+512                    70.99
+1024                   89.97
+2048                  103.27
+4096                  128.80
+8192                  173.77
+16384                 193.84
+32768                 395.22
+65536                 631.03
+131072                965.75
+262144               1910.68
+524288               3463.83
+1048576              6967.20
+2097152             13547.46
+4194304             26532.96
+[s02r1b01:12832] mca: base: close: component ucx closed
+[s02r1b01:12832] mca: base: close: unloading component ucx
+[s02r1b01:12832] mca: base: close: component tcp closed
+[s02r1b01:12832] mca: base: close: unloading component tcp
+[s02r1b01:12832] mca: base: close: component self closed
+[s02r1b01:12832] mca: base: close: unloading component self

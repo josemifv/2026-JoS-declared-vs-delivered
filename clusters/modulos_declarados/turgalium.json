@@ -1,0 +1,18 @@
+{
+  "cluster": "turgalium",
+  "nota": "Fuente declarativa, espejo de la sección 'Entorno de software' de clusters/turgalium.md (hechos del clúster versionados por decisión del 2026-09-26 en rules/DEVIATIONS.md). 'versiones_declaradas' = la versión que declara el nombre del módulo o que el módulo empaqueta; la comparación con la versión real medida la hace discovery/declared_real.py (D1) y la corroboración en ejecución viene de la verificación funcional (humos, ldd//proc).",
+  "pilas": {
+    "gcc": {
+      "modulos": ["openmpi_gcc/5.0.5", "ucx/1.9.0"],
+      "attr_sufijo": "@mod0",
+      "versiones_declaradas": {"openmpi": "5.0.5", "ucx": "1.9.0", "gcc": null},
+      "notas": "gcc sin módulo: binario del sistema; el módulo ucx/1.9.0 no pone ucx_info en PATH en login; attr_sufijo = combo 'module load' con el que el descubrimiento midio esta pila (software/@mod0)"
+    },
+    "oneapi": {
+      "modulos": ["intel/2025.3.2"],
+      "attr_sufijo": "@mod1",
+      "versiones_declaradas": {"intelmpi": "2021.17", "libfabric": "2.2.0", "icx": "2025.3.2"},
+      "notas": "el módulo intel empaqueta IMPI, libfabric y icx; attr_sufijo = combo 'module load' con el que el descubrimiento midio esta pila (software/@mod1)"
+    }
+  }
+}

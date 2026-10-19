@@ -1,0 +1,477 @@
+[Wed Feb 18 11:19:57 2026] Lustre: Lustre: Build Version: 2.17.0
+[Wed Feb 18 11:19:59 2026] Lustre: 1604:0:(ldlm_lib.c:562:client_obd_setup()) MGC<ip>@o2ib: config has no valid NIDs, force dynamic NIDs
+[Wed Feb 18 11:19:59 2026] Lustre: 1604:0:(obd_mount.c:245:lustre_add_mgc_failnodes()) MGC<ip>@o2ib: can't add failover peer <ip>@o2ib, rc = -2
+[Wed Feb 18 11:19:59 2026] LustreError: 1604:0:(import.c:490:import_select_connection()) MGC<ip>@o2ib: no connections available: rc = -22
+[Wed Feb 18 11:19:59 2026] LustreError: 1604:0:(obd_mount.c:514:lustre_start_mgc()) connect failed -22
+[Wed Feb 18 11:19:59 2026] LustreError: 1604:0:(obd_class.h:478:obd_check_dev()) Device 0 not setup
+[Wed Feb 18 11:19:59 2026] LustreError: 1604:0:(super25.c:198:lustre_fill_super()) llite: Unable to mount <unknown>: rc = -22
+[Wed Feb 18 11:27:03 2026] LustreError: 1960:0:(mgc_request.c:232:do_config_log_add()) MGC<ip>@o2ib: failed processing log, type 1: rc = -110
+[Wed Feb 18 11:27:19 2026] Lustre: Mounted cetafs2-client
+[Wed Feb 18 11:27:29 2026] Lustre: Mounted cetafs2-client
+[Wed Feb 18 11:27:40 2026] Lustre: Mounted cetafs2-client
+[Mon Feb 23 13:14:53 2026] LustreError: 214021:0:(statahead.c:2408:start_statahead_thread()) cetafs2: invalid pattern 0X0.
+[Wed Feb 25 02:24:28 2026] LustreError: 424917:0:(statahead.c:2408:start_statahead_thread()) cetafs2: invalid pattern 0X0.
+[Wed Feb 25 18:33:49 2026] LustreError: 512188:0:(statahead.c:2408:start_statahead_thread()) cetafs2: invalid pattern 0X0.
+[Wed Feb 25 23:29:33 2026] LustreError: 543590:0:(statahead.c:2408:start_statahead_thread()) cetafs2: invalid pattern 0X0.
+[Thu Feb 26 09:11:23 2026] LustreError: 595857:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.
+[Wed Mar 11 11:47:31 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5
+[Wed Mar 11 11:47:31 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 11:47:36 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 11:47:41 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5
+[Wed Mar 11 11:47:41 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 11:47:46 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 11:47:46 2026] LustreError: Skipped 1 previous similar message
+[Wed Mar 11 11:47:51 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5
+[Wed Mar 11 11:47:51 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 11:47:51 2026] LustreError: Skipped 1 previous similar message
+[Wed Mar 11 11:48:01 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5
+[Wed Mar 11 11:48:01 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 11:48:01 2026] LustreError: Skipped 5 previous similar messages
+[Wed Mar 11 11:48:11 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5
+[Wed Mar 11 11:48:21 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5
+[Wed Mar 11 11:48:21 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 11:48:21 2026] LustreError: Skipped 17 previous similar messages
+[Wed Mar 11 11:48:41 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5
+[Wed Mar 11 11:48:41 2026] LustreError: 4010292:0:(osc_quota.c:196:osc_quotactl()) Skipped 1 previous similar message
+[Wed Mar 11 11:48:56 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 11:48:56 2026] LustreError: Skipped 49 previous similar messages
+[Wed Mar 11 11:50:02 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 11:50:02 2026] LustreError: Skipped 103 previous similar messages
+[Wed Mar 11 11:52:15 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 11:52:15 2026] LustreError: Skipped 207 previous similar messages
+[Wed Mar 11 11:56:36 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 11:56:36 2026] LustreError: Skipped 407 previous similar messages
+[Wed Mar 11 12:05:13 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 12:05:13 2026] LustreError: Skipped 807 previous similar messages
+[Wed Mar 11 12:15:17 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 12:15:17 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 12:25:21 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 12:25:21 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 12:35:25 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 12:35:25 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 12:45:30 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 12:45:30 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 12:55:34 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 12:55:34 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 13:05:38 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 13:05:38 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 13:15:42 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 13:15:42 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 13:25:46 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 13:25:46 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 13:35:50 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 13:35:50 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 13:45:54 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 13:45:54 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 13:55:59 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 13:55:59 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 14:06:03 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 14:06:03 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 14:16:07 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 14:16:07 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 14:26:11 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 14:26:11 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 14:36:15 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 14:36:15 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 14:46:19 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 14:46:19 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 14:56:24 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 14:56:24 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 15:06:28 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 15:06:28 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 15:16:32 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 15:16:32 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 15:26:36 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 15:26:36 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 15:36:40 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 15:36:40 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 15:46:44 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 15:46:44 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 15:56:49 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 15:56:49 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 16:06:53 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 16:06:53 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 16:16:57 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 16:16:57 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 16:27:01 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 16:27:01 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 16:37:05 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 16:37:05 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 16:47:09 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 16:47:09 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 16:57:13 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 16:57:13 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 17:07:18 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 17:07:18 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 17:17:22 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 17:17:22 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 17:27:26 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 17:27:26 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 17:37:30 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 17:37:30 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 17:47:34 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 17:47:34 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 17:57:38 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 17:57:38 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 18:07:43 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 18:07:43 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 18:17:47 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 18:17:47 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 18:27:51 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 18:27:51 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 18:37:55 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 18:37:55 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 18:47:59 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 18:47:59 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 18:58:03 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 18:58:03 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 19:08:07 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 19:08:07 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 19:18:12 2026] LustreError: cetafs2-OST0005-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 19:18:12 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 19:28:16 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 19:28:16 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 19:38:20 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 19:38:20 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 19:48:24 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 19:48:24 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 19:58:28 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 19:58:28 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 20:08:32 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 20:08:32 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 20:18:37 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 20:18:37 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 20:28:41 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 20:28:41 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 20:38:45 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 20:38:45 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 20:48:49 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 20:48:49 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 20:58:53 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 20:58:53 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 21:08:57 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 21:08:57 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 21:19:01 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 21:19:01 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 21:29:06 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 21:29:06 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 21:39:10 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 21:39:10 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 21:49:14 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 21:49:14 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 21:59:18 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 21:59:18 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 22:09:22 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 22:09:22 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 22:19:26 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 22:19:26 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 22:29:31 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 22:29:31 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 22:39:35 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 22:39:35 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 22:49:39 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 22:49:39 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 22:59:43 2026] LustreError: cetafs2-OST0004-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 22:59:43 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 23:09:47 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 23:09:47 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 23:19:51 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 23:19:51 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 23:29:56 2026] LustreError: cetafs2-OST0004-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 23:29:56 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 23:40:00 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 23:40:00 2026] LustreError: Skipped 943 previous similar messages
+[Wed Mar 11 23:50:04 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Wed Mar 11 23:50:04 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 00:00:08 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 00:00:08 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 00:10:12 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 00:10:12 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 00:20:16 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 00:20:16 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 00:30:20 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 00:30:20 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 00:40:25 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 00:40:25 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 00:50:29 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 00:50:29 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 01:00:33 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 01:00:33 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 01:10:37 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 01:10:37 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 01:20:41 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 01:20:41 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 01:30:45 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 01:30:45 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 01:40:50 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 01:40:50 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 01:50:54 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 01:50:54 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 02:00:58 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 02:00:58 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 02:11:02 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 02:11:02 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 02:21:06 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 02:21:06 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 02:31:10 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 02:31:10 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 02:41:14 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 02:41:14 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 02:51:19 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 02:51:19 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 03:01:23 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 03:01:23 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 03:11:27 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 03:11:27 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 03:21:31 2026] LustreError: cetafs2-OST0005-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 03:21:31 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 03:31:35 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 03:31:35 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 03:41:39 2026] LustreError: cetafs2-OST0002-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 03:41:39 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 03:51:44 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 03:51:44 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 04:01:48 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 04:01:48 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 04:11:52 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 04:11:52 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 04:21:56 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 04:21:56 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 04:32:00 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 04:32:00 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 04:42:04 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 04:42:04 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 04:52:08 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 04:52:08 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 05:02:13 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 05:02:13 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 05:12:17 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 05:12:17 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 05:22:21 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 05:22:21 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 05:32:25 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 05:32:25 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 05:42:29 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 05:42:29 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 05:52:33 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 05:52:33 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 06:02:38 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 06:02:38 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 06:12:42 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 06:12:42 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 06:22:46 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 06:22:46 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 06:32:50 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 06:32:50 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 06:42:54 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 06:42:54 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 06:52:58 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 06:52:58 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 07:03:03 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 07:03:03 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 07:13:07 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 07:13:07 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 07:23:11 2026] LustreError: cetafs2-OST0004-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 07:23:11 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 07:33:15 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 07:33:15 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 07:43:19 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 07:43:19 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 07:53:23 2026] LustreError: cetafs2-OST0002-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 07:53:23 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 08:03:27 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 08:03:27 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 08:13:32 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 08:13:32 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 08:23:36 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 08:23:36 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 08:33:40 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 08:33:40 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 08:43:44 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 08:43:44 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 08:53:48 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 08:53:48 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 09:03:52 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 09:03:52 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 09:13:57 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 09:13:57 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 09:24:01 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 09:24:01 2026] LustreError: Skipped 943 previous similar messages
+[Thu Mar 12 09:34:05 2026] LustreError: cetafs2-OST0001-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 09:34:05 2026] LustreError: Skipped 920 previous similar messages
+[Thu Mar 12 09:44:08 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 09:44:08 2026] LustreError: Skipped 641 previous similar messages
+[Thu Mar 12 09:54:11 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -16
+[Thu Mar 12 09:54:11 2026] LustreError: Skipped 487 previous similar messages
+[Thu Mar 12 10:04:15 2026] LustreError: cetafs2-OST0000-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -16
+[Thu Mar 12 10:04:15 2026] LustreError: Skipped 650 previous similar messages
+[Thu Mar 12 10:14:19 2026] LustreError: cetafs2-OST0002-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -16
+[Thu Mar 12 10:14:19 2026] LustreError: Skipped 616 previous similar messages
+[Thu Mar 12 10:24:23 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 10:24:23 2026] LustreError: Skipped 678 previous similar messages
+[Thu Mar 12 10:34:26 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 10:34:26 2026] LustreError: Skipped 529 previous similar messages
+[Thu Mar 12 10:44:30 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 10:44:30 2026] LustreError: Skipped 471 previous similar messages
+[Thu Mar 12 10:54:35 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 10:54:35 2026] LustreError: Skipped 471 previous similar messages
+[Thu Mar 12 11:04:39 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 11:04:39 2026] LustreError: Skipped 471 previous similar messages
+[Thu Mar 12 11:14:43 2026] LustreError: cetafs2-OST0004-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -114
+[Thu Mar 12 11:14:43 2026] LustreError: Skipped 465 previous similar messages
+[Thu Mar 12 11:26:20 2026] LustreError: cetafs2-OST000d-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -19
+[Thu Mar 12 11:26:20 2026] LustreError: Skipped 106 previous similar messages
+[Thu Mar 12 11:36:23 2026] LustreError: cetafs2-OST0003-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -16
+[Thu Mar 12 11:36:23 2026] LustreError: Skipped 145 previous similar messages
+[Thu Mar 12 11:46:27 2026] LustreError: cetafs2-OST0004-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -16
+[Thu Mar 12 11:46:27 2026] LustreError: Skipped 237 previous similar messages
+[Thu Mar 12 11:48:25 2026] LustreError: 4015522:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5
+[Thu Mar 12 11:48:30 2026] LustreError: 4015522:0:(osc_quota.c:196:osc_quotactl()) ptlrpc_queue_wait failed, rc: -5
+[Thu Mar 12 11:56:31 2026] LustreError: cetafs2-OST000d-osc-ffff90090f1e6800: operation ost_connect to node <ip>@tcp failed: rc = -16
+[Thu Mar 12 11:56:31 2026] LustreError: Skipped 191 previous similar messages
+[Wed Apr  1 09:27:01 2026] LustreError: 880267:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Apr  2 02:34:30 2026] LustreError: 880854:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Apr  2 02:34:30 2026] LustreError: 880854:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages
+[Wed Apr  8 16:54:28 2026] LustreError: 268140:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Apr  8 16:54:28 2026] LustreError: 268140:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 7 previous similar messages
+[Wed Apr  8 16:54:33 2026] LustreError: 2522050:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Apr  8 16:54:33 2026] LustreError: 2522050:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Wed Apr  8 16:54:34 2026] LustreError: 267898:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Apr  8 16:54:34 2026] LustreError: 267898:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 31 previous similar messages
+[Wed Apr  8 16:54:37 2026] LustreError: 267898:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Apr  8 16:54:37 2026] LustreError: 267898:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 18 previous similar messages
+[Wed Apr  8 16:54:41 2026] LustreError: 267898:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Apr  8 16:54:41 2026] LustreError: 267898:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 326 previous similar messages
+[Wed Apr  8 16:55:34 2026] LustreError: 873507:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Apr  8 16:55:34 2026] LustreError: 873507:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 214 previous similar messages
+[Wed Apr  8 16:59:08 2026] LustreError: 873507:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Apr  8 16:59:08 2026] LustreError: 873507:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Wed Apr  8 16:59:44 2026] LustreError: 873507:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Apr  8 16:59:44 2026] LustreError: 873507:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Wed Apr  8 17:06:15 2026] LustreError: 24449:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Apr  8 17:06:15 2026] LustreError: 24449:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages
+[Tue May 19 13:07:03 2026] LustreError: 940142:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Tue May 19 13:07:03 2026] LustreError: 940142:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 23 previous similar messages
+[Wed May 20 22:16:48 2026] LustreError: 936279:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed May 20 22:16:48 2026] LustreError: 936279:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Wed May 20 22:18:57 2026] LustreError: 1558798:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed May 20 22:18:57 2026] LustreError: 1558798:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Wed May 20 22:57:56 2026] LustreError: 1486367:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed May 20 22:57:56 2026] LustreError: 1486367:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 20 previous similar messages
+[Wed May 20 22:58:09 2026] LustreError: 937059:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed May 20 22:58:09 2026] LustreError: 937059:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Fri May 22 00:59:20 2026] LustreError: 785228:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Fri May 22 00:59:20 2026] LustreError: 785228:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Fri May 22 01:00:46 2026] LustreError: 785228:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Fri May 22 01:00:46 2026] LustreError: 785228:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Fri May 22 01:05:43 2026] LustreError: 785228:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Fri May 22 01:05:43 2026] LustreError: 785228:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Sat May 23 16:38:11 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 17:07:28 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 17:07:28 2026] Lustre: Skipped 1 previous similar message
+[Sat May 23 17:07:52 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 208840.
+[Sat May 23 17:07:52 2026] Lustre: Skipped 3 previous similar messages
+[Sat May 23 17:11:31 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 17:11:31 2026] Lustre: Skipped 12 previous similar messages
+[Sat May 23 18:25:55 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 208840.
+[Sat May 23 18:25:55 2026] Lustre: Skipped 17 previous similar messages
+[Sat May 23 18:29:56 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 18:29:56 2026] Lustre: Skipped 12 previous similar messages
+[Sat May 23 18:30:26 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 18:30:26 2026] Lustre: Skipped 1 previous similar message
+[Sat May 23 18:33:06 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 18:33:06 2026] Lustre: Skipped 1 previous similar message
+[Sat May 23 18:34:26 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 18:37:30 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 18:39:56 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 18:39:56 2026] Lustre: Skipped 2 previous similar messages
+[Sat May 23 18:41:57 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 18:41:57 2026] Lustre: Skipped 4 previous similar messages
+[Sat May 23 18:43:12 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 18:45:36 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 18:50:21 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 18:50:21 2026] Lustre: Skipped 4 previous similar messages
+[Sat May 23 18:58:53 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 208840.
+[Sat May 23 18:58:53 2026] Lustre: Skipped 28 previous similar messages
+[Sat May 23 19:21:25 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 19:21:25 2026] Lustre: Skipped 27 previous similar messages
+[Sat May 23 19:28:37 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (2 current) to proc with flag: 220840.
+[Sat May 23 19:31:20 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 19:37:39 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 208840.
+[Sat May 23 19:50:27 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 19:50:27 2026] Lustre: Skipped 5 previous similar messages
+[Sat May 23 20:17:26 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 20:17:26 2026] Lustre: Skipped 1 previous similar message
+[Sat May 23 20:18:45 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 20:23:54 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 20:23:54 2026] Lustre: Skipped 1 previous similar message
+[Sat May 23 20:29:15 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 200840.
+[Sat May 23 21:07:53 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 21:07:53 2026] Lustre: Skipped 1 previous similar message
+[Sat May 23 21:26:58 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 21:34:45 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 21:40:11 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 21:47:17 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 22:23:43 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 22:28:02 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 22:46:18 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 22:56:12 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 22:57:20 2026] Lustre: cetafs2-MDT0000-mdc-ffff90090f1e6800: Force grant RPC slot (1 current) to proc with flag: 220840.
+[Sat May 23 22:57:20 2026] Lustre: Skipped 8 previous similar messages
+[Thu Jun 18 02:38:22 2026] LustreError: 3331039:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jun 18 02:38:22 2026] LustreError: 3331039:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Sun Jun 21 09:01:50 2026] LustreError: 3827705:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sun Jun 21 09:01:50 2026] LustreError: 3827705:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Mon Jun 29 11:40:57 2026] LustreError: 50981:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Mon Jun 29 11:40:57 2026] LustreError: 50981:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Mon Jun 29 11:41:17 2026] LustreError: 50981:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Mon Jun 29 11:41:17 2026] LustreError: 50981:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Mon Jun 29 11:41:50 2026] LustreError: 50981:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Mon Jun 29 11:41:50 2026] LustreError: 50981:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Mon Jun 29 11:46:57 2026] LustreError: 4040436:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Mon Jun 29 11:46:57 2026] LustreError: 4040436:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Mon Jun 29 11:50:25 2026] LustreError: 4183950:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Mon Jun 29 11:50:25 2026] LustreError: 4183950:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Wed Jul  1 22:54:46 2026] LustreError: 4040436:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jul  1 22:54:46 2026] LustreError: 4040436:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul  2 10:00:29 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul  2 10:00:29 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul  2 10:00:53 2026] LustreError: 164175:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul  2 10:00:53 2026] LustreError: 164175:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul  2 10:02:42 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul  2 10:02:42 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul  2 10:02:57 2026] LustreError: 35127:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul  2 10:02:57 2026] LustreError: 35127:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul  2 10:03:11 2026] LustreError: 3776948:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul  2 10:03:11 2026] LustreError: 3776948:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul  2 10:04:56 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul  2 10:04:56 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul  2 10:16:51 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul  2 10:16:51 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul  2 10:18:14 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul  2 10:18:14 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul  2 10:20:00 2026] LustreError: 158667:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul  2 10:20:00 2026] LustreError: 158667:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul  2 10:22:21 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul  2 10:22:21 2026] LustreError: 4065113:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Sat Aug 29 15:33:22 2026] LustreError: 786588:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Aug 29 15:33:22 2026] LustreError: 786588:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Sat Aug 29 15:35:20 2026] LustreError: 851692:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Aug 29 15:35:20 2026] LustreError: 851692:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages
+[Sat Aug 29 15:55:42 2026] LustreError: 933271:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Aug 29 15:55:42 2026] LustreError: 933271:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages
+[Sat Aug 29 16:07:39 2026] LustreError: 775884:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sun Aug 30 19:35:31 2026] LustreError: 786588:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sun Aug 30 19:35:31 2026] LustreError: 786588:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages
+[Sun Aug 30 19:48:11 2026] LustreError: 917286:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sun Aug 30 19:48:11 2026] LustreError: 917286:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages
+[Fri Sep 11 00:52:53 2026] LustreError: 1036385:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Fri Sep 11 00:52:53 2026] LustreError: 1036385:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages
+[Thu Sep 17 10:20:27 2026] LustreError: 1130493:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Sep 17 10:20:27 2026] LustreError: 1130493:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Sep 17 13:37:10 2026] LustreError: 1036385:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Fri Sep 18 14:55:30 2026] LustreError: 1123682:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Sep 19 17:33:09 2026] LustreError: 1191707:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Sep 19 21:50:24 2026] LustreError: 1183282:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Mon Sep 21 22:56:43 2026] LustreError: 1233145:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.
+[Fri Sep 25 14:37:56 2026]  ? __pfx_ll_put_link+0x10/0x10 [lustre]

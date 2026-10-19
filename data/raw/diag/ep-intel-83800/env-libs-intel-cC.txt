@@ -1,0 +1,18 @@
+## module list
+
+Currently Loaded Modules:
+  1) intel/2025.3.2
+
+ 
+
+## ldd <scratch>/cc/raw/diag/ep-intel-83800/ep.C.intel.x
+	libmpifort.so.12 => /opt/apps/intel/2025.3.2/mpi/latest/lib/libmpifort.so.12 (0x00007f8d8f816000)
+	libmpi.so.12 => /opt/apps/intel/2025.3.2/mpi/latest/lib/libmpi.so.12 (0x00007f8d85755000)
+	libgfortran.so.5 => /lib64/libgfortran.so.5 (0x00007f8d85493000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f8d853b8000)
+## env del módulo
+FI_PROVIDER_PATH=/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/libfabric/lib/prov
+I_MPI_HYDRA_BOOTSTRAP=slurm
+I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS=--external-launcher
+I_MPI_ROOT=/opt/apps/intel/2025.3.2/mpi/latest
+LD_LIBRARY_PATH=/opt/apps/intel/2025.3.2/mkl/latest/lib:/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/libfabric/lib:/opt/apps/intel/2025.3.2/mpi/latest/lib:/opt/apps/intel/2025.3.2/tbb/latest/lib:/opt/apps/intel/2025.3.2/compiler/latest/opt/compiler/lib:/opt/apps/intel/2025.3.2/compiler/latest/lib

@@ -1,0 +1,46 @@
+== host b9p01  gfortran: /usr/bin/gfortran  GNU Fortran (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+== ifx: /opt/apps/intel/2025.3.2/compiler/latest/bin/ifx
+== NPB gcc / spr
+   mpif90 -> /opt/apps/openmpi_gcc/5.0.5/bin/mpif90 (gfortran -I/opt/apps/openmpi_gcc/5.0.5/include -I/opt/apps/openmpi_gcc/5.0.5/lib -L/opt/apps/openmpi_gcc/5.0.5/lib -Wl,-rpath -Wl,/opt/apps/openmpi_gcc/5.0.5/lib -Wl,--enable-new-dtags -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi)
+bash: instrumentation/cmdlog.sh: No such file or directory
+   !! ep.D.x no generado
+bash: instrumentation/cmdlog.sh: No such file or directory
+   !! cg.D.x no generado
+bash: instrumentation/cmdlog.sh: No such file or directory
+   !! mg.D.x no generado
+== NPB intel / spr
+   mpif90 -> /opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 (gfortran -fallow-argument-mismatch -I"/opt/apps/intel/2025.3.2/mpi/latest/include/mpi/gfortran/11.1.0" -I"/opt/apps/intel/2025.3.2/mpi/latest/include" -I"/opt/apps/intel/2025.3.2/mpi/latest/include/mpi" -L"/opt/apps/intel/2025.3.2/mpi/latest/lib" -L"/opt/apps/intel/2025.3.2/mpi/latest/lib" -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker "/opt/apps/intel/2025.3.2/mpi/latest/lib" -Xlinker -rpath -Xlinker "/opt/apps/intel/2025.3.2/mpi/latest/lib" -lmpifort -lmpi -lrt -lpthread -Wl,-z,now -Wl,-z,relro -Wl,-z,noexecstack -Xlinker --enable-new-dtags -ldl)
+bash: instrumentation/cmdlog.sh: No such file or directory
+   !! ep.D.x no generado
+bash: instrumentation/cmdlog.sh: No such file or directory
+   !! cg.D.x no generado
+bash: instrumentation/cmdlog.sh: No such file or directory
+   !! mg.D.x no generado
+== HPCG gcc (mpicxx -march=sapphirerapids)
+bash: instrumentation/cmdlog.sh: No such file or directory
+bash: instrumentation/cmdlog.sh: No such file or directory
+!! xhpcg NO construido (gcc)
+== HPCG intel (mpiicpx -xSAPPHIRERAPIDS)
+bash: instrumentation/cmdlog.sh: No such file or directory
+bash: instrumentation/cmdlog.sh: No such file or directory
+!! xhpcg NO construido (intel)
+== resultado ==
+<scratch>/benchmarks/npb/gcc/spr/:
+drwxr-xr-x 2 <u> <account>  4096 Sep 30 17:42 .
+drwxr-xr-x 5 <u> <account>  4096 Sep 30 17:42 ..
+-rwxr-xr-x 1 <u> <account> 77584 Sep 30 17:42 ft.B.x
+-rwxr-xr-x 1 <u> <account> 77584 Sep 30 17:42 ft.C.x
+-rwxr-xr-x 1 <u> <account> 77584 Sep 30 17:42 ft.D.x
+<scratch>/benchmarks/npb/intel/spr/:
+drwxr-xr-x 2 <u> <account>  4096 Sep 30 17:42 .
+drwxr-xr-x 5 <u> <account>  4096 Sep 30 17:42 ..
+-rwxr-xr-x 1 <u> <account> 76904 Sep 30 17:42 ft.B.x
+-rwxr-xr-x 1 <u> <account> 76904 Sep 30 17:42 ft.C.x
+-rwxr-xr-x 1 <u> <account> 76904 Sep 30 17:42 ft.D.x
+<scratch>/benchmarks/phaseB/hpcg/gcc/:
+drwxr-xr-x 2 <u> <account> 4096 Oct  4 13:25 .
+drwxr-xr-x 4 <u> <account> 4096 Oct  4 13:25 ..
+<scratch>/benchmarks/phaseB/hpcg/intel/:
+drwxr-xr-x 2 <u> <account> 4096 Oct  4 13:25 .
+drwxr-xr-x 4 <u> <account> 4096 Oct  4 13:25 ..
+== fin compilación fase B (job 83222) ==

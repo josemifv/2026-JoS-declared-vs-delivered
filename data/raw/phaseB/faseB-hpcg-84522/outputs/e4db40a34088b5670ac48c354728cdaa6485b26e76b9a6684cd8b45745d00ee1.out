@@ -1,0 +1,607 @@
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.17  Build 20251215 (id: 2ac2f63)
+[0] MPI startup(): Copyright (C) 2003-2025 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 2.2.0-impi_2021.17.2
+[0] MPI startup(): libfabric provider: mlx
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_spr_ofi_mlx_200_x1.dat" not found
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_spr_ofi_mlx_200.dat" not found
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_spr_ofi_mlx.dat" not found
+[0] MPI startup(): Load tuning file: "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_spr_ofi.dat"
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_spr_ofi.dat" not found
+[0] MPI startup(): Load tuning file: "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc//tuning_clx-ap_ofi.dat"
+[0] MPI startup(): Number of NICs:  1 
+[0] MPI startup(): ===== NIC pinning on b9p01 =====
+[0] MPI startup(): Rank    Thread id  Pin nic
+[0] MPI startup(): 0       0          mlx
+[0] MPI startup(): 1       0          mlx
+[0] MPI startup(): 2       0          mlx
+[0] MPI startup(): 3       0          mlx
+[0] MPI startup(): 4       0          mlx
+[0] MPI startup(): 5       0          mlx
+[0] MPI startup(): 6       0          mlx
+[0] MPI startup(): 7       0          mlx
+[0] MPI startup(): 8       0          mlx
+[0] MPI startup(): 9       0          mlx
+[0] MPI startup(): 10      0          mlx
+[0] MPI startup(): 11      0          mlx
+[0] MPI startup(): 12      0          mlx
+[0] MPI startup(): 13      0          mlx
+[0] MPI startup(): 14      0          mlx
+[0] MPI startup(): 15      0          mlx
+[0] MPI startup(): 16      0          mlx
+[0] MPI startup(): 17      0          mlx
+[0] MPI startup(): 18      0          mlx
+[0] MPI startup(): 19      0          mlx
+[0] MPI startup(): 20      0          mlx
+[0] MPI startup(): 21      0          mlx
+[0] MPI startup(): 22      0          mlx
+[0] MPI startup(): 23      0          mlx
+[0] MPI startup(): 24      0          mlx
+[0] MPI startup(): 25      0          mlx
+[0] MPI startup(): 26      0          mlx
+[0] MPI startup(): 27      0          mlx
+[0] MPI startup(): 28      0          mlx
+[0] MPI startup(): 29      0          mlx
+[0] MPI startup(): 30      0          mlx
+[0] MPI startup(): 31      0          mlx
+[0] MPI startup(): 32      0          mlx
+[0] MPI startup(): 33      0          mlx
+[0] MPI startup(): 34      0          mlx
+[0] MPI startup(): 35      0          mlx
+[0] MPI startup(): 36      0          mlx
+[0] MPI startup(): 37      0          mlx
+[0] MPI startup(): 38      0          mlx
+[0] MPI startup(): 39      0          mlx
+[0] MPI startup(): 40      0          mlx
+[0] MPI startup(): 41      0          mlx
+[0] MPI startup(): 42      0          mlx
+[0] MPI startup(): 43      0          mlx
+[0] MPI startup(): 44      0          mlx
+[0] MPI startup(): 45      0          mlx
+[0] MPI startup(): 46      0          mlx
+[0] MPI startup(): 47      0          mlx
+[0] MPI startup(): 48      0          mlx
+[0] MPI startup(): 49      0          mlx
+[0] MPI startup(): 50      0          mlx
+[0] MPI startup(): 51      0          mlx
+[0] MPI startup(): 52      0          mlx
+[0] MPI startup(): 53      0          mlx
+[0] MPI startup(): 54      0          mlx
+[0] MPI startup(): 55      0          mlx
+[0] MPI startup(): 56      0          mlx
+[0] MPI startup(): 57      0          mlx
+[0] MPI startup(): 58      0          mlx
+[0] MPI startup(): 59      0          mlx
+[0] MPI startup(): 60      0          mlx
+[0] MPI startup(): 61      0          mlx
+[0] MPI startup(): 62      0          mlx
+[0] MPI startup(): 63      0          mlx
+[0] MPI startup(): ===== CPU pinning =====
+[0] MPI startup(): Rank    Pid      Node name  Pin cpu
+[0] MPI startup(): 0       3402220  b9p01      {0}
+[0] MPI startup(): 1       3402221  b9p01      {1}
+[0] MPI startup(): 2       3402222  b9p01      {2}
+[0] MPI startup(): 3       3402223  b9p01      {3}
+[0] MPI startup(): 4       3402224  b9p01      {4}
+[0] MPI startup(): 5       3402225  b9p01      {5}
+[0] MPI startup(): 6       3402226  b9p01      {6}
+[0] MPI startup(): 7       3402227  b9p01      {7}
+[0] MPI startup(): 8       3402228  b9p01      {8}
+[0] MPI startup(): 9       3402229  b9p01      {9}
+[0] MPI startup(): 10      3402230  b9p01      {10}
+[0] MPI startup(): 11      3402231  b9p01      {11}
+[0] MPI startup(): 12      3402232  b9p01      {12}
+[0] MPI startup(): 13      3402233  b9p01      {13}
+[0] MPI startup(): 14      3402234  b9p01      {14}
+[0] MPI startup(): 15      3402235  b9p01      {15}
+[0] MPI startup(): 16      3402236  b9p01      {16}
+[0] MPI startup(): 17      3402237  b9p01      {17}
+[0] MPI startup(): 18      3402238  b9p01      {18}
+[0] MPI startup(): 19      3402239  b9p01      {19}
+[0] MPI startup(): 20      3402240  b9p01      {20}
+[0] MPI startup(): 21      3402241  b9p01      {21}
+[0] MPI startup(): 22      3402242  b9p01      {22}
+[0] MPI startup(): 23      3402243  b9p01      {23}
+[0] MPI startup(): 24      3402244  b9p01      {24}
+[0] MPI startup(): 25      3402245  b9p01      {25}
+[0] MPI startup(): 26      3402246  b9p01      {26}
+[0] MPI startup(): 27      3402247  b9p01      {27}
+[0] MPI startup(): 28      3402248  b9p01      {28}
+[0] MPI startup(): 29      3402249  b9p01      {29}
+[0] MPI startup(): 30      3402250  b9p01      {30}
+[0] MPI startup(): 31      3402251  b9p01      {31}
+[0] MPI startup(): 32      3402252  b9p01      {56}
+[0] MPI startup(): 33      3402253  b9p01      {57}
+[0] MPI startup(): 34      3402254  b9p01      {58}
+[0] MPI startup(): 35      3402255  b9p01      {59}
+[0] MPI startup(): 36      3402256  b9p01      {60}
+[0] MPI startup(): 37      3402257  b9p01      {61}
+[0] MPI startup(): 38      3402258  b9p01      {62}
+[0] MPI startup(): 39      3402259  b9p01      {63}
+[0] MPI startup(): 40      3402260  b9p01      {64}
+[0] MPI startup(): 41      3402261  b9p01      {65}
+[0] MPI startup(): 42      3402262  b9p01      {66}
+[0] MPI startup(): 43      3402263  b9p01      {67}
+[0] MPI startup(): 44      3402264  b9p01      {68}
+[0] MPI startup(): 45      3402265  b9p01      {69}
+[0] MPI startup(): 46      3402266  b9p01      {70}
+[0] MPI startup(): 47      3402267  b9p01      {71}
+[0] MPI startup(): 48      3402268  b9p01      {72}
+[0] MPI startup(): 49      3402269  b9p01      {73}
+[0] MPI startup(): 50      3402270  b9p01      {74}
+[0] MPI startup(): 51      3402271  b9p01      {75}
+[0] MPI startup(): 52      3402272  b9p01      {76}
+[0] MPI startup(): 53      3402273  b9p01      {77}
+[0] MPI startup(): 54      3402274  b9p01      {78}
+[0] MPI startup(): 55      3402275  b9p01      {79}
+[0] MPI startup(): 56      3402276  b9p01      {80}
+[0] MPI startup(): 57      3402277  b9p01      {81}
+[0] MPI startup(): 58      3402278  b9p01      {82}
+[0] MPI startup(): 59      3402279  b9p01      {83}
+[0] MPI startup(): 60      3402280  b9p01      {84}
+[0] MPI startup(): 61      3402281  b9p01      {85}
+[0] MPI startup(): 62      3402282  b9p01      {86}
+[0] MPI startup(): 63      3402283  b9p01      {87}
+[0] MPI startup(): 64      3573234  b9p06      {0}
+[0] MPI startup(): 65      3573235  b9p06      {1}
+[0] MPI startup(): 66      3573236  b9p06      {2}
+[0] MPI startup(): 67      3573237  b9p06      {3}
+[0] MPI startup(): 68      3573238  b9p06      {4}
+[0] MPI startup(): 69      3573239  b9p06      {5}
+[0] MPI startup(): 70      3573240  b9p06      {6}
+[0] MPI startup(): 71      3573241  b9p06      {7}
+[0] MPI startup(): 72      3573242  b9p06      {8}
+[0] MPI startup(): 73      3573243  b9p06      {9}
+[0] MPI startup(): 74      3573244  b9p06      {10}
+[0] MPI startup(): 75      3573245  b9p06      {11}
+[0] MPI startup(): 76      3573246  b9p06      {12}
+[0] MPI startup(): 77      3573247  b9p06      {13}
+[0] MPI startup(): 78      3573248  b9p06      {14}
+[0] MPI startup(): 79      3573249  b9p06      {15}
+[0] MPI startup(): 80      3573250  b9p06      {16}
+[0] MPI startup(): 81      3573251  b9p06      {17}
+[0] MPI startup(): 82      3573252  b9p06      {18}
+[0] MPI startup(): 83      3573253  b9p06      {19}
+[0] MPI startup(): 84      3573254  b9p06      {20}
+[0] MPI startup(): 85      3573255  b9p06      {21}
+[0] MPI startup(): 86      3573256  b9p06      {22}
+[0] MPI startup(): 87      3573257  b9p06      {23}
+[0] MPI startup(): 88      3573258  b9p06      {24}
+[0] MPI startup(): 89      3573259  b9p06      {25}
+[0] MPI startup(): 90      3573260  b9p06      {26}
+[0] MPI startup(): 91      3573261  b9p06      {27}
+[0] MPI startup(): 92      3573262  b9p06      {28}
+[0] MPI startup(): 93      3573263  b9p06      {29}
+[0] MPI startup(): 94      3573264  b9p06      {30}
+[0] MPI startup(): 95      3573265  b9p06      {31}
+[0] MPI startup(): 96      3573266  b9p06      {56}
+[0] MPI startup(): 97      3573267  b9p06      {57}
+[0] MPI startup(): 98      3573268  b9p06      {58}
+[0] MPI startup(): 99      3573269  b9p06      {59}
+[0] MPI startup(): 100     3573270  b9p06      {60}
+[0] MPI startup(): 101     3573271  b9p06      {61}
+[0] MPI startup(): 102     3573272  b9p06      {62}
+[0] MPI startup(): 103     3573273  b9p06      {63}
+[0] MPI startup(): 104     3573274  b9p06      {64}
+[0] MPI startup(): 105     3573275  b9p06      {65}
+[0] MPI startup(): 106     3573276  b9p06      {66}
+[0] MPI startup(): 107     3573277  b9p06      {67}
+[0] MPI startup(): 108     3573278  b9p06      {68}
+[0] MPI startup(): 109     3573279  b9p06      {69}
+[0] MPI startup(): 110     3573280  b9p06      {70}
+[0] MPI startup(): 111     3573281  b9p06      {71}
+[0] MPI startup(): 112     3573282  b9p06      {72}
+[0] MPI startup(): 113     3573283  b9p06      {73}
+[0] MPI startup(): 114     3573284  b9p06      {74}
+[0] MPI startup(): 115     3573285  b9p06      {75}
+[0] MPI startup(): 116     3573286  b9p06      {76}
+[0] MPI startup(): 117     3573287  b9p06      {77}
+[0] MPI startup(): 118     3573288  b9p06      {78}
+[0] MPI startup(): 119     3573289  b9p06      {79}
+[0] MPI startup(): 120     3573290  b9p06      {80}
+[0] MPI startup(): 121     3573291  b9p06      {81}
+[0] MPI startup(): 122     3573292  b9p06      {82}
+[0] MPI startup(): 123     3573293  b9p06      {83}
+[0] MPI startup(): 124     3573294  b9p06      {84}
+[0] MPI startup(): 125     3573295  b9p06      {85}
+[0] MPI startup(): 126     3573296  b9p06      {86}
+[0] MPI startup(): 127     3573297  b9p06      {87}
+[0] MPI startup(): 128     3138294  b9p08      {0}
+[0] MPI startup(): 129     3138295  b9p08      {1}
+[0] MPI startup(): 130     3138296  b9p08      {2}
+[0] MPI startup(): 131     3138297  b9p08      {3}
+[0] MPI startup(): 132     3138298  b9p08      {4}
+[0] MPI startup(): 133     3138299  b9p08      {5}
+[0] MPI startup(): 134     3138300  b9p08      {6}
+[0] MPI startup(): 135     3138301  b9p08      {7}
+[0] MPI startup(): 136     3138302  b9p08      {8}
+[0] MPI startup(): 137     3138303  b9p08      {9}
+[0] MPI startup(): 138     3138304  b9p08      {10}
+[0] MPI startup(): 139     3138305  b9p08      {11}
+[0] MPI startup(): 140     3138306  b9p08      {12}
+[0] MPI startup(): 141     3138307  b9p08      {13}
+[0] MPI startup(): 142     3138308  b9p08      {14}
+[0] MPI startup(): 143     3138309  b9p08      {15}
+[0] MPI startup(): 144     3138310  b9p08      {16}
+[0] MPI startup(): 145     3138311  b9p08      {17}
+[0] MPI startup(): 146     3138312  b9p08      {18}
+[0] MPI startup(): 147     3138313  b9p08      {19}
+[0] MPI startup(): 148     3138314  b9p08      {20}
+[0] MPI startup(): 149     3138315  b9p08      {21}
+[0] MPI startup(): 150     3138316  b9p08      {22}
+[0] MPI startup(): 151     3138317  b9p08      {23}
+[0] MPI startup(): 152     3138318  b9p08      {24}
+[0] MPI startup(): 153     3138319  b9p08      {25}
+[0] MPI startup(): 154     3138320  b9p08      {26}
+[0] MPI startup(): 155     3138321  b9p08      {27}
+[0] MPI startup(): 156     3138322  b9p08      {28}
+[0] MPI startup(): 157     3138323  b9p08      {29}
+[0] MPI startup(): 158     3138324  b9p08      {30}
+[0] MPI startup(): 159     3138325  b9p08      {31}
+[0] MPI startup(): 160     3138326  b9p08      {56}
+[0] MPI startup(): 161     3138327  b9p08      {57}
+[0] MPI startup(): 162     3138328  b9p08      {58}
+[0] MPI startup(): 163     3138329  b9p08      {59}
+[0] MPI startup(): 164     3138330  b9p08      {60}
+[0] MPI startup(): 165     3138331  b9p08      {61}
+[0] MPI startup(): 166     3138332  b9p08      {62}
+[0] MPI startup(): 167     3138333  b9p08      {63}
+[0] MPI startup(): 168     3138334  b9p08      {64}
+[0] MPI startup(): 169     3138335  b9p08      {65}
+[0] MPI startup(): 170     3138336  b9p08      {66}
+[0] MPI startup(): 171     3138337  b9p08      {67}
+[0] MPI startup(): 172     3138338  b9p08      {68}
+[0] MPI startup(): 173     3138339  b9p08      {69}
+[0] MPI startup(): 174     3138340  b9p08      {70}
+[0] MPI startup(): 175     3138341  b9p08      {71}
+[0] MPI startup(): 176     3138342  b9p08      {72}
+[0] MPI startup(): 177     3138343  b9p08      {73}
+[0] MPI startup(): 178     3138344  b9p08      {74}
+[0] MPI startup(): 179     3138345  b9p08      {75}
+[0] MPI startup(): 180     3138346  b9p08      {76}
+[0] MPI startup(): 181     3138347  b9p08      {77}
+[0] MPI startup(): 182     3138348  b9p08      {78}
+[0] MPI startup(): 183     3138349  b9p08      {79}
+[0] MPI startup(): 184     3138350  b9p08      {80}
+[0] MPI startup(): 185     3138351  b9p08      {81}
+[0] MPI startup(): 186     3138352  b9p08      {82}
+[0] MPI startup(): 187     3138353  b9p08      {83}
+[0] MPI startup(): 188     3138354  b9p08      {84}
+[0] MPI startup(): 189     3138355  b9p08      {85}
+[0] MPI startup(): 190     3138356  b9p08      {86}
+[0] MPI startup(): 191     3138357  b9p08      {87}
+[0] MPI startup(): 192     655370   b9p09      {0}
+[0] MPI startup(): 193     655371   b9p09      {1}
+[0] MPI startup(): 194     655372   b9p09      {2}
+[0] MPI startup(): 195     655373   b9p09      {3}
+[0] MPI startup(): 196     655374   b9p09      {4}
+[0] MPI startup(): 197     655375   b9p09      {5}
+[0] MPI startup(): 198     655376   b9p09      {6}
+[0] MPI startup(): 199     655377   b9p09      {7}
+[0] MPI startup(): 200     655378   b9p09      {8}
+[0] MPI startup(): 201     655379   b9p09      {9}
+[0] MPI startup(): 202     655380   b9p09      {10}
+[0] MPI startup(): 203     655381   b9p09      {11}
+[0] MPI startup(): 204     655382   b9p09      {12}
+[0] MPI startup(): 205     655383   b9p09      {13}
+[0] MPI startup(): 206     655384   b9p09      {14}
+[0] MPI startup(): 207     655385   b9p09      {15}
+[0] MPI startup(): 208     655386   b9p09      {16}
+[0] MPI startup(): 209     655387   b9p09      {17}
+[0] MPI startup(): 210     655388   b9p09      {18}
+[0] MPI startup(): 211     655389   b9p09      {19}
+[0] MPI startup(): 212     655390   b9p09      {20}
+[0] MPI startup(): 213     655391   b9p09      {21}
+[0] MPI startup(): 214     655392   b9p09      {22}
+[0] MPI startup(): 215     655393   b9p09      {23}
+[0] MPI startup(): 216     655394   b9p09      {24}
+[0] MPI startup(): 217     655395   b9p09      {25}
+[0] MPI startup(): 218     655396   b9p09      {26}
+[0] MPI startup(): 219     655397   b9p09      {27}
+[0] MPI startup(): 220     655398   b9p09      {28}
+[0] MPI startup(): 221     655399   b9p09      {29}
+[0] MPI startup(): 222     655400   b9p09      {30}
+[0] MPI startup(): 223     655401   b9p09      {31}
+[0] MPI startup(): 224     655402   b9p09      {56}
+[0] MPI startup(): 225     655403   b9p09      {57}
+[0] MPI startup(): 226     655404   b9p09      {58}
+[0] MPI startup(): 227     655405   b9p09      {59}
+[0] MPI startup(): 228     655406   b9p09      {60}
+[0] MPI startup(): 229     655407   b9p09      {61}
+[0] MPI startup(): 230     655408   b9p09      {62}
+[0] MPI startup(): 231     655409   b9p09      {63}
+[0] MPI startup(): 232     655410   b9p09      {64}
+[0] MPI startup(): 233     655411   b9p09      {65}
+[0] MPI startup(): 234     655412   b9p09      {66}
+[0] MPI startup(): 235     655413   b9p09      {67}
+[0] MPI startup(): 236     655414   b9p09      {68}
+[0] MPI startup(): 237     655415   b9p09      {69}
+[0] MPI startup(): 238     655416   b9p09      {70}
+[0] MPI startup(): 239     655417   b9p09      {71}
+[0] MPI startup(): 240     655418   b9p09      {72}
+[0] MPI startup(): 241     655419   b9p09      {73}
+[0] MPI startup(): 242     655420   b9p09      {74}
+[0] MPI startup(): 243     655421   b9p09      {75}
+[0] MPI startup(): 244     655422   b9p09      {76}
+[0] MPI startup(): 245     655423   b9p09      {77}
+[0] MPI startup(): 246     655424   b9p09      {78}
+[0] MPI startup(): 247     655425   b9p09      {79}
+[0] MPI startup(): 248     655426   b9p09      {80}
+[0] MPI startup(): 249     655427   b9p09      {81}
+[0] MPI startup(): 250     655428   b9p09      {82}
+[0] MPI startup(): 251     655429   b9p09      {83}
+[0] MPI startup(): 252     655430   b9p09      {84}
+[0] MPI startup(): 253     655431   b9p09      {85}
+[0] MPI startup(): 254     655432   b9p09      {86}
+[0] MPI startup(): 255     655433   b9p09      {87}
+[0] MPI startup(): 256     2186278  b9p13      {0}
+[0] MPI startup(): 257     2186279  b9p13      {1}
+[0] MPI startup(): 258     2186280  b9p13      {2}
+[0] MPI startup(): 259     2186281  b9p13      {3}
+[0] MPI startup(): 260     2186282  b9p13      {4}
+[0] MPI startup(): 261     2186283  b9p13      {5}
+[0] MPI startup(): 262     2186284  b9p13      {6}
+[0] MPI startup(): 263     2186285  b9p13      {7}
+[0] MPI startup(): 264     2186286  b9p13      {8}
+[0] MPI startup(): 265     2186287  b9p13      {9}
+[0] MPI startup(): 266     2186288  b9p13      {10}
+[0] MPI startup(): 267     2186289  b9p13      {11}
+[0] MPI startup(): 268     2186290  b9p13      {12}
+[0] MPI startup(): 269     2186291  b9p13      {13}
+[0] MPI startup(): 270     2186292  b9p13      {14}
+[0] MPI startup(): 271     2186293  b9p13      {15}
+[0] MPI startup(): 272     2186294  b9p13      {16}
+[0] MPI startup(): 273     2186295  b9p13      {17}
+[0] MPI startup(): 274     2186296  b9p13      {18}
+[0] MPI startup(): 275     2186297  b9p13      {19}
+[0] MPI startup(): 276     2186298  b9p13      {20}
+[0] MPI startup(): 277     2186299  b9p13      {21}
+[0] MPI startup(): 278     2186300  b9p13      {22}
+[0] MPI startup(): 279     2186301  b9p13      {23}
+[0] MPI startup(): 280     2186302  b9p13      {24}
+[0] MPI startup(): 281     2186303  b9p13      {25}
+[0] MPI startup(): 282     2186304  b9p13      {26}
+[0] MPI startup(): 283     2186305  b9p13      {27}
+[0] MPI startup(): 284     2186306  b9p13      {28}
+[0] MPI startup(): 285     2186307  b9p13      {29}
+[0] MPI startup(): 286     2186308  b9p13      {30}
+[0] MPI startup(): 287     2186309  b9p13      {31}
+[0] MPI startup(): 288     2186310  b9p13      {56}
+[0] MPI startup(): 289     2186311  b9p13      {57}
+[0] MPI startup(): 290     2186312  b9p13      {58}
+[0] MPI startup(): 291     2186313  b9p13      {59}
+[0] MPI startup(): 292     2186314  b9p13      {60}
+[0] MPI startup(): 293     2186315  b9p13      {61}
+[0] MPI startup(): 294     2186316  b9p13      {62}
+[0] MPI startup(): 295     2186317  b9p13      {63}
+[0] MPI startup(): 296     2186318  b9p13      {64}
+[0] MPI startup(): 297     2186319  b9p13      {65}
+[0] MPI startup(): 298     2186320  b9p13      {66}
+[0] MPI startup(): 299     2186321  b9p13      {67}
+[0] MPI startup(): 300     2186322  b9p13      {68}
+[0] MPI startup(): 301     2186323  b9p13      {69}
+[0] MPI startup(): 302     2186324  b9p13      {70}
+[0] MPI startup(): 303     2186325  b9p13      {71}
+[0] MPI startup(): 304     2186326  b9p13      {72}
+[0] MPI startup(): 305     2186327  b9p13      {73}
+[0] MPI startup(): 306     2186328  b9p13      {74}
+[0] MPI startup(): 307     2186329  b9p13      {75}
+[0] MPI startup(): 308     2186330  b9p13      {76}
+[0] MPI startup(): 309     2186331  b9p13      {77}
+[0] MPI startup(): 310     2186332  b9p13      {78}
+[0] MPI startup(): 311     2186333  b9p13      {79}
+[0] MPI startup(): 312     2186334  b9p13      {80}
+[0] MPI startup(): 313     2186335  b9p13      {81}
+[0] MPI startup(): 314     2186336  b9p13      {82}
+[0] MPI startup(): 315     2186337  b9p13      {83}
+[0] MPI startup(): 316     2186338  b9p13      {84}
+[0] MPI startup(): 317     2186339  b9p13      {85}
+[0] MPI startup(): 318     2186340  b9p13      {86}
+[0] MPI startup(): 319     2186341  b9p13      {87}
+[0] MPI startup(): 320     2350345  b9p14      {0}
+[0] MPI startup(): 321     2350346  b9p14      {1}
+[0] MPI startup(): 322     2350347  b9p14      {2}
+[0] MPI startup(): 323     2350348  b9p14      {3}
+[0] MPI startup(): 324     2350349  b9p14      {4}
+[0] MPI startup(): 325     2350350  b9p14      {5}
+[0] MPI startup(): 326     2350351  b9p14      {6}
+[0] MPI startup(): 327     2350352  b9p14      {7}
+[0] MPI startup(): 328     2350353  b9p14      {8}
+[0] MPI startup(): 329     2350354  b9p14      {9}
+[0] MPI startup(): 330     2350355  b9p14      {10}
+[0] MPI startup(): 331     2350356  b9p14      {11}
+[0] MPI startup(): 332     2350357  b9p14      {12}
+[0] MPI startup(): 333     2350358  b9p14      {13}
+[0] MPI startup(): 334     2350359  b9p14      {14}
+[0] MPI startup(): 335     2350360  b9p14      {15}
+[0] MPI startup(): 336     2350361  b9p14      {16}
+[0] MPI startup(): 337     2350362  b9p14      {17}
+[0] MPI startup(): 338     2350363  b9p14      {18}
+[0] MPI startup(): 339     2350364  b9p14      {19}
+[0] MPI startup(): 340     2350365  b9p14      {20}
+[0] MPI startup(): 341     2350366  b9p14      {21}
+[0] MPI startup(): 342     2350367  b9p14      {22}
+[0] MPI startup(): 343     2350368  b9p14      {23}
+[0] MPI startup(): 344     2350369  b9p14      {24}
+[0] MPI startup(): 345     2350370  b9p14      {25}
+[0] MPI startup(): 346     2350371  b9p14      {26}
+[0] MPI startup(): 347     2350372  b9p14      {27}
+[0] MPI startup(): 348     2350373  b9p14      {28}
+[0] MPI startup(): 349     2350374  b9p14      {29}
+[0] MPI startup(): 350     2350375  b9p14      {30}
+[0] MPI startup(): 351     2350376  b9p14      {31}
+[0] MPI startup(): 352     2350377  b9p14      {56}
+[0] MPI startup(): 353     2350378  b9p14      {57}
+[0] MPI startup(): 354     2350379  b9p14      {58}
+[0] MPI startup(): 355     2350380  b9p14      {59}
+[0] MPI startup(): 356     2350381  b9p14      {60}
+[0] MPI startup(): 357     2350382  b9p14      {61}
+[0] MPI startup(): 358     2350383  b9p14      {62}
+[0] MPI startup(): 359     2350384  b9p14      {63}
+[0] MPI startup(): 360     2350385  b9p14      {64}
+[0] MPI startup(): 361     2350386  b9p14      {65}
+[0] MPI startup(): 362     2350387  b9p14      {66}
+[0] MPI startup(): 363     2350388  b9p14      {67}
+[0] MPI startup(): 364     2350389  b9p14      {68}
+[0] MPI startup(): 365     2350390  b9p14      {69}
+[0] MPI startup(): 366     2350391  b9p14      {70}
+[0] MPI startup(): 367     2350392  b9p14      {71}
+[0] MPI startup(): 368     2350393  b9p14      {72}
+[0] MPI startup(): 369     2350394  b9p14      {73}
+[0] MPI startup(): 370     2350395  b9p14      {74}
+[0] MPI startup(): 371     2350396  b9p14      {75}
+[0] MPI startup(): 372     2350397  b9p14      {76}
+[0] MPI startup(): 373     2350398  b9p14      {77}
+[0] MPI startup(): 374     2350399  b9p14      {78}
+[0] MPI startup(): 375     2350400  b9p14      {79}
+[0] MPI startup(): 376     2350401  b9p14      {80}
+[0] MPI startup(): 377     2350402  b9p14      {81}
+[0] MPI startup(): 378     2350403  b9p14      {82}
+[0] MPI startup(): 379     2350404  b9p14      {83}
+[0] MPI startup(): 380     2350405  b9p14      {84}
+[0] MPI startup(): 381     2350406  b9p14      {85}
+[0] MPI startup(): 382     2350407  b9p14      {86}
+[0] MPI startup(): 383     2350408  b9p14      {87}
+[0] MPI startup(): 384     2495605  b9p15      {0}
+[0] MPI startup(): 385     2495606  b9p15      {1}
+[0] MPI startup(): 386     2495607  b9p15      {2}
+[0] MPI startup(): 387     2495608  b9p15      {3}
+[0] MPI startup(): 388     2495609  b9p15      {4}
+[0] MPI startup(): 389     2495610  b9p15      {5}
+[0] MPI startup(): 390     2495611  b9p15      {6}
+[0] MPI startup(): 391     2495612  b9p15      {7}
+[0] MPI startup(): 392     2495613  b9p15      {8}
+[0] MPI startup(): 393     2495614  b9p15      {9}
+[0] MPI startup(): 394     2495615  b9p15      {10}
+[0] MPI startup(): 395     2495616  b9p15      {11}
+[0] MPI startup(): 396     2495617  b9p15      {12}
+[0] MPI startup(): 397     2495618  b9p15      {13}
+[0] MPI startup(): 398     2495619  b9p15      {14}
+[0] MPI startup(): 399     2495620  b9p15      {15}
+[0] MPI startup(): 400     2495621  b9p15      {16}
+[0] MPI startup(): 401     2495622  b9p15      {17}
+[0] MPI startup(): 402     2495623  b9p15      {18}
+[0] MPI startup(): 403     2495624  b9p15      {19}
+[0] MPI startup(): 404     2495625  b9p15      {20}
+[0] MPI startup(): 405     2495626  b9p15      {21}
+[0] MPI startup(): 406     2495627  b9p15      {22}
+[0] MPI startup(): 407     2495628  b9p15      {23}
+[0] MPI startup(): 408     2495629  b9p15      {24}
+[0] MPI startup(): 409     2495630  b9p15      {25}
+[0] MPI startup(): 410     2495631  b9p15      {26}
+[0] MPI startup(): 411     2495632  b9p15      {27}
+[0] MPI startup(): 412     2495633  b9p15      {28}
+[0] MPI startup(): 413     2495634  b9p15      {29}
+[0] MPI startup(): 414     2495635  b9p15      {30}
+[0] MPI startup(): 415     2495636  b9p15      {31}
+[0] MPI startup(): 416     2495637  b9p15      {56}
+[0] MPI startup(): 417     2495638  b9p15      {57}
+[0] MPI startup(): 418     2495639  b9p15      {58}
+[0] MPI startup(): 419     2495640  b9p15      {59}
+[0] MPI startup(): 420     2495641  b9p15      {60}
+[0] MPI startup(): 421     2495642  b9p15      {61}
+[0] MPI startup(): 422     2495643  b9p15      {62}
+[0] MPI startup(): 423     2495644  b9p15      {63}
+[0] MPI startup(): 424     2495645  b9p15      {64}
+[0] MPI startup(): 425     2495646  b9p15      {65}
+[0] MPI startup(): 426     2495647  b9p15      {66}
+[0] MPI startup(): 427     2495648  b9p15      {67}
+[0] MPI startup(): 428     2495649  b9p15      {68}
+[0] MPI startup(): 429     2495650  b9p15      {69}
+[0] MPI startup(): 430     2495651  b9p15      {70}
+[0] MPI startup(): 431     2495652  b9p15      {71}
+[0] MPI startup(): 432     2495653  b9p15      {72}
+[0] MPI startup(): 433     2495654  b9p15      {73}
+[0] MPI startup(): 434     2495655  b9p15      {74}
+[0] MPI startup(): 435     2495656  b9p15      {75}
+[0] MPI startup(): 436     2495657  b9p15      {76}
+[0] MPI startup(): 437     2495658  b9p15      {77}
+[0] MPI startup(): 438     2495659  b9p15      {78}
+[0] MPI startup(): 439     2495660  b9p15      {79}
+[0] MPI startup(): 440     2495661  b9p15      {80}
+[0] MPI startup(): 441     2495662  b9p15      {81}
+[0] MPI startup(): 442     2495663  b9p15      {82}
+[0] MPI startup(): 443     2495664  b9p15      {83}
+[0] MPI startup(): 444     2495665  b9p15      {84}
+[0] MPI startup(): 445     2495666  b9p15      {85}
+[0] MPI startup(): 446     2495667  b9p15      {86}
+[0] MPI startup(): 447     2495668  b9p15      {87}
+[0] MPI startup(): 448     1674108  b9p16      {0}
+[0] MPI startup(): 449     1674109  b9p16      {1}
+[0] MPI startup(): 450     1674110  b9p16      {2}
+[0] MPI startup(): 451     1674111  b9p16      {3}
+[0] MPI startup(): 452     1674112  b9p16      {4}
+[0] MPI startup(): 453     1674113  b9p16      {5}
+[0] MPI startup(): 454     1674114  b9p16      {6}
+[0] MPI startup(): 455     1674115  b9p16      {7}
+[0] MPI startup(): 456     1674116  b9p16      {8}
+[0] MPI startup(): 457     1674117  b9p16      {9}
+[0] MPI startup(): 458     1674118  b9p16      {10}
+[0] MPI startup(): 459     1674119  b9p16      {11}
+[0] MPI startup(): 460     1674120  b9p16      {12}
+[0] MPI startup(): 461     1674121  b9p16      {13}
+[0] MPI startup(): 462     1674122  b9p16      {14}
+[0] MPI startup(): 463     1674123  b9p16      {15}
+[0] MPI startup(): 464     1674124  b9p16      {16}
+[0] MPI startup(): 465     1674125  b9p16      {17}
+[0] MPI startup(): 466     1674126  b9p16      {18}
+[0] MPI startup(): 467     1674127  b9p16      {19}
+[0] MPI startup(): 468     1674128  b9p16      {20}
+[0] MPI startup(): 469     1674129  b9p16      {21}
+[0] MPI startup(): 470     1674130  b9p16      {22}
+[0] MPI startup(): 471     1674131  b9p16      {23}
+[0] MPI startup(): 472     1674132  b9p16      {24}
+[0] MPI startup(): 473     1674133  b9p16      {25}
+[0] MPI startup(): 474     1674134  b9p16      {26}
+[0] MPI startup(): 475     1674135  b9p16      {27}
+[0] MPI startup(): 476     1674136  b9p16      {28}
+[0] MPI startup(): 477     1674137  b9p16      {29}
+[0] MPI startup(): 478     1674138  b9p16      {30}
+[0] MPI startup(): 479     1674139  b9p16      {31}
+[0] MPI startup(): 480     1674140  b9p16      {56}
+[0] MPI startup(): 481     1674141  b9p16      {57}
+[0] MPI startup(): 482     1674142  b9p16      {58}
+[0] MPI startup(): 483     1674143  b9p16      {59}
+[0] MPI startup(): 484     1674144  b9p16      {60}
+[0] MPI startup(): 485     1674145  b9p16      {61}
+[0] MPI startup(): 486     1674146  b9p16      {62}
+[0] MPI startup(): 487     1674147  b9p16      {63}
+[0] MPI startup(): 488     1674148  b9p16      {64}
+[0] MPI startup(): 489     1674149  b9p16      {65}
+[0] MPI startup(): 490     1674150  b9p16      {66}
+[0] MPI startup(): 491     1674151  b9p16      {67}
+[0] MPI startup(): 492     1674152  b9p16      {68}
+[0] MPI startup(): 493     1674153  b9p16      {69}
+[0] MPI startup(): 494     1674154  b9p16      {70}
+[0] MPI startup(): 495     1674155  b9p16      {71}
+[0] MPI startup(): 496     1674156  b9p16      {72}
+[0] MPI startup(): 497     1674157  b9p16      {73}
+[0] MPI startup(): 498     1674158  b9p16      {74}
+[0] MPI startup(): 499     1674159  b9p16      {75}
+[0] MPI startup(): 500     1674160  b9p16      {76}
+[0] MPI startup(): 501     1674161  b9p16      {77}
+[0] MPI startup(): 502     1674162  b9p16      {78}
+[0] MPI startup(): 503     1674163  b9p16      {79}
+[0] MPI startup(): 504     1674164  b9p16      {80}
+[0] MPI startup(): 505     1674165  b9p16      {81}
+[0] MPI startup(): 506     1674166  b9p16      {82}
+[0] MPI startup(): 507     1674167  b9p16      {83}
+[0] MPI startup(): 508     1674168  b9p16      {84}
+[0] MPI startup(): 509     1674169  b9p16      {85}
+[0] MPI startup(): 510     1674170  b9p16      {86}
+[0] MPI startup(): 511     1674171  b9p16      {87}
+[0] MPI startup(): I_MPI_ROOT=/opt/apps/intel/2025.3.2/mpi/latest
+[0] MPI startup(): ONEAPI_ROOT=/opt/apps/intel/2025.3.2
+[0] MPI startup(): I_MPI_MPIRUN=mpirun
+[0] MPI startup(): I_MPI_BIND_WIN_ALLOCATE=localalloc
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS=--external-launcher
+[0] MPI startup(): I_MPI_HYDRA_TOPOLIB=ipl2
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP=slurm
+[0] MPI startup(): I_MPI_PIN_DOMAIN_SIZE=1
+[0] MPI startup(): I_MPI_PIN_DOMAIN_SIZE=1
+[0] MPI startup(): I_MPI_RETURN_WIN_MEM_NUMA=0
+[0] MPI startup(): I_MPI_PIN_PROCESSOR_LIST=0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87
+[0] MPI startup(): I_MPI_PIN_ORDER=compact
+[0] MPI startup(): I_MPI_INTERNAL_MEM_POLICY=default
+[0] MPI startup(): I_MPI_FABRICS=ofi
+[0] MPI startup(): I_MPI_DEBUG=5

@@ -1,0 +1,808 @@
+{
+  "schema_version": 1,
+  "cluster": "turgalium",
+  "node": "b9p11",
+  "role": "node",
+  "partition": "cpu112c",
+  "collected_at": "2026-09-25T22:01:24Z",
+  "run_id": "disc-turgalium-20260925T220118Z-3871628",
+  "collector": {
+    "wrapper": "<home>/instrumentation/cmdlog.sh",
+    "dry_run": false
+  },
+  "fingerprint": "cfafa557da4cfca730463db0c773c4c1e437e1cca679680aba1aed1f73769f8d",
+  "fingerprint_attrs": [
+    "cpu_model",
+    "sockets",
+    "cores_per_socket",
+    "threads_per_core",
+    "logical_cpus_online",
+    "microcode",
+    "scaling_governor",
+    "no_turbo",
+    "freq_min_khz",
+    "freq_max_khz",
+    "numa_nodes",
+    "memory_total_kb",
+    "dimm_population",
+    "thp_enabled",
+    "numa_balancing",
+    "os",
+    "kernel",
+    "bios_version",
+    "bios_date",
+    "package_hash",
+    "hca_model",
+    "hca_firmware",
+    "port_state",
+    "port_rate",
+    "ofed_version",
+    "ucx_version",
+    "ucx_transports",
+    "libfabric_version",
+    "libfabric_providers",
+    "gcc_version",
+    "icx_version",
+    "openmpi_version",
+    "intelmpi_version",
+    "gpu_list",
+    "gpu_driver_cuda",
+    "gpu_topology",
+    "gpu_settings"
+  ],
+  "fingerprint_values": {
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8480+",
+    "sockets": 2,
+    "cores_per_socket": 56,
+    "threads_per_core": 1,
+    "logical_cpus_online": 112,
+    "microcode": "0x2b000639",
+    "scaling_governor": [
+      "performance"
+    ],
+    "no_turbo": 0,
+    "freq_min_khz": 800000,
+    "freq_max_khz": 3800000,
+    "numa_nodes": 2,
+    "memory_total_kb": 1056473688,
+    "dimm_population": null,
+    "thp_enabled": "always",
+    "numa_balancing": 1,
+    "os": "rocky-9.5",
+    "kernel": "5.14.0-611.34.1.el9_7.x86_64",
+    "bios_version": "R14",
+    "bios_date": "04/21/2025",
+    "package_hash": {
+      "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+      "count": 890
+    },
+    "hca_model": "MT4123",
+    "hca_firmware": [
+      "20.37.1014"
+    ],
+    "port_state": [
+      "Active"
+    ],
+    "port_rate": [
+      200
+    ],
+    "ofed_version": "OFED-internal-25.10-1.2.8:",
+    "ucx_version": "# Library version: 1.20.0",
+    "ucx_transports": [
+      "cma",
+      "dc_mlx5",
+      "knem",
+      "posix",
+      "rc_mlx5",
+      "rc_verbs",
+      "self",
+      "sysv",
+      "tcp",
+      "ud_mlx5",
+      "ud_verbs",
+      "xpmem"
+    ],
+    "libfabric_version": "fi_info: 1.18.0",
+    "libfabric_providers": [
+      "off_coll:",
+      "ofi_hook_debug:",
+      "ofi_hook_dmabuf_peer_mem:",
+      "ofi_hook_hmem:",
+      "ofi_hook_noop:",
+      "ofi_hook_perf:",
+      "ofi_hook_trace:",
+      "ofi_mrail:",
+      "ofi_rxd:",
+      "ofi_rxm:",
+      "opx:",
+      "psm2:",
+      "psm3:",
+      "shm:",
+      "sockets:",
+      "tcp:",
+      "udp:",
+      "usnic:",
+      "verbs:",
+      "version: 1.0",
+      "version: 118.0",
+      "version: 304.1010"
+    ],
+    "gcc_version": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)",
+    "icx_version": null,
+    "openmpi_version": null,
+    "intelmpi_version": null,
+    "gpu_list": null,
+    "gpu_driver_cuda": null,
+    "gpu_topology": null,
+    "gpu_settings": null
+  },
+  "attributes": {
+    "cpu_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "Intel(R) Xeon(R) Platinum 8480+",
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc.out"
+      }
+    },
+    "sockets": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p11"
+        ],
+        "out_hash": "b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e.out"
+      }
+    },
+    "cores_per_socket": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 56,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 56,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p11"
+        ],
+        "out_hash": "b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e.out"
+      }
+    },
+    "threads_per_core": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p11"
+        ],
+        "out_hash": "b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e.out"
+      }
+    },
+    "logical_cpus_online": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 112,
+        "cmd": [
+          "nproc",
+          "--all"
+        ],
+        "out_hash": "f7dbab4769334b25f2b4c0606fef276da29bc7477cc15f51f0967a6e477e7c94",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/f7dbab4769334b25f2b4c0606fef276da29bc7477cc15f51f0967a6e477e7c94.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 112,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p11"
+        ],
+        "out_hash": "b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e.out"
+      }
+    },
+    "microcode": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "0x2b000639",
+        "cmd": [
+          "cat",
+          "/proc/cpuinfo"
+        ],
+        "out_hash": "49e6961448d7965bd26fcd1d590b4d0a039c9fcc740a70c2f8d0686dad169898",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/49e6961448d7965bd26fcd1d590b4d0a039c9fcc740a70c2f8d0686dad169898.out"
+      }
+    },
+    "scaling_governor": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "performance"
+        ],
+        "cmd": [
+          "bash",
+          "-c",
+          "grep -H . /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
+        ],
+        "out_hash": "bbc1cbfb493a3a9ca4f311c17f180e577e74cde958107c06bbf0c20e7ff9530e",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/bbc1cbfb493a3a9ca4f311c17f180e577e74cde958107c06bbf0c20e7ff9530e.out"
+      }
+    },
+    "no_turbo": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 0,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/intel_pstate/no_turbo"
+        ],
+        "out_hash": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa.out"
+      }
+    },
+    "freq_min_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 800000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq"
+        ],
+        "out_hash": "20906f772bf0b93e695828b6019fcd7284341cbe95ee2865a6e86b8e400551ed",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/20906f772bf0b93e695828b6019fcd7284341cbe95ee2865a6e86b8e400551ed.out"
+      }
+    },
+    "freq_max_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 3800000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq"
+        ],
+        "out_hash": "54eb4724ea802bde85274ac5e3d37a778219365aa36c15be3e0f81fcad1f75a1",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/54eb4724ea802bde85274ac5e3d37a778219365aa36c15be3e0f81fcad1f75a1.out"
+      }
+    },
+    "numa_nodes": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc.out"
+      }
+    },
+    "memory_total_kb": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1056473688,
+        "cmd": [
+          "cat",
+          "/proc/meminfo"
+        ],
+        "out_hash": "0d8f32a4c4e7e04b5cffc9c51d14c061d221d4e4dad65442e54513ce833c9660",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/0d8f32a4c4e7e04b5cffc9c51d14c061d221d4e4dad65442e54513ce833c9660.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 1024000000,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p11"
+        ],
+        "out_hash": "b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e.out"
+      }
+    },
+    "dimm_population": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "dmidecode_mem: exit 1"
+      }
+    },
+    "thp_enabled": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "always",
+        "cmd": [
+          "cat",
+          "/sys/kernel/mm/transparent_hugepage/enabled"
+        ],
+        "out_hash": "092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d.out"
+      }
+    },
+    "numa_balancing": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "cat",
+          "/proc/sys/kernel/numa_balancing"
+        ],
+        "out_hash": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865.out"
+      }
+    },
+    "os": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "rocky-9.5",
+        "cmd": [
+          "cat",
+          "/etc/os-release"
+        ],
+        "out_hash": "cdf4bbbd4451e30dfa6893e0550a27f2863d98bc611565a7af0202610754b972",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/cdf4bbbd4451e30dfa6893e0550a27f2863d98bc611565a7af0202610754b972.out"
+      }
+    },
+    "kernel": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "5.14.0-611.34.1.el9_7.x86_64",
+        "cmd": [
+          "uname",
+          "-r"
+        ],
+        "out_hash": "353653b514f1011efbd3cbd4dbdbf2a8e65c633b62e922649d3695cd5f7b0a68",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/353653b514f1011efbd3cbd4dbdbf2a8e65c633b62e922649d3695cd5f7b0a68.out"
+      }
+    },
+    "bios_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "R14",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_version"
+        ],
+        "out_hash": "266280d851572166626e34edbf4126d1d07a81bf509adfbc12083e3fbc442526",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/266280d851572166626e34edbf4126d1d07a81bf509adfbc12083e3fbc442526.out"
+      }
+    },
+    "bios_date": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "04/21/2025",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_date"
+        ],
+        "out_hash": "cf178c2f63ceafdfc1399eff66e0bab77601e85c674d2e387d546dfad93139ac",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/cf178c2f63ceafdfc1399eff66e0bab77601e85c674d2e387d546dfad93139ac.out"
+      }
+    },
+    "server_model": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "X440-E7 2U4N2S",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/product_name"
+        ],
+        "out_hash": "7754e783a0b7034f613c53065e6b327965bc69d910cd7d28acfb89be3d7b9431",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/7754e783a0b7034f613c53065e6b327965bc69d910cd7d28acfb89be3d7b9431.out"
+      }
+    },
+    "package_hash": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+          "count": 890
+        },
+        "cmd": [
+          "rpm",
+          "-qa",
+          "--qf",
+          "%{NAME}-%{VERSION}-%{RELEASE}\\n"
+        ],
+        "out_hash": "c0ac2d7dd54d790cd91aea05b76963af7434a901234dd898f8a47ec0a322d0f8",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/c0ac2d7dd54d790cd91aea05b76963af7434a901234dd898f8a47ec0a322d0f8.out"
+      }
+    },
+    "hca_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "MT4123",
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "821543a9164c10e03714319c200afd19de8a595dc3c656d32e170cd9c849546f",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/821543a9164c10e03714319c200afd19de8a595dc3c656d32e170cd9c849546f.out"
+      }
+    },
+    "hca_firmware": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "20.37.1014"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "821543a9164c10e03714319c200afd19de8a595dc3c656d32e170cd9c849546f",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/821543a9164c10e03714319c200afd19de8a595dc3c656d32e170cd9c849546f.out"
+      }
+    },
+    "port_state": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "Active"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "821543a9164c10e03714319c200afd19de8a595dc3c656d32e170cd9c849546f",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/821543a9164c10e03714319c200afd19de8a595dc3c656d32e170cd9c849546f.out"
+      }
+    },
+    "port_rate": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          200
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "821543a9164c10e03714319c200afd19de8a595dc3c656d32e170cd9c849546f",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/821543a9164c10e03714319c200afd19de8a595dc3c656d32e170cd9c849546f.out"
+      }
+    },
+    "ofed_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "OFED-internal-25.10-1.2.8:",
+        "cmd": [
+          "ofed_info",
+          "-s"
+        ],
+        "out_hash": "20ba5052018928ea8762a1f162d72ab319f8330446b41a2a732d53c4f467b0aa",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/20ba5052018928ea8762a1f162d72ab319f8330446b41a2a732d53c4f467b0aa.out"
+      }
+    },
+    "ucx_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "# Library version: 1.20.0",
+        "cmd": [
+          "ucx_info",
+          "-v"
+        ],
+        "out_hash": "d1db0a26261881f2392a567de0b5c07c3c185b8bd5f95355869c56fd82e3385a",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/d1db0a26261881f2392a567de0b5c07c3c185b8bd5f95355869c56fd82e3385a.out"
+      }
+    },
+    "ucx_transports": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "cma",
+          "dc_mlx5",
+          "knem",
+          "posix",
+          "rc_mlx5",
+          "rc_verbs",
+          "self",
+          "sysv",
+          "tcp",
+          "ud_mlx5",
+          "ud_verbs",
+          "xpmem"
+        ],
+        "cmd": [
+          "ucx_info",
+          "-d"
+        ],
+        "out_hash": "6fdd8b6998f006e4db2cb3653dca019f52dcb60b87775bd7d8047be012bc4a03",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/6fdd8b6998f006e4db2cb3653dca019f52dcb60b87775bd7d8047be012bc4a03.out"
+      }
+    },
+    "libfabric_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "fi_info: 1.18.0",
+        "cmd": [
+          "fi_info",
+          "--version"
+        ],
+        "out_hash": "4e38ec6d420997cff4151247a9a8b4682eea71ee8c769f171b6fdcf3157c2357",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/4e38ec6d420997cff4151247a9a8b4682eea71ee8c769f171b6fdcf3157c2357.out"
+      }
+    },
+    "libfabric_providers": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "off_coll:",
+          "ofi_hook_debug:",
+          "ofi_hook_dmabuf_peer_mem:",
+          "ofi_hook_hmem:",
+          "ofi_hook_noop:",
+          "ofi_hook_perf:",
+          "ofi_hook_trace:",
+          "ofi_mrail:",
+          "ofi_rxd:",
+          "ofi_rxm:",
+          "opx:",
+          "psm2:",
+          "psm3:",
+          "shm:",
+          "sockets:",
+          "tcp:",
+          "udp:",
+          "usnic:",
+          "verbs:",
+          "version: 1.0",
+          "version: 118.0",
+          "version: 304.1010"
+        ],
+        "cmd": [
+          "fi_info",
+          "-l"
+        ],
+        "out_hash": "e46f0bae86c5d9214cb06306cd9a925315025be81ea680de12911ae41c3376b3",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/e46f0bae86c5d9214cb06306cd9a925315025be81ea680de12911ae41c3376b3.out"
+      }
+    },
+    "modules_avail": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "766906d7806c0bed14d26c0d6be18a1d772ece0654bc459ddce360638eabbdcf",
+          "count": 34
+        },
+        "cmd": [
+          "bash",
+          "-lc",
+          "module avail"
+        ],
+        "out_hash": "70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26.out"
+      }
+    },
+    "gcc_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)",
+        "cmd": [
+          "gcc",
+          "--version"
+        ],
+        "out_hash": "0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23.out"
+      }
+    },
+    "icx_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "icx_version: exit 127"
+      }
+    },
+    "openmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpirun_version: exit 127; ompi_info_version: exit 127"
+      }
+    },
+    "intelmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpiexec_version: exit 127"
+      }
+    },
+    "mpi_cuda_aware": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "ompi_info_parsable: exit 127"
+      }
+    },
+    "cmmse_stack": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "module_avail: sin dato"
+      }
+    },
+    "slurm_features": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": [
+          "1TB_RAM",
+          "3.80GHz",
+          "8084+",
+          "CPU_Sapphire_Rapids",
+          "Infiniband_HDR"
+        ],
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p11"
+        ],
+        "out_hash": "b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e.out"
+      }
+    },
+    "slurm_gres": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": "(null)",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p11"
+        ],
+        "out_hash": "b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e.out"
+      }
+    },
+    "lustre_version": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "lfs 2.17.0",
+        "cmd": [
+          "lfs",
+          "--version"
+        ],
+        "out_hash": "485d6665429178fe15167e8004ceea26216561719cf420b20ffce4b9fc03e797",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/485d6665429178fe15167e8004ceea26216561719cf420b20ffce4b9fc03e797.out"
+      }
+    },
+    "mounts": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "TARGET    SOURCE                                            FSTYPE OPTIONS\n/opt/apps <ip>@o2ib:<ip>@o2ib:/cetafs2/apps  lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose\n/ws       <ip>@o2ib:<ip>@o2ib:/cetafs2/ws    lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose\n/home     <ip>@o2ib:<ip>@o2ib:/cetafs2/homes lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose",
+        "cmd": [
+          "findmnt",
+          "-t",
+          "lustre,nfs,gpfs"
+        ],
+        "out_hash": "5fbbbb258ed5ba00acd8f75752634e8f4c18387e06c136a89b9620a0f1ff8181",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/5fbbbb258ed5ba00acd8f75752634e8f4c18387e06c136a89b9620a0f1ff8181.out"
+      }
+    },
+    "lustre_errors": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "[Thu Apr 30 21:07:42 2026] Lustre: Lustre: Build Version: 2.17.0\n[Thu Apr 30 21:07:45 2026] Lustre: Mounted cetafs2-client\n[Thu Apr 30 21:07:45 2026] Lustre: Skipped 2 previous similar messages\n[Mon Jun  1 09:19:58 2026] Lustre: 43695:0:(client.c:2472:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1780297739/real 1780297739]  req@00000000537467da x1863969756713216/t0(0) o101->cetafs2-MDT0000-mdc-ff403bed95275800@<ip>@o2ib:12/10 lens 576/1152 e 9 to 1 dl 1780298344 ref 2 fl Rpc:XQr/600/ffffffff rc 0/-1 job:'' uid:0 gid:0 projid:0\n[Mon Jun  1 09:19:58 2026] Lustre: cetafs2-MDT0000-mdc-ff403bed95275800: Connection to cetafs2-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Jun  1 09:19:58 2026] Lustre: cetafs2-MDT0000-mdc-ff403bed95275800: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Sat Aug 29 01:28:28 2026] LustreError: 3489734:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 01:28:34 2026] LustreError: 3489732:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 01:28:34 2026] LustreError: 3489732:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sat Aug 29 01:29:09 2026] LustreError: 3489732:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 01:29:09 2026] LustreError: 3489732:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Sat Aug 29 01:31:16 2026] LustreError: 3489745:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 01:31:16 2026] LustreError: 3489745:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sat Aug 29 01:31:30 2026] LustreError: 3989114:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 01:31:30 2026] LustreError: 3989114:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sat Aug 29 01:31:40 2026] LustreError: 3957286:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 01:31:40 2026] LustreError: 3957286:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sat Aug 29 22:12:08 2026] LustreError: 3489703:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 22:12:08 2026] LustreError: 3489703:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Mon Aug 31 14:00:32 2026] Lustre: cetafs2-OST0006-osc-ff403bed95275800: Connection to cetafs2-OST0006 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Aug 31 14:00:32 2026] Lustre: Skipped 1 previous similar message\n[Mon Aug 31 14:10:32 2026]  cl_sync_file_range+0x2a8/0x370 [lustre]\n[Mon Aug 31 14:10:32 2026]  ll_writepages+0x1d8/0x290 [lustre]",
+        "cmd": [
+          "bash",
+          "-c",
+          "dmesg -T | grep -iE 'lustre|LustreError'"
+        ],
+        "out_hash": "466de508f04e6776f8c26a2afb1c6b3cc9e4fa3b989b3089add1c818a17fbd9a",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/466de508f04e6776f8c26a2afb1c6b3cc9e4fa3b989b3089add1c818a17fbd9a.out"
+      }
+    },
+    "gpu_list": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_L: exit 127"
+      },
+      "declared": {
+        "observable": true,
+        "value": "(null)",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p11"
+        ],
+        "out_hash": "b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/b1bca6a0d085482888890a433db66595a906a80972c2af850f8790cb90922d5e.out"
+      }
+    },
+    "gpu_driver_cuda": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi: exit 127"
+      }
+    },
+    "gpu_topology": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_topo: exit 127"
+      }
+    },
+    "gpu_settings": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_q: exit 127"
+      }
+    }
+  }
+}

@@ -1,0 +1,799 @@
+{
+  "schema_version": 1,
+  "cluster": "turgalium",
+  "node": "acp04",
+  "role": "node",
+  "partition": "volta",
+  "collected_at": "2026-09-28T15:12:57Z",
+  "run_id": "disc-turgalium-20260925T220239Z-3871861",
+  "collector": {
+    "wrapper": "<home>/instrumentation/cmdlog.sh",
+    "dry_run": false
+  },
+  "fingerprint": "0db7d5acf4e6e03b9a45c86b75bba800dcfffd6881cd68578b0a23d404d4cb1b",
+  "fingerprint_attrs": [
+    "cpu_model",
+    "sockets",
+    "cores_per_socket",
+    "threads_per_core",
+    "logical_cpus_online",
+    "microcode",
+    "scaling_governor",
+    "no_turbo",
+    "freq_min_khz",
+    "freq_max_khz",
+    "numa_nodes",
+    "memory_total_kb",
+    "dimm_population",
+    "thp_enabled",
+    "numa_balancing",
+    "os",
+    "kernel",
+    "bios_version",
+    "bios_date",
+    "package_hash",
+    "hca_model",
+    "hca_firmware",
+    "port_state",
+    "port_rate",
+    "ofed_version",
+    "ucx_version",
+    "ucx_transports",
+    "libfabric_version",
+    "libfabric_providers",
+    "gcc_version",
+    "icx_version",
+    "openmpi_version",
+    "intelmpi_version",
+    "gpu_list",
+    "gpu_driver_cuda",
+    "gpu_topology",
+    "gpu_settings"
+  ],
+  "fingerprint_values": {
+    "cpu_model": "Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz",
+    "sockets": 2,
+    "cores_per_socket": 18,
+    "threads_per_core": 1,
+    "logical_cpus_online": 36,
+    "microcode": "0x500002c",
+    "scaling_governor": [
+      "performance"
+    ],
+    "no_turbo": 0,
+    "freq_min_khz": 1000000,
+    "freq_max_khz": 3900000,
+    "numa_nodes": 2,
+    "memory_total_kb": 791221400,
+    "dimm_population": null,
+    "thp_enabled": "always",
+    "numa_balancing": 1,
+    "os": "rocky-9.5",
+    "kernel": "5.14.0-611.30.1.el9_7.x86_64",
+    "bios_version": "3.2",
+    "bios_date": "11/07/2019",
+    "package_hash": {
+      "sha256": "545d08aaa5316eced84d446f9f70afbebbc737effc76be0b7ccd1425d9ac59da",
+      "count": 936
+    },
+    "hca_model": "MT4119",
+    "hca_firmware": [
+      "16.28.2006"
+    ],
+    "port_state": [
+      "Active"
+    ],
+    "port_rate": [
+      100
+    ],
+    "ofed_version": "OFED-internal-24.10-4.1.4:",
+    "ucx_version": "# Library version: 1.18.0",
+    "ucx_transports": [
+      "cma",
+      "dc_mlx5",
+      "posix",
+      "rc_mlx5",
+      "rc_verbs",
+      "self",
+      "sysv",
+      "tcp",
+      "ud_mlx5",
+      "ud_verbs"
+    ],
+    "libfabric_version": null,
+    "libfabric_providers": null,
+    "gcc_version": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+    "icx_version": null,
+    "openmpi_version": null,
+    "intelmpi_version": null,
+    "gpu_list": [
+      "GPU 0: Tesla V100-PCIE-32GB (UUID: GPU-c51ab99d-0508-f5b7-174e-9efc03086f8c)",
+      "GPU 1: Tesla V100-PCIE-32GB (UUID: GPU-7b89c2f7-2ca0-d78c-1f37-9f657dc3eb8a)"
+    ],
+    "gpu_driver_cuda": {
+      "driver": "580.126.16",
+      "cuda": "13.0"
+    },
+    "gpu_topology": "\u001b[4mGPU0\tGPU1\tNIC0\tNIC1\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m",
+    "gpu_settings": {
+      "ecc_current": "Disabled",
+      "max_clocks_mhz": {
+        "sm": 1380,
+        "memory": 877,
+        "graphics": 1380
+      }
+    }
+  },
+  "attributes": {
+    "cpu_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz",
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "393d734ecac9d381a40c1f6f4da2d0dcaa563d0d395eda70bd80eebd0b65d427",
+        "out_path": "<scratch>/discovery/volta/outputs/393d734ecac9d381a40c1f6f4da2d0dcaa563d0d395eda70bd80eebd0b65d427.out"
+      }
+    },
+    "sockets": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "393d734ecac9d381a40c1f6f4da2d0dcaa563d0d395eda70bd80eebd0b65d427",
+        "out_path": "<scratch>/discovery/volta/outputs/393d734ecac9d381a40c1f6f4da2d0dcaa563d0d395eda70bd80eebd0b65d427.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp04"
+        ],
+        "out_hash": "3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb",
+        "out_path": "<scratch>/discovery/volta/outputs/3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb.out"
+      }
+    },
+    "cores_per_socket": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 18,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "393d734ecac9d381a40c1f6f4da2d0dcaa563d0d395eda70bd80eebd0b65d427",
+        "out_path": "<scratch>/discovery/volta/outputs/393d734ecac9d381a40c1f6f4da2d0dcaa563d0d395eda70bd80eebd0b65d427.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 18,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp04"
+        ],
+        "out_hash": "3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb",
+        "out_path": "<scratch>/discovery/volta/outputs/3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb.out"
+      }
+    },
+    "threads_per_core": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "393d734ecac9d381a40c1f6f4da2d0dcaa563d0d395eda70bd80eebd0b65d427",
+        "out_path": "<scratch>/discovery/volta/outputs/393d734ecac9d381a40c1f6f4da2d0dcaa563d0d395eda70bd80eebd0b65d427.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp04"
+        ],
+        "out_hash": "3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb",
+        "out_path": "<scratch>/discovery/volta/outputs/3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb.out"
+      }
+    },
+    "logical_cpus_online": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 36,
+        "cmd": [
+          "nproc",
+          "--all"
+        ],
+        "out_hash": "a4b2c5db15348c29451e18b8307e5ef81625ea638e807935f39ceaa8d9ac7758",
+        "out_path": "<scratch>/discovery/volta/outputs/a4b2c5db15348c29451e18b8307e5ef81625ea638e807935f39ceaa8d9ac7758.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 36,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp04"
+        ],
+        "out_hash": "3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb",
+        "out_path": "<scratch>/discovery/volta/outputs/3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb.out"
+      }
+    },
+    "microcode": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "0x500002c",
+        "cmd": [
+          "cat",
+          "/proc/cpuinfo"
+        ],
+        "out_hash": "d281ce7cfcf467d3d4798a45193f1012bfdbb48c455ab2ee5356362e4c308c35",
+        "out_path": "<scratch>/discovery/volta/outputs/d281ce7cfcf467d3d4798a45193f1012bfdbb48c455ab2ee5356362e4c308c35.out"
+      }
+    },
+    "scaling_governor": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "performance"
+        ],
+        "cmd": [
+          "bash",
+          "-c",
+          "grep -H . /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
+        ],
+        "out_hash": "f92c0c6f71172c76e00bf6de359392ddea1c2b98a5ff5bc13917b0c76dd3a0ec",
+        "out_path": "<scratch>/discovery/volta/outputs/f92c0c6f71172c76e00bf6de359392ddea1c2b98a5ff5bc13917b0c76dd3a0ec.out"
+      }
+    },
+    "no_turbo": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 0,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/intel_pstate/no_turbo"
+        ],
+        "out_hash": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "out_path": "<scratch>/discovery/volta/outputs/9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa.out"
+      }
+    },
+    "freq_min_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1000000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq"
+        ],
+        "out_hash": "085c348f64a3b543e973a33749e90ba20847b99016a87e5228847597d61ce582",
+        "out_path": "<scratch>/discovery/volta/outputs/085c348f64a3b543e973a33749e90ba20847b99016a87e5228847597d61ce582.out"
+      }
+    },
+    "freq_max_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 3900000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq"
+        ],
+        "out_hash": "8daf7042b0f8dc94d5d9751d4de5a2744a4af0e852e1bcf35e593b2ac3c6c6ee",
+        "out_path": "<scratch>/discovery/volta/outputs/8daf7042b0f8dc94d5d9751d4de5a2744a4af0e852e1bcf35e593b2ac3c6c6ee.out"
+      }
+    },
+    "numa_nodes": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "393d734ecac9d381a40c1f6f4da2d0dcaa563d0d395eda70bd80eebd0b65d427",
+        "out_path": "<scratch>/discovery/volta/outputs/393d734ecac9d381a40c1f6f4da2d0dcaa563d0d395eda70bd80eebd0b65d427.out"
+      }
+    },
+    "memory_total_kb": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 791221400,
+        "cmd": [
+          "cat",
+          "/proc/meminfo"
+        ],
+        "out_hash": "7a36aaa267a0e0f79a5c1edf2725f3a2f0d7ad12f135ae445e56bd15be50a255",
+        "out_path": "<scratch>/discovery/volta/outputs/7a36aaa267a0e0f79a5c1edf2725f3a2f0d7ad12f135ae445e56bd15be50a255.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 790528000,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp04"
+        ],
+        "out_hash": "3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb",
+        "out_path": "<scratch>/discovery/volta/outputs/3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb.out"
+      }
+    },
+    "dimm_population": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "dmidecode_mem: exit 1"
+      }
+    },
+    "thp_enabled": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "always",
+        "cmd": [
+          "cat",
+          "/sys/kernel/mm/transparent_hugepage/enabled"
+        ],
+        "out_hash": "092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d",
+        "out_path": "<scratch>/discovery/volta/outputs/092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d.out"
+      }
+    },
+    "numa_balancing": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "cat",
+          "/proc/sys/kernel/numa_balancing"
+        ],
+        "out_hash": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+        "out_path": "<scratch>/discovery/volta/outputs/4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865.out"
+      }
+    },
+    "os": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "rocky-9.5",
+        "cmd": [
+          "cat",
+          "/etc/os-release"
+        ],
+        "out_hash": "cdf4bbbd4451e30dfa6893e0550a27f2863d98bc611565a7af0202610754b972",
+        "out_path": "<scratch>/discovery/volta/outputs/cdf4bbbd4451e30dfa6893e0550a27f2863d98bc611565a7af0202610754b972.out"
+      }
+    },
+    "kernel": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "5.14.0-611.30.1.el9_7.x86_64",
+        "cmd": [
+          "uname",
+          "-r"
+        ],
+        "out_hash": "e43cab5cd8a664440b64ee3367e40d5603602e58cfd09e515b669ea84e28eed1",
+        "out_path": "<scratch>/discovery/volta/outputs/e43cab5cd8a664440b64ee3367e40d5603602e58cfd09e515b669ea84e28eed1.out"
+      }
+    },
+    "bios_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "3.2",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_version"
+        ],
+        "out_hash": "81824dba6d71d2996baef3cc5f77008ebc34656848b502292277b3feffab5d82",
+        "out_path": "<scratch>/discovery/volta/outputs/81824dba6d71d2996baef3cc5f77008ebc34656848b502292277b3feffab5d82.out"
+      }
+    },
+    "bios_date": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "11/07/2019",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_date"
+        ],
+        "out_hash": "b497f135c3025811d7454b05ef0a3e9e1b0f4d1bf5b6ef0461cd6f79d23db5e6",
+        "out_path": "<scratch>/discovery/volta/outputs/b497f135c3025811d7454b05ef0a3e9e1b0f4d1bf5b6ef0461cd6f79d23db5e6.out"
+      }
+    },
+    "server_model": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "BullSequana X410-E5",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/product_name"
+        ],
+        "out_hash": "01eac7dd4b6e717562974668d838f6da50978e17261d6cadc3ce779f4590d330",
+        "out_path": "<scratch>/discovery/volta/outputs/01eac7dd4b6e717562974668d838f6da50978e17261d6cadc3ce779f4590d330.out"
+      }
+    },
+    "package_hash": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "545d08aaa5316eced84d446f9f70afbebbc737effc76be0b7ccd1425d9ac59da",
+          "count": 936
+        },
+        "cmd": [
+          "rpm",
+          "-qa",
+          "--qf",
+          "%{NAME}-%{VERSION}-%{RELEASE}\\n"
+        ],
+        "out_hash": "30a88c1241ce68d6196cddfde3b770f2c6ef4d0310811e9cd0f7a9968b135175",
+        "out_path": "<scratch>/discovery/volta/outputs/30a88c1241ce68d6196cddfde3b770f2c6ef4d0310811e9cd0f7a9968b135175.out"
+      }
+    },
+    "hca_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "MT4119",
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "edee64f97f806bf34ec495d201efc2550e5719af939381d543622c76dccd9842",
+        "out_path": "<scratch>/discovery/volta/outputs/edee64f97f806bf34ec495d201efc2550e5719af939381d543622c76dccd9842.out"
+      }
+    },
+    "hca_firmware": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "16.28.2006"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "edee64f97f806bf34ec495d201efc2550e5719af939381d543622c76dccd9842",
+        "out_path": "<scratch>/discovery/volta/outputs/edee64f97f806bf34ec495d201efc2550e5719af939381d543622c76dccd9842.out"
+      }
+    },
+    "port_state": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "Active"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "edee64f97f806bf34ec495d201efc2550e5719af939381d543622c76dccd9842",
+        "out_path": "<scratch>/discovery/volta/outputs/edee64f97f806bf34ec495d201efc2550e5719af939381d543622c76dccd9842.out"
+      }
+    },
+    "port_rate": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          100
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "edee64f97f806bf34ec495d201efc2550e5719af939381d543622c76dccd9842",
+        "out_path": "<scratch>/discovery/volta/outputs/edee64f97f806bf34ec495d201efc2550e5719af939381d543622c76dccd9842.out"
+      }
+    },
+    "ofed_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "OFED-internal-24.10-4.1.4:",
+        "cmd": [
+          "ofed_info",
+          "-s"
+        ],
+        "out_hash": "4392390707b072a658fc98b3c66b42d949b994f3b524ffd2744932f03f24fa4b",
+        "out_path": "<scratch>/discovery/volta/outputs/4392390707b072a658fc98b3c66b42d949b994f3b524ffd2744932f03f24fa4b.out"
+      }
+    },
+    "ucx_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "# Library version: 1.18.0",
+        "cmd": [
+          "ucx_info",
+          "-v"
+        ],
+        "out_hash": "8cad25904658bca545a2473da9a2dfac0701b7bd61f548b24a3375ba84817639",
+        "out_path": "<scratch>/discovery/volta/outputs/8cad25904658bca545a2473da9a2dfac0701b7bd61f548b24a3375ba84817639.out"
+      }
+    },
+    "ucx_transports": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "cma",
+          "dc_mlx5",
+          "posix",
+          "rc_mlx5",
+          "rc_verbs",
+          "self",
+          "sysv",
+          "tcp",
+          "ud_mlx5",
+          "ud_verbs"
+        ],
+        "cmd": [
+          "ucx_info",
+          "-d"
+        ],
+        "out_hash": "965910d5ed5f6d36909a6f5a7c3097c15acd9d48ecd24e15df353c8426dcf303",
+        "out_path": "<scratch>/discovery/volta/outputs/965910d5ed5f6d36909a6f5a7c3097c15acd9d48ecd24e15df353c8426dcf303.out"
+      }
+    },
+    "libfabric_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "fi_info_version: exit 127"
+      }
+    },
+    "libfabric_providers": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "fi_info_list: exit 127"
+      }
+    },
+    "modules_avail": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "766906d7806c0bed14d26c0d6be18a1d772ece0654bc459ddce360638eabbdcf",
+          "count": 34
+        },
+        "cmd": [
+          "bash",
+          "-lc",
+          "module avail"
+        ],
+        "out_hash": "70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26",
+        "out_path": "<scratch>/discovery/volta/outputs/70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26.out"
+      }
+    },
+    "gcc_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+        "cmd": [
+          "gcc",
+          "--version"
+        ],
+        "out_hash": "06916117479fa673e716e8ca91dad1b78e49ca5843d64cedfa68f12a9d82f112",
+        "out_path": "<scratch>/discovery/volta/outputs/06916117479fa673e716e8ca91dad1b78e49ca5843d64cedfa68f12a9d82f112.out"
+      }
+    },
+    "icx_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "icx_version: exit 127"
+      }
+    },
+    "openmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpirun_version: exit 127; ompi_info_version: exit 127"
+      }
+    },
+    "intelmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpiexec_version: exit 127"
+      }
+    },
+    "mpi_cuda_aware": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "ompi_info_parsable: exit 127"
+      }
+    },
+    "cmmse_stack": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "module_avail: sin dato"
+      }
+    },
+    "slurm_features": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": [
+          "2.60GHz",
+          "6240",
+          "768GB_RAM",
+          "CPU_CascadeLake",
+          "Infiniband_EDR",
+          "gpu_volta_V100"
+        ],
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp04"
+        ],
+        "out_hash": "3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb",
+        "out_path": "<scratch>/discovery/volta/outputs/3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb.out"
+      }
+    },
+    "slurm_gres": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": "gpu:volta:2",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp04"
+        ],
+        "out_hash": "3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb",
+        "out_path": "<scratch>/discovery/volta/outputs/3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb.out"
+      }
+    },
+    "lustre_version": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "lfs 2.17.0",
+        "cmd": [
+          "lfs",
+          "--version"
+        ],
+        "out_hash": "485d6665429178fe15167e8004ceea26216561719cf420b20ffce4b9fc03e797",
+        "out_path": "<scratch>/discovery/volta/outputs/485d6665429178fe15167e8004ceea26216561719cf420b20ffce4b9fc03e797.out"
+      }
+    },
+    "mounts": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "TARGET    SOURCE                                            FSTYPE OPTIONS\n/opt/apps <ip>@o2ib:<ip>@o2ib:/cetafs2/apps  lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose\n/home     <ip>@o2ib:<ip>@o2ib:/cetafs2/homes lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose\n/ws       <ip>@o2ib:<ip>@o2ib:/cetafs2/ws    lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose",
+        "cmd": [
+          "findmnt",
+          "-t",
+          "lustre,nfs,gpfs"
+        ],
+        "out_hash": "a2543cb54b2605902143f1823d73e22a4b806caafa5bd0b90c5225a50cacc53d",
+        "out_path": "<scratch>/discovery/volta/outputs/a2543cb54b2605902143f1823d73e22a4b806caafa5bd0b90c5225a50cacc53d.out"
+      }
+    },
+    "lustre_errors": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "[Thu Apr 30 20:51:10 2026] Lustre: Lustre: Build Version: 2.17.0\n[Thu Apr 30 20:51:14 2026] Lustre: Mounted cetafs2-client\n[Thu Apr 30 20:51:14 2026] Lustre: Skipped 2 previous similar messages\n[Mon May 11 19:26:59 2026] LustreError: 289837:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Tue May 12 02:18:29 2026] LustreError: 284725:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Tue May 12 02:18:29 2026] LustreError: 284725:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 13 previous similar messages\n[Mon Jun  1 09:19:18 2026] Lustre: 1927:0:(client.c:2472:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1780297739/real 1780297739]  req@000000005891f62d x1863933735219072/t0(0) o101->cetafs2-MDT0000-mdc-ffff960a8fd34000@<ip>@o2ib:12/10 lens 576/1152 e 16 to 1 dl 1780298344 ref 2 fl Rpc:XQr/600/ffffffff rc 0/-1 job:'' uid:0 gid:0 projid:0\n[Mon Jun  1 09:19:18 2026] Lustre: cetafs2-MDT0000-mdc-ffff960a8fd34000: Connection to cetafs2-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Jun  1 09:19:18 2026] Lustre: cetafs2-MDT0000-mdc-ffff960a8fd34000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Sat Jun 13 15:49:43 2026] LustreError: 1213236:0:(statahead.c:2408:start_statahead_thread()) cetafs2: invalid pattern 0X0.\n[Sat Jun 13 17:58:51 2026] LustreError: 1225834:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Sat Aug 22 22:59:29 2026]  ? ll_fault0+0x3b6/0x560 [lustre]\n[Sat Aug 22 22:59:29 2026]  ? ll_fault+0x428/0x520 [lustre]\n[Sat Aug 22 22:59:29 2026]  ? ll_fault0+0x3b6/0x560 [lustre]\n[Sat Aug 29 15:37:00 2026] LustreError: 2167170:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 15:37:00 2026] LustreError: 2167170:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 13 previous similar messages\n[Sat Aug 29 15:37:31 2026] LustreError: 2084875:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 15:37:31 2026] LustreError: 2084875:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Sat Aug 29 16:24:25 2026] LustreError: 2167451:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sat Aug 29 16:24:25 2026] LustreError: 2167451:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Sat Aug 29 18:12:48 2026] LustreError: 2168408:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Aug 30 19:30:26 2026] LustreError: 2167582:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Aug 30 19:30:55 2026] LustreError: 2172504:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Aug 30 19:30:55 2026] LustreError: 2172504:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Sun Aug 30 19:31:26 2026] LustreError: 2168411:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Aug 30 19:31:57 2026] LustreError: 2176926:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Aug 30 19:31:57 2026] LustreError: 2176926:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Sun Aug 30 19:33:08 2026] LustreError: 2025464:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Aug 30 19:34:12 2026] LustreError: 2177275:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Aug 30 19:34:12 2026] LustreError: 2177275:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Mon Sep 14 13:21:20 2026] LustreError: 2301889:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Sep 16 18:57:32 2026] LustreError: 2285119:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Sep 16 18:57:32 2026] LustreError: 2285119:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Sep 16 18:57:33 2026] LustreError: 2168373:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14",
+        "cmd": [
+          "bash",
+          "-c",
+          "dmesg -T | grep -iE 'lustre|LustreError'"
+        ],
+        "out_hash": "37cd962683bfd18eac9b6eb716511bd639bf6ba6e42e27da3b2a04b1cfaf8ff9",
+        "out_path": "<scratch>/discovery/volta/outputs/37cd962683bfd18eac9b6eb716511bd639bf6ba6e42e27da3b2a04b1cfaf8ff9.out"
+      }
+    },
+    "gpu_list": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "GPU 0: Tesla V100-PCIE-32GB (UUID: GPU-c51ab99d-0508-f5b7-174e-9efc03086f8c)",
+          "GPU 1: Tesla V100-PCIE-32GB (UUID: GPU-7b89c2f7-2ca0-d78c-1f37-9f657dc3eb8a)"
+        ],
+        "cmd": [
+          "nvidia-smi",
+          "-L"
+        ],
+        "out_hash": "4dd84d714f557f5a11de2d9189f1f5960674a25bbf6fc2eca110ee5c4932873a",
+        "out_path": "<scratch>/discovery/volta/outputs/4dd84d714f557f5a11de2d9189f1f5960674a25bbf6fc2eca110ee5c4932873a.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": "gpu:volta:2",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acp04"
+        ],
+        "out_hash": "3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb",
+        "out_path": "<scratch>/discovery/volta/outputs/3b8c8caf8c82297653e4ec1af9d56284dc2a3750a333fb082d6d883acb0201bb.out"
+      }
+    },
+    "gpu_driver_cuda": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "driver": "580.126.16",
+          "cuda": "13.0"
+        },
+        "cmd": [
+          "nvidia-smi"
+        ],
+        "out_hash": "3dbb6f21c19e0a91732f45853e55307ab8239f65f309621cd0caca9f2c6f235e",
+        "out_path": "<scratch>/discovery/volta/outputs/3dbb6f21c19e0a91732f45853e55307ab8239f65f309621cd0caca9f2c6f235e.out"
+      }
+    },
+    "gpu_topology": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "\u001b[4mGPU0\tGPU1\tNIC0\tNIC1\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m",
+        "cmd": [
+          "nvidia-smi",
+          "topo",
+          "-m"
+        ],
+        "out_hash": "fb52757d39ba5cf07871f24ef921e69cb485ba00f9f15b001c085c6cb951e517",
+        "out_path": "<scratch>/discovery/volta/outputs/fb52757d39ba5cf07871f24ef921e69cb485ba00f9f15b001c085c6cb951e517.out"
+      }
+    },
+    "gpu_settings": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "ecc_current": "Disabled",
+          "max_clocks_mhz": {
+            "sm": 1380,
+            "memory": 877,
+            "graphics": 1380
+          }
+        },
+        "cmd": [
+          "nvidia-smi",
+          "-q",
+          "-d",
+          "CLOCK,ECC,PERFORMANCE"
+        ],
+        "out_hash": "dc1d9dccc0c78950e5284e3d15e48b522b68986bcb8bdb4f1c12af2bb6952854",
+        "out_path": "<scratch>/discovery/volta/outputs/dc1d9dccc0c78950e5284e3d15e48b522b68986bcb8bdb4f1c12af2bb6952854.out"
+      }
+    }
+  }
+}

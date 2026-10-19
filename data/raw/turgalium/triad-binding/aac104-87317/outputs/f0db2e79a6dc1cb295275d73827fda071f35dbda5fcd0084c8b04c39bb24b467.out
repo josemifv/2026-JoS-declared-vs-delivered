@@ -1,0 +1,69 @@
+thread=0 cpus=0-35
+thread=1 cpus=0-35
+thread=2 cpus=0-35
+thread=3 cpus=0-35
+thread=4 cpus=0-35
+thread=5 cpus=0-35
+thread=6 cpus=0-35
+thread=7 cpus=0-35
+thread=8 cpus=0-35
+thread=9 cpus=0-35
+thread=10 cpus=0-35
+thread=11 cpus=0-35
+thread=12 cpus=0-35
+thread=13 cpus=0-35
+thread=14 cpus=0-35
+thread=15 cpus=0-35
+thread=16 cpus=0-35
+thread=17 cpus=0-35
+thread=18 cpus=0-35
+thread=19 cpus=0-35
+thread=20 cpus=0-35
+thread=21 cpus=0-35
+thread=22 cpus=0-35
+thread=23 cpus=0-35
+thread=24 cpus=0-35
+thread=25 cpus=0-35
+thread=26 cpus=0-35
+thread=27 cpus=0-35
+thread=28 cpus=0-35
+thread=29 cpus=0-35
+thread=30 cpus=0-35
+thread=31 cpus=0-35
+thread=32 cpus=0-35
+thread=33 cpus=0-35
+thread=34 cpus=0-35
+thread=35 cpus=0-35
+-------------------------------------------------------------
+STREAM version $Revision: 5.10 $
+-------------------------------------------------------------
+This system uses 8 bytes per array element.
+-------------------------------------------------------------
+Array size = 40000000 (elements), Offset = 0 (elements)
+Memory per array = 305.2 MiB (= 0.3 GiB).
+Total memory required = 915.5 MiB (= 0.9 GiB).
+Each kernel will be executed 10 times.
+ The *best* time for each kernel (excluding the first iteration)
+ will be used to compute the reported bandwidth.
+-------------------------------------------------------------
+Number of Threads requested = 36
+Number of Threads counted = 36
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 3451 microseconds.
+   (= 3451 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:          162353.6     0.003963     0.003942     0.004056
+Scale:         130106.4     0.005012     0.004919     0.005565
+Add:           144532.5     0.006664     0.006642     0.006705
+Triad:         149690.8     0.006438     0.006413     0.006469
+-------------------------------------------------------------
+Solution Validates: avg error less than 1.000000e-13 on all three arrays
+-------------------------------------------------------------

@@ -1,0 +1,30 @@
+pin-pedido: host=b9p03 hca_numa=0 core=0 origen=sysfs(node0)
+pin-real: host=b9p03 cpus=0
+pin-pedido: host=b9p04 hca_numa=0 core=0 origen=sysfs(node0)
+pin-real: host=b9p04 cpus=0
+[1791873851.180258] [b9p03:559609:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791873851.194144] [b9p04:3738574:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791873851.217874] [b9p04:3738574:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=ud,sm,self UCX_LOG_LEVEL=info
+[1791873851.257512] [b9p03:559609:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=ud,sm,self UCX_LOG_LEVEL=info
+[1791873851.258253] [b9p03:559609:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+[1791873851.258739] [b9p04:3738574:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+[1791873851.260209] [b9p03:559609:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(ud_mlx5/mlx5_0:1)
+[1791873851.260264] [b9p04:3738574:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(ud_mlx5/mlx5_0:1)
+1                       1.42
+2                       1.03
+4                       1.03
+8                       1.04
+16                      1.11
+32                      1.10
+64                      1.15
+128                     1.15
+256                     1.70
+512                     1.83
+1024                    1.93
+2048                    2.27
+4096                    3.00
+8192                    3.94

@@ -1,0 +1,4607 @@
+{
+  "cluster": "turgalium",
+  "generated_at": "2026-09-30T06:50:35Z",
+  "fingerprint_attrs": [
+    "cpu_model",
+    "sockets",
+    "cores_per_socket",
+    "threads_per_core",
+    "logical_cpus_online",
+    "microcode",
+    "scaling_governor",
+    "no_turbo",
+    "freq_min_khz",
+    "freq_max_khz",
+    "numa_nodes",
+    "memory_total_kb",
+    "thp_enabled",
+    "numa_balancing",
+    "os",
+    "kernel",
+    "bios_version",
+    "bios_date",
+    "package_hash",
+    "hca_model",
+    "hca_firmware",
+    "port_state",
+    "port_rate",
+    "ofed_version",
+    "ucx_version",
+    "ucx_transports",
+    "libfabric_version",
+    "libfabric_providers",
+    "gcc_version"
+  ],
+  "partitions": {
+    "cpu112c": {
+      "nodes": [
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16"
+      ],
+      "fingerprint_attrs_used": [
+        "cpu_model",
+        "sockets",
+        "cores_per_socket",
+        "threads_per_core",
+        "logical_cpus_online",
+        "microcode",
+        "scaling_governor",
+        "no_turbo",
+        "freq_min_khz",
+        "freq_max_khz",
+        "numa_nodes",
+        "memory_total_kb",
+        "thp_enabled",
+        "numa_balancing",
+        "os",
+        "kernel",
+        "bios_version",
+        "bios_date",
+        "package_hash",
+        "hca_model",
+        "hca_firmware",
+        "port_state",
+        "port_rate",
+        "ofed_version",
+        "ucx_version",
+        "ucx_transports",
+        "libfabric_version",
+        "libfabric_providers",
+        "gcc_version"
+      ],
+      "fingerprint_attrs_excluded": {
+        "dimm_population": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "icx_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "openmpi_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "intelmpi_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "gpu_list": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "gpu_driver_cuda": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "gpu_topology": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "gpu_settings": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        }
+      }
+    },
+    "cpu36c": {
+      "nodes": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120"
+      ],
+      "fingerprint_attrs_used": [
+        "cpu_model",
+        "sockets",
+        "cores_per_socket",
+        "threads_per_core",
+        "logical_cpus_online",
+        "microcode",
+        "scaling_governor",
+        "no_turbo",
+        "freq_min_khz",
+        "freq_max_khz",
+        "numa_nodes",
+        "memory_total_kb",
+        "thp_enabled",
+        "numa_balancing",
+        "os",
+        "kernel",
+        "bios_version",
+        "bios_date",
+        "package_hash",
+        "hca_model",
+        "hca_firmware",
+        "port_state",
+        "port_rate",
+        "ofed_version",
+        "ucx_version",
+        "ucx_transports",
+        "libfabric_version",
+        "libfabric_providers",
+        "gcc_version"
+      ],
+      "fingerprint_attrs_excluded": {
+        "dimm_population": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "icx_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "openmpi_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "intelmpi_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "gpu_list": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "gpu_driver_cuda": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "gpu_topology": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "gpu_settings": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        }
+      }
+    },
+    "h100": {
+      "nodes": [
+        "b9p17",
+        "b9p18"
+      ],
+      "fingerprint_attrs_used": [
+        "cpu_model",
+        "sockets",
+        "cores_per_socket",
+        "threads_per_core",
+        "logical_cpus_online",
+        "microcode",
+        "scaling_governor",
+        "no_turbo",
+        "freq_min_khz",
+        "freq_max_khz",
+        "numa_nodes",
+        "memory_total_kb",
+        "thp_enabled",
+        "numa_balancing",
+        "os",
+        "kernel",
+        "bios_version",
+        "bios_date",
+        "package_hash",
+        "hca_model",
+        "hca_firmware",
+        "port_state",
+        "port_rate",
+        "ofed_version",
+        "ucx_version",
+        "ucx_transports",
+        "gcc_version",
+        "gpu_list",
+        "gpu_driver_cuda",
+        "gpu_topology",
+        "gpu_settings"
+      ],
+      "fingerprint_attrs_excluded": {
+        "dimm_population": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "libfabric_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "libfabric_providers": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "icx_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "openmpi_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "intelmpi_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        }
+      }
+    },
+    "volta": {
+      "nodes": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04"
+      ],
+      "fingerprint_attrs_used": [
+        "cpu_model",
+        "sockets",
+        "cores_per_socket",
+        "threads_per_core",
+        "logical_cpus_online",
+        "microcode",
+        "scaling_governor",
+        "no_turbo",
+        "freq_min_khz",
+        "freq_max_khz",
+        "numa_nodes",
+        "memory_total_kb",
+        "thp_enabled",
+        "numa_balancing",
+        "os",
+        "kernel",
+        "bios_version",
+        "bios_date",
+        "package_hash",
+        "hca_model",
+        "hca_firmware",
+        "port_state",
+        "port_rate",
+        "ofed_version",
+        "ucx_version",
+        "ucx_transports",
+        "gcc_version",
+        "gpu_list",
+        "gpu_driver_cuda",
+        "gpu_topology",
+        "gpu_settings"
+      ],
+      "fingerprint_attrs_excluded": {
+        "dimm_population": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "libfabric_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "libfabric_providers": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "icx_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "openmpi_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        },
+        "intelmpi_version": {
+          "reason": "no observable en toda la partición (limitación del descubrimiento)"
+        }
+      }
+    }
+  },
+  "majority": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+  "subpartitions": [
+    {
+      "id": 0,
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "size": 18,
+      "nodes": [
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc120"
+      ],
+      "nodelist": "aac102,aac103,aac104,aac105,aac106,aac109,aac110,aac111,aac112,aac113,aac114,aac115,aac116,aac117,aac118,aac119,aac120,acc120",
+      "constraint_candidate": "192GB_RAM,3.10GHz,6254,CPU_CascadeLake,Infiniband_EDR",
+      "differs_from_majority": {}
+    },
+    {
+      "id": 1,
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "size": 14,
+      "nodes": [
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc108",
+        "acc109",
+        "acc111",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119"
+      ],
+      "nodelist": "acc101,acc102,acc103,acc104,acc108,acc109,acc111,acc113,acc114,acc115,acc116,acc117,acc118,acc119",
+      "constraint_candidate": "192GB_RAM,3.10GHz,6254,CPU_CascadeLake,Infiniband_EDR",
+      "differs_from_majority": {
+        "threads_per_core": {
+          "value": 2,
+          "majority": 1
+        },
+        "logical_cpus_online": {
+          "value": 72,
+          "majority": 36
+        }
+      }
+    },
+    {
+      "id": 2,
+      "fingerprint": "36e00000b1edd438ed8c2f5d990f0016f58d5f8514aa3cea6d5dd1174176fdc7",
+      "size": 10,
+      "nodes": [
+        "b9p01",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11"
+      ],
+      "nodelist": "b9p01,b9p03,b9p04,b9p05,b9p06,b9p07,b9p08,b9p09,b9p10,b9p11",
+      "constraint_candidate": "1TB_RAM,3.80GHz,8084+,CPU_Sapphire_Rapids,Infiniband_HDR",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Platinum 8480+",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "cores_per_socket": {
+          "value": 56,
+          "majority": 18
+        },
+        "logical_cpus_online": {
+          "value": 112,
+          "majority": 36
+        },
+        "microcode": {
+          "value": "0x2b000639",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 800000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3800000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 1024,
+          "majority": 192
+        },
+        "bios_version": {
+          "value": "R14",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "04/21/2025",
+          "majority": "10/08/2021"
+        },
+        "hca_model": {
+          "value": "MT4123",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "20.37.1014"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "port_rate": {
+          "value": [
+            200
+          ],
+          "majority": [
+            100
+          ]
+        }
+      }
+    },
+    {
+      "id": 3,
+      "fingerprint": "9bba4666f14d6d5fc16f1c1094fec6f3ed180c16ec492c47947181de4dcaa5b4",
+      "size": 4,
+      "nodes": [
+        "acc106",
+        "acc107",
+        "acc110",
+        "acc112"
+      ],
+      "nodelist": "acc106,acc107,acc110,acc112",
+      "constraint_candidate": "192GB_RAM,3.10GHz,6254,CPU_CascadeLake,Infiniband_EDR",
+      "differs_from_majority": {
+        "threads_per_core": {
+          "value": 2,
+          "majority": 1
+        },
+        "logical_cpus_online": {
+          "value": 72,
+          "majority": 36
+        },
+        "hca_firmware": {
+          "value": [
+            "12.23.1020"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        }
+      }
+    },
+    {
+      "id": 4,
+      "fingerprint": "c2c8b3cee9e284dd1368adea20ae43e7162bdf94efcfdebef2d34e0123f13975",
+      "size": 2,
+      "nodes": [
+        "b9p13",
+        "b9p16"
+      ],
+      "nodelist": "b9p13,b9p16",
+      "constraint_candidate": "1TB_RAM,3.80GHz,8084+,CPU_Sapphire_Rapids,Infiniband_HDR",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Platinum 8480+",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "cores_per_socket": {
+          "value": 56,
+          "majority": 18
+        },
+        "logical_cpus_online": {
+          "value": 112,
+          "majority": 36
+        },
+        "microcode": {
+          "value": "0x2b000190",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 800000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3800000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 1024,
+          "majority": 192
+        },
+        "bios_version": {
+          "value": "F14",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "02/28/2023",
+          "majority": "10/08/2021"
+        },
+        "hca_model": {
+          "value": "MT4123",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "20.36.1010"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "port_rate": {
+          "value": [
+            200
+          ],
+          "majority": [
+            100
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "fingerprint": "0b368912cb33779c9cb98158ba49ba28141d195c171a4f696f20a5e24c84c393",
+      "size": 1,
+      "nodes": [
+        "aac101"
+      ],
+      "nodelist": "aac101",
+      "constraint_candidate": "192GB_RAM,3.10GHz,6254,CPU_CascadeLake,Infiniband_EDR",
+      "differs_from_majority": {
+        "package_hash": {
+          "value": {
+            "sha256": "fad9a3bc481cc2811ce7f5949f0f4f1148609a38f739cfb1e107c4a2778b84a2",
+            "count": 892
+          },
+          "majority": {
+            "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+            "count": 890
+          }
+        }
+      }
+    },
+    {
+      "id": 6,
+      "fingerprint": "0ed877f3f83dda2f280444d6d12b3feef5b12f9c979203e02c80a2973dd143d0",
+      "size": 1,
+      "nodes": [
+        "acp03"
+      ],
+      "nodelist": "acp03",
+      "constraint_candidate": "2.60GHz,6240,768GB_RAM,CPU_CascadeLake,Infiniband_EDR,gpu_volta_V100",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "microcode": {
+          "value": "0x500002c",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 1000000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3900000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 768,
+          "majority": 192
+        },
+        "kernel": {
+          "value": "5.14.0-611.30.1.el9_7.x86_64",
+          "majority": "5.14.0-611.34.1.el9_7.x86_64"
+        },
+        "bios_version": {
+          "value": "3.2",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "11/07/2019",
+          "majority": "10/08/2021"
+        },
+        "package_hash": {
+          "value": {
+            "sha256": "545d08aaa5316eced84d446f9f70afbebbc737effc76be0b7ccd1425d9ac59da",
+            "count": 936
+          },
+          "majority": {
+            "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+            "count": 890
+          }
+        },
+        "hca_model": {
+          "value": "MT4119",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "16.28.2006"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "ofed_version": {
+          "value": "OFED-internal-24.10-4.1.4:",
+          "majority": "OFED-internal-25.10-1.2.8:"
+        },
+        "ucx_version": {
+          "value": "# Library version: 1.18.0",
+          "majority": "# Library version: 1.20.0"
+        },
+        "ucx_transports": {
+          "value": [
+            "cma",
+            "dc_mlx5",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs"
+          ],
+          "majority": [
+            "cma",
+            "dc_mlx5",
+            "knem",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs",
+            "xpmem"
+          ]
+        },
+        "gcc_version": {
+          "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+          "majority": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "fingerprint": "15f4932034d6ce5d688c34119251fc26a9032fb9d223b76991254c15a59990b9",
+      "size": 1,
+      "nodes": [
+        "acc105"
+      ],
+      "nodelist": "acc105",
+      "constraint_candidate": "192GB_RAM,3.10GHz,6254,CPU_CascadeLake,Infiniband_EDR",
+      "differs_from_majority": {
+        "microcode": {
+          "value": "0x5003605",
+          "majority": "0x5003102"
+        },
+        "bios_version": {
+          "value": "4.2",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "12/27/2023",
+          "majority": "10/08/2021"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "fingerprint": "3235c43be2ef11bacfd8956bb14b04fd8ccc0397d9a1306586852a19558e6dfb",
+      "size": 1,
+      "nodes": [
+        "aap04"
+      ],
+      "nodelist": "aap04",
+      "constraint_candidate": "192GB_RAM,2.60GHz,6240,CPU_CascadeLake,Infiniband_EDR,gpu_volta_V100",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "microcode": {
+          "value": "0x5000024",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 1000000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3900000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 768,
+          "majority": 192
+        },
+        "kernel": {
+          "value": "5.14.0-611.30.1.el9_7.x86_64",
+          "majority": "5.14.0-611.34.1.el9_7.x86_64"
+        },
+        "bios_version": {
+          "value": "3.1",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "05/09/2019",
+          "majority": "10/08/2021"
+        },
+        "package_hash": {
+          "value": {
+            "sha256": "545d08aaa5316eced84d446f9f70afbebbc737effc76be0b7ccd1425d9ac59da",
+            "count": 936
+          },
+          "majority": {
+            "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+            "count": 890
+          }
+        },
+        "hca_model": {
+          "value": "MT4119",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "16.35.2000"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "ofed_version": {
+          "value": "OFED-internal-24.10-4.1.4:",
+          "majority": "OFED-internal-25.10-1.2.8:"
+        },
+        "ucx_version": {
+          "value": "# Library version: 1.18.0",
+          "majority": "# Library version: 1.20.0"
+        },
+        "ucx_transports": {
+          "value": [
+            "cma",
+            "dc_mlx5",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs"
+          ],
+          "majority": [
+            "cma",
+            "dc_mlx5",
+            "knem",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs",
+            "xpmem"
+          ]
+        },
+        "gcc_version": {
+          "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+          "majority": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "fingerprint": "4bd11b573267fafb8d233e37291f5e3230ca3f18ce242a7f48a74cf0c22c7eb9",
+      "size": 1,
+      "nodes": [
+        "b9p18"
+      ],
+      "nodelist": "b9p18",
+      "constraint_candidate": "1TB_RAM,3.80GHz,8084+,CPU_Sapphire_Rapids,Infiniband_HDR,gpu_hopper_H100",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Platinum 8480+",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "cores_per_socket": {
+          "value": 56,
+          "majority": 18
+        },
+        "logical_cpus_online": {
+          "value": 112,
+          "majority": 36
+        },
+        "microcode": {
+          "value": "0x2b0004b1",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 800000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3800000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 1024,
+          "majority": 192
+        },
+        "kernel": {
+          "value": "5.14.0-611.30.1.el9_7.x86_64",
+          "majority": "5.14.0-611.34.1.el9_7.x86_64"
+        },
+        "bios_version": {
+          "value": "F05",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "08/07/2023",
+          "majority": "10/08/2021"
+        },
+        "package_hash": {
+          "value": {
+            "sha256": "1dd1eaf24e7afb342d7848edfb6f877af1aa68ea94887f0a6d4e3016e7a9fda3",
+            "count": 929
+          },
+          "majority": {
+            "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+            "count": 890
+          }
+        },
+        "hca_model": {
+          "value": "MT4125",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "22.32.2306"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "port_rate": {
+          "value": [
+            200
+          ],
+          "majority": [
+            100
+          ]
+        },
+        "ofed_version": {
+          "value": "OFED-internal-24.10-4.1.4:",
+          "majority": "OFED-internal-25.10-1.2.8:"
+        },
+        "ucx_version": {
+          "value": "# Library version: 1.18.0",
+          "majority": "# Library version: 1.20.0"
+        },
+        "ucx_transports": {
+          "value": [
+            "cma",
+            "dc_mlx5",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs"
+          ],
+          "majority": [
+            "cma",
+            "dc_mlx5",
+            "knem",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs",
+            "xpmem"
+          ]
+        },
+        "gcc_version": {
+          "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+          "majority": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "fingerprint": "561e62353361d82b8bc0f5ec84db07ab16719b12504e17cec4c0aaec8ac8d249",
+      "size": 1,
+      "nodes": [
+        "aap01"
+      ],
+      "nodelist": "aap01",
+      "constraint_candidate": "192GB_RAM,2.60GHz,6240,CPU_CascadeLake,Infiniband_EDR,gpu_volta_V100",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "microcode": {
+          "value": "0x5000024",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 1000000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3900000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 768,
+          "majority": 192
+        },
+        "kernel": {
+          "value": "5.14.0-611.30.1.el9_7.x86_64",
+          "majority": "5.14.0-611.34.1.el9_7.x86_64"
+        },
+        "bios_version": {
+          "value": "3.1",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "05/09/2019",
+          "majority": "10/08/2021"
+        },
+        "package_hash": {
+          "value": {
+            "sha256": "6bf8c290f75df4bf1af8170d98a601ec5918e29c42d6ffb57cc38245bbe240cd",
+            "count": 938
+          },
+          "majority": {
+            "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+            "count": 890
+          }
+        },
+        "hca_model": {
+          "value": "MT4119",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "16.28.2006"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "ofed_version": {
+          "value": "OFED-internal-24.10-4.1.4:",
+          "majority": "OFED-internal-25.10-1.2.8:"
+        },
+        "ucx_version": {
+          "value": "# Library version: 1.18.0",
+          "majority": "# Library version: 1.20.0"
+        },
+        "ucx_transports": {
+          "value": [
+            "cma",
+            "dc_mlx5",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs"
+          ],
+          "majority": [
+            "cma",
+            "dc_mlx5",
+            "knem",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs",
+            "xpmem"
+          ]
+        },
+        "gcc_version": {
+          "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+          "majority": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "fingerprint": "57ca34d54822ca7d4cb06186f338d41d7d4eabe07a0e6f69678984526e2cae9f",
+      "size": 1,
+      "nodes": [
+        "b9p02"
+      ],
+      "nodelist": "b9p02",
+      "constraint_candidate": "1TB_RAM,3.80GHz,8084+,CPU_Sapphire_Rapids,Infiniband_HDR",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Platinum 8480+",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "cores_per_socket": {
+          "value": 56,
+          "majority": 18
+        },
+        "threads_per_core": {
+          "value": 2,
+          "majority": 1
+        },
+        "logical_cpus_online": {
+          "value": 224,
+          "majority": 36
+        },
+        "microcode": {
+          "value": "0x2b000639",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 800000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3800000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 1024,
+          "majority": 192
+        },
+        "bios_version": {
+          "value": "R14",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "04/21/2025",
+          "majority": "10/08/2021"
+        },
+        "hca_model": {
+          "value": "MT4123",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "20.37.1014"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "port_rate": {
+          "value": [
+            200
+          ],
+          "majority": [
+            100
+          ]
+        }
+      }
+    },
+    {
+      "id": 12,
+      "fingerprint": "603d57a8104a08b5a2c0d5d8ba38925fe0690d3da35bef6e436ea81c8500ece6",
+      "size": 1,
+      "nodes": [
+        "aac108"
+      ],
+      "nodelist": "aac108",
+      "constraint_candidate": "192GB_RAM,3.10GHz,6254,CPU_CascadeLake,Infiniband_EDR",
+      "differs_from_majority": {
+        "microcode": {
+          "value": "0x5003003",
+          "majority": "0x5003102"
+        },
+        "bios_version": {
+          "value": "3.4",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "02/17/2021",
+          "majority": "10/08/2021"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "fingerprint": "74598bfe056fb35ee3d7545ee47c3bdd8732a689b048546e214f4872ac853270",
+      "size": 1,
+      "nodes": [
+        "aac107"
+      ],
+      "nodelist": "aac107",
+      "constraint_candidate": "192GB_RAM,3.10GHz,6254,CPU_CascadeLake,Infiniband_EDR",
+      "differs_from_majority": {
+        "hca_firmware": {
+          "value": [
+            "12.18.1000"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        }
+      }
+    },
+    {
+      "id": 14,
+      "fingerprint": "ae0045ef3891df972596de17e61d498ba7e356dc6d54b0f7981979af1479c6f1",
+      "size": 1,
+      "nodes": [
+        "b9p12"
+      ],
+      "nodelist": "b9p12",
+      "constraint_candidate": "1TB_RAM,3.80GHz,8084+,CPU_Sapphire_Rapids,Infiniband_HDR",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Platinum 8480+",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "cores_per_socket": {
+          "value": 56,
+          "majority": 18
+        },
+        "threads_per_core": {
+          "value": 2,
+          "majority": 1
+        },
+        "logical_cpus_online": {
+          "value": 224,
+          "majority": 36
+        },
+        "microcode": {
+          "value": "0x2b000620",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 800000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3800000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 1024,
+          "majority": 192
+        },
+        "bios_version": {
+          "value": "R10",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "11/10/2024",
+          "majority": "10/08/2021"
+        },
+        "hca_model": {
+          "value": "MT4123",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "20.37.1014"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "port_rate": {
+          "value": [
+            200
+          ],
+          "majority": [
+            100
+          ]
+        }
+      }
+    },
+    {
+      "id": 15,
+      "fingerprint": "ae36ca7fafa71d56803e90d112844d6889ff62de88d6472abdf6c07131bd73cf",
+      "size": 1,
+      "nodes": [
+        "aap03"
+      ],
+      "nodelist": "aap03",
+      "constraint_candidate": "192GB_RAM,2.60GHz,6240,CPU_CascadeLake,Infiniband_EDR,gpu_volta_V100",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "microcode": {
+          "value": "0x5000024",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 1000000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3900000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 768,
+          "majority": 192
+        },
+        "kernel": {
+          "value": "5.14.0-611.30.1.el9_7.x86_64",
+          "majority": "5.14.0-611.34.1.el9_7.x86_64"
+        },
+        "bios_version": {
+          "value": "3.1",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "05/09/2019",
+          "majority": "10/08/2021"
+        },
+        "package_hash": {
+          "value": {
+            "sha256": "545d08aaa5316eced84d446f9f70afbebbc737effc76be0b7ccd1425d9ac59da",
+            "count": 936
+          },
+          "majority": {
+            "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+            "count": 890
+          }
+        },
+        "hca_model": {
+          "value": "MT4119",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "16.28.2006"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "ofed_version": {
+          "value": "OFED-internal-24.10-4.1.4:",
+          "majority": "OFED-internal-25.10-1.2.8:"
+        },
+        "ucx_version": {
+          "value": "# Library version: 1.18.0",
+          "majority": "# Library version: 1.20.0"
+        },
+        "ucx_transports": {
+          "value": [
+            "cma",
+            "dc_mlx5",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs"
+          ],
+          "majority": [
+            "cma",
+            "dc_mlx5",
+            "knem",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs",
+            "xpmem"
+          ]
+        },
+        "gcc_version": {
+          "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+          "majority": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "fingerprint": "b80efb4c3eb922ebb566456285146eb2ceaac6c74aed7daece783d1035494ae2",
+      "size": 1,
+      "nodes": [
+        "acp04"
+      ],
+      "nodelist": "acp04",
+      "constraint_candidate": "2.60GHz,6240,768GB_RAM,CPU_CascadeLake,Infiniband_EDR,gpu_volta_V100",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "microcode": {
+          "value": "0x500002c",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 1000000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3900000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 768,
+          "majority": 192
+        },
+        "kernel": {
+          "value": "5.14.0-611.30.1.el9_7.x86_64",
+          "majority": "5.14.0-611.34.1.el9_7.x86_64"
+        },
+        "bios_version": {
+          "value": "3.2",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "11/07/2019",
+          "majority": "10/08/2021"
+        },
+        "package_hash": {
+          "value": {
+            "sha256": "545d08aaa5316eced84d446f9f70afbebbc737effc76be0b7ccd1425d9ac59da",
+            "count": 936
+          },
+          "majority": {
+            "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+            "count": 890
+          }
+        },
+        "hca_model": {
+          "value": "MT4119",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "16.28.2006"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "ofed_version": {
+          "value": "OFED-internal-24.10-4.1.4:",
+          "majority": "OFED-internal-25.10-1.2.8:"
+        },
+        "ucx_version": {
+          "value": "# Library version: 1.18.0",
+          "majority": "# Library version: 1.20.0"
+        },
+        "ucx_transports": {
+          "value": [
+            "cma",
+            "dc_mlx5",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs"
+          ],
+          "majority": [
+            "cma",
+            "dc_mlx5",
+            "knem",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs",
+            "xpmem"
+          ]
+        },
+        "gcc_version": {
+          "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+          "majority": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "fingerprint": "bae9d97ba610f2217d794107adcba30449ef90a34f6912d16fe6f9716393358f",
+      "size": 1,
+      "nodes": [
+        "b9p17"
+      ],
+      "nodelist": "b9p17",
+      "constraint_candidate": "1TB_RAM,3.80GHz,8084+,CPU_Sapphire_Rapids,Infiniband_HDR,gpu_hopper_H100",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Platinum 8480+",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "cores_per_socket": {
+          "value": 56,
+          "majority": 18
+        },
+        "logical_cpus_online": {
+          "value": 112,
+          "majority": 36
+        },
+        "microcode": {
+          "value": "0x2b000590",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 800000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3800000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 1024,
+          "majority": 192
+        },
+        "kernel": {
+          "value": "5.14.0-611.30.1.el9_7.x86_64",
+          "majority": "5.14.0-611.34.1.el9_7.x86_64"
+        },
+        "bios_version": {
+          "value": "R04",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "03/05/2024",
+          "majority": "10/08/2021"
+        },
+        "package_hash": {
+          "value": {
+            "sha256": "1dd1eaf24e7afb342d7848edfb6f877af1aa68ea94887f0a6d4e3016e7a9fda3",
+            "count": 929
+          },
+          "majority": {
+            "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+            "count": 890
+          }
+        },
+        "hca_model": {
+          "value": "MT4125",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "22.32.2306"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "port_rate": {
+          "value": [
+            200
+          ],
+          "majority": [
+            100
+          ]
+        },
+        "ofed_version": {
+          "value": "OFED-internal-24.10-4.1.4:",
+          "majority": "OFED-internal-25.10-1.2.8:"
+        },
+        "ucx_version": {
+          "value": "# Library version: 1.18.0",
+          "majority": "# Library version: 1.20.0"
+        },
+        "ucx_transports": {
+          "value": [
+            "cma",
+            "dc_mlx5",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs"
+          ],
+          "majority": [
+            "cma",
+            "dc_mlx5",
+            "knem",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs",
+            "xpmem"
+          ]
+        },
+        "gcc_version": {
+          "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+          "majority": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "fingerprint": "c297df97117355643a7ae55f2efd565284f574a3e6127023c83423444ad0e202",
+      "size": 1,
+      "nodes": [
+        "b9p14"
+      ],
+      "nodelist": "b9p14",
+      "constraint_candidate": "1TB_RAM,3.80GHz,8084+,CPU_Sapphire_Rapids,Infiniband_HDR",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Platinum 8480+",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "cores_per_socket": {
+          "value": 56,
+          "majority": 18
+        },
+        "logical_cpus_online": {
+          "value": 112,
+          "majority": 36
+        },
+        "microcode": {
+          "value": "0x2b0004b1",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 800000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3800000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 1024,
+          "majority": 192
+        },
+        "bios_version": {
+          "value": "F23",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "10/26/2023",
+          "majority": "10/08/2021"
+        },
+        "hca_model": {
+          "value": "MT4125",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "22.32.2306"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "port_rate": {
+          "value": [
+            200
+          ],
+          "majority": [
+            100
+          ]
+        }
+      }
+    },
+    {
+      "id": 19,
+      "fingerprint": "c2b851316273635cb400380b7fbf9e7aa2a019dae143cd9bbf4b80728222a342",
+      "size": 1,
+      "nodes": [
+        "aap02"
+      ],
+      "nodelist": "aap02",
+      "constraint_candidate": "192GB_RAM,2.60GHz,6240,CPU_CascadeLake,Infiniband_EDR,gpu_volta_V100",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "microcode": {
+          "value": "0x5000024",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 1000000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3900000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 768,
+          "majority": 192
+        },
+        "kernel": {
+          "value": "5.14.0-611.30.1.el9_7.x86_64",
+          "majority": "5.14.0-611.34.1.el9_7.x86_64"
+        },
+        "bios_version": {
+          "value": "3.1",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "05/09/2019",
+          "majority": "10/08/2021"
+        },
+        "package_hash": {
+          "value": {
+            "sha256": "545d08aaa5316eced84d446f9f70afbebbc737effc76be0b7ccd1425d9ac59da",
+            "count": 936
+          },
+          "majority": {
+            "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+            "count": 890
+          }
+        },
+        "hca_model": {
+          "value": "MT4119",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "16.28.2006"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "ofed_version": {
+          "value": "OFED-internal-24.10-4.1.4:",
+          "majority": "OFED-internal-25.10-1.2.8:"
+        },
+        "ucx_version": {
+          "value": "# Library version: 1.18.0",
+          "majority": "# Library version: 1.20.0"
+        },
+        "ucx_transports": {
+          "value": [
+            "cma",
+            "dc_mlx5",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs"
+          ],
+          "majority": [
+            "cma",
+            "dc_mlx5",
+            "knem",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs",
+            "xpmem"
+          ]
+        },
+        "gcc_version": {
+          "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+          "majority": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "fingerprint": "c5c3bf85bfe2ab2e44a9176066938e27458a1755c0c4202be63ed00d6a83f434",
+      "size": 1,
+      "nodes": [
+        "acp02"
+      ],
+      "nodelist": "acp02",
+      "constraint_candidate": "2.60GHz,6240,768GB_RAM,CPU_CascadeLake,Infiniband_EDR,gpu_volta_V100",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "microcode": {
+          "value": "0x500002c",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 1000000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3900000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 768,
+          "majority": 192
+        },
+        "kernel": {
+          "value": "5.14.0-611.30.1.el9_7.x86_64",
+          "majority": "5.14.0-611.34.1.el9_7.x86_64"
+        },
+        "bios_version": {
+          "value": "3.2",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "11/07/2019",
+          "majority": "10/08/2021"
+        },
+        "package_hash": {
+          "value": {
+            "sha256": "6bf84d3eabd4d566894622a509bbb2ff2a484eb68d948025796991c2085706c6",
+            "count": 932
+          },
+          "majority": {
+            "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+            "count": 890
+          }
+        },
+        "hca_model": {
+          "value": "MT4119",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "16.28.2006"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "ofed_version": {
+          "value": "OFED-internal-24.10-4.1.4:",
+          "majority": "OFED-internal-25.10-1.2.8:"
+        },
+        "ucx_version": {
+          "value": "# Library version: 1.18.0",
+          "majority": "# Library version: 1.20.0"
+        },
+        "ucx_transports": {
+          "value": [
+            "cma",
+            "dc_mlx5",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs"
+          ],
+          "majority": [
+            "cma",
+            "dc_mlx5",
+            "knem",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs",
+            "xpmem"
+          ]
+        },
+        "gcc_version": {
+          "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+          "majority": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "fingerprint": "ca919efe1a2d19c26deb0374bdc5d09e3e7f9c8824e05ffbdcf6cf886173b935",
+      "size": 1,
+      "nodes": [
+        "acp01"
+      ],
+      "nodelist": "acp01",
+      "constraint_candidate": "2.60GHz,6240,768GB_RAM,CPU_CascadeLake,Infiniband_EDR,gpu_volta_V100",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "microcode": {
+          "value": "0x500002c",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 1000000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3900000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 768,
+          "majority": 192
+        },
+        "kernel": {
+          "value": "5.14.0-611.30.1.el9_7.x86_64",
+          "majority": "5.14.0-611.34.1.el9_7.x86_64"
+        },
+        "bios_version": {
+          "value": "3.2",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "11/07/2019",
+          "majority": "10/08/2021"
+        },
+        "package_hash": {
+          "value": {
+            "sha256": "2f19dd7cb89a32a6d4871d5dabc2cce85ee834e199df546dd34edfacd84c3056",
+            "count": 937
+          },
+          "majority": {
+            "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+            "count": 890
+          }
+        },
+        "hca_model": {
+          "value": "MT4119",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "16.28.2006",
+            "16.35.4506"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "ofed_version": {
+          "value": "OFED-internal-24.10-4.1.4:",
+          "majority": "OFED-internal-25.10-1.2.8:"
+        },
+        "ucx_version": {
+          "value": "# Library version: 1.18.0",
+          "majority": "# Library version: 1.20.0"
+        },
+        "ucx_transports": {
+          "value": [
+            "cma",
+            "dc_mlx5",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs"
+          ],
+          "majority": [
+            "cma",
+            "dc_mlx5",
+            "knem",
+            "posix",
+            "rc_mlx5",
+            "rc_verbs",
+            "self",
+            "sysv",
+            "tcp",
+            "ud_mlx5",
+            "ud_verbs",
+            "xpmem"
+          ]
+        },
+        "gcc_version": {
+          "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+          "majority": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "fingerprint": "eb20e86443a693de834e3a494a902001dcc4d4a48bdcaedf0cf13b2865fe81d6",
+      "size": 1,
+      "nodes": [
+        "b9p15"
+      ],
+      "nodelist": "b9p15",
+      "constraint_candidate": "1TB_RAM,3.80GHz,8084+,CPU_Sapphire_Rapids,Infiniband_HDR",
+      "differs_from_majority": {
+        "cpu_model": {
+          "value": "Intel(R) Xeon(R) Platinum 8480+",
+          "majority": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz"
+        },
+        "cores_per_socket": {
+          "value": 56,
+          "majority": 18
+        },
+        "logical_cpus_online": {
+          "value": 112,
+          "majority": 36
+        },
+        "microcode": {
+          "value": "0x2b0004b1",
+          "majority": "0x5003102"
+        },
+        "freq_min_khz": {
+          "value": 800000,
+          "majority": 1200000
+        },
+        "freq_max_khz": {
+          "value": 3800000,
+          "majority": 4000000
+        },
+        "memory_total_kb": {
+          "value": 1024,
+          "majority": 192
+        },
+        "bios_version": {
+          "value": "F23",
+          "majority": "3.4b"
+        },
+        "bios_date": {
+          "value": "10/26/2023",
+          "majority": "10/08/2021"
+        },
+        "hca_model": {
+          "value": "MT4123",
+          "majority": "MT4115"
+        },
+        "hca_firmware": {
+          "value": [
+            "20.36.1010"
+          ],
+          "majority": [
+            "12.25.1020"
+          ]
+        },
+        "port_rate": {
+          "value": [
+            200
+          ],
+          "majority": [
+            100
+          ]
+        }
+      }
+    }
+  ],
+  "attributes_by_value": {
+    "cpu_model": {
+      "\"Intel(R) Xeon(R) Gold 6240 CPU @ 2.60GHz\"": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04"
+      ],
+      "\"Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz\"": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120"
+      ],
+      "\"Intel(R) Xeon(R) Platinum 8480+\"": [
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "sockets": {
+      "2": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "cores_per_socket": {
+      "18": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04"
+      ],
+      "56": [
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "threads_per_core": {
+      "1": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acc105",
+        "acc120",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p01",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ],
+      "2": [
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "b9p02",
+        "b9p12"
+      ]
+    },
+    "logical_cpus_online": {
+      "112": [
+        "b9p01",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ],
+      "224": [
+        "b9p02",
+        "b9p12"
+      ],
+      "36": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acc105",
+        "acc120",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04"
+      ],
+      "72": [
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119"
+      ]
+    },
+    "microcode": {
+      "\"0x2b000190\"": [
+        "b9p13",
+        "b9p16"
+      ],
+      "\"0x2b0004b1\"": [
+        "b9p14",
+        "b9p15",
+        "b9p18"
+      ],
+      "\"0x2b000590\"": [
+        "b9p17"
+      ],
+      "\"0x2b000620\"": [
+        "b9p12"
+      ],
+      "\"0x2b000639\"": [
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11"
+      ],
+      "\"0x5000024\"": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04"
+      ],
+      "\"0x500002c\"": [
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04"
+      ],
+      "\"0x5003003\"": [
+        "aac108"
+      ],
+      "\"0x5003102\"": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120"
+      ],
+      "\"0x5003605\"": [
+        "acc105"
+      ]
+    },
+    "scaling_governor": {
+      "[\"performance\"]": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "no_turbo": {
+      "0": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "freq_min_khz": {
+      "1000000": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04"
+      ],
+      "1200000": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120"
+      ],
+      "800000": [
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "freq_max_khz": {
+      "3800000": [
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ],
+      "3900000": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04"
+      ],
+      "4000000": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120"
+      ]
+    },
+    "numa_nodes": {
+      "2": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "memory_total_kb": {
+      "1024": [
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ],
+      "192": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120"
+      ],
+      "768": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04"
+      ]
+    },
+    "thp_enabled": {
+      "\"always\"": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "numa_balancing": {
+      "1": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "os": {
+      "\"rocky-9.5\"": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "kernel": {
+      "\"5.14.0-611.30.1.el9_7.x86_64\"": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p17",
+        "b9p18"
+      ],
+      "\"5.14.0-611.34.1.el9_7.x86_64\"": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16"
+      ]
+    },
+    "bios_version": {
+      "\"3.1\"": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04"
+      ],
+      "\"3.2\"": [
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04"
+      ],
+      "\"3.4\"": [
+        "aac108"
+      ],
+      "\"3.4b\"": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120"
+      ],
+      "\"4.2\"": [
+        "acc105"
+      ],
+      "\"F05\"": [
+        "b9p18"
+      ],
+      "\"F14\"": [
+        "b9p13",
+        "b9p16"
+      ],
+      "\"F23\"": [
+        "b9p14",
+        "b9p15"
+      ],
+      "\"R04\"": [
+        "b9p17"
+      ],
+      "\"R10\"": [
+        "b9p12"
+      ],
+      "\"R14\"": [
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11"
+      ]
+    },
+    "bios_date": {
+      "\"02/17/2021\"": [
+        "aac108"
+      ],
+      "\"02/28/2023\"": [
+        "b9p13",
+        "b9p16"
+      ],
+      "\"03/05/2024\"": [
+        "b9p17"
+      ],
+      "\"04/21/2025\"": [
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11"
+      ],
+      "\"05/09/2019\"": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04"
+      ],
+      "\"08/07/2023\"": [
+        "b9p18"
+      ],
+      "\"10/08/2021\"": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120"
+      ],
+      "\"10/26/2023\"": [
+        "b9p14",
+        "b9p15"
+      ],
+      "\"11/07/2019\"": [
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04"
+      ],
+      "\"11/10/2024\"": [
+        "b9p12"
+      ],
+      "\"12/27/2023\"": [
+        "acc105"
+      ]
+    },
+    "package_hash": {
+      "{\"count\":890,\"sha256\":\"64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba\"}": [
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16"
+      ],
+      "{\"count\":892,\"sha256\":\"fad9a3bc481cc2811ce7f5949f0f4f1148609a38f739cfb1e107c4a2778b84a2\"}": [
+        "aac101"
+      ],
+      "{\"count\":929,\"sha256\":\"1dd1eaf24e7afb342d7848edfb6f877af1aa68ea94887f0a6d4e3016e7a9fda3\"}": [
+        "b9p17",
+        "b9p18"
+      ],
+      "{\"count\":932,\"sha256\":\"6bf84d3eabd4d566894622a509bbb2ff2a484eb68d948025796991c2085706c6\"}": [
+        "acp02"
+      ],
+      "{\"count\":936,\"sha256\":\"545d08aaa5316eced84d446f9f70afbebbc737effc76be0b7ccd1425d9ac59da\"}": [
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp03",
+        "acp04"
+      ],
+      "{\"count\":937,\"sha256\":\"2f19dd7cb89a32a6d4871d5dabc2cce85ee834e199df546dd34edfacd84c3056\"}": [
+        "acp01"
+      ],
+      "{\"count\":938,\"sha256\":\"6bf8c290f75df4bf1af8170d98a601ec5918e29c42d6ffb57cc38245bbe240cd\"}": [
+        "aap01"
+      ]
+    },
+    "hca_model": {
+      "\"MT4115\"": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120"
+      ],
+      "\"MT4119\"": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04"
+      ],
+      "\"MT4123\"": [
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p15",
+        "b9p16"
+      ],
+      "\"MT4125\"": [
+        "b9p14",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "hca_firmware": {
+      "[\"12.18.1000\"]": [
+        "aac107"
+      ],
+      "[\"12.23.1020\"]": [
+        "acc106",
+        "acc107",
+        "acc110",
+        "acc112"
+      ],
+      "[\"12.25.1020\"]": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc108",
+        "acc109",
+        "acc111",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120"
+      ],
+      "[\"16.28.2006\",\"16.35.4506\"]": [
+        "acp01"
+      ],
+      "[\"16.28.2006\"]": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "acp02",
+        "acp03",
+        "acp04"
+      ],
+      "[\"16.35.2000\"]": [
+        "aap04"
+      ],
+      "[\"20.36.1010\"]": [
+        "b9p13",
+        "b9p15",
+        "b9p16"
+      ],
+      "[\"20.37.1014\"]": [
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12"
+      ],
+      "[\"22.32.2306\"]": [
+        "b9p14",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "port_state": {
+      "[\"Active\"]": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "port_rate": {
+      "[100]": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04"
+      ],
+      "[200]": [
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "ofed_version": {
+      "\"OFED-internal-24.10-4.1.4:\"": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p17",
+        "b9p18"
+      ],
+      "\"OFED-internal-25.10-1.2.8:\"": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16"
+      ]
+    },
+    "ucx_version": {
+      "\"# Library version: 1.18.0\"": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p17",
+        "b9p18"
+      ],
+      "\"# Library version: 1.20.0\"": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16"
+      ]
+    },
+    "ucx_transports": {
+      "[\"cma\",\"dc_mlx5\",\"knem\",\"posix\",\"rc_mlx5\",\"rc_verbs\",\"self\",\"sysv\",\"tcp\",\"ud_mlx5\",\"ud_verbs\",\"xpmem\"]": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16"
+      ],
+      "[\"cma\",\"dc_mlx5\",\"posix\",\"rc_mlx5\",\"rc_verbs\",\"self\",\"sysv\",\"tcp\",\"ud_mlx5\",\"ud_verbs\"]": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "libfabric_version": {
+      "\"fi_info: 1.18.0\"": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16"
+      ],
+      "null": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "libfabric_providers": {
+      "[\"off_coll:\",\"ofi_hook_debug:\",\"ofi_hook_dmabuf_peer_mem:\",\"ofi_hook_hmem:\",\"ofi_hook_noop:\",\"ofi_hook_perf:\",\"ofi_hook_trace:\",\"ofi_mrail:\",\"ofi_rxd:\",\"ofi_rxm:\",\"opx:\",\"psm2:\",\"psm3:\",\"shm:\",\"sockets:\",\"tcp:\",\"udp:\",\"usnic:\",\"verbs:\",\"version: 1.0\",\"version: 118.0\",\"version: 304.1010\"]": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16"
+      ],
+      "null": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p17",
+        "b9p18"
+      ]
+    },
+    "gcc_version": {
+      "\"gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)\"": [
+        "aap01",
+        "aap02",
+        "aap03",
+        "aap04",
+        "acp01",
+        "acp02",
+        "acp03",
+        "acp04",
+        "b9p17",
+        "b9p18"
+      ],
+      "\"gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)\"": [
+        "aac101",
+        "aac102",
+        "aac103",
+        "aac104",
+        "aac105",
+        "aac106",
+        "aac107",
+        "aac108",
+        "aac109",
+        "aac110",
+        "aac111",
+        "aac112",
+        "aac113",
+        "aac114",
+        "aac115",
+        "aac116",
+        "aac117",
+        "aac118",
+        "aac119",
+        "aac120",
+        "acc101",
+        "acc102",
+        "acc103",
+        "acc104",
+        "acc105",
+        "acc106",
+        "acc107",
+        "acc108",
+        "acc109",
+        "acc110",
+        "acc111",
+        "acc112",
+        "acc113",
+        "acc114",
+        "acc115",
+        "acc116",
+        "acc117",
+        "acc118",
+        "acc119",
+        "acc120",
+        "b9p01",
+        "b9p02",
+        "b9p03",
+        "b9p04",
+        "b9p05",
+        "b9p06",
+        "b9p07",
+        "b9p08",
+        "b9p09",
+        "b9p10",
+        "b9p11",
+        "b9p12",
+        "b9p13",
+        "b9p14",
+        "b9p15",
+        "b9p16"
+      ]
+    }
+  },
+  "nodes": {
+    "aac101": {
+      "fingerprint": "0b368912cb33779c9cb98158ba49ba28141d195c171a4f696f20a5e24c84c393",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac102": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac103": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac104": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac105": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac106": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac107": {
+      "fingerprint": "74598bfe056fb35ee3d7545ee47c3bdd8732a689b048546e214f4872ac853270",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac108": {
+      "fingerprint": "603d57a8104a08b5a2c0d5d8ba38925fe0690d3da35bef6e436ea81c8500ece6",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac109": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac110": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac111": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac112": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac113": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac114": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac115": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac116": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac117": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac118": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac119": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aac120": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aap01": {
+      "fingerprint": "561e62353361d82b8bc0f5ec84db07ab16719b12504e17cec4c0aaec8ac8d249",
+      "partition": "volta",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aap02": {
+      "fingerprint": "c2b851316273635cb400380b7fbf9e7aa2a019dae143cd9bbf4b80728222a342",
+      "partition": "volta",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aap03": {
+      "fingerprint": "ae36ca7fafa71d56803e90d112844d6889ff62de88d6472abdf6c07131bd73cf",
+      "partition": "volta",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "aap04": {
+      "fingerprint": "3235c43be2ef11bacfd8956bb14b04fd8ccc0397d9a1306586852a19558e6dfb",
+      "partition": "volta",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc101": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc102": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc103": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc104": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc105": {
+      "fingerprint": "15f4932034d6ce5d688c34119251fc26a9032fb9d223b76991254c15a59990b9",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc106": {
+      "fingerprint": "9bba4666f14d6d5fc16f1c1094fec6f3ed180c16ec492c47947181de4dcaa5b4",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc107": {
+      "fingerprint": "9bba4666f14d6d5fc16f1c1094fec6f3ed180c16ec492c47947181de4dcaa5b4",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc108": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc109": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc110": {
+      "fingerprint": "9bba4666f14d6d5fc16f1c1094fec6f3ed180c16ec492c47947181de4dcaa5b4",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc111": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc112": {
+      "fingerprint": "9bba4666f14d6d5fc16f1c1094fec6f3ed180c16ec492c47947181de4dcaa5b4",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc113": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc114": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc115": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc116": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc117": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc118": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc119": {
+      "fingerprint": "b0d12319c487d01b7db81fdb92e75da44dea1355cb9e7e5e02ac3f42b54d23e0",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acc120": {
+      "fingerprint": "040c5afc9be17231dc92121d8c8f939c948abc350018582eab830fd2dcc4231a",
+      "partition": "cpu36c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acp01": {
+      "fingerprint": "ca919efe1a2d19c26deb0374bdc5d09e3e7f9c8824e05ffbdcf6cf886173b935",
+      "partition": "volta",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acp02": {
+      "fingerprint": "c5c3bf85bfe2ab2e44a9176066938e27458a1755c0c4202be63ed00d6a83f434",
+      "partition": "volta",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acp03": {
+      "fingerprint": "0ed877f3f83dda2f280444d6d12b3feef5b12f9c979203e02c80a2973dd143d0",
+      "partition": "volta",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "acp04": {
+      "fingerprint": "b80efb4c3eb922ebb566456285146eb2ceaac6c74aed7daece783d1035494ae2",
+      "partition": "volta",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p01": {
+      "fingerprint": "36e00000b1edd438ed8c2f5d990f0016f58d5f8514aa3cea6d5dd1174176fdc7",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p02": {
+      "fingerprint": "57ca34d54822ca7d4cb06186f338d41d7d4eabe07a0e6f69678984526e2cae9f",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p03": {
+      "fingerprint": "36e00000b1edd438ed8c2f5d990f0016f58d5f8514aa3cea6d5dd1174176fdc7",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p04": {
+      "fingerprint": "36e00000b1edd438ed8c2f5d990f0016f58d5f8514aa3cea6d5dd1174176fdc7",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p05": {
+      "fingerprint": "36e00000b1edd438ed8c2f5d990f0016f58d5f8514aa3cea6d5dd1174176fdc7",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p06": {
+      "fingerprint": "36e00000b1edd438ed8c2f5d990f0016f58d5f8514aa3cea6d5dd1174176fdc7",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p07": {
+      "fingerprint": "36e00000b1edd438ed8c2f5d990f0016f58d5f8514aa3cea6d5dd1174176fdc7",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p08": {
+      "fingerprint": "36e00000b1edd438ed8c2f5d990f0016f58d5f8514aa3cea6d5dd1174176fdc7",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p09": {
+      "fingerprint": "36e00000b1edd438ed8c2f5d990f0016f58d5f8514aa3cea6d5dd1174176fdc7",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p10": {
+      "fingerprint": "36e00000b1edd438ed8c2f5d990f0016f58d5f8514aa3cea6d5dd1174176fdc7",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p11": {
+      "fingerprint": "36e00000b1edd438ed8c2f5d990f0016f58d5f8514aa3cea6d5dd1174176fdc7",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p12": {
+      "fingerprint": "ae0045ef3891df972596de17e61d498ba7e356dc6d54b0f7981979af1479c6f1",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p13": {
+      "fingerprint": "c2c8b3cee9e284dd1368adea20ae43e7162bdf94efcfdebef2d34e0123f13975",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p14": {
+      "fingerprint": "c297df97117355643a7ae55f2efd565284f574a3e6127023c83423444ad0e202",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p15": {
+      "fingerprint": "eb20e86443a693de834e3a494a902001dcc4d4a48bdcaedf0cf13b2865fe81d6",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p16": {
+      "fingerprint": "c2c8b3cee9e284dd1368adea20ae43e7162bdf94efcfdebef2d34e0123f13975",
+      "partition": "cpu112c",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p17": {
+      "fingerprint": "bae9d97ba610f2217d794107adcba30449ef90a34f6912d16fe6f9716393358f",
+      "partition": "h100",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    },
+    "b9p18": {
+      "fingerprint": "4bd11b573267fafb8d233e37291f5e3230ca3f18ce242a7f48a74cf0c22c7eb9",
+      "partition": "h100",
+      "role": "node",
+      "stored_fingerprint_matches": false
+    }
+  }
+}

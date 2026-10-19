@@ -1,0 +1,19 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.4      =
+   =      MPI/Fortran/C                    =
+   =========================================
+
+cd MG; make CLASS=D
+make[1]: Entering directory '<scratch>/src/intelc/npb-intelc-spr/MG'
+make[2]: Entering directory '<scratch>/src/intelc/npb-intelc-spr/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '<scratch>/src/intelc/npb-intelc-spr/sys'
+../sys/setparams mg D 
+mpiifx -march=sapphirerapids -c  -O3 -march=sapphirerapids mpinpb.f90
+ifx: command line warning #10121: overriding '-march=sapphirerapids' with '-march=sapphirerapids'
+mpiifx -march=sapphirerapids -c  -O3 -march=sapphirerapids mg_data.f90
+ifx: command line warning #10121: overriding '-march=sapphirerapids' with '-march=sapphirerapids'
+mpiifx -march=sapphirerapids -c  -O3 -march=sapphirerapids mg.f90
+ifx: command line warning #10121: overriding '-march=sapphirerapids' with '-march=sapphirerapids'
+mpiifx -march=sapphirerapids  -o ../bin/mg.D.x mg.o mg_data.o mpinpb.o ../common/print_results.o ../common/get_active_nprocs.o ../common/randi8.o ../common/timers.o 
+make[1]: Leaving directory '<scratch>/src/intelc/npb-intelc-spr/MG'

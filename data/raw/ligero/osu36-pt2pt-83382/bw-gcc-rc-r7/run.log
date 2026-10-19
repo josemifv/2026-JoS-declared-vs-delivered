@@ -1,0 +1,36 @@
+pin-pedido: host=acc101 hca_numa=0 core=0 origen=sysfs(node0)
+pin-pedido: host=acc102 hca_numa=0 core=0 origen=sysfs(node0)
+pin-real: host=acc101 cpus=0
+pin-real: host=acc102 cpus=0
+[1791139830.932599] [acc101:1760660:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791139830.983202] [acc102:439418:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791139831.051421] [acc101:1760660:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info
+[1791139831.101166] [acc102:439418:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=rc,sm,self UCX_LOG_LEVEL=info
+[1791139831.102449] [acc101:1760660:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory rc_mlx5/mlx5_0:1)
+[1791139831.102220] [acc102:439418:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory rc_mlx5/mlx5_0:1)
+
+# OSU MPI Bandwidth Test v7.4
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+[1791139831.144271] [acc101:1760660:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)
+[1791139831.144026] [acc102:439418:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(rc_mlx5/mlx5_0:1)
+8                      52.93
+16                    108.34
+32                    212.54
+64                    387.17
+128                   800.06
+256                  1488.22
+512                  2780.20
+1024                 4763.77
+2048                 6940.47
+4096                 7153.21
+8192                 9272.74
+16384               10303.58
+32768               11185.80
+65536               11586.93
+131072              11840.03
+262144              11962.50
+524288              12003.82
+1048576             12041.72
+2097152             12058.85
+4194304             12060.93

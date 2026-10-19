@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "cluster": "turgalium",
+  "node": "b9p12",
+  "role": "login",
+  "partition": "cpu112c",
+  "collected_at": "2026-09-26T10:10:34Z",
+  "run_id": "sw-b9p12",
+  "collector": {
+    "wrapper": "<home>/instrumentation/cmdlog.sh",
+    "dry_run": false
+  },
+  "fingerprint": "50c711e7ab15c2af16aeb154a5c5a06286de5ff865cc3ac582243fc10667cf7f",
+  "fingerprint_attrs": [
+    "gcc_version",
+    "icx_version",
+    "openmpi_version",
+    "intelmpi_version"
+  ],
+  "fingerprint_values": {
+    "gcc_version": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)",
+    "icx_version": null,
+    "openmpi_version": null,
+    "intelmpi_version": null
+  },
+  "attributes": {
+    "modules_avail": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "766906d7806c0bed14d26c0d6be18a1d772ece0654bc459ddce360638eabbdcf",
+          "count": 34
+        },
+        "cmd": [
+          "bash",
+          "-lc",
+          "module avail"
+        ],
+        "out_hash": "70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26",
+        "out_path": "<scratch>/discovery/software/outputs/70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26.out"
+      }
+    },
+    "gcc_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)",
+        "cmd": [
+          "gcc",
+          "--version"
+        ],
+        "out_hash": "0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23",
+        "out_path": "<scratch>/discovery/software/outputs/0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23.out"
+      }
+    },
+    "icx_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "icx_version: exit 127"
+      }
+    },
+    "openmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpirun_version: exit 127; ompi_info_version: exit 127"
+      }
+    },
+    "intelmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpiexec_version: exit 127"
+      }
+    },
+    "mpi_cuda_aware": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "ompi_info_parsable: exit 127"
+      }
+    },
+    "cmmse_stack": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "module_avail: sin dato"
+      }
+    },
+    "gcc_version@mod0": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)",
+        "cmd": [
+          "bash",
+          "-lc",
+          "module load openmpi_gcc/5.0.5 ucx/1.9.0 >/dev/null 2>&1; gcc --version"
+        ],
+        "out_hash": "0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23",
+        "out_path": "<scratch>/discovery/software/outputs/0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23.out"
+      }
+    },
+    "icx_version@mod0": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "mod0_icx: exit 127"
+      }
+    },
+    "openmpi_version@mod0": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "mpirun (Open MPI) 5.0.5",
+        "cmd": [
+          "bash",
+          "-lc",
+          "module load openmpi_gcc/5.0.5 ucx/1.9.0 >/dev/null 2>&1; mpirun --version"
+        ],
+        "out_hash": "9e767dc94b052cf3268406cd592bc52b986adaa35399b4b95268fbfb9f03c0b7",
+        "out_path": "<scratch>/discovery/software/outputs/9e767dc94b052cf3268406cd592bc52b986adaa35399b4b95268fbfb9f03c0b7.out"
+      }
+    },
+    "intelmpi_version@mod0": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "mpiexec (Open MPI) 5.0.5",
+        "cmd": [
+          "bash",
+          "-lc",
+          "module load openmpi_gcc/5.0.5 ucx/1.9.0 >/dev/null 2>&1; mpiexec --version"
+        ],
+        "out_hash": "344aa766ff4d8b24c3098cdc7eded133c3ff44301e6241992799a85defde008a",
+        "out_path": "<scratch>/discovery/software/outputs/344aa766ff4d8b24c3098cdc7eded133c3ff44301e6241992799a85defde008a.out"
+      }
+    },
+    "gcc_version@mod1": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)",
+        "cmd": [
+          "bash",
+          "-lc",
+          "module load intel/2025.3.2 >/dev/null 2>&1; gcc --version"
+        ],
+        "out_hash": "0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23",
+        "out_path": "<scratch>/discovery/software/outputs/0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23.out"
+      }
+    },
+    "icx_version@mod1": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "Intel(R) oneAPI DPC++/C++ Compiler 2025.3.2 (2025.3.2.20260112)",
+        "cmd": [
+          "bash",
+          "-lc",
+          "module load intel/2025.3.2 >/dev/null 2>&1; icx --version"
+        ],
+        "out_hash": "0f5c262e2c939e7182ecfced6c75ec45d8376d5a8213d5cca7362f37111d75a6",
+        "out_path": "<scratch>/discovery/software/outputs/0f5c262e2c939e7182ecfced6c75ec45d8376d5a8213d5cca7362f37111d75a6.out"
+      }
+    },
+    "openmpi_version@mod1": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "Intel(R) MPI Library for Linux* OS, Version 2021.17 Build 20251215 (id: 2ac2f63)",
+        "cmd": [
+          "bash",
+          "-lc",
+          "module load intel/2025.3.2 >/dev/null 2>&1; mpirun --version"
+        ],
+        "out_hash": "437a05a78d1a567e1b4a3ca03766ada1b75f0494af37701ce7f90c3c87abb43a",
+        "out_path": "<scratch>/discovery/software/outputs/437a05a78d1a567e1b4a3ca03766ada1b75f0494af37701ce7f90c3c87abb43a.out"
+      }
+    },
+    "intelmpi_version@mod1": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "Intel(R) MPI Library for Linux* OS, Version 2021.17 Build 20251215 (id: 2ac2f63)",
+        "cmd": [
+          "bash",
+          "-lc",
+          "module load intel/2025.3.2 >/dev/null 2>&1; mpirun --version"
+        ],
+        "out_hash": "437a05a78d1a567e1b4a3ca03766ada1b75f0494af37701ce7f90c3c87abb43a",
+        "out_path": "<scratch>/discovery/software/outputs/437a05a78d1a567e1b4a3ca03766ada1b75f0494af37701ce7f90c3c87abb43a.out"
+      }
+    },
+    "gcc_version@mod2": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)",
+        "cmd": [
+          "gcc",
+          "--version"
+        ],
+        "out_hash": "0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23",
+        "out_path": "<scratch>/discovery/software/outputs/0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23.out"
+      }
+    },
+    "icx_version@mod2": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "mod2_icx: exit 127"
+      }
+    },
+    "openmpi_version@mod2": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "mod2_mpirun: sin dato"
+      }
+    },
+    "intelmpi_version@mod2": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "mod2_mpiexec: sin dato"
+      }
+    }
+  }
+}

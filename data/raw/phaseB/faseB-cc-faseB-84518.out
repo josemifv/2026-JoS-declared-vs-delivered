@@ -1,0 +1,135 @@
+== job 84518 grupo=mg rondas=1..11 inicia 2026-10-09T11:11:18+02:00
+== script: /var/lib/slurmd/job84518/slurm_script
+== sha256(script): e23dd72335325bf59ada8f0acdec0fbd16fb28edfbf406738f1a0bbb89d80d37
+== commit(repo):  85c52ffe45c20ce2bbf62445b6af11466540b5c6
+== nodos asignados (fijos dentro de la asignación):
+b9p13 
+--- control D-B (inicio): osu_allreduce -m 65536 (64 ranks, gcc por defecto)
+--- map-check humo-intel-mlx-1n (pedido: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 en 1n)
+64
+--- map-check humo-intelc-mlx-1n (pedido: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 en 1n)
+64
+== RONDA 1 2026-10-09T11:11:20+02:00
+--- RUN mg-1n par=intel/mlx ronda=1 ranks=64 2026-10-09T11:11:20+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN mg-1n par=intelc/mlx ronda=1 ranks=64 2026-10-09T11:11:41+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+!! SALTADA mg-2n/intel ronda 1: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-2n/intelc ronda 1: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intel ronda 1: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intelc ronda 1: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intel ronda 1: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intelc ronda 1: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+== RONDA 2 2026-10-09T11:12:02+02:00
+--- RUN mg-1n par=intelc/mlx ronda=2 ranks=64 2026-10-09T11:12:02+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN mg-1n par=intel/mlx ronda=2 ranks=64 2026-10-09T11:12:23+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+!! SALTADA mg-2n/intelc ronda 2: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-2n/intel ronda 2: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intelc ronda 2: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intel ronda 2: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intelc ronda 2: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intel ronda 2: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+== RONDA 3 2026-10-09T11:12:43+02:00
+--- RUN mg-1n par=intel/mlx ronda=3 ranks=64 2026-10-09T11:12:43+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN mg-1n par=intelc/mlx ronda=3 ranks=64 2026-10-09T11:13:03+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+!! SALTADA mg-2n/intel ronda 3: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-2n/intelc ronda 3: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intel ronda 3: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intelc ronda 3: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intel ronda 3: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intelc ronda 3: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+== RONDA 4 2026-10-09T11:13:24+02:00
+--- RUN mg-1n par=intelc/mlx ronda=4 ranks=64 2026-10-09T11:13:24+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN mg-1n par=intel/mlx ronda=4 ranks=64 2026-10-09T11:13:45+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+!! SALTADA mg-2n/intelc ronda 4: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-2n/intel ronda 4: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intelc ronda 4: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intel ronda 4: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intelc ronda 4: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intel ronda 4: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+== RONDA 5 2026-10-09T11:14:05+02:00
+--- RUN mg-1n par=intel/mlx ronda=5 ranks=64 2026-10-09T11:14:05+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN mg-1n par=intelc/mlx ronda=5 ranks=64 2026-10-09T11:14:26+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+!! SALTADA mg-2n/intel ronda 5: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-2n/intelc ronda 5: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intel ronda 5: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intelc ronda 5: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intel ronda 5: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intelc ronda 5: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+== RONDA 6 2026-10-09T11:14:46+02:00
+--- RUN mg-1n par=intelc/mlx ronda=6 ranks=64 2026-10-09T11:14:47+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN mg-1n par=intel/mlx ronda=6 ranks=64 2026-10-09T11:15:08+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+!! SALTADA mg-2n/intelc ronda 6: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-2n/intel ronda 6: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intelc ronda 6: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intel ronda 6: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intelc ronda 6: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intel ronda 6: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+== RONDA 7 2026-10-09T11:15:28+02:00
+--- RUN mg-1n par=intel/mlx ronda=7 ranks=64 2026-10-09T11:15:28+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN mg-1n par=intelc/mlx ronda=7 ranks=64 2026-10-09T11:15:48+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+!! SALTADA mg-2n/intel ronda 7: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-2n/intelc ronda 7: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intel ronda 7: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intelc ronda 7: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intel ronda 7: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intelc ronda 7: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+== RONDA 8 2026-10-09T11:16:09+02:00
+--- RUN mg-1n par=intelc/mlx ronda=8 ranks=64 2026-10-09T11:16:09+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN mg-1n par=intel/mlx ronda=8 ranks=64 2026-10-09T11:16:30+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+!! SALTADA mg-2n/intelc ronda 8: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-2n/intel ronda 8: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intelc ronda 8: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intel ronda 8: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intelc ronda 8: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intel ronda 8: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+== RONDA 9 2026-10-09T11:16:50+02:00
+--- RUN mg-1n par=intel/mlx ronda=9 ranks=64 2026-10-09T11:16:50+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN mg-1n par=intelc/mlx ronda=9 ranks=64 2026-10-09T11:17:11+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+!! SALTADA mg-2n/intel ronda 9: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-2n/intelc ronda 9: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intel ronda 9: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intelc ronda 9: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intel ronda 9: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intelc ronda 9: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+== RONDA 10 2026-10-09T11:17:32+02:00
+--- RUN mg-1n par=intelc/mlx ronda=10 ranks=64 2026-10-09T11:17:32+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN mg-1n par=intel/mlx ronda=10 ranks=64 2026-10-09T11:17:53+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+!! SALTADA mg-2n/intelc ronda 10: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-2n/intel ronda 10: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intelc ronda 10: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intel ronda 10: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intelc ronda 10: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intel ronda 10: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+== RONDA 11 2026-10-09T11:18:13+02:00
+--- RUN mg-1n par=intel/mlx ronda=11 ranks=64 2026-10-09T11:18:13+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN mg-1n par=intelc/mlx ronda=11 ranks=64 2026-10-09T11:18:33+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+!! SALTADA mg-2n/intel ronda 11: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-2n/intelc ronda 11: la celda pide 128 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intel ronda 11: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-4n/intelc ronda 11: la celda pide 256 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intel ronda 11: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA mg-8n/intelc ronda 11: la celda pide 512 ranks y la asignación da 64 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+--- control D-B (fin): osu_allreduce -m 65536 (64 ranks, gcc por defecto)
+== fase B mg (1..11) terminada (job 84518) 2026-10-09T11:18:55+02:00
+== manifiesto: <scratch>/cc/raw/phaseB/faseB-mg-84518/manifest.csv

@@ -1,0 +1,41 @@
+
+---------------------------- /opt/apps/modulefiles ----------------------------
+   R/4.0.2                 libfabric/1.11.2
+   ansys/v190              metis/5.1.0
+   ansys/2021r2     (D)    nco/nco-5.3.6_gcc
+   ansysEM/2021            netcdf/4.9.3_gcc
+   boost/1.74.0            nvhpc/21.9               (g)
+   bwa/0.7.15              openblas/0.3.10
+   cdo/2.5.4_gcc           openmpi_gcc/5.0.5_cuda12
+   cmake/3.18.2            openmpi_gcc/5.0.5        (D)
+   cuda/12.9.1      (g)    papi/6.0.0
+   cudnn/8.9_cuda12 (g)    parmetis/4.0.3
+   eccodes/2.3.0           pmix/3.2.3
+   eccodes/2.38.0   (D)    rsem/1.3.3
+   eigen/3.3.7             samtools/1.12
+   fftw/3.3.10_gcc         singularity/2.5.2
+   gatk/4.2.0.0            singularity/2.6.0
+   gdal/2.4.4              singularity/2.6.1
+   gromacs/2021.2          singularity/3.7.3        (D)
+   hdf5/1.14.6_gcc         star/2.7.8a
+   hwloc/2.2.0             starccm/20.06.007-R8
+   hwloc/2.4.1      (D)    tensorflow/2.20          (g)
+   intel/2025.3.2          ucx/1.9.0
+   jasper_gcc/3.0.3        valgrind/3.11.0
+   java/8u261              vasp/5.4.4
+   lammps/20200303
+
+  Where:
+   D:  Default Module
+   g:  built for GPU
+
+If the avail list is too long consider trying:
+
+"module --default avail" or "ml -d av" to just list the default modules.
+"module overview" or "ml ov" to display the number of modules for each name.
+
+Use "module spider" to find all possible modules and extensions.
+Use "module keyword key1 key2 ..." to search for all possible modules matching
+any of the "keys".
+
+

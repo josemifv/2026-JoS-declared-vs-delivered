@@ -1,0 +1,723 @@
+{
+  "schema_version": 1,
+  "cluster": "xula",
+  "node": "xula5204",
+  "role": "node",
+  "partition": "xula4",
+  "collected_at": "2026-10-12T19:24:02Z",
+  "run_id": "disc-xula-20261012T192329Z-3706427",
+  "collector": {
+    "wrapper": "<home>/instrumentation/cmdlog.sh",
+    "dry_run": false
+  },
+  "fingerprint": "909a0ceae844f3b64ef70a6c7ffbfd38b29c7e5e7542ce1b55da5a9042d30632",
+  "fingerprint_attrs": [
+    "cpu_model",
+    "sockets",
+    "cores_per_socket",
+    "threads_per_core",
+    "logical_cpus_online",
+    "microcode",
+    "scaling_governor",
+    "no_turbo",
+    "freq_min_khz",
+    "freq_max_khz",
+    "numa_nodes",
+    "memory_total_kb",
+    "dimm_population",
+    "thp_enabled",
+    "numa_balancing",
+    "os",
+    "kernel",
+    "bios_version",
+    "bios_date",
+    "package_hash",
+    "hca_model",
+    "hca_firmware",
+    "port_state",
+    "port_rate",
+    "ofed_version",
+    "ucx_version",
+    "ucx_transports",
+    "libfabric_version",
+    "libfabric_providers",
+    "gcc_version",
+    "icx_version",
+    "openmpi_version",
+    "intelmpi_version",
+    "gpu_list",
+    "gpu_driver_cuda",
+    "gpu_topology",
+    "gpu_settings"
+  ],
+  "fingerprint_values": {
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8480+",
+    "sockets": 2,
+    "cores_per_socket": 56,
+    "threads_per_core": 2,
+    "logical_cpus_online": 224,
+    "microcode": "0x2b000661",
+    "scaling_governor": [
+      "performance"
+    ],
+    "no_turbo": 0,
+    "freq_min_khz": 800000,
+    "freq_max_khz": 3800000,
+    "numa_nodes": 2,
+    "memory_total_kb": 1056471328,
+    "dimm_population": null,
+    "thp_enabled": "always",
+    "numa_balancing": 1,
+    "os": "rocky-8.6",
+    "kernel": "4.18.0-372.32.1.el8_6.x86_64",
+    "bios_version": "R20",
+    "bios_date": "01/01/2026",
+    "package_hash": {
+      "sha256": "38af8e42162ef5d7939a10009a80d79cfd8a30da0f6d113227c40725d02244ad",
+      "count": 950
+    },
+    "hca_model": "MT4125",
+    "hca_firmware": [
+      "22.35.8002"
+    ],
+    "port_state": [
+      "Active"
+    ],
+    "port_rate": [
+      200
+    ],
+    "ofed_version": "MLNX_OFED_LINUX-4.9-6.0.6.0.202306191140:",
+    "ucx_version": "# UCT version=1.8.0 revision c0a9704",
+    "ucx_transports": [
+      "cma",
+      "posix",
+      "self",
+      "sysv",
+      "tcp"
+    ],
+    "libfabric_version": null,
+    "libfabric_providers": null,
+    "gcc_version": "gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-10)",
+    "icx_version": null,
+    "openmpi_version": null,
+    "intelmpi_version": null,
+    "gpu_list": null,
+    "gpu_driver_cuda": null,
+    "gpu_topology": null,
+    "gpu_settings": null
+  },
+  "attributes": {
+    "cpu_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "Intel(R) Xeon(R) Platinum 8480+",
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "ead742e5116b350b774f64418eb92757499fd76c6c6d819443d970570460123a",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/ead742e5116b350b774f64418eb92757499fd76c6c6d819443d970570460123a.out"
+      }
+    },
+    "sockets": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "ead742e5116b350b774f64418eb92757499fd76c6c6d819443d970570460123a",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/ead742e5116b350b774f64418eb92757499fd76c6c6d819443d970570460123a.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "xula5204"
+        ],
+        "out_hash": "0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48.out"
+      }
+    },
+    "cores_per_socket": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 56,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "ead742e5116b350b774f64418eb92757499fd76c6c6d819443d970570460123a",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/ead742e5116b350b774f64418eb92757499fd76c6c6d819443d970570460123a.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 56,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "xula5204"
+        ],
+        "out_hash": "0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48.out"
+      }
+    },
+    "threads_per_core": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "ead742e5116b350b774f64418eb92757499fd76c6c6d819443d970570460123a",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/ead742e5116b350b774f64418eb92757499fd76c6c6d819443d970570460123a.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "xula5204"
+        ],
+        "out_hash": "0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48.out"
+      }
+    },
+    "logical_cpus_online": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 224,
+        "cmd": [
+          "nproc",
+          "--all"
+        ],
+        "out_hash": "7d95d2923118bf3cdf3f5d4600b1df557deb75d0ca2ef0f8d3718c3691c86455",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/7d95d2923118bf3cdf3f5d4600b1df557deb75d0ca2ef0f8d3718c3691c86455.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 112,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "xula5204"
+        ],
+        "out_hash": "0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48.out"
+      }
+    },
+    "microcode": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "0x2b000661",
+        "cmd": [
+          "cat",
+          "/proc/cpuinfo"
+        ],
+        "out_hash": "7e1bf30c4f2dd4f3dca40e29e96088e4bf07fb8730d716d0382f2bbc783d1eb3",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/7e1bf30c4f2dd4f3dca40e29e96088e4bf07fb8730d716d0382f2bbc783d1eb3.out"
+      }
+    },
+    "scaling_governor": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "performance"
+        ],
+        "cmd": [
+          "bash",
+          "-c",
+          "grep -H . /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
+        ],
+        "out_hash": "2af21dd0d82f70e8ec9eacf216c0a08f869e55c5d0b6ba2fc5b8d036c596081d",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/2af21dd0d82f70e8ec9eacf216c0a08f869e55c5d0b6ba2fc5b8d036c596081d.out"
+      }
+    },
+    "no_turbo": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 0,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/intel_pstate/no_turbo"
+        ],
+        "out_hash": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa.out"
+      }
+    },
+    "freq_min_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 800000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq"
+        ],
+        "out_hash": "20906f772bf0b93e695828b6019fcd7284341cbe95ee2865a6e86b8e400551ed",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/20906f772bf0b93e695828b6019fcd7284341cbe95ee2865a6e86b8e400551ed.out"
+      }
+    },
+    "freq_max_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 3800000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq"
+        ],
+        "out_hash": "54eb4724ea802bde85274ac5e3d37a778219365aa36c15be3e0f81fcad1f75a1",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/54eb4724ea802bde85274ac5e3d37a778219365aa36c15be3e0f81fcad1f75a1.out"
+      }
+    },
+    "numa_nodes": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "numactl",
+          "-H"
+        ],
+        "out_hash": "360109e57eb72ced24dad48c57911f6de0884dcabeb36ae6a76697b3415e6e0c",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/360109e57eb72ced24dad48c57911f6de0884dcabeb36ae6a76697b3415e6e0c.out"
+      }
+    },
+    "memory_total_kb": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1056471328,
+        "cmd": [
+          "cat",
+          "/proc/meminfo"
+        ],
+        "out_hash": "9e99600be35d0caac316540cf59bb8595e66e77774c43526d0bd58926b4f1c87",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/9e99600be35d0caac316540cf59bb8595e66e77774c43526d0bd58926b4f1c87.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 1054720000,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "xula5204"
+        ],
+        "out_hash": "0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48.out"
+      }
+    },
+    "dimm_population": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "dmidecode_mem: exit 1"
+      }
+    },
+    "thp_enabled": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "always",
+        "cmd": [
+          "cat",
+          "/sys/kernel/mm/transparent_hugepage/enabled"
+        ],
+        "out_hash": "092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d.out"
+      }
+    },
+    "numa_balancing": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "cat",
+          "/proc/sys/kernel/numa_balancing"
+        ],
+        "out_hash": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865.out"
+      }
+    },
+    "os": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "rocky-8.6",
+        "cmd": [
+          "cat",
+          "/etc/os-release"
+        ],
+        "out_hash": "f04095cebd15356e179945658c8047c37f3652906273a21469ac3fab27d8e0d1",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/f04095cebd15356e179945658c8047c37f3652906273a21469ac3fab27d8e0d1.out"
+      }
+    },
+    "kernel": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "4.18.0-372.32.1.el8_6.x86_64",
+        "cmd": [
+          "uname",
+          "-r"
+        ],
+        "out_hash": "21a8c593c64351af01c5f6a6498572fe937429fc1584e0f50a4ec228fe0f8159",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/21a8c593c64351af01c5f6a6498572fe937429fc1584e0f50a4ec228fe0f8159.out"
+      }
+    },
+    "bios_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "R20",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_version"
+        ],
+        "out_hash": "923fea6f6de0d5fc45e92c18196a346ea460421fa6be012523cdcea4beab5fce",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/923fea6f6de0d5fc45e92c18196a346ea460421fa6be012523cdcea4beab5fce.out"
+      }
+    },
+    "bios_date": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "01/01/2026",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_date"
+        ],
+        "out_hash": "1faadf6c200691064be14fbb1e02425b007828444958e66b6486e08e97bc936a",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/1faadf6c200691064be14fbb1e02425b007828444958e66b6486e08e97bc936a.out"
+      }
+    },
+    "server_model": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "X440-E7 2U4N2S",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/product_name"
+        ],
+        "out_hash": "7754e783a0b7034f613c53065e6b327965bc69d910cd7d28acfb89be3d7b9431",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/7754e783a0b7034f613c53065e6b327965bc69d910cd7d28acfb89be3d7b9431.out"
+      }
+    },
+    "package_hash": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "38af8e42162ef5d7939a10009a80d79cfd8a30da0f6d113227c40725d02244ad",
+          "count": 950
+        },
+        "cmd": [
+          "rpm",
+          "-qa",
+          "--qf",
+          "%{NAME}-%{VERSION}-%{RELEASE}\\n"
+        ],
+        "out_hash": "cdd38bb24ba764aa7bdfc032e8843829a1ac99686ea3bf93821a845c4c3657e7",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/cdd38bb24ba764aa7bdfc032e8843829a1ac99686ea3bf93821a845c4c3657e7.out"
+      }
+    },
+    "hca_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "MT4125",
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "cd012986599d3e58aeb3709fa14a705396fe42148724a6471f0ed031c68cd2a9",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/cd012986599d3e58aeb3709fa14a705396fe42148724a6471f0ed031c68cd2a9.out"
+      }
+    },
+    "hca_firmware": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "22.35.8002"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "cd012986599d3e58aeb3709fa14a705396fe42148724a6471f0ed031c68cd2a9",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/cd012986599d3e58aeb3709fa14a705396fe42148724a6471f0ed031c68cd2a9.out"
+      }
+    },
+    "port_state": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "Active"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "cd012986599d3e58aeb3709fa14a705396fe42148724a6471f0ed031c68cd2a9",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/cd012986599d3e58aeb3709fa14a705396fe42148724a6471f0ed031c68cd2a9.out"
+      }
+    },
+    "port_rate": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          200
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "cd012986599d3e58aeb3709fa14a705396fe42148724a6471f0ed031c68cd2a9",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/cd012986599d3e58aeb3709fa14a705396fe42148724a6471f0ed031c68cd2a9.out"
+      }
+    },
+    "ofed_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "MLNX_OFED_LINUX-4.9-6.0.6.0.202306191140:",
+        "cmd": [
+          "ofed_info",
+          "-s"
+        ],
+        "out_hash": "2f0e25afaaedb5be902357e9d444044be327ac76414ded4b39551ac6ea242b58",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/2f0e25afaaedb5be902357e9d444044be327ac76414ded4b39551ac6ea242b58.out"
+      }
+    },
+    "ucx_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "# UCT version=1.8.0 revision c0a9704",
+        "cmd": [
+          "ucx_info",
+          "-v"
+        ],
+        "out_hash": "3fa1d876a109690539382fdf4c9e71e8c94a27490881858b575735d41dbf3969",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/3fa1d876a109690539382fdf4c9e71e8c94a27490881858b575735d41dbf3969.out"
+      }
+    },
+    "ucx_transports": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "cma",
+          "posix",
+          "self",
+          "sysv",
+          "tcp"
+        ],
+        "cmd": [
+          "ucx_info",
+          "-d"
+        ],
+        "out_hash": "eb38b8858bf5a27e16cd89c8c1cbd167d568625c3a1b5cde87ca68c694cc35fc",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/eb38b8858bf5a27e16cd89c8c1cbd167d568625c3a1b5cde87ca68c694cc35fc.out"
+      }
+    },
+    "libfabric_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "fi_info_version: exit 127"
+      }
+    },
+    "libfabric_providers": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "fi_info_list: exit 127"
+      }
+    },
+    "modules_avail": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "4677f8b69be1bc254de18004ef055b77ecb6bf58a892c5e35275dedb084cc129",
+          "count": 1842
+        },
+        "cmd": [
+          "bash",
+          "-lc",
+          "module avail"
+        ],
+        "out_hash": "d0c6d4359fe0329760b8c015cde13b71252c9282e523adc86f65f7c623fa9dc2",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/d0c6d4359fe0329760b8c015cde13b71252c9282e523adc86f65f7c623fa9dc2.out"
+      }
+    },
+    "gcc_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-10)",
+        "cmd": [
+          "gcc",
+          "--version"
+        ],
+        "out_hash": "d1abe3c8c05755581a73999217f9e8b703f3594538212e5854fab34f1d2b70d6",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/d1abe3c8c05755581a73999217f9e8b703f3594538212e5854fab34f1d2b70d6.out"
+      }
+    },
+    "icx_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "icx_version: exit 127"
+      }
+    },
+    "openmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpirun_version: exit 127; ompi_info_version: exit 127"
+      }
+    },
+    "intelmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpiexec_version: exit 2"
+      }
+    },
+    "mpi_cuda_aware": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "ompi_info_parsable: exit 127"
+      }
+    },
+    "cmmse_stack": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "module_avail: sin dato"
+      }
+    },
+    "slurm_features": {
+      "F": false,
+      "declared": {
+        "observable": false,
+        "reason": "scontrol_node: sin dato"
+      }
+    },
+    "slurm_gres": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": "(null)",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "xula5204"
+        ],
+        "out_hash": "0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48.out"
+      }
+    },
+    "lustre_version": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "lfs 2.15.4",
+        "cmd": [
+          "lfs",
+          "--version"
+        ],
+        "out_hash": "575f57776e64368a14c0f9416dcba612b20724d29015fa4aad33da39b7328a10",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/575f57776e64368a14c0f9416dcba612b20724d29015fa4aad33da39b7328a10.out"
+      }
+    },
+    "mounts": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "TARGET      SOURCE                                    FSTYPE OPTIONS\n/mnt/nfs    <ip>:/LV_disco_RES/xula3           nfs    rw,relatime,vers=3,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=<ip>,mountvers=3,mountport=892,mountproto=udp,local_lock=none,addr=<ip>\n/mnt/lustre <ip>@o2ib:<ip>@o2ib:/lustre lustre rw,checksum,localflock,nouser_xattr,lruresize,lazystatfs,nouser_fid2path,verbose,noencrypt",
+        "cmd": [
+          "findmnt",
+          "-t",
+          "lustre,nfs,gpfs"
+        ],
+        "out_hash": "69ef691af78d8e4926ea3270284b3f20b75c8bb6568f4505608b7ba7e9f42a05",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/69ef691af78d8e4926ea3270284b3f20b75c8bb6568f4505608b7ba7e9f42a05.out"
+      }
+    },
+    "lustre_errors": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "[Tue Jun  2 13:19:37 2026] Lustre: Lustre: Build Version: 2.15.4\n[Tue Jun  2 13:19:44 2026] LustreError: 4535:0:(mgc_request.c:253:do_config_log_add()) MGC<ip>@o2ib: failed processing log, type 1: rc = -5\n[Tue Jun  2 13:19:52 2026] LustreError: 4893:0:(mgc_request.c:612:do_requeue()) failed processing log: -5\n[Tue Jun  2 13:20:04 2026] Lustre: Mounted lustre-client\n[Thu Jul  2 09:44:43 2026] Lustre: 4693:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1782978280/real 1782978280]  req@000000005383915f x1866946212134592/t0(0) o3->lustre-OST0001-osc-ff2438b70f43c000@<ip>@o2ib:6/4 lens 488/4536 e 0 to 1 dl 1782978287 ref 2 fl Rpc:XQr/0/ffffffff rc 0/-1 job:''\n[Thu Jul  2 09:44:43 2026] Lustre: lustre-OST0001-osc-ff2438b70f43c000: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Thu Jul  2 09:44:46 2026] Lustre: 4697:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1782978284/real 1782978284]  req@0000000001e8d407 x1866946212134848/t0(0) o400->lustre-OST0000-osc-ff2438b70f43c000@<ip>@o2ib:28/4 lens 224/224 e 0 to 1 dl 1782978291 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Thu Jul  2 09:44:46 2026] Lustre: lustre-OST0000-osc-ff2438b70f43c000: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Thu Jul  2 09:49:41 2026] Lustre: lustre-OST0000-osc-ff2438b70f43c000: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Thu Jul  2 09:49:41 2026] Lustre: Skipped 1 previous similar message\n[Thu Jul  2 09:49:46 2026] Lustre: lustre-OST0001-osc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Thu Jul  2 09:51:08 2026] Lustre: lustre-OST0003-osc-ff2438b70f43c000: Connection to lustre-OST0003 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Thu Jul  2 09:51:08 2026] Lustre: Skipped 1 previous similar message\n[Thu Jul  2 09:53:13 2026] Lustre: 4780:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1782978659/real 1782978659]  req@0000000091dbb4dc x1866946212154880/t0(0) o400->lustre-OST0003-osc-ff2438b70f43c000@<ip>@o2ib:28/4 lens 224/224 e 0 to 1 dl 1782978797 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Thu Jul  2 09:53:13 2026] Lustre: 4780:0:(client.c:2295:ptlrpc_expire_one_request()) Skipped 1 previous similar message\n[Thu Jul  2 09:55:43 2026] Lustre: lustre-OST0002-osc-ff2438b70f43c000: Connection to lustre-OST0002 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Thu Jul  2 09:55:43 2026] Lustre: Skipped 1 previous similar message\n[Thu Jul  2 09:55:51 2026] Lustre: lustre-OST0002-osc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Thu Jul  2 09:55:51 2026] Lustre: Skipped 1 previous similar message\n[Fri Jul  3 13:17:50 2026] Lustre: lustre-OST0000-osc-ff2438b70f43c000: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Fri Jul  3 13:17:50 2026] Lustre: Skipped 1 previous similar message\n[Fri Jul  3 13:22:47 2026] Lustre: lustre-OST0000-osc-ff2438b70f43c000: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Fri Jul  3 13:22:52 2026] Lustre: lustre-OST0001-osc-ff2438b70f43c000: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Fri Jul  3 13:24:07 2026] Lustre: lustre-OST0001-osc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Fri Jul  3 13:24:07 2026] Lustre: Skipped 1 previous similar message\n[Mon Jul  6 18:01:14 2026] Lustre: 4777:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1783353672/real 1783353672]  req@00000000a4bede2f x1866956974452032/t0(0) o400->lustre-OST0000-osc-ff2438b70f43c000@<ip>@o2ib:28/4 lens 224/224 e 0 to 1 dl 1783353679 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Mon Jul  6 18:01:14 2026] Lustre: lustre-OST0001-osc-ff2438b70f43c000: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Jul  6 18:01:14 2026] Lustre: 4777:0:(client.c:2295:ptlrpc_expire_one_request()) Skipped 1 previous similar message\n[Mon Jul  6 18:01:17 2026] Lustre: 4747:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1783353675/real 1783353675]  req@000000000cc055e2 x1866956974452288/t0(0) o4->lustre-OST0001-osc-ff2438b70f43c000@<ip>@o2ib:6/4 lens 3408/448 e 0 to 1 dl 1783353682 ref 2 fl Rpc:XQr/0/ffffffff rc 0/-1 job:''\n[Mon Jul  6 18:01:17 2026] Lustre: 4747:0:(client.c:2295:ptlrpc_expire_one_request()) Skipped 2 previous similar messages\n[Mon Jul  6 18:06:12 2026] Lustre: lustre-OST0000-osc-ff2438b70f43c000: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Jul  6 18:06:12 2026] Lustre: Skipped 2 previous similar messages\n[Mon Jul  6 18:06:26 2026] Lustre: lustre-OST0001-osc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Mon Jul  6 18:06:26 2026] Lustre: Skipped 1 previous similar message\n[Wed Jul 15 11:59:13 2026] Lustre: lustre-OST0000-osc-ff2438b70f43c000: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Wed Jul 15 11:59:13 2026] Lustre: Skipped 1 previous similar message\n[Wed Jul 15 12:00:25 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Wed Jul 15 12:01:23 2026] Lustre: 4783:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1784109682/real 1784109682]  req@00000000cf854b6e x1866957578624768/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1784109689 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Wed Jul 15 12:01:23 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail\n[Wed Jul 15 12:02:29 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xa4b3153186fb6707 to 0xa4b3154829429686\n[Wed Jul 15 12:02:29 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Wed Jul 15 12:02:29 2026] Lustre: Skipped 1 previous similar message\n[Wed Jul 15 12:02:43 2026] LustreError: 4652:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@000000001465b32f x1866957578290880/t692807630042(692807630042) o101->lustre-MDT0000-mdc-ff2438b70f43c000@<ip>@o2ib:12/10 lens 584/568 e 0 to 0 dl 1784109776 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''\n[Wed Jul 15 12:03:00 2026] Lustre: lustre-MDT0001-mdc-ff2438b70f43c000: Connection to lustre-MDT0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Wed Jul 15 12:03:25 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Wed Jul 15 12:04:08 2026] LustreError: 11-0: lustre-OST0000-osc-ff2438b70f43c000: operation ost_read to node <ip>@o2ib failed: rc = -107\n[Wed Jul 15 12:04:08 2026] Lustre: lustre-OST0000-osc-ff2438b70f43c000: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Wed Jul 15 12:04:18 2026] Lustre: lustre-OST0000-osc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Wed Jul 15 12:04:18 2026] Lustre: Skipped 1 previous similar message\n[Mon Jul 27 07:40:37 2026] Lustre: lustre-MDT0001-mdc-ff2438b70f43c000: Connection to lustre-MDT0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Jul 27 07:41:03 2026] Lustre: lustre-MDT0001-mdc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Mon Jul 27 07:43:30 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Jul 27 07:44:03 2026] Lustre: 4781:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1785131043/real 1785131043]  req@00000000d6f63389 x1866958428959680/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1785131050 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Mon Jul 27 07:44:03 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail\n[Mon Jul 27 07:44:38 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xa4b3154829429686 to 0xa4b3155078451093\n[Mon Jul 27 07:44:38 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Mon Jul 27 07:45:11 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Fri Jul 31 13:34:02 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Fri Jul 31 13:35:47 2026] Lustre: 4780:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1785497748/real 1785497748]  req@000000008cf5b3b9 x1866958601060352/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1785497755 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Fri Jul 31 13:35:47 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail\n[Fri Jul 31 13:37:14 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xa4b3155078451093 to 0xb011bbb21c602338\n[Fri Jul 31 13:37:14 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Fri Jul 31 13:38:18 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Fri Jul 31 13:41:49 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Fri Jul 31 13:42:01 2026] Lustre: 4818:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1785498122/real 1785498122]  req@000000007f5801d5 x1866958601064704/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1785498129 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Fri Jul 31 13:42:01 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail\n[Fri Jul 31 13:42:06 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xb011bbb21c602338 to 0x32e865c835b3637b\n[Fri Jul 31 13:42:06 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Fri Jul 31 13:43:55 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Mon Aug 10 11:01:46 2026] LustreError: 11-0: lustre-MDT0000-mdc-ff2438b70f43c000: operation mds_close to node <ip>@o2ib failed: rc = -107\n[Mon Aug 10 11:01:46 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Aug 10 11:02:39 2026] Lustre: 4778:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1786352561/real 1786352561]  req@0000000002ce68a0 x1866959080915200/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1786352568 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Mon Aug 10 11:02:39 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail\n[Mon Aug 10 11:03:28 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0x32e865c835b3637b to 0xb011bbb21c9c6268\n[Mon Aug 10 11:03:28 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Mon Aug 10 11:04:17 2026] LustreError: 4652:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@0000000072c467e9 x1866959053693696/t708946406410(708946406410) o101->lustre-MDT0000-mdc-ff2438b70f43c000@<ip>@o2ib:12/10 lens 592/568 e 0 to 0 dl 1786352674 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''\n[Mon Aug 10 11:04:17 2026] LustreError: 4652:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 20 previous similar messages\n[Mon Aug 10 11:05:12 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Mon Aug 10 11:05:32 2026] Lustre: 4823:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1786352734/real 1786352734]  req@000000003cad5a7f x1866959080924608/t0(0) o400->lustre-OST0000-osc-ff2438b70f43c000@<ip>@o2ib:28/4 lens 224/224 e 0 to 1 dl 1786352741 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Mon Aug 10 11:05:32 2026] Lustre: lustre-OST0001-osc-ff2438b70f43c000: Connection to lustre-OST0001 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Aug 10 11:05:32 2026] Lustre: 4823:0:(client.c:2295:ptlrpc_expire_one_request()) Skipped 1 previous similar message\n[Mon Aug 10 11:07:51 2026] Lustre: lustre-OST0002-osc-ff2438b70f43c000: Connection to lustre-OST0002 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Aug 10 11:07:51 2026] Lustre: Skipped 2 previous similar messages\n[Mon Aug 10 11:09:15 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Aug 10 11:09:20 2026] LustreError: 4652:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@0000000072c467e9 x1866959053693696/t708946406410(708946406410) o101->lustre-MDT0000-mdc-ff2438b70f43c000@<ip>@o2ib:12/10 lens 592/568 e 0 to 0 dl 1786352977 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''\n[Mon Aug 10 11:09:20 2026] LustreError: 4652:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 376 previous similar messages\n[Mon Aug 10 11:09:22 2026] Lustre: 4870:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1786352965/real 1786352965]  req@00000000099b907d x1866959081117120/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1786352972 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Mon Aug 10 11:09:22 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail\n[Mon Aug 10 11:09:29 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xb011bbb21c9c6268 to 0xd11172ef599fbca6\n[Mon Aug 10 11:09:29 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Mon Aug 10 11:10:17 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Wed Oct  7 11:37:01 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Wed Oct  7 11:38:10 2026] Lustre: 4804:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1791365899/real 1791365899]  req@00000000ce334c55 x1867004959440256/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1791365906 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Wed Oct  7 11:38:10 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail\n[Wed Oct  7 11:39:37 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xd11172ef599fbca6 to 0xb011bbb21ce011de\n[Wed Oct  7 11:39:37 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Wed Oct  7 11:40:37 2026] LustreError: 4652:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@00000000c5159ba2 x1866994131240128/t719175862437(719175862437) o101->lustre-MDT0000-mdc-ff2438b70f43c000@<ip>@o2ib:12/10 lens 608/568 e 0 to 0 dl 1791366061 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''\n[Wed Oct  7 11:40:37 2026] LustreError: 4652:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 375 previous similar messages\n[Wed Oct  7 11:40:48 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Wed Oct  7 11:41:01 2026] Lustre: 4842:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1791366070/real 1791366070]  req@000000007e56baa6 x1867004959457024/t0(0) o400->lustre-OST0001-osc-ff2438b70f43c000@<ip>@o2ib:28/4 lens 224/224 e 0 to 1 dl 1791366077 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Wed Oct  7 11:41:01 2026] Lustre: lustre-OST0000-osc-ff2438b70f43c000: Connection to lustre-OST0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Wed Oct  7 11:41:01 2026] Lustre: 4842:0:(client.c:2295:ptlrpc_expire_one_request()) Skipped 1 previous similar message\n[Wed Oct  7 11:44:31 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection to lustre-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Wed Oct  7 11:44:32 2026] Lustre: Skipped 1 previous similar message\n[Wed Oct  7 11:44:38 2026] Lustre: 4835:0:(client.c:2295:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1791366288/real 1791366288]  req@000000008383f84b x1867004959525440/t0(0) o400->MGC<ip>@o2ib@<ip>@o2ib:26/25 lens 224/224 e 0 to 1 dl 1791366295 ref 1 fl Rpc:XNQr/0/ffffffff rc 0/-1 job:''\n[Wed Oct  7 11:44:38 2026] LustreError: 166-1: MGC<ip>@o2ib: Connection to MGS (at <ip>@o2ib) was lost; in progress operations using this service will fail\n[Wed Oct  7 11:44:48 2026] LustreError: 4652:0:(client.c:3185:ptlrpc_replay_interpret()) @@@ status 301, old was 0  req@00000000c5159ba2 x1866994131240128/t719175862437(719175862437) o101->lustre-MDT0000-mdc-ff2438b70f43c000@<ip>@o2ib:12/10 lens 608/568 e 0 to 0 dl 1791366473 ref 2 fl Interpret:RPQU/4/0 rc 301/301 job:''\n[Wed Oct  7 11:44:48 2026] LustreError: 4652:0:(client.c:3185:ptlrpc_replay_interpret()) Skipped 39 previous similar messages\n[Wed Oct  7 11:45:01 2026] Lustre: Evicted from MGS (at <ip>@o2ib) after server handle changed from 0xb011bbb21ce011de to 0xa93bb3db9c32c11e\n[Wed Oct  7 11:45:01 2026] Lustre: MGC<ip>@o2ib: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Wed Oct  7 11:45:14 2026] Lustre: lustre-MDT0000-mdc-ff2438b70f43c000: Connection restored to <ip>@o2ib (at <ip>@o2ib)",
+        "cmd": [
+          "bash",
+          "-c",
+          "dmesg -T | grep -iE 'lustre|LustreError'"
+        ],
+        "out_hash": "170d40e29663fef295aadfaa88fdd20a4e9afc226e654007d45ac11465404696",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/170d40e29663fef295aadfaa88fdd20a4e9afc226e654007d45ac11465404696.out"
+      }
+    },
+    "gpu_list": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_L: exit 127"
+      },
+      "declared": {
+        "observable": true,
+        "value": "(null)",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "xula5204"
+        ],
+        "out_hash": "0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48",
+        "out_path": "<scratch>/cc/raw/xula/fase1/discovery/outputs/0af8eb1567754ba648e55c2cf88c269471951e808b17d2900c208d55335baa48.out"
+      }
+    },
+    "gpu_driver_cuda": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi: exit 127"
+      }
+    },
+    "gpu_topology": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_topo: exit 127"
+      }
+    },
+    "gpu_settings": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_q: exit 127"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+TARGET         SOURCE                                                                         FSTYPE OPTIONS
+/              <ip>:/install/netboot/sles12.3/x86_64/lusi2/rootimg                      nfs    ro,relatime,vers=3,rsize=1048576,wsize=1048576,namlen=255,hard,nolock,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=<ip>,mountvers=3,mountport=20048,mountproto=udp,local_lock=all,addr=<ip>
+├─/lustre      <ip>@o2ib:<ip>@o2ib:/LUSTRE                                        lustre rw,flock,lazystatfs
+└─/var/lib/rpm <ip>:/install/netboot/sles12.3/x86_64/lusi2/rootimg/.default/var/lib/rpm nfs    ro,relatime,vers=3,rsize=1048576,wsize=1048576,namlen=255,hard,nolock,proto=tcp,timeo=600,retrans=2,sec=sys,mountaddr=<ip>,mountvers=3,mountport=20048,mountproto=udp,local_lock=all,addr=<ip>

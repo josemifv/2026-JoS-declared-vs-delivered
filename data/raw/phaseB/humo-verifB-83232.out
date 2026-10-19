@@ -1,0 +1,148 @@
+== humo verif fase B (job 83232) en b9p06 b9p07 
+== criterio: NPB 'Verification Successful' (sin 'Verification failed'); HPCG 'HPCG result is VALID'
+================= par gcc/rc
+--- librerías del binario EP bajo el stack (gcc):
+    libmpi_usempif08.so.40
+    libmpi_usempi_ignore_tkr.so.40
+    libmpi_mpifh.so.40
+    libmpi.so.40
+    libgfortran.so.5
+    libucp.so.0
+    libucs.so.0
+    libuct.so.0
+--- mapa pedido = real (R10):
+    ranks=128  cpus distintos=64
+    NPB ep clase D: FALLO  ()
+    PROC /opt/apps/openmpi_gcc/5.0.5/lib/libmpi.so.40.40.5
+    PROC /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_mpifh.so.40.40.0
+    PROC /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_usempi_ignore_tkr.so.40.40.0
+    PROC /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_usempif08.so.40.40.2
+    PROC /usr/lib64/libgfortran.so.5.0.0
+    PROC /usr/lib64/libmlx5.so.1.25.58.0
+    PROC /usr/lib64/libucp.so.0.0.0
+    PROC /usr/lib64/libucs.so.0.0.0
+    PROC /usr/lib64/libuct.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_cma.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_ib.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_ib_mlx5.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_knem.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_rdmacm.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_xpmem.so.0.0.0
+    NPB ft clase D: FALLO  ()
+    transporte efectivo:
+      [1791117016.618234] [b9p07:3299138:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#2 tag(rc_mlx5/mlx5_0:1)
+      [1791117016.639123] [b9p06:3220675:a]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#2 tag(rc_mlx5/mlx5_0:1)
+    NPB cg clase D: FALLO  ()
+    NPB mg clase D: FALLO  ()
+    HPCG 3.1.0: FALLO
+================= par gcc/dc
+--- librerías del binario EP bajo el stack (gcc):
+    libmpi_usempif08.so.40
+    libmpi_usempi_ignore_tkr.so.40
+    libmpi_mpifh.so.40
+    libmpi.so.40
+    libgfortran.so.5
+    libucp.so.0
+    libucs.so.0
+    libuct.so.0
+--- mapa pedido = real (R10):
+    ranks=128  cpus distintos=64
+    NPB ep clase D: FALLO  ()
+    PROC /opt/apps/openmpi_gcc/5.0.5/lib/libmpi.so.40.40.5
+    PROC /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_mpifh.so.40.40.0
+    PROC /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_usempi_ignore_tkr.so.40.40.0
+    PROC /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_usempif08.so.40.40.2
+    PROC /usr/lib64/libgfortran.so.5.0.0
+    PROC /usr/lib64/libmlx5.so.1.25.58.0
+    PROC /usr/lib64/libucp.so.0.0.0
+    PROC /usr/lib64/libucs.so.0.0.0
+    PROC /usr/lib64/libuct.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_cma.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_ib.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_ib_mlx5.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_knem.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_rdmacm.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_xpmem.so.0.0.0
+    NPB ft clase D: FALLO  ()
+    transporte efectivo:
+      [1791117089.446036] [b9p07:3300750:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#2 tag(dc_mlx5/mlx5_0:1)
+      [1791117089.449447] [b9p06:3222773:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#2 tag(dc_mlx5/mlx5_0:1)
+    NPB cg clase D: FALLO  ()
+    NPB mg clase D: FALLO  ()
+    HPCG 3.1.0: FALLO
+================= par gcc/ud
+--- librerías del binario EP bajo el stack (gcc):
+    libmpi_usempif08.so.40
+    libmpi_usempi_ignore_tkr.so.40
+    libmpi_mpifh.so.40
+    libmpi.so.40
+    libgfortran.so.5
+    libucp.so.0
+    libucs.so.0
+    libuct.so.0
+--- mapa pedido = real (R10):
+    ranks=128  cpus distintos=64
+    NPB ep clase D: FALLO  ()
+    PROC /opt/apps/openmpi_gcc/5.0.5/lib/libmpi.so.40.40.5
+    PROC /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_mpifh.so.40.40.0
+    PROC /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_usempi_ignore_tkr.so.40.40.0
+    PROC /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_usempif08.so.40.40.2
+    PROC /usr/lib64/libgfortran.so.5.0.0
+    PROC /usr/lib64/libmlx5.so.1.25.58.0
+    PROC /usr/lib64/libucp.so.0.0.0
+    PROC /usr/lib64/libucs.so.0.0.0
+    PROC /usr/lib64/libuct.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_cma.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_ib.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_ib_mlx5.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_knem.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_rdmacm.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_xpmem.so.0.0.0
+    NPB ft clase D: FALLO  ()
+    transporte efectivo:
+      [1791117160.522786] [b9p07:3302611:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#2 tag(ud_mlx5/mlx5_0:1)
+      [1791117160.540248] [b9p06:3224750:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#2 tag(ud_mlx5/mlx5_0:1)
+    NPB cg clase D: FALLO  ()
+    NPB mg clase D: FALLO  ()
+    HPCG 3.1.0: FALLO
+================= par intel/mlx
+--- librerías del binario EP bajo el stack (intel):
+    libmpifort.so.12
+    libmpi.so.12
+    libgfortran.so.5
+--- mapa pedido = real (R10):
+    ranks=128  cpus distintos=64
+    NPB ep clase D: FALLO  ()
+    PROC /opt/apps/intel/2025.3.2/mpi/2021.17/lib/libmpi.so.12.0.0
+    PROC /opt/apps/intel/2025.3.2/mpi/2021.17/lib/libmpifort.so.12.0.0
+    PROC /opt/apps/intel/2025.3.2/mpi/2021.17/opt/mpi/libfabric/lib/libfabric.so.1
+    PROC /opt/apps/intel/2025.3.2/mpi/2021.17/opt/mpi/libfabric/lib/prov/libmlx-fi.so
+    PROC /opt/apps/intel/2025.3.2/mpi/2021.17/opt/mpi/libfabric/lib/prov/libpsm3-fi.so
+    PROC /opt/apps/intel/2025.3.2/mpi/2021.17/opt/mpi/libfabric/lib/prov/libpsmx2-fi.so
+    PROC /opt/apps/intel/2025.3.2/mpi/2021.17/opt/mpi/libfabric/lib/prov/librxm-fi.so
+    PROC /opt/apps/intel/2025.3.2/mpi/2021.17/opt/mpi/libfabric/lib/prov/libshm-fi.so
+    PROC /opt/apps/intel/2025.3.2/mpi/2021.17/opt/mpi/libfabric/lib/prov/libtcp-fi.so
+    PROC /opt/apps/intel/2025.3.2/mpi/2021.17/opt/mpi/libfabric/lib/prov/libverbs-1.1-fi.so
+    PROC /opt/apps/intel/2025.3.2/mpi/2021.17/opt/mpi/libfabric/lib/prov/libverbs-1.12-fi.so
+    PROC /usr/lib64/libgfortran.so.5.0.0
+    PROC /usr/lib64/libmlx5.so.1.25.58.0
+    PROC /usr/lib64/libucp.so.0.0.0
+    PROC /usr/lib64/libucs.so.0.0.0
+    PROC /usr/lib64/libuct.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_cma.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_ib.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_ib_mlx5.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_knem.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_rdmacm.so.0.0.0
+    PROC /usr/lib64/ucx/libuct_xpmem.so.0.0.0
+    NPB ft clase D: FALLO  ()
+    transporte efectivo:
+      [0] MPI startup(): libfabric provider: mlx
+    NPB cg clase D: FALLO  ()
+    NPB mg clase D: FALLO  ()
+    HPCG 3.1.0: FALLO
+================= RESUMEN
+  NPB  clase D: 0/16 verificaciones OK
+  HPCG 3.1.0  : 0/4 con resultado VALID
+  map-checks fallidos: 0
+== humo de verificación terminado (job 83232); registro en <scratch>/cc/raw/phaseB/humo-verif-83232

@@ -1,0 +1,19 @@
+== E-d job=83735 modo=ingenuo rondas=1..1 sha256=615a6a44f1e822563b4ba6e9e5f4ccfb5e15381c82099a215bc6ee29493a867e 2026-10-05T23:37:52+02:00
+== nodos asignados (dato del modo ingenuo; fijos dentro de la asignación):
+b9p02 SMT=2 b9p08 SMT=1 b9p09 SMT=1 b9p10 SMT=1 b9p11 SMT=1 b9p12 SMT=2 b9p13 SMT=1 b9p14 SMT=1 
+--- map-check ingenuo (colocación: objeto de la prueba)
+   ranks con cpus= : 512
+--- ldd ingenuo (QA 7b: libmpi del binario = la del mpirun cargado)
+	libmpi_usempif08.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_usempif08.so.40 (0x00007f1822b0b000)
+	libmpi_usempi_ignore_tkr.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_usempi_ignore_tkr.so.40 (0x00007f1822af9000)
+	libmpi_mpifh.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi_mpifh.so.40 (0x00007f1822a8c000)
+	libmpi.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi.so.40 (0x00007f1822703000)
+	libucp.so.0 => /lib64/libucp.so.0 (0x00007f1821ee1000)
+level1 start: run_id=83735 node=b9p02 mode=unprivileged estado=<home>/.level1_state/83735
+level1 pre: contadores IB capturados (unprivileged)
+== RONDA 1 2026-10-05T23:37:54+02:00
+    -> exit=0 verif=SUCCESSFUL
+level1 post: contadores IB capturados tras 2 s
+data/raw/context/83735.json
+level1 stop: contexto escrito en data/raw/context/83735.json
+== E-d ingenuo (1..1) terminado (job 83735) 2026-10-05T23:38:28+02:00 — <scratch>/cc/raw/infrautil/ed-ingenuo-83735/manifest.csv

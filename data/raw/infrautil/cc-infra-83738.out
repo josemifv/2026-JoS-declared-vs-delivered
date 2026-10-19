@@ -1,0 +1,60 @@
+== infrautil job=83738 c36-off nodo=aac102 SMT=1 hilo(s)/core sha=fe4a32ab8aa10b47c93ca77fb3798f7bcc6eef8a799251e3587e820090b241cb 2026-10-05T22:46:52+02:00
+== commit(desplegado): fd9c7366075a6298af032067d6e0ec80a21f0841
+level1 start: run_id=83738 node=aac102 mode=unprivileged estado=<home>/.level1_state/83738
+level1 pre: contadores IB capturados (unprivileged)
+--- RUN stream gcc ranks=16 binding=default ronda=1 (calentamiento)
+--- RUN stream gcc ranks=16 binding=explicit ronda=1 (calentamiento)
+--- RUN stream gcc ranks=32 binding=default ronda=1 (calentamiento)
+--- RUN stream gcc ranks=32 binding=explicit ronda=1 (calentamiento)
+--- RUN stream gcc ranks=56 binding=default ronda=1 (calentamiento)
+!! celda gcc/stream/56/explicit: sin mapa para c36-off/56 (declarada en el manifiesto)
+--- RUN stream gcc ranks=64 binding=default ronda=1 (calentamiento)
+!! celda gcc/stream/64/explicit: sin mapa para c36-off/64 (declarada en el manifiesto)
+--- map-check gcc/ft/16/default
+    ranks con cpus=: 16
+--- RUN ft gcc ranks=16 binding=default ronda=1 (calentamiento)
+--- map-check gcc/ft/16/explicit
+!! map-check FALLO gcc/ft/16/explicit (conservado)
+    ranks con cpus=: 0
+0
+--- RUN ft gcc ranks=16 binding=explicit ronda=1 (calentamiento)
+--- map-check gcc/ft/32/default
+    ranks con cpus=: 32
+--- RUN ft gcc ranks=32 binding=default ronda=1 (calentamiento)
+--- map-check gcc/ft/32/explicit
+!! map-check FALLO gcc/ft/32/explicit (conservado)
+    ranks con cpus=: 0
+0
+--- RUN ft gcc ranks=32 binding=explicit ronda=1 (calentamiento)
+!! celda gcc/ep/16/default: falta <scratch>/benchmarks/npb/gcc/clx/ep.D.x (declarada en el manifiesto)
+!! celda gcc/ep/16/explicit: falta <scratch>/benchmarks/npb/gcc/clx/ep.D.x (declarada en el manifiesto)
+!! celda gcc/ep/32/default: falta <scratch>/benchmarks/npb/gcc/clx/ep.D.x (declarada en el manifiesto)
+!! celda gcc/ep/32/explicit: falta <scratch>/benchmarks/npb/gcc/clx/ep.D.x (declarada en el manifiesto)
+--- RUN stream intel ranks=16 binding=default ronda=1 (calentamiento)
+--- RUN stream intel ranks=16 binding=explicit ronda=1 (calentamiento)
+--- RUN stream intel ranks=32 binding=default ronda=1 (calentamiento)
+--- RUN stream intel ranks=32 binding=explicit ronda=1 (calentamiento)
+--- RUN stream intel ranks=56 binding=default ronda=1 (calentamiento)
+!! celda intel/stream/56/explicit: sin mapa para c36-off/56 (declarada en el manifiesto)
+--- RUN stream intel ranks=64 binding=default ronda=1 (calentamiento)
+!! celda intel/stream/64/explicit: sin mapa para c36-off/64 (declarada en el manifiesto)
+--- map-check intel/ft/16/default
+    ranks con cpus=: 16
+--- RUN ft intel ranks=16 binding=default ronda=1 (calentamiento)
+--- map-check intel/ft/16/explicit
+    ranks con cpus=: 16
+--- RUN ft intel ranks=16 binding=explicit ronda=1 (calentamiento)
+--- map-check intel/ft/32/default
+    ranks con cpus=: 32
+--- RUN ft intel ranks=32 binding=default ronda=1 (calentamiento)
+--- map-check intel/ft/32/explicit
+    ranks con cpus=: 32
+--- RUN ft intel ranks=32 binding=explicit ronda=1 (calentamiento)
+!! celda intel/ep/16/default: falta <scratch>/benchmarks/npb/intel/clx/ep.D.x (declarada en el manifiesto)
+!! celda intel/ep/16/explicit: falta <scratch>/benchmarks/npb/intel/clx/ep.D.x (declarada en el manifiesto)
+!! celda intel/ep/32/default: falta <scratch>/benchmarks/npb/intel/clx/ep.D.x (declarada en el manifiesto)
+!! celda intel/ep/32/explicit: falta <scratch>/benchmarks/npb/intel/clx/ep.D.x (declarada en el manifiesto)
+level1 post: contadores IB capturados tras 2 s
+data/raw/context/83738.json
+level1 stop: contexto escrito en data/raw/context/83738.json
+== infrautil c36-off terminado (job 83738) 2026-10-05T23:14:53+02:00 — <scratch>/cc/raw/infrautil/c36-off-83738/manifest.csv

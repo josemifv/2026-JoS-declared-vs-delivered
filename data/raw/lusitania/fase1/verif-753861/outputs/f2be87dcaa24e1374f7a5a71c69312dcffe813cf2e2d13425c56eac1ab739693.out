@@ -1,0 +1,880 @@
+pin-pedido: host=s02r1b02 rank=1 core=0 origen=sysfs(node0)
+pin-real: host=s02r1b02 rank=1 cpus=0
+	linux-vdso.so.1 (0x00007fff6f3e3000)
+	libmpicxx.so.12 => /lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/lib/libmpicxx.so.12 (0x00007f2f9424a000)
+	libmpifort.so.12 => /lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/lib/libmpifort.so.12 (0x00007f2f93e93000)
+	libmpi.so.12 => /lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/lib/libmpi.so.12 (0x00007f2f9235b000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f2f92142000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f2f91f25000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f2f91d21000)
+	libstdc++.so.6 => /lusitania_apps/gcc-11.2.0/lib64/libstdc++.so.6 (0x00007f2f91911000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f2f91614000)
+	libgcc_s.so.1 => /lusitania_apps/gcc-11.2.0/lib64/libgcc_s.so.1 (0x00007f2f913fb000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f2f91057000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000563c8e148000)
+pin-pedido: host=s02r1b01 rank=0 core=0 origen=sysfs(node0)
+pin-real: host=s02r1b01 rank=0 cpus=0
+	linux-vdso.so.1 (0x00007ffc401de000)
+	libmpicxx.so.12 => /lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/lib/libmpicxx.so.12 (0x00007f77e2a91000)
+	libmpifort.so.12 => /lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/lib/libmpifort.so.12 (0x00007f77e26da000)
+	libmpi.so.12 => /lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/lib/libmpi.so.12 (0x00007f77e0ba2000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f77e0989000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f77e076c000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f77e0568000)
+	libstdc++.so.6 => /lusitania_apps/gcc-11.2.0/lib64/libstdc++.so.6 (0x00007f77e0158000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f77dfe5b000)
+	libgcc_s.so.1 => /lusitania_apps/gcc-11.2.0/lib64/libgcc_s.so.1 (0x00007f77dfc42000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f77df89e000)
+	/lib64/ld-linux-x86-64.so.2 (0x000055f50ea95000)
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.11  Build 20231005 (id: 74c4a23)
+[0] MPI startup(): Copyright (C) 2003-2023 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:11164:1792102938::core:core:ze_hmem_dl_init():497<warn> Failed to dlopen libze_loader.so
+libfabric:11164:1792102938::core:core:ofi_hmem_init():421<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:11164:1792102938::core:mr:ofi_default_cache_size():79<info> default cache size=1055128640
+[0] MPI startup(): libfabric version: 1.18.1-impi
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:5742:1792102938::core:core:ze_hmem_dl_init():497<warn> Failed to dlopen libze_loader.so
+libfabric:5742:1792102938::core:core:ofi_hmem_init():421<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:5742:1792102938::core:mr:ofi_default_cache_size():79<info> default cache size=2110325248
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:11164:1792102938::core:mr:ofi_default_cache_size():79<info> default cache size=1055128640
+libfabric:11164:1792102938::core:core:ofi_register_provider():476<info> registering provider: verbs (118.10)
+libfabric:11164:1792102938::core:core:ofi_register_provider():476<info> registering provider: tcp (118.10)
+libfabric:11164:1792102938::core:core:ofi_register_provider():503<info> "tcp" filtered by provider include/exclude list, skipping
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:11164:1792102938::core:core:ofi_register_provider():476<info> registering provider: shm (118.20)
+libfabric:11164:1792102938::core:core:ofi_register_provider():503<info> "shm" filtered by provider include/exclude list, skipping
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:11164:1792102938::core:core:ze_hmem_dl_init():497<warn> Failed to dlopen libze_loader.so
+libfabric:11164:1792102938::core:core:ofi_hmem_init():421<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:11164:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:11164:1792102938::core:core:ofi_register_provider():476<info> registering provider: ofi_rxm (118.10)
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:5742:1792102938::core:mr:ofi_default_cache_size():79<info> default cache size=2110325248
+libfabric:5742:1792102938::core:core:ofi_register_provider():476<info> registering provider: verbs (118.10)
+libfabric:5742:1792102938::core:core:ofi_register_provider():476<info> registering provider: tcp (118.10)
+libfabric:5742:1792102938::core:core:ofi_register_provider():503<info> "tcp" filtered by provider include/exclude list, skipping
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:5742:1792102938::core:core:ofi_register_provider():476<info> registering provider: shm (118.20)
+libfabric:5742:1792102938::core:core:ofi_register_provider():503<info> "shm" filtered by provider include/exclude list, skipping
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:5742:1792102938::core:core:ze_hmem_dl_init():497<warn> Failed to dlopen libze_loader.so
+libfabric:5742:1792102938::core:core:ofi_hmem_init():421<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:5742:1792102938::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:5742:1792102938::core:core:ofi_register_provider():476<info> registering provider: ofi_rxm (118.10)
+libfabric:11164:1792102938::psm3:core:fi_prov_ini():921<info> s02r1b02:rank1: build options: VERSION=705.1000=7.5.1.0, HAVE_PSM3_SRC=1, PSM3_CUDA=0
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_bool():94<info> s02r1b02:rank1: variable FI_PSM3_NAME_SERVER=<not set>
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_bool():94<info> s02r1b02:rank1: variable FI_PSM3_TAGGED_RMA=<not set>
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_str():128<info> s02r1b02:rank1: read string var FI_PSM3_UUID=5b160000-cec3-db7a-e85d-06006878d01c
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_int():113<info> s02r1b02:rank1: read int var FI_PSM3_DELAY=0
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_int():109<info> s02r1b02:rank1: variable FI_PSM3_TIMEOUT=<not set>
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_int():109<info> s02r1b02:rank1: variable FI_PSM3_PROG_INTERVAL=<not set>
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_str():124<info> s02r1b02:rank1: variable FI_PSM3_PROG_AFFINITY=<not set>
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_int():113<info> s02r1b02:rank1: read int var FI_PSM3_INJECT_SIZE=32768
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_int():113<info> s02r1b02:rank1: read int var FI_PSM3_LOCK_LEVEL=0
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_bool():94<info> s02r1b02:rank1: variable FI_PSM3_LAZY_CONN=<not set>
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_int():109<info> s02r1b02:rank1: variable FI_PSM3_CONN_TIMEOUT=<not set>
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_bool():94<info> s02r1b02:rank1: variable FI_PSM3_DISCONNECT=<not set>
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_str():124<info> s02r1b02:rank1: variable FI_PSM3_TAG_LAYOUT=<not set>
+libfabric:11164:1792102938::psm3:core:psmx3_param_get_bool():94<info> s02r1b02:rank1: variable FI_PSM3_YIELD_MODE=<not set>
+libfabric:11164:1792102938::core:core:ofi_register_provider():476<info> registering provider: psm3 (705.1000)
+libfabric:11164:1792102938::core:core:ofi_register_provider():503<info> "psm3" filtered by provider include/exclude list, skipping
+libfabric:11164:1792102938::core:core:ofi_register_provider():476<info> registering provider: ofi_hook_noop (118.10)
+libfabric:11164:1792102938::core:core:ofi_register_provider():476<info> registering provider: off_coll (118.10)
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:11164:1792102938::verbs:core:vrb_read_params():720<info> dmabuf support is disabled
+libfabric:11164:1792102938::verbs:fabric:verbs_devs_print():889<info> list of verbs devices found for FI_EP_MSG:
+libfabric:11164:1792102938::verbs:fabric:verbs_devs_print():893<info> #1 mlx4_0 - IPoIB addresses:
+libfabric:11164:1792102938::verbs:fabric:verbs_devs_print():903<info> 	<ip>
+libfabric:11164:1792102938::verbs:fabric:vrb_get_device_attrs():620<info> device mlx4_0: first found active port is 1
+libfabric:11164:1792102938::verbs:fabric:vrb_get_device_attrs():620<info> device mlx4_0: first found active port is 1
+libfabric:11164:1792102938::verbs:fabric:vrb_get_device_attrs():620<info> device mlx4_0: first found active port is 1
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-xrc
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-xrc
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-xrc
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-xrc
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-dgram
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-dgram
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1167<info> Provider ofi_rxm is excluded
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::core:core:fi_getinfo_():1304<warn> Can't find provider with the highest priority
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:11164:1792102938::core:core:fi_getinfo_():1386<info> Start regular provider search because provider with the highest priority verbs can not be initialized
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1167<info> Provider ofi_rxm is excluded
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::core:core:fi_getinfo_():1304<warn> Can't find provider with the highest priority
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1167<info> Provider ofi_rxm is excluded
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1562<info> hints->ep_attr->rx_ctx_cnt != FI_SHARED_CONTEXT. Skipping XRC FI_EP_MSG endpoints
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1562<info> hints->ep_attr->rx_ctx_cnt != FI_SHARED_CONTEXT. Skipping XRC FI_EP_MSG endpoints
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-dgram
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-dgram
+libfabric:11164:1792102938::core:core:fi_fabric_():1611<info> Opened fabric: IB-0xfe80000000000000
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority off_coll, must_use_util_prov = 0
+libfabric:11164:1792102938::core:core:fi_getinfo_():1345<info> Since off_coll can be used, verbs has been skipped. To use verbs, please, set FI_PROVIDER=verbs
+libfabric:11164:1792102938::core:core:fi_fabric_():1611<info> Opened fabric: IB-0xfe80000000000000
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1167<info> Provider ofi_rxm is excluded
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:vrb_check_hints():268<info> skipping device mlx4_0-xrc (want mlx4_0)
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:vrb_check_hints():268<info> skipping device mlx4_0-xrc (want mlx4_0)
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:mr:vrb_domain():381<info> MR cache enabled for FI_HMEM_SYSTEM memory
+libfabric:11164:1792102938::ofi_rxm:av:util_verify_av_attr():515<warn> Shared AV is unsupported
+libfabric:11164:1792102938::ofi_rxm:av:util_av_init():486<info> AV size 2
+libfabric:11164:1792102938::ofi_rxm:core:ofi_check_rx_attr():805<info> Tx only caps ignored in Rx caps
+libfabric:11164:1792102938::ofi_rxm:core:ofi_check_tx_attr():903<info> Rx only caps ignored in Tx caps
+libfabric:11164:1792102938::ofi_rxm:core:ofi_check_fabric_attr():412<info> Requesting provider verbs;ofi_rxm, skipping tcp
+libfabric:11164:1792102938::ofi_rxm:core:ofi_check_fabric_attr():412<info> Requesting provider verbs;ofi_rxm, skipping tcp
+libfabric:11164:1792102938::ofi_rxm:core:ofi_check_rx_attr():805<info> Tx only caps ignored in Rx caps
+libfabric:11164:1792102938::ofi_rxm:core:ofi_check_tx_attr():903<info> Rx only caps ignored in Tx caps
+libfabric:11164:1792102938::ofi_rxm:core:ofi_check_ep_attr():789<info> Tag size exceeds supported size
+libfabric:11164:1792102938::ofi_rxm:core:ofi_check_ep_attr():790<info> Supported: 6148914691236517205
+libfabric:11164:1792102938::ofi_rxm:core:ofi_check_ep_attr():790<info> Requested: 12297829382473034410
+libfabric:11164:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:11164:1792102938::core:core:ofi_layering_ok():1167<info> Provider ofi_rxm is excluded
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:vrb_check_hints():268<info> skipping device mlx4_0-xrc (want mlx4_0)
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:11164:1792102938::verbs:core:vrb_check_hints():268<info> skipping device mlx4_0-xrc (want mlx4_0)
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102938::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102938::ofi_rxm:core:rxm_ep_settings_init():1517<info> Settings:
+		 MR local: MSG - 1, RxM - 0
+		 Completions per progress: MSG - 1
+		 Buffered min: 88
+		 Min multi recv size: 16384
+		 inject size: 256
+		 Protocol limits: Eager: 16384, SAR: 131072
+libfabric:11164:1792102938::verbs:ep_ctrl:vrb_pep_listen():525<info> listening on: fi_sockaddr_in://<ip>:41461
+libfabric:5742:1792102938::psm3:core:fi_prov_ini():921<info> s02r1b01:rank0: build options: VERSION=705.1000=7.5.1.0, HAVE_PSM3_SRC=1, PSM3_CUDA=0
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_bool():94<info> s02r1b01:rank0: variable FI_PSM3_NAME_SERVER=<not set>
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_bool():94<info> s02r1b01:rank0: variable FI_PSM3_TAGGED_RMA=<not set>
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_str():128<info> s02r1b01:rank0: read string var FI_PSM3_UUID=5b160000-cec3-db7a-e85d-06006878d01c
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_int():113<info> s02r1b01:rank0: read int var FI_PSM3_DELAY=0
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_int():109<info> s02r1b01:rank0: variable FI_PSM3_TIMEOUT=<not set>
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_int():109<info> s02r1b01:rank0: variable FI_PSM3_PROG_INTERVAL=<not set>
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_str():124<info> s02r1b01:rank0: variable FI_PSM3_PROG_AFFINITY=<not set>
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_int():113<info> s02r1b01:rank0: read int var FI_PSM3_INJECT_SIZE=32768
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_int():113<info> s02r1b01:rank0: read int var FI_PSM3_LOCK_LEVEL=0
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_bool():94<info> s02r1b01:rank0: variable FI_PSM3_LAZY_CONN=<not set>
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_int():109<info> s02r1b01:rank0: variable FI_PSM3_CONN_TIMEOUT=<not set>
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_bool():94<info> s02r1b01:rank0: variable FI_PSM3_DISCONNECT=<not set>
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_str():124<info> s02r1b01:rank0: variable FI_PSM3_TAG_LAYOUT=<not set>
+libfabric:5742:1792102938::psm3:core:psmx3_param_get_bool():94<info> s02r1b01:rank0: variable FI_PSM3_YIELD_MODE=<not set>
+libfabric:5742:1792102938::core:core:ofi_register_provider():476<info> registering provider: psm3 (705.1000)
+libfabric:5742:1792102938::core:core:ofi_register_provider():503<info> "psm3" filtered by provider include/exclude list, skipping
+libfabric:5742:1792102938::core:core:ofi_register_provider():476<info> registering provider: ofi_hook_noop (118.10)
+libfabric:5742:1792102938::core:core:ofi_register_provider():476<info> registering provider: off_coll (118.10)
+libfabric:5742:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102938::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102938::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:5742:1792102940::verbs:core:vrb_read_params():720<info> dmabuf support is disabled
+libfabric:5742:1792102940::verbs:fabric:verbs_devs_print():889<info> list of verbs devices found for FI_EP_MSG:
+libfabric:5742:1792102940::verbs:fabric:verbs_devs_print():893<info> #1 mlx4_0 - IPoIB addresses:
+libfabric:5742:1792102940::verbs:fabric:verbs_devs_print():903<info> 	<ip>
+libfabric:5742:1792102941::verbs:fabric:vrb_get_device_attrs():620<info> device mlx4_0: first found active port is 1
+libfabric:5742:1792102941::verbs:fabric:vrb_get_device_attrs():620<info> device mlx4_0: first found active port is 1
+libfabric:5742:1792102941::verbs:fabric:vrb_get_device_attrs():620<info> device mlx4_0: first found active port is 1
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-xrc
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-xrc
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-xrc
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-xrc
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-dgram
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-dgram
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:ofi_layering_ok():1167<info> Provider ofi_rxm is excluded
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::core:core:fi_getinfo_():1304<warn> Can't find provider with the highest priority
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:5742:1792102941::core:core:fi_getinfo_():1386<info> Start regular provider search because provider with the highest priority verbs can not be initialized
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:ofi_layering_ok():1167<info> Provider ofi_rxm is excluded
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::core:core:fi_getinfo_():1304<warn> Can't find provider with the highest priority
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:ofi_layering_ok():1178<info> Need core provider, skipping ofi_rxm
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():746<info> Provider requires use of shared rx context
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_MSG
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_RDM
+[0] MPI startup(): libfabric provider: verbs;ofi_rxm
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:ofi_layering_ok():1167<info> Provider ofi_rxm is excluded
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1562<info> hints->ep_attr->rx_ctx_cnt != FI_SHARED_CONTEXT. Skipping XRC FI_EP_MSG endpoints
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1562<info> hints->ep_attr->rx_ctx_cnt != FI_SHARED_CONTEXT. Skipping XRC FI_EP_MSG endpoints
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-dgram
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0-dgram
+libfabric:5742:1792102941::core:core:fi_fabric_():1611<info> Opened fabric: IB-0xfe80000000000000
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority off_coll, must_use_util_prov = 0
+libfabric:5742:1792102941::core:core:fi_getinfo_():1345<info> Since off_coll can be used, verbs has been skipped. To use verbs, please, set FI_PROVIDER=verbs
+libfabric:5742:1792102941::core:core:fi_fabric_():1611<info> Opened fabric: IB-0xfe80000000000000
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:ofi_layering_ok():1167<info> Provider ofi_rxm is excluded
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:vrb_check_hints():268<info> skipping device mlx4_0-xrc (want mlx4_0)
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:vrb_check_hints():268<info> skipping device mlx4_0-xrc (want mlx4_0)
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:mr:vrb_domain():381<info> MR cache enabled for FI_HMEM_SYSTEM memory
+libfabric:5742:1792102941::ofi_rxm:av:util_verify_av_attr():515<warn> Shared AV is unsupported
+libfabric:5742:1792102941::ofi_rxm:av:util_av_init():486<info> AV size 2
+libfabric:5742:1792102941::ofi_rxm:core:ofi_check_rx_attr():805<info> Tx only caps ignored in Rx caps
+libfabric:5742:1792102941::ofi_rxm:core:ofi_check_tx_attr():903<info> Rx only caps ignored in Tx caps
+libfabric:5742:1792102941::ofi_rxm:core:ofi_check_fabric_attr():412<info> Requesting provider verbs;ofi_rxm, skipping tcp
+libfabric:5742:1792102941::ofi_rxm:core:ofi_check_fabric_attr():412<info> Requesting provider verbs;ofi_rxm, skipping tcp
+libfabric:5742:1792102941::ofi_rxm:core:ofi_check_rx_attr():805<info> Tx only caps ignored in Rx caps
+libfabric:5742:1792102941::ofi_rxm:core:ofi_check_tx_attr():903<info> Rx only caps ignored in Tx caps
+libfabric:5742:1792102941::ofi_rxm:core:ofi_check_ep_attr():789<info> Tag size exceeds supported size
+libfabric:5742:1792102941::ofi_rxm:core:ofi_check_ep_attr():790<info> Supported: 6148914691236517205
+libfabric:5742:1792102941::ofi_rxm:core:ofi_check_ep_attr():790<info> Requested: 12297829382473034410
+libfabric:5742:1792102941::core:core:fi_getinfo_():1318<info> Found provider with the highest priority verbs, must_use_util_prov = 1
+libfabric:5742:1792102941::core:core:ofi_layering_ok():1167<info> Provider ofi_rxm is excluded
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:vrb_check_hints():268<info> skipping device mlx4_0-xrc (want mlx4_0)
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:vrb_check_hints():268<info> skipping device mlx4_0-xrc (want mlx4_0)
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::ofi_rxm:core:rxm_ep_settings_init():1517<info> Settings:
+		 MR local: MSG - 1, RxM - 0
+		 Completions per progress: MSG - 1
+		 Buffered min: 88
+		 Min multi recv size: 16384
+		 inject size: 256
+		 Protocol limits: Eager: 16384, SAR: 131072
+libfabric:5742:1792102941::verbs:ep_ctrl:vrb_pep_listen():525<info> listening on: fi_sockaddr_in://<ip>:39750
+libfabric:11164:1792102942::ofi_rxm:av:ofi_av_insert_addr():291<info> inserting addr: fi_sockaddr_in://<ip>:39750
+libfabric:11164:1792102942::ofi_rxm:av:ofi_av_insert_addr():314<info> fi_addr: 0
+libfabric:11164:1792102942::ofi_rxm:av:ofi_av_insert_addr():291<info> inserting addr: fi_sockaddr_in://<ip>:41461
+libfabric:11164:1792102942::ofi_rxm:av:ofi_av_insert_addr():314<info> fi_addr: 1
+libfabric:11164:1792102942::ofi_rxm:core:rxm_ep_setopt():518<info> FI_OPT_MIN_MULTI_RECV set to 16384
+libfabric:5742:1792102941::ofi_rxm:av:ofi_av_insert_addr():291<info> inserting addr: fi_sockaddr_in://<ip>:39750
+libfabric:5742:1792102941::ofi_rxm:av:ofi_av_insert_addr():314<info> fi_addr: 0
+libfabric:5742:1792102941::ofi_rxm:av:ofi_av_insert_addr():291<info> inserting addr: fi_sockaddr_in://<ip>:41461
+libfabric:5742:1792102941::ofi_rxm:av:ofi_av_insert_addr():314<info> fi_addr: 1
+libfabric:5742:1792102941::ofi_rxm:core:rxm_ep_setopt():518<info> FI_OPT_MIN_MULTI_RECV set to 16384
+libfabric:11164:1792102942::verbs:core:ofi_check_tx_attr():903<info> Rx only caps ignored in Tx caps
+libfabric:11164:1792102942::verbs:core:ofi_check_rx_attr():805<info> Tx only caps ignored in Rx caps
+libfabric:11164:1792102942::verbs:core:ofi_check_rx_attr():805<info> Tx only caps ignored in Rx caps
+libfabric:11164:1792102942::verbs:core:ofi_check_tx_attr():903<info> Rx only caps ignored in Tx caps
+libfabric:11164:1792102942::verbs:core:ofi_check_rx_attr():805<info> Tx only caps ignored in Rx caps
+libfabric:11164:1792102942::verbs:core:ofi_check_tx_attr():903<info> Rx only caps ignored in Tx caps
+libfabric:11164:1792102942::verbs:core:ofi_check_ep_attr():689<info> Unsupported protocol
+libfabric:11164:1792102942::verbs:core:ofi_check_ep_attr():690<info> Supported: FI_PROTO_RDMA_CM_IB_XRC
+libfabric:11164:1792102942::verbs:core:ofi_check_ep_attr():690<info> Requested: FI_PROTO_RDMA_CM_IB_RC
+libfabric:11164:1792102942::verbs:core:ofi_check_ep_attr():689<info> Unsupported protocol
+libfabric:11164:1792102942::verbs:core:ofi_check_ep_attr():690<info> Supported: FI_PROTO_RDMA_CM_IB_XRC
+libfabric:11164:1792102942::verbs:core:ofi_check_ep_attr():690<info> Requested: FI_PROTO_RDMA_CM_IB_RC
+libfabric:11164:1792102942::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102942::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102942::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:11164:1792102942::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:11164:1792102942::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:11164:1792102942::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+[0] MPI startup(): File "/lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/opt/mpi/etc/tuning_skx_ofi_verbs-ofi-rxm_32.dat" not found
+[0] MPI startup(): Load tuning file: "/lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/opt/mpi/etc/tuning_skx_ofi.dat"
+[0] MPI startup(): ===== Nic pinning on s02r1b01 =====
+[0] MPI startup(): Rank	Pin nic
+[0] MPI startup(): 0	mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #1 mlx4_0
+libfabric:5742:1792102941::verbs:core:ofi_check_rx_attr():805<info> Tx only caps ignored in Rx caps
+libfabric:5742:1792102941::verbs:core:ofi_check_tx_attr():903<info> Rx only caps ignored in Tx caps
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #2 mlx4_0
+libfabric:5742:1792102941::verbs:core:ofi_check_rx_attr():805<info> Tx only caps ignored in Rx caps
+libfabric:5742:1792102941::verbs:core:ofi_check_tx_attr():903<info> Rx only caps ignored in Tx caps
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1585<info> adding fi_info for domain: mlx4_0
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #3 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:vrb_check_hints():268<info> skipping device mlx4_0-xrc (want mlx4_0)
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #4 mlx4_0-xrc
+libfabric:5742:1792102941::verbs:core:vrb_check_hints():268<info> skipping device mlx4_0-xrc (want mlx4_0)
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #5 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:fabric:vrb_get_matching_info():1540<info> checking domain: #6 mlx4_0-dgram
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::ofi_rxm:ep_ctrl:rxm_process_connreq():681<info> connreq for 0x16445a0
+libfabric:5742:1792102941::verbs:core:ofi_check_tx_attr():903<info> Rx only caps ignored in Tx caps
+libfabric:5742:1792102941::verbs:core:ofi_check_rx_attr():805<info> Tx only caps ignored in Rx caps
+libfabric:5742:1792102941::verbs:core:ofi_check_rx_attr():805<info> Tx only caps ignored in Rx caps
+libfabric:5742:1792102941::verbs:core:ofi_check_tx_attr():903<info> Rx only caps ignored in Tx caps
+libfabric:5742:1792102941::verbs:core:ofi_check_rx_attr():805<info> Tx only caps ignored in Rx caps
+libfabric:5742:1792102941::verbs:core:ofi_check_tx_attr():903<info> Rx only caps ignored in Tx caps
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():689<info> Unsupported protocol
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():690<info> Supported: FI_PROTO_RDMA_CM_IB_XRC
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():690<info> Requested: FI_PROTO_RDMA_CM_IB_RC
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():689<info> Unsupported protocol
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():690<info> Supported: FI_PROTO_RDMA_CM_IB_XRC
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_attr():690<info> Requested: FI_PROTO_RDMA_CM_IB_RC
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():667<info> unsupported endpoint type
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Supported: FI_EP_DGRAM
+libfabric:5742:1792102941::verbs:core:ofi_check_ep_type():668<info> Requested: FI_EP_MSG
+[0] MPI startup(): I_MPI_ROOT=/lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest
+[0] MPI startup(): I_MPI_MPIRUN=mpirun
+[0] MPI startup(): I_MPI_BIND_WIN_ALLOCATE=localalloc
+[0] MPI startup(): I_MPI_HYDRA_TOPOLIB=hwloc
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP=slurm
+[0] MPI startup(): I_MPI_RETURN_WIN_MEM_NUMA=0
+[0] libfabric:5742:1792102942::ofi_rxm:cq:rxm_cq_write_error_trunc():143<warn> Message truncated: recv buf length: 148 message length: 164
+MPI startup(): I_MPI_PIN=0
+[0] MPI startup(): I_MPI_INTERNAL_MEM_POLICY=default
+[0] MPI startup(): I_MPI_FABRICS=ofi
+[0] MPI startup(): I_MPI_DEBUG=5
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                      46.74
+2                      66.11
+4                      61.25
+8                      63.83
+16                     54.86
+32                     65.75
+64                     63.99
+128                    74.08
+256                    80.49
+512                    92.73
+1024                  109.09
+2048                  118.35
+4096                  176.49
+8192                  217.70
+libfabric:5742:1792102968::ofi_rxm:ep_ctrl:rxm_stop_listen():872<info> stopping CM thread
+libfabric:11164:1792102969::ofi_rxm:ep_ctrl:rxm_stop_listen():872<info> stopping CM thread
+libfabric:11164:1792102969::verbs:domain:vrb_ep_close():624<info> EP 0x83bad0 is being closed
+libfabric:11164:1792102969::verbs:mr:ofi_mr_cache_cleanup():457<info> MR cache stats: searches 0, deletes 2, hits 0 notify 12
+libfabric:11164:1792102969::psm3:core:psmx3_fini():875<info> s02r1b02:rank1: 
+libfabric:5742:1792102968::verbs:domain:vrb_ep_close():624<info> EP 0x162c240 is being closed
+libfabric:5742:1792102968::verbs:mr:ofi_mr_cache_cleanup():457<info> MR cache stats: searches 0, deletes 2, hits 0 notify 12
+libfabric:5742:1792102969::psm3:core:psmx3_fini():875<info> s02r1b01:rank0: 

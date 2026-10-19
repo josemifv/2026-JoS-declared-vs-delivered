@@ -1,0 +1,34 @@
+[1791035149.487929] [b9p05:603199:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791035149.507687] [b9p05:603199:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_NET_DEVICES=ib0 UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791035149.516291] [b9p04:3466505:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791035149.535670] [b9p04:3466505:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_NET_DEVICES=ib0 UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791035149.536369] [b9p04:3466505:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+[1791035149.536849] [b9p05:603199:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+[1791035149.538673] [b9p04:3466505:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791035149.538920] [b9p05:603199:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791035149.546788] [b9p04:3466505:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0x2089450: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+[1791035149.547005] [b9p05:603199:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0x1be2ad0: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+8                      11.09
+16                      9.68
+32                      9.69
+64                      9.71
+128                     9.75
+256                    10.06
+512                    10.20
+1024                   10.04
+2048                   11.24
+4096                   11.03
+8192                   12.03
+16384                  14.43
+32768                  20.45
+65536                  51.45
+131072                 49.80
+262144                106.85
+524288                177.59
+1048576               259.55
+2097152               466.57
+4194304               877.01

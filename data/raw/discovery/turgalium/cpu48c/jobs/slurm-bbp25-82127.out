@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "<home>/discovery/collect_node.py", line 933, in <module>
+    sys.exit(main())
+  File "<home>/discovery/collect_node.py", line 929, in main
+    return collect_node(args)
+  File "<home>/discovery/collect_node.py", line 814, in collect_node
+    attr["real"] = eval_sources(chk["real"], get)
+  File "<home>/discovery/collect_node.py", line 708, in eval_sources
+    entry = rawget(src["raw"])
+  File "<home>/discovery/collect_node.py", line 808, in get
+    return rawget.get(name, rawget_named[name])
+  File "<home>/discovery/collect_node.py", line 216, in get
+    code, out, rec = self.recorder.run(argv)
+  File "<home>/discovery/collect_node.py", line 101, in run
+    return self._via_wrapper(argv)
+  File "<home>/discovery/collect_node.py", line 116, in _via_wrapper
+    rec = self._find_record(out_hash, argv, before) or self._synth(out_hash, argv, proc.returncode)
+  File "<home>/discovery/collect_node.py", line 129, in _find_record
+    with open(self.jsonl, "r", encoding="utf-8") as fh:
+BrokenPipeError: [Errno 108] Cannot send after transport endpoint shutdown: '<scratch>/discovery/cpu48c/commands.jsonl'

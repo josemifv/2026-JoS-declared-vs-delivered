@@ -1,0 +1,23 @@
+=== A: secuencia tanda 1 (load gcc -> purge -> load intel) ===
+Options -binding/-bind-to/-map-by/-membind are not supported and will be ignored.
+	Please refer I_MPI_PIN environment variables family.
+This test requires at least two processes
+This test requires at least two processes
+=== B: hydra -ppn + -genv I_MPI_PMI_LIBRARY ===
+No PMIx server was reachable, but a PMI1/2 was detected.
+If srun is being used to launch application,  128 singletons will be started.
+This test requires at least two processes
+This test requires at least two processes
+=== C: hydra -ppn solo (referencia) ===
+No PMIx server was reachable, but a PMI1/2 was detected.
+If srun is being used to launch application,  128 singletons will be started.
+This test requires at least two processes
+This test requires at least two processes
+=== D: I_MPI_PMI_LIBRARY en el entorno del task ===
+PMI_FD=5
+PMI_FD=6
+PMI_RANK=0
+PMI_RANK=1
+PMI_RANK=2
+PMI_RANK=3
+PMI_SIZE=4

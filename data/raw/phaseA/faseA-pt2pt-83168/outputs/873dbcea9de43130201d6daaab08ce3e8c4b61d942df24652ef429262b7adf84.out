@@ -1,0 +1,34 @@
+[1791034931.158222] [b9p04:3455269:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791034931.177698] [b9p04:3455269:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_NET_DEVICES=ib0 UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791034931.214034] [b9p05:599822:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791034931.233660] [b9p05:599822:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_NET_DEVICES=ib0 UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791034931.234277] [b9p04:3455269:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+[1791034931.234512] [b9p05:599822:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+[1791034931.236372] [b9p05:599822:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791034931.236387] [b9p04:3455269:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791034931.244457] [b9p05:599822:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0x2643ad0: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+[1791034931.244476] [b9p04:3455269:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0x7ee370: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+8                      18.60
+16                     10.31
+32                      9.58
+64                      9.57
+128                     9.81
+256                     9.94
+512                     9.95
+1024                   10.21
+2048                   11.01
+4096                   10.85
+8192                   12.02
+16384                  16.73
+32768                  21.00
+65536                  49.55
+131072                 58.38
+262144                101.19
+524288                161.64
+1048576               283.92
+2097152               475.11
+4194304               835.41

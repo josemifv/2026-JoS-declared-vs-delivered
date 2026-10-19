@@ -1,0 +1,19 @@
+BabelStream
+Version: 5.0
+Implementation: CUDA
+Running kernels 100 times
+Precision: double
+Array size: 2048.0 MiB (=2.0 GiB)
+Total size: 6144.0 MiB (=6.0 GiB)
+Using CUDA device NVIDIA H100 PCIe
+Driver: 13000
+Memory: DEFAULT
+Reduction kernel config: 456 groups of (fixed) size 1024
+Init: 0.405361 s (=15156.854236 MiBytes/sec)
+Read: 0.003429 s (=1791805.290492 MiBytes/sec)
+Function    MiBytes/sec Min (sec)   Max         Average     
+Copy        1663617.784 0.00246     0.00247     0.00247     
+Mul         1653591.212 0.00248     0.00248     0.00248     
+Add         1767067.488 0.00348     0.00350     0.00349     
+Triad       1769881.933 0.00347     0.00350     0.00348     
+Dot         1848676.612 0.00222     0.00223     0.00222     

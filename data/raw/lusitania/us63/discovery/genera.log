@@ -1,0 +1,28 @@
+cluster=lusitania data=<scratch>/cc/raw/lusitania/us63/discovery wrapper=<home>/instrumentation/cmdlog.sh
+nodos a descubrir:
+s02r1b01
+s02r1b09
+s02r1b17
+s02r1b26
+s02r1b34
+s02r1b42
+s02r2b01
+s02r2b03
+s02r2b05
+s02r2b06
+s02r2b08
+s02r2b10
+[dry-run] sbatch --exclusive --nodelist=s02r1b01 <scratch>/cc/raw/lusitania/us63/discovery/jobs/disc_s02r1b01.sbatch
+[dry-run] sbatch --exclusive --nodelist=s02r1b09 <scratch>/cc/raw/lusitania/us63/discovery/jobs/disc_s02r1b09.sbatch
+[dry-run] sbatch --exclusive --nodelist=s02r1b17 <scratch>/cc/raw/lusitania/us63/discovery/jobs/disc_s02r1b17.sbatch
+[dry-run] sbatch --exclusive --nodelist=s02r1b26 <scratch>/cc/raw/lusitania/us63/discovery/jobs/disc_s02r1b26.sbatch
+[dry-run] sbatch --exclusive --nodelist=s02r1b34 <scratch>/cc/raw/lusitania/us63/discovery/jobs/disc_s02r1b34.sbatch
+[dry-run] sbatch --exclusive --nodelist=s02r1b42 <scratch>/cc/raw/lusitania/us63/discovery/jobs/disc_s02r1b42.sbatch
+[dry-run] sbatch --exclusive --nodelist=s02r2b01 <scratch>/cc/raw/lusitania/us63/discovery/jobs/disc_s02r2b01.sbatch
+[dry-run] sbatch --exclusive --nodelist=s02r2b03 <scratch>/cc/raw/lusitania/us63/discovery/jobs/disc_s02r2b03.sbatch
+[dry-run] sbatch --exclusive --nodelist=s02r2b05 <scratch>/cc/raw/lusitania/us63/discovery/jobs/disc_s02r2b05.sbatch
+[dry-run] sbatch --exclusive --nodelist=s02r2b06 <scratch>/cc/raw/lusitania/us63/discovery/jobs/disc_s02r2b06.sbatch
+[dry-run] sbatch --exclusive --nodelist=s02r2b08 <scratch>/cc/raw/lusitania/us63/discovery/jobs/disc_s02r2b08.sbatch
+[dry-run] sbatch --exclusive --nodelist=s02r2b10 <scratch>/cc/raw/lusitania/us63/discovery/jobs/disc_s02r2b10.sbatch
+dry-run: no se ha enviado ningun job (usa --submit para enviar).
+fingerprint: python3 "<home>/discovery/fingerprint.py" --cluster lusitania

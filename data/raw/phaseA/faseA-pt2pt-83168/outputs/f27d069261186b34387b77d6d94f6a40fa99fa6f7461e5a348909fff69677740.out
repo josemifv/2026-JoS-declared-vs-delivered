@@ -1,0 +1,34 @@
+[1791034997.029439] [b9p04:3458331:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791034997.041937] [b9p05:600769:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791034997.048950] [b9p04:3458331:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_NET_DEVICES=ib0 UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791034997.061879] [b9p05:600769:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_NET_DEVICES=ib0 UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791034997.062274] [b9p04:3458331:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+[1791034997.062719] [b9p05:600769:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+
+# OSU MPI Bi-Directional Bandwidth Test v7.4
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+[1791034997.064543] [b9p05:600769:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791034997.064325] [b9p04:3458331:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791034997.072324] [b9p04:3458331:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0x15f25f0: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+[1791034997.072873] [b9p05:600769:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0x15a0f60: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+8                       9.87
+16                     16.98
+32                     34.73
+64                     75.62
+128                   122.72
+256                   270.04
+512                   658.24
+1024                 1126.03
+2048                 2448.67
+4096                 2983.43
+8192                 4609.14
+16384                5674.39
+32768                6110.51
+65536                6765.14
+131072               7359.55
+262144               6535.02
+524288               8273.51
+1048576              7115.18
+2097152              6910.60
+4194304              6779.33

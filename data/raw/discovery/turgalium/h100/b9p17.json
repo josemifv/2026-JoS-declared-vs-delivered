@@ -1,0 +1,803 @@
+{
+  "schema_version": 1,
+  "cluster": "turgalium",
+  "node": "b9p17",
+  "role": "node",
+  "partition": "h100",
+  "collected_at": "2026-09-26T11:22:13Z",
+  "run_id": "disc-turgalium-20260925T220012Z-3871120",
+  "collector": {
+    "wrapper": "<home>/instrumentation/cmdlog.sh",
+    "dry_run": false
+  },
+  "fingerprint": "3efda475ffd9f0ad268c1aec01087982e6cac9bb0eb0a5f65dd71a09d1ae1585",
+  "fingerprint_attrs": [
+    "cpu_model",
+    "sockets",
+    "cores_per_socket",
+    "threads_per_core",
+    "logical_cpus_online",
+    "microcode",
+    "scaling_governor",
+    "no_turbo",
+    "freq_min_khz",
+    "freq_max_khz",
+    "numa_nodes",
+    "memory_total_kb",
+    "dimm_population",
+    "thp_enabled",
+    "numa_balancing",
+    "os",
+    "kernel",
+    "bios_version",
+    "bios_date",
+    "package_hash",
+    "hca_model",
+    "hca_firmware",
+    "port_state",
+    "port_rate",
+    "ofed_version",
+    "ucx_version",
+    "ucx_transports",
+    "libfabric_version",
+    "libfabric_providers",
+    "gcc_version",
+    "icx_version",
+    "openmpi_version",
+    "intelmpi_version",
+    "gpu_list",
+    "gpu_driver_cuda",
+    "gpu_topology",
+    "gpu_settings"
+  ],
+  "fingerprint_values": {
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8480+",
+    "sockets": 2,
+    "cores_per_socket": 56,
+    "threads_per_core": 1,
+    "logical_cpus_online": 112,
+    "microcode": "0x2b000590",
+    "scaling_governor": [
+      "performance"
+    ],
+    "no_turbo": 0,
+    "freq_min_khz": 800000,
+    "freq_max_khz": 3800000,
+    "numa_nodes": 2,
+    "memory_total_kb": 1056473740,
+    "dimm_population": null,
+    "thp_enabled": "always",
+    "numa_balancing": 1,
+    "os": "rocky-9.5",
+    "kernel": "5.14.0-611.30.1.el9_7.x86_64",
+    "bios_version": "R04",
+    "bios_date": "03/05/2024",
+    "package_hash": {
+      "sha256": "1dd1eaf24e7afb342d7848edfb6f877af1aa68ea94887f0a6d4e3016e7a9fda3",
+      "count": 929
+    },
+    "hca_model": "MT4125",
+    "hca_firmware": [
+      "22.32.2306"
+    ],
+    "port_state": [
+      "Active"
+    ],
+    "port_rate": [
+      200
+    ],
+    "ofed_version": "OFED-internal-24.10-4.1.4:",
+    "ucx_version": "# Library version: 1.18.0",
+    "ucx_transports": [
+      "cma",
+      "dc_mlx5",
+      "posix",
+      "rc_mlx5",
+      "rc_verbs",
+      "self",
+      "sysv",
+      "tcp",
+      "ud_mlx5",
+      "ud_verbs"
+    ],
+    "libfabric_version": null,
+    "libfabric_providers": null,
+    "gcc_version": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+    "icx_version": null,
+    "openmpi_version": null,
+    "intelmpi_version": null,
+    "gpu_list": [
+      "GPU 0: NVIDIA H100 PCIe (UUID: GPU-f6899ccc-da1d-29c0-bfdb-d3720aaa0db2)",
+      "GPU 1: NVIDIA H100 PCIe (UUID: GPU-7c0aaf04-d6d8-9483-d062-2fb8b2d269af)",
+      "GPU 2: NVIDIA H100 PCIe (UUID: GPU-3865c0fb-d2ad-b3f1-3c21-73676b8df878)",
+      "GPU 3: NVIDIA H100 PCIe (UUID: GPU-bb0a32d5-31b6-ba5f-fe16-00ffc8f70828)"
+    ],
+    "gpu_driver_cuda": {
+      "driver": "580.126.16",
+      "cuda": "13.0"
+    },
+    "gpu_topology": "\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tNIC0\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m",
+    "gpu_settings": {
+      "ecc_current": "Enabled",
+      "max_clocks_mhz": {
+        "sm": 1755,
+        "memory": 1593,
+        "graphics": 1755
+      }
+    }
+  },
+  "attributes": {
+    "cpu_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "Intel(R) Xeon(R) Platinum 8480+",
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "957f12f7d6fbfa00ec5e9fe2a820f8f06e40e14d4786354e3e19b4cfa2abaf10",
+        "out_path": "<scratch>/discovery/h100/outputs/957f12f7d6fbfa00ec5e9fe2a820f8f06e40e14d4786354e3e19b4cfa2abaf10.out"
+      }
+    },
+    "sockets": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "957f12f7d6fbfa00ec5e9fe2a820f8f06e40e14d4786354e3e19b4cfa2abaf10",
+        "out_path": "<scratch>/discovery/h100/outputs/957f12f7d6fbfa00ec5e9fe2a820f8f06e40e14d4786354e3e19b4cfa2abaf10.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p17"
+        ],
+        "out_hash": "5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44",
+        "out_path": "<scratch>/discovery/h100/outputs/5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44.out"
+      }
+    },
+    "cores_per_socket": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 56,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "957f12f7d6fbfa00ec5e9fe2a820f8f06e40e14d4786354e3e19b4cfa2abaf10",
+        "out_path": "<scratch>/discovery/h100/outputs/957f12f7d6fbfa00ec5e9fe2a820f8f06e40e14d4786354e3e19b4cfa2abaf10.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 56,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p17"
+        ],
+        "out_hash": "5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44",
+        "out_path": "<scratch>/discovery/h100/outputs/5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44.out"
+      }
+    },
+    "threads_per_core": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "957f12f7d6fbfa00ec5e9fe2a820f8f06e40e14d4786354e3e19b4cfa2abaf10",
+        "out_path": "<scratch>/discovery/h100/outputs/957f12f7d6fbfa00ec5e9fe2a820f8f06e40e14d4786354e3e19b4cfa2abaf10.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p17"
+        ],
+        "out_hash": "5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44",
+        "out_path": "<scratch>/discovery/h100/outputs/5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44.out"
+      }
+    },
+    "logical_cpus_online": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 112,
+        "cmd": [
+          "nproc",
+          "--all"
+        ],
+        "out_hash": "f7dbab4769334b25f2b4c0606fef276da29bc7477cc15f51f0967a6e477e7c94",
+        "out_path": "<scratch>/discovery/h100/outputs/f7dbab4769334b25f2b4c0606fef276da29bc7477cc15f51f0967a6e477e7c94.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 112,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p17"
+        ],
+        "out_hash": "5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44",
+        "out_path": "<scratch>/discovery/h100/outputs/5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44.out"
+      }
+    },
+    "microcode": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "0x2b000590",
+        "cmd": [
+          "cat",
+          "/proc/cpuinfo"
+        ],
+        "out_hash": "e475661fb02f594df944f808d4daca45ca7d8010ce22c56c473bede63a6ceae0",
+        "out_path": "<scratch>/discovery/h100/outputs/e475661fb02f594df944f808d4daca45ca7d8010ce22c56c473bede63a6ceae0.out"
+      }
+    },
+    "scaling_governor": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "performance"
+        ],
+        "cmd": [
+          "bash",
+          "-c",
+          "grep -H . /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
+        ],
+        "out_hash": "bbc1cbfb493a3a9ca4f311c17f180e577e74cde958107c06bbf0c20e7ff9530e",
+        "out_path": "<scratch>/discovery/h100/outputs/bbc1cbfb493a3a9ca4f311c17f180e577e74cde958107c06bbf0c20e7ff9530e.out"
+      }
+    },
+    "no_turbo": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 0,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/intel_pstate/no_turbo"
+        ],
+        "out_hash": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "out_path": "<scratch>/discovery/h100/outputs/9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa.out"
+      }
+    },
+    "freq_min_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 800000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq"
+        ],
+        "out_hash": "20906f772bf0b93e695828b6019fcd7284341cbe95ee2865a6e86b8e400551ed",
+        "out_path": "<scratch>/discovery/h100/outputs/20906f772bf0b93e695828b6019fcd7284341cbe95ee2865a6e86b8e400551ed.out"
+      }
+    },
+    "freq_max_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 3800000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq"
+        ],
+        "out_hash": "54eb4724ea802bde85274ac5e3d37a778219365aa36c15be3e0f81fcad1f75a1",
+        "out_path": "<scratch>/discovery/h100/outputs/54eb4724ea802bde85274ac5e3d37a778219365aa36c15be3e0f81fcad1f75a1.out"
+      }
+    },
+    "numa_nodes": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "957f12f7d6fbfa00ec5e9fe2a820f8f06e40e14d4786354e3e19b4cfa2abaf10",
+        "out_path": "<scratch>/discovery/h100/outputs/957f12f7d6fbfa00ec5e9fe2a820f8f06e40e14d4786354e3e19b4cfa2abaf10.out"
+      }
+    },
+    "memory_total_kb": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1056473740,
+        "cmd": [
+          "cat",
+          "/proc/meminfo"
+        ],
+        "out_hash": "5a4fcbc09b85c0d868620f93369a6c051df3795d767183f97c82334bed9ec63c",
+        "out_path": "<scratch>/discovery/h100/outputs/5a4fcbc09b85c0d868620f93369a6c051df3795d767183f97c82334bed9ec63c.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 1024000000,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p17"
+        ],
+        "out_hash": "5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44",
+        "out_path": "<scratch>/discovery/h100/outputs/5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44.out"
+      }
+    },
+    "dimm_population": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "dmidecode_mem: exit 1"
+      }
+    },
+    "thp_enabled": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "always",
+        "cmd": [
+          "cat",
+          "/sys/kernel/mm/transparent_hugepage/enabled"
+        ],
+        "out_hash": "092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d",
+        "out_path": "<scratch>/discovery/h100/outputs/092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d.out"
+      }
+    },
+    "numa_balancing": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "cat",
+          "/proc/sys/kernel/numa_balancing"
+        ],
+        "out_hash": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+        "out_path": "<scratch>/discovery/h100/outputs/4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865.out"
+      }
+    },
+    "os": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "rocky-9.5",
+        "cmd": [
+          "cat",
+          "/etc/os-release"
+        ],
+        "out_hash": "cdf4bbbd4451e30dfa6893e0550a27f2863d98bc611565a7af0202610754b972",
+        "out_path": "<scratch>/discovery/h100/outputs/cdf4bbbd4451e30dfa6893e0550a27f2863d98bc611565a7af0202610754b972.out"
+      }
+    },
+    "kernel": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "5.14.0-611.30.1.el9_7.x86_64",
+        "cmd": [
+          "uname",
+          "-r"
+        ],
+        "out_hash": "e43cab5cd8a664440b64ee3367e40d5603602e58cfd09e515b669ea84e28eed1",
+        "out_path": "<scratch>/discovery/h100/outputs/e43cab5cd8a664440b64ee3367e40d5603602e58cfd09e515b669ea84e28eed1.out"
+      }
+    },
+    "bios_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "R04",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_version"
+        ],
+        "out_hash": "8a66d379d2285b07247f352d87441327084918bcac7365b0082cb32ee1e3f24d",
+        "out_path": "<scratch>/discovery/h100/outputs/8a66d379d2285b07247f352d87441327084918bcac7365b0082cb32ee1e3f24d.out"
+      }
+    },
+    "bios_date": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "03/05/2024",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_date"
+        ],
+        "out_hash": "fc24193faec4fefa11447c95523f69bbe11e68994290a6aaccf11cb9fefa1149",
+        "out_path": "<scratch>/discovery/h100/outputs/fc24193faec4fefa11447c95523f69bbe11e68994290a6aaccf11cb9fefa1149.out"
+      }
+    },
+    "server_model": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "X450-E7 2U1N2S",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/product_name"
+        ],
+        "out_hash": "2717deca68f24ec8f262cbde38ce40a4776fd0ec6407a1703af5c96d442b5bfa",
+        "out_path": "<scratch>/discovery/h100/outputs/2717deca68f24ec8f262cbde38ce40a4776fd0ec6407a1703af5c96d442b5bfa.out"
+      }
+    },
+    "package_hash": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "1dd1eaf24e7afb342d7848edfb6f877af1aa68ea94887f0a6d4e3016e7a9fda3",
+          "count": 929
+        },
+        "cmd": [
+          "rpm",
+          "-qa",
+          "--qf",
+          "%{NAME}-%{VERSION}-%{RELEASE}\\n"
+        ],
+        "out_hash": "3a78594a45cb5c7d231e5f38a431e9593c1d5008a49565abf28eb827c26a94bb",
+        "out_path": "<scratch>/discovery/h100/outputs/3a78594a45cb5c7d231e5f38a431e9593c1d5008a49565abf28eb827c26a94bb.out"
+      }
+    },
+    "hca_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "MT4125",
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "1fec25b366ef89a32139d9c0fb447c6aecab39317b48bbc73fee2e6d1ba3e0f4",
+        "out_path": "<scratch>/discovery/h100/outputs/1fec25b366ef89a32139d9c0fb447c6aecab39317b48bbc73fee2e6d1ba3e0f4.out"
+      }
+    },
+    "hca_firmware": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "22.32.2306"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "1fec25b366ef89a32139d9c0fb447c6aecab39317b48bbc73fee2e6d1ba3e0f4",
+        "out_path": "<scratch>/discovery/h100/outputs/1fec25b366ef89a32139d9c0fb447c6aecab39317b48bbc73fee2e6d1ba3e0f4.out"
+      }
+    },
+    "port_state": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "Active"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "1fec25b366ef89a32139d9c0fb447c6aecab39317b48bbc73fee2e6d1ba3e0f4",
+        "out_path": "<scratch>/discovery/h100/outputs/1fec25b366ef89a32139d9c0fb447c6aecab39317b48bbc73fee2e6d1ba3e0f4.out"
+      }
+    },
+    "port_rate": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          200
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "1fec25b366ef89a32139d9c0fb447c6aecab39317b48bbc73fee2e6d1ba3e0f4",
+        "out_path": "<scratch>/discovery/h100/outputs/1fec25b366ef89a32139d9c0fb447c6aecab39317b48bbc73fee2e6d1ba3e0f4.out"
+      }
+    },
+    "ofed_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "OFED-internal-24.10-4.1.4:",
+        "cmd": [
+          "ofed_info",
+          "-s"
+        ],
+        "out_hash": "4392390707b072a658fc98b3c66b42d949b994f3b524ffd2744932f03f24fa4b",
+        "out_path": "<scratch>/discovery/h100/outputs/4392390707b072a658fc98b3c66b42d949b994f3b524ffd2744932f03f24fa4b.out"
+      }
+    },
+    "ucx_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "# Library version: 1.18.0",
+        "cmd": [
+          "ucx_info",
+          "-v"
+        ],
+        "out_hash": "8cad25904658bca545a2473da9a2dfac0701b7bd61f548b24a3375ba84817639",
+        "out_path": "<scratch>/discovery/h100/outputs/8cad25904658bca545a2473da9a2dfac0701b7bd61f548b24a3375ba84817639.out"
+      }
+    },
+    "ucx_transports": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "cma",
+          "dc_mlx5",
+          "posix",
+          "rc_mlx5",
+          "rc_verbs",
+          "self",
+          "sysv",
+          "tcp",
+          "ud_mlx5",
+          "ud_verbs"
+        ],
+        "cmd": [
+          "ucx_info",
+          "-d"
+        ],
+        "out_hash": "1de9d263a511477736f16919b20af8117b7032d1592c0d134281f07063878fbb",
+        "out_path": "<scratch>/discovery/h100/outputs/1de9d263a511477736f16919b20af8117b7032d1592c0d134281f07063878fbb.out"
+      }
+    },
+    "libfabric_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "fi_info_version: exit 127"
+      }
+    },
+    "libfabric_providers": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "fi_info_list: exit 127"
+      }
+    },
+    "modules_avail": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "766906d7806c0bed14d26c0d6be18a1d772ece0654bc459ddce360638eabbdcf",
+          "count": 34
+        },
+        "cmd": [
+          "bash",
+          "-lc",
+          "module avail"
+        ],
+        "out_hash": "70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26",
+        "out_path": "<scratch>/discovery/h100/outputs/70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26.out"
+      }
+    },
+    "gcc_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-11)",
+        "cmd": [
+          "gcc",
+          "--version"
+        ],
+        "out_hash": "06916117479fa673e716e8ca91dad1b78e49ca5843d64cedfa68f12a9d82f112",
+        "out_path": "<scratch>/discovery/h100/outputs/06916117479fa673e716e8ca91dad1b78e49ca5843d64cedfa68f12a9d82f112.out"
+      }
+    },
+    "icx_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "icx_version: exit 127"
+      }
+    },
+    "openmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpirun_version: exit 127; ompi_info_version: exit 127"
+      }
+    },
+    "intelmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpiexec_version: exit 127"
+      }
+    },
+    "mpi_cuda_aware": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "ompi_info_parsable: exit 127"
+      }
+    },
+    "cmmse_stack": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "module_avail: sin dato"
+      }
+    },
+    "slurm_features": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": [
+          "1TB_RAM",
+          "3.80GHz",
+          "8084+",
+          "CPU_Sapphire_Rapids",
+          "Infiniband_HDR",
+          "gpu_hopper_H100"
+        ],
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p17"
+        ],
+        "out_hash": "5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44",
+        "out_path": "<scratch>/discovery/h100/outputs/5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44.out"
+      }
+    },
+    "slurm_gres": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": "gpu:H100:4",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p17"
+        ],
+        "out_hash": "5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44",
+        "out_path": "<scratch>/discovery/h100/outputs/5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44.out"
+      }
+    },
+    "lustre_version": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "lfs 2.17.0",
+        "cmd": [
+          "lfs",
+          "--version"
+        ],
+        "out_hash": "485d6665429178fe15167e8004ceea26216561719cf420b20ffce4b9fc03e797",
+        "out_path": "<scratch>/discovery/h100/outputs/485d6665429178fe15167e8004ceea26216561719cf420b20ffce4b9fc03e797.out"
+      }
+    },
+    "mounts": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "TARGET    SOURCE                                            FSTYPE OPTIONS\n/home     <ip>@o2ib:<ip>@o2ib:/cetafs2/homes lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose\n/opt/apps <ip>@o2ib:<ip>@o2ib:/cetafs2/apps  lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose\n/ws       <ip>@o2ib:<ip>@o2ib:/cetafs2/ws    lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose",
+        "cmd": [
+          "findmnt",
+          "-t",
+          "lustre,nfs,gpfs"
+        ],
+        "out_hash": "bdbd07436be1aa5205c98aa39d3f57862aa91ba91ac8acbca367a3b4ee35e55c",
+        "out_path": "<scratch>/discovery/h100/outputs/bdbd07436be1aa5205c98aa39d3f57862aa91ba91ac8acbca367a3b4ee35e55c.out"
+      }
+    },
+    "lustre_errors": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "[Thu Apr 16 13:31:32 2026] Lustre: Lustre: Build Version: 2.17.0\n[Thu Apr 16 13:31:36 2026] Lustre: Mounted cetafs2-client\n[Thu Apr 16 13:31:36 2026] Lustre: Skipped 2 previous similar messages\n[Thu May 28 10:52:11 2026] LustreError: 3381406:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu May 28 10:53:57 2026] LustreError: 852143:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu May 28 10:53:57 2026] LustreError: 852143:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 6 previous similar messages\n[Thu May 28 10:55:37 2026] LustreError: 913:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu May 28 10:55:37 2026] LustreError: 913:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu May 28 10:56:27 2026] LustreError: 542401:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu May 28 10:56:27 2026] LustreError: 542401:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 6 previous similar messages\n[Mon Jun  1 09:19:13 2026] Lustre: 26047:0:(client.c:2472:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1780297739/real 1780297739]  req@00000000a8f440a3 x1862636375075328/t0(0) o101->cetafs2-MDT0000-mdc-ff3b5131526ca000@<ip>@o2ib:12/10 lens 576/1152 e 9 to 1 dl 1780298344 ref 2 fl Rpc:XQr/600/ffffffff rc 0/-1 job:'' uid:0 gid:0 projid:0\n[Mon Jun  1 09:19:13 2026] Lustre: cetafs2-MDT0000-mdc-ff3b5131526ca000: Connection to cetafs2-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Jun  1 09:19:13 2026] Lustre: cetafs2-MDT0000-mdc-ff3b5131526ca000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Fri Jun  5 21:39:40 2026] LustreError: 3822236:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 21:39:40 2026] LustreError: 3822236:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 6 previous similar messages\n[Fri Jun 12 18:19:52 2026] LustreError: 3553653:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun 12 18:19:53 2026] LustreError: 3553653:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Jun 12 18:28:28 2026] LustreError: 3839847:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun 12 18:28:28 2026] LustreError: 3839847:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun 12 18:29:05 2026] LustreError: 3246163:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun 12 18:29:05 2026] LustreError: 3246163:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Jun 12 18:40:12 2026] LustreError: 3976622:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun 12 18:40:12 2026] LustreError: 3976622:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun 12 18:46:06 2026] LustreError: 3732110:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun 12 18:46:06 2026] LustreError: 3732110:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Jun 12 18:48:06 2026] LustreError: 3874093:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun 12 18:48:06 2026] LustreError: 3874093:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Jun 12 18:49:35 2026] LustreError: 3851039:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun 12 18:49:35 2026] LustreError: 3851039:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 11:12:00 2026] LustreError: 4176726:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 11:12:00 2026] LustreError: 4176726:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 13:17:20 2026] LustreError: 3874093:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 13:17:20 2026] LustreError: 3874093:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 14:52:54 2026] LustreError: 3841946:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 14:52:54 2026] LustreError: 3841946:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 16:35:09 2026] LustreError: 3655485:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 16:35:09 2026] LustreError: 3655485:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 16:40:09 2026] LustreError: 4130723:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 16:40:09 2026] LustreError: 4130723:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 16:41:19 2026] LustreError: 3977200:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 16:41:19 2026] LustreError: 3977200:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 16:44:53 2026] LustreError: 172307:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 16:44:53 2026] LustreError: 172307:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 16:47:02 2026] LustreError: 42246:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 16:47:02 2026] LustreError: 42246:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 16:51:42 2026] LustreError: 4131001:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 16:51:42 2026] LustreError: 4131001:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 17:17:12 2026] LustreError: 34546:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 17:17:12 2026] LustreError: 34546:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 17:34:02 2026] LustreError: 3246163:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 17:34:02 2026] LustreError: 3246163:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 18:01:05 2026] LustreError: 44319:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 18:01:05 2026] LustreError: 44319:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 18:01:26 2026] LustreError: 611120:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 18:01:26 2026] LustreError: 611120:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Sun Jun 14 18:02:26 2026] LustreError: 4112172:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 18:02:26 2026] LustreError: 4112172:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 18:04:32 2026] LustreError: 3887021:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 18:04:32 2026] LustreError: 3887021:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 18:10:50 2026] LustreError: 629:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 18:10:50 2026] LustreError: 629:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 18:51:58 2026] LustreError: 28685:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 18:51:58 2026] LustreError: 28685:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Jun 14 19:03:03 2026] LustreError: 40041:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 14 19:03:03 2026] LustreError: 40041:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Jun 17 18:54:31 2026] LustreError: 3977082:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 18:54:31 2026] LustreError: 3977082:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Jun 17 18:59:06 2026] LustreError: 3514253:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 18:59:06 2026] LustreError: 3514253:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Jun 17 19:07:26 2026] LustreError: 228850:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 19:07:26 2026] LustreError: 228850:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Jun 17 19:15:17 2026] LustreError: 3977082:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 19:15:17 2026] LustreError: 3977082:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Jun 17 19:18:29 2026] LustreError: 44812:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 19:18:29 2026] LustreError: 44812:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Jun 17 19:19:35 2026] LustreError: 88115:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 19:19:35 2026] LustreError: 88115:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Jun 17 19:27:09 2026] LustreError: 188843:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 19:27:09 2026] LustreError: 188843:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Jun 17 19:35:29 2026] LustreError: 19673:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 19:35:29 2026] LustreError: 19673:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Wed Jun 17 19:38:45 2026] LustreError: 246419:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 19:38:45 2026] LustreError: 246419:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Jun 17 19:45:22 2026] LustreError: 3827630:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 19:45:22 2026] LustreError: 3827630:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Wed Jun 17 19:53:45 2026] LustreError: 188843:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 19:53:45 2026] LustreError: 188843:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Wed Jun 17 20:17:56 2026] LustreError: 38350:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 20:17:56 2026] LustreError: 38350:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 6 previous similar messages\n[Wed Jun 17 20:28:26 2026] LustreError: 46347:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 20:28:26 2026] LustreError: 46347:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Jun 17 20:34:42 2026] LustreError: 4112172:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 20:34:42 2026] LustreError: 4112172:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Wed Jun 17 20:45:21 2026] LustreError: 3873397:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Jun 17 20:45:21 2026] LustreError: 3873397:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Sun Jun 21 22:53:25 2026] LustreError: 34544:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 21 22:53:25 2026] LustreError: 34544:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 19 previous similar messages\n[Sun Jun 28 23:45:35 2026] LustreError: 3977200:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Jun 28 23:45:35 2026] LustreError: 3977200:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  9 12:25:37 2026] LustreError: 424020:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  9 12:25:37 2026] LustreError: 424020:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  9 13:12:07 2026] LustreError: 1071860:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  9 13:12:07 2026] LustreError: 1071860:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  9 15:47:26 2026] LustreError: 392626:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  9 15:47:26 2026] LustreError: 392626:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  9 16:02:56 2026] LustreError: 429291:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  9 16:02:56 2026] LustreError: 429291:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  9 17:56:22 2026] LustreError: 278916:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  9 17:56:22 2026] LustreError: 278916:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul  9 18:03:50 2026] LustreError: 1077367:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  9 18:03:50 2026] LustreError: 1077367:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Thu Jul  9 18:04:39 2026] LustreError: 429291:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  9 18:04:39 2026] LustreError: 429291:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jul 24 13:48:59 2026] LustreError: 3665500:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jul 24 13:48:59 2026] LustreError: 3665500:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Mon Aug 24 01:38:56 2026] LustreError: 1230294:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Mon Aug 24 01:38:56 2026] LustreError: 1230294:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Thu Aug 27 00:02:51 2026] LustreError: 1226247:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Aug 27 00:02:51 2026] LustreError: 1226247:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Aug 28 00:17:43 2026] LustreError: 632254:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Aug 28 00:17:43 2026] LustreError: 632254:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Mon Aug 31 13:59:18 2026] Lustre: cetafs2-OST0006-osc-ff3b51315355b000: Connection to cetafs2-OST0006 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Wed Sep  2 15:23:10 2026] LustreError: 1035637:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Sep  2 15:23:10 2026] LustreError: 1035637:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Sep  3 10:41:42 2026] LustreError: 1296623:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Sep  3 10:41:42 2026] LustreError: 1296623:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Thu Sep  3 10:52:16 2026] LustreError: 728656:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Sep  3 10:52:16 2026] LustreError: 728656:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Sep  3 10:52:29 2026] LustreError: 2909331:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Sep  3 10:52:29 2026] LustreError: 2909331:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Sep  3 10:52:38 2026] LustreError: 2495494:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Sep  3 10:52:38 2026] LustreError: 2495494:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 01:17:56 2026] LustreError: 910665:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 01:17:56 2026] LustreError: 910665:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 08:57:30 2026] LustreError: 2958233:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 08:57:30 2026] LustreError: 2958233:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 08:58:01 2026] LustreError: 1031324:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 08:58:01 2026] LustreError: 1031324:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 08:59:15 2026] LustreError: 918327:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 08:59:15 2026] LustreError: 918327:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 08:59:32 2026] LustreError: 2963321:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 08:59:32 2026] LustreError: 2963321:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 09:00:10 2026] LustreError: 2718508:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 09:00:10 2026] LustreError: 2718508:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 09:02:19 2026] LustreError: 2700060:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 09:02:19 2026] LustreError: 2700060:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Fri Sep  4 10:38:38 2026] LustreError: 2768817:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 10:38:38 2026] LustreError: 2768817:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 11:00:09 2026] LustreError: 659093:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 11:00:09 2026] LustreError: 659093:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 11:03:42 2026] LustreError: 402767:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 11:03:42 2026] LustreError: 402767:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 11:04:22 2026] LustreError: 777041:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 11:04:22 2026] LustreError: 777041:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 11:07:43 2026] LustreError: 2781810:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 11:07:43 2026] LustreError: 2781810:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 11:16:04 2026] LustreError: 1239822:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 11:16:04 2026] LustreError: 1239822:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 11:16:37 2026] LustreError: 2649487:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 11:16:37 2026] LustreError: 2649487:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 11:17:31 2026] LustreError: 443200:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 11:17:31 2026] LustreError: 443200:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 11:20:07 2026] LustreError: 1284715:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 11:20:07 2026] LustreError: 1284715:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 11:25:26 2026] LustreError: 2955649:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 11:25:26 2026] LustreError: 2955649:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Fri Sep  4 12:49:23 2026] LustreError: 2772819:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 12:49:23 2026] LustreError: 2772819:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Fri Sep  4 12:55:35 2026] LustreError: 2965034:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Sep  4 12:55:35 2026] LustreError: 2965034:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Mon Sep  7 16:44:52 2026] LustreError: 2611931:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Mon Sep  7 16:44:52 2026] LustreError: 2611931:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Sep  9 12:10:16 2026] LustreError: 918327:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Sep  9 12:10:16 2026] LustreError: 918327:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 15 previous similar messages\n[Wed Sep  9 12:10:19 2026] LustreError: 2929314:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Sep  9 12:10:19 2026] LustreError: 2929314:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Sep  9 13:00:56 2026] LustreError: 2963391:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Sep  9 13:00:56 2026] LustreError: 2963391:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Sep  9 13:25:58 2026] LustreError: 486609:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Sep  9 13:25:58 2026] LustreError: 486609:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Mon Sep 14 11:33:54 2026] LustreError: 3183558:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Mon Sep 14 11:33:54 2026] LustreError: 3183558:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Wed Sep 16 22:06:08 2026] LustreError: 3589712:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Wed Sep 16 22:06:08 2026] LustreError: 3589712:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Sun Sep 20 15:52:01 2026] LustreError: 1746074:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Sun Sep 20 15:52:01 2026] LustreError: 1746074:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Mon Sep 21 17:49:58 2026] LustreError: 1455962:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Mon Sep 21 17:49:58 2026] LustreError: 1455962:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Tue Sep 22 11:38:53 2026] LustreError: 320656:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Tue Sep 22 11:38:53 2026] LustreError: 320656:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Tue Sep 22 12:03:09 2026] LustreError: 322407:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Tue Sep 22 12:03:09 2026] LustreError: 322407:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Tue Sep 22 16:06:41 2026] LustreError: 2593358:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Tue Sep 22 16:06:41 2026] LustreError: 2593358:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Tue Sep 22 18:00:22 2026] LustreError: 2679188:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Tue Sep 22 18:00:22 2026] LustreError: 2679188:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Tue Sep 22 22:14:01 2026] LustreError: 320561:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Tue Sep 22 22:14:01 2026] LustreError: 320561:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message",
+        "cmd": [
+          "bash",
+          "-c",
+          "dmesg -T | grep -iE 'lustre|LustreError'"
+        ],
+        "out_hash": "59eff7c0e4add8d98a40f9c3d5bea04d69e5ee78cf827797a629f9be7c5870f2",
+        "out_path": "<scratch>/discovery/h100/outputs/59eff7c0e4add8d98a40f9c3d5bea04d69e5ee78cf827797a629f9be7c5870f2.out"
+      }
+    },
+    "gpu_list": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "GPU 0: NVIDIA H100 PCIe (UUID: GPU-f6899ccc-da1d-29c0-bfdb-d3720aaa0db2)",
+          "GPU 1: NVIDIA H100 PCIe (UUID: GPU-7c0aaf04-d6d8-9483-d062-2fb8b2d269af)",
+          "GPU 2: NVIDIA H100 PCIe (UUID: GPU-3865c0fb-d2ad-b3f1-3c21-73676b8df878)",
+          "GPU 3: NVIDIA H100 PCIe (UUID: GPU-bb0a32d5-31b6-ba5f-fe16-00ffc8f70828)"
+        ],
+        "cmd": [
+          "nvidia-smi",
+          "-L"
+        ],
+        "out_hash": "4215915ea07e535d21c93619c4d4a7999dd5df0d0c3846447e55a4b037f75f08",
+        "out_path": "<scratch>/discovery/h100/outputs/4215915ea07e535d21c93619c4d4a7999dd5df0d0c3846447e55a4b037f75f08.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": "gpu:H100:4",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p17"
+        ],
+        "out_hash": "5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44",
+        "out_path": "<scratch>/discovery/h100/outputs/5abdd06e899b0adb8f3b38c44f573ef0c20e122ddb28a604c315d4baf69f1e44.out"
+      }
+    },
+    "gpu_driver_cuda": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "driver": "580.126.16",
+          "cuda": "13.0"
+        },
+        "cmd": [
+          "nvidia-smi"
+        ],
+        "out_hash": "788920ec24c7bcdacf79d0a78fbcb3f53f663009c23a67532c0e15e84b286dde",
+        "out_path": "<scratch>/discovery/h100/outputs/788920ec24c7bcdacf79d0a78fbcb3f53f663009c23a67532c0e15e84b286dde.out"
+      }
+    },
+    "gpu_topology": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tNIC0\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m",
+        "cmd": [
+          "nvidia-smi",
+          "topo",
+          "-m"
+        ],
+        "out_hash": "a8168f30e5d61b8d01ff54b52b462cc463cb1fa1ae0fbd294442a48625bf16e9",
+        "out_path": "<scratch>/discovery/h100/outputs/a8168f30e5d61b8d01ff54b52b462cc463cb1fa1ae0fbd294442a48625bf16e9.out"
+      }
+    },
+    "gpu_settings": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "ecc_current": "Enabled",
+          "max_clocks_mhz": {
+            "sm": 1755,
+            "memory": 1593,
+            "graphics": 1755
+          }
+        },
+        "cmd": [
+          "nvidia-smi",
+          "-q",
+          "-d",
+          "CLOCK,ECC,PERFORMANCE"
+        ],
+        "out_hash": "25cdc141e90f588772292884126980ab9e31c6f9cf9c444da374568f46daebf2",
+        "out_path": "<scratch>/discovery/h100/outputs/25cdc141e90f588772292884126980ab9e31c6f9cf9c444da374568f46daebf2.out"
+      }
+    }
+  }
+}

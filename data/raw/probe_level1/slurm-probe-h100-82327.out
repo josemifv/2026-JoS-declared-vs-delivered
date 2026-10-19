@@ -1,0 +1,17 @@
+== nodo: b9p17 ==
+== identidad ==
+<u>
+== A. turbostat ==
+== B. RAPL por sysfs (sin privilegios) ==
+cat: '/sys/class/powercap/intel-rapl:0/energy_uj': Permission denied
+cat: '/sys/class/powercap/intel-rapl:0/energy_uj': Permission denied
+== C. frecuencias por cpufreq ==
+800000
+== D. contadores IB por sysfs ==
+fichero: /sys/class/infiniband/mlx5_0/ports/1/counters/port_xmit_data
+760954049608
+== E. perfquery ==
+/usr/sbin/perfquery
+ibwarn: [804446] mad_rpc_open_port: can't open UMAD port ((null):0)
+perfquery: iberror: failed: Failed to open '(null)' port '0'
+== fin de sonda ==

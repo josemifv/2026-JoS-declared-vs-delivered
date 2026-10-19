@@ -1,0 +1,808 @@
+{
+  "schema_version": 1,
+  "cluster": "turgalium",
+  "node": "acc117",
+  "role": "node",
+  "partition": "cpu36c",
+  "collected_at": "2026-09-25T22:03:55Z",
+  "run_id": "disc-turgalium-20260925T220348Z-3872147",
+  "collector": {
+    "wrapper": "<home>/instrumentation/cmdlog.sh",
+    "dry_run": false
+  },
+  "fingerprint": "34d79f5a99d967157d202f93ac9c78da40396f7a676d28bfc355cab2a0cd1125",
+  "fingerprint_attrs": [
+    "cpu_model",
+    "sockets",
+    "cores_per_socket",
+    "threads_per_core",
+    "logical_cpus_online",
+    "microcode",
+    "scaling_governor",
+    "no_turbo",
+    "freq_min_khz",
+    "freq_max_khz",
+    "numa_nodes",
+    "memory_total_kb",
+    "dimm_population",
+    "thp_enabled",
+    "numa_balancing",
+    "os",
+    "kernel",
+    "bios_version",
+    "bios_date",
+    "package_hash",
+    "hca_model",
+    "hca_firmware",
+    "port_state",
+    "port_rate",
+    "ofed_version",
+    "ucx_version",
+    "ucx_transports",
+    "libfabric_version",
+    "libfabric_providers",
+    "gcc_version",
+    "icx_version",
+    "openmpi_version",
+    "intelmpi_version",
+    "gpu_list",
+    "gpu_driver_cuda",
+    "gpu_topology",
+    "gpu_settings"
+  ],
+  "fingerprint_values": {
+    "cpu_model": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz",
+    "sockets": 2,
+    "cores_per_socket": 18,
+    "threads_per_core": 2,
+    "logical_cpus_online": 72,
+    "microcode": "0x5003102",
+    "scaling_governor": [
+      "performance"
+    ],
+    "no_turbo": 0,
+    "freq_min_khz": 1200000,
+    "freq_max_khz": 4000000,
+    "numa_nodes": 2,
+    "memory_total_kb": 196660128,
+    "dimm_population": null,
+    "thp_enabled": "always",
+    "numa_balancing": 1,
+    "os": "rocky-9.5",
+    "kernel": "5.14.0-611.34.1.el9_7.x86_64",
+    "bios_version": "3.4b",
+    "bios_date": "10/08/2021",
+    "package_hash": {
+      "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+      "count": 890
+    },
+    "hca_model": "MT4115",
+    "hca_firmware": [
+      "12.25.1020"
+    ],
+    "port_state": [
+      "Active"
+    ],
+    "port_rate": [
+      100
+    ],
+    "ofed_version": "OFED-internal-25.10-1.2.8:",
+    "ucx_version": "# Library version: 1.20.0",
+    "ucx_transports": [
+      "cma",
+      "dc_mlx5",
+      "knem",
+      "posix",
+      "rc_mlx5",
+      "rc_verbs",
+      "self",
+      "sysv",
+      "tcp",
+      "ud_mlx5",
+      "ud_verbs",
+      "xpmem"
+    ],
+    "libfabric_version": "fi_info: 1.18.0",
+    "libfabric_providers": [
+      "off_coll:",
+      "ofi_hook_debug:",
+      "ofi_hook_dmabuf_peer_mem:",
+      "ofi_hook_hmem:",
+      "ofi_hook_noop:",
+      "ofi_hook_perf:",
+      "ofi_hook_trace:",
+      "ofi_mrail:",
+      "ofi_rxd:",
+      "ofi_rxm:",
+      "opx:",
+      "psm2:",
+      "psm3:",
+      "shm:",
+      "sockets:",
+      "tcp:",
+      "udp:",
+      "usnic:",
+      "verbs:",
+      "version: 1.0",
+      "version: 118.0",
+      "version: 304.1010"
+    ],
+    "gcc_version": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)",
+    "icx_version": null,
+    "openmpi_version": null,
+    "intelmpi_version": null,
+    "gpu_list": null,
+    "gpu_driver_cuda": null,
+    "gpu_topology": null,
+    "gpu_settings": null
+  },
+  "attributes": {
+    "cpu_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "Intel(R) Xeon(R) Gold 6254 CPU @ 3.10GHz",
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "5e92ecd81c64ef8217a6ff4ff3024c401b5e21aecc780fd5786ef52a78da676d",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/5e92ecd81c64ef8217a6ff4ff3024c401b5e21aecc780fd5786ef52a78da676d.out"
+      }
+    },
+    "sockets": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "5e92ecd81c64ef8217a6ff4ff3024c401b5e21aecc780fd5786ef52a78da676d",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/5e92ecd81c64ef8217a6ff4ff3024c401b5e21aecc780fd5786ef52a78da676d.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acc117"
+        ],
+        "out_hash": "405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0.out"
+      }
+    },
+    "cores_per_socket": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 18,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "5e92ecd81c64ef8217a6ff4ff3024c401b5e21aecc780fd5786ef52a78da676d",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/5e92ecd81c64ef8217a6ff4ff3024c401b5e21aecc780fd5786ef52a78da676d.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 18,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acc117"
+        ],
+        "out_hash": "405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0.out"
+      }
+    },
+    "threads_per_core": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "5e92ecd81c64ef8217a6ff4ff3024c401b5e21aecc780fd5786ef52a78da676d",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/5e92ecd81c64ef8217a6ff4ff3024c401b5e21aecc780fd5786ef52a78da676d.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acc117"
+        ],
+        "out_hash": "405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0.out"
+      }
+    },
+    "logical_cpus_online": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 72,
+        "cmd": [
+          "nproc",
+          "--all"
+        ],
+        "out_hash": "bd5fa6e75f0ddfcd9ff32e0a2297554cd81188f177f14d7ce416310efa0b5c77",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/bd5fa6e75f0ddfcd9ff32e0a2297554cd81188f177f14d7ce416310efa0b5c77.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 36,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acc117"
+        ],
+        "out_hash": "405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0.out"
+      }
+    },
+    "microcode": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "0x5003102",
+        "cmd": [
+          "cat",
+          "/proc/cpuinfo"
+        ],
+        "out_hash": "965b9468d81c04e6ab7704b7c94377a2638dbd0871fea6eaef3cd0ba3fa6a0f8",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/965b9468d81c04e6ab7704b7c94377a2638dbd0871fea6eaef3cd0ba3fa6a0f8.out"
+      }
+    },
+    "scaling_governor": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "performance"
+        ],
+        "cmd": [
+          "bash",
+          "-c",
+          "grep -H . /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
+        ],
+        "out_hash": "4469a2794cdf88f7bc45b0983d26d6a10a31fe277350889fd241816751e1ed46",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/4469a2794cdf88f7bc45b0983d26d6a10a31fe277350889fd241816751e1ed46.out"
+      }
+    },
+    "no_turbo": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 0,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/intel_pstate/no_turbo"
+        ],
+        "out_hash": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa.out"
+      }
+    },
+    "freq_min_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1200000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq"
+        ],
+        "out_hash": "55cd3e65c3d972cef88ad6c016d1cd4f91138c0da18344d7ec8c35e38755d330",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/55cd3e65c3d972cef88ad6c016d1cd4f91138c0da18344d7ec8c35e38755d330.out"
+      }
+    },
+    "freq_max_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 4000000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq"
+        ],
+        "out_hash": "a92373742eac3ba9e17aa3c09b8bcb19aefda9be4f665a6a94048ab1ae6247c8",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/a92373742eac3ba9e17aa3c09b8bcb19aefda9be4f665a6a94048ab1ae6247c8.out"
+      }
+    },
+    "numa_nodes": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "5e92ecd81c64ef8217a6ff4ff3024c401b5e21aecc780fd5786ef52a78da676d",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/5e92ecd81c64ef8217a6ff4ff3024c401b5e21aecc780fd5786ef52a78da676d.out"
+      }
+    },
+    "memory_total_kb": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 196660128,
+        "cmd": [
+          "cat",
+          "/proc/meminfo"
+        ],
+        "out_hash": "c4d37d7944222785e73e037433e462cc4e69c2fab7bdaa72822dfe9268f821fe",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/c4d37d7944222785e73e037433e462cc4e69c2fab7bdaa72822dfe9268f821fe.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 195584000,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acc117"
+        ],
+        "out_hash": "405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0.out"
+      }
+    },
+    "dimm_population": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "dmidecode_mem: exit 1"
+      }
+    },
+    "thp_enabled": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "always",
+        "cmd": [
+          "cat",
+          "/sys/kernel/mm/transparent_hugepage/enabled"
+        ],
+        "out_hash": "092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d.out"
+      }
+    },
+    "numa_balancing": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "cat",
+          "/proc/sys/kernel/numa_balancing"
+        ],
+        "out_hash": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865.out"
+      }
+    },
+    "os": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "rocky-9.5",
+        "cmd": [
+          "cat",
+          "/etc/os-release"
+        ],
+        "out_hash": "cdf4bbbd4451e30dfa6893e0550a27f2863d98bc611565a7af0202610754b972",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/cdf4bbbd4451e30dfa6893e0550a27f2863d98bc611565a7af0202610754b972.out"
+      }
+    },
+    "kernel": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "5.14.0-611.34.1.el9_7.x86_64",
+        "cmd": [
+          "uname",
+          "-r"
+        ],
+        "out_hash": "353653b514f1011efbd3cbd4dbdbf2a8e65c633b62e922649d3695cd5f7b0a68",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/353653b514f1011efbd3cbd4dbdbf2a8e65c633b62e922649d3695cd5f7b0a68.out"
+      }
+    },
+    "bios_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "3.4b",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_version"
+        ],
+        "out_hash": "88b06d3b7efee12032b3caa0e505829a1a8b87bffdcb09619a8980d15743cd83",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/88b06d3b7efee12032b3caa0e505829a1a8b87bffdcb09619a8980d15743cd83.out"
+      }
+    },
+    "bios_date": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "10/08/2021",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_date"
+        ],
+        "out_hash": "564021d2833474aeb87e459dd1d72c3293c9c5ac61cd246b949a74e87f44cdb5",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/564021d2833474aeb87e459dd1d72c3293c9c5ac61cd246b949a74e87f44cdb5.out"
+      }
+    },
+    "server_model": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "BullSequana X550-E5",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/product_name"
+        ],
+        "out_hash": "6a6f7bd3b87b26713e71bc13470664a622fef44c719fa3add1e052408fae495d",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/6a6f7bd3b87b26713e71bc13470664a622fef44c719fa3add1e052408fae495d.out"
+      }
+    },
+    "package_hash": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+          "count": 890
+        },
+        "cmd": [
+          "rpm",
+          "-qa",
+          "--qf",
+          "%{NAME}-%{VERSION}-%{RELEASE}\\n"
+        ],
+        "out_hash": "c0ac2d7dd54d790cd91aea05b76963af7434a901234dd898f8a47ec0a322d0f8",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/c0ac2d7dd54d790cd91aea05b76963af7434a901234dd898f8a47ec0a322d0f8.out"
+      }
+    },
+    "hca_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "MT4115",
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "28c55265cc156b56bf434d39d038e170cb019d7d0ce5f4521a54f848925d162b",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/28c55265cc156b56bf434d39d038e170cb019d7d0ce5f4521a54f848925d162b.out"
+      }
+    },
+    "hca_firmware": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "12.25.1020"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "28c55265cc156b56bf434d39d038e170cb019d7d0ce5f4521a54f848925d162b",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/28c55265cc156b56bf434d39d038e170cb019d7d0ce5f4521a54f848925d162b.out"
+      }
+    },
+    "port_state": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "Active"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "28c55265cc156b56bf434d39d038e170cb019d7d0ce5f4521a54f848925d162b",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/28c55265cc156b56bf434d39d038e170cb019d7d0ce5f4521a54f848925d162b.out"
+      }
+    },
+    "port_rate": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          100
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "28c55265cc156b56bf434d39d038e170cb019d7d0ce5f4521a54f848925d162b",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/28c55265cc156b56bf434d39d038e170cb019d7d0ce5f4521a54f848925d162b.out"
+      }
+    },
+    "ofed_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "OFED-internal-25.10-1.2.8:",
+        "cmd": [
+          "ofed_info",
+          "-s"
+        ],
+        "out_hash": "20ba5052018928ea8762a1f162d72ab319f8330446b41a2a732d53c4f467b0aa",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/20ba5052018928ea8762a1f162d72ab319f8330446b41a2a732d53c4f467b0aa.out"
+      }
+    },
+    "ucx_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "# Library version: 1.20.0",
+        "cmd": [
+          "ucx_info",
+          "-v"
+        ],
+        "out_hash": "d1db0a26261881f2392a567de0b5c07c3c185b8bd5f95355869c56fd82e3385a",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/d1db0a26261881f2392a567de0b5c07c3c185b8bd5f95355869c56fd82e3385a.out"
+      }
+    },
+    "ucx_transports": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "cma",
+          "dc_mlx5",
+          "knem",
+          "posix",
+          "rc_mlx5",
+          "rc_verbs",
+          "self",
+          "sysv",
+          "tcp",
+          "ud_mlx5",
+          "ud_verbs",
+          "xpmem"
+        ],
+        "cmd": [
+          "ucx_info",
+          "-d"
+        ],
+        "out_hash": "9ebe6ecc475086935bd364d3f11aa544a370f6c43a0cf4179f412ad8fda24b82",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/9ebe6ecc475086935bd364d3f11aa544a370f6c43a0cf4179f412ad8fda24b82.out"
+      }
+    },
+    "libfabric_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "fi_info: 1.18.0",
+        "cmd": [
+          "fi_info",
+          "--version"
+        ],
+        "out_hash": "4e38ec6d420997cff4151247a9a8b4682eea71ee8c769f171b6fdcf3157c2357",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/4e38ec6d420997cff4151247a9a8b4682eea71ee8c769f171b6fdcf3157c2357.out"
+      }
+    },
+    "libfabric_providers": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "off_coll:",
+          "ofi_hook_debug:",
+          "ofi_hook_dmabuf_peer_mem:",
+          "ofi_hook_hmem:",
+          "ofi_hook_noop:",
+          "ofi_hook_perf:",
+          "ofi_hook_trace:",
+          "ofi_mrail:",
+          "ofi_rxd:",
+          "ofi_rxm:",
+          "opx:",
+          "psm2:",
+          "psm3:",
+          "shm:",
+          "sockets:",
+          "tcp:",
+          "udp:",
+          "usnic:",
+          "verbs:",
+          "version: 1.0",
+          "version: 118.0",
+          "version: 304.1010"
+        ],
+        "cmd": [
+          "fi_info",
+          "-l"
+        ],
+        "out_hash": "e46f0bae86c5d9214cb06306cd9a925315025be81ea680de12911ae41c3376b3",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/e46f0bae86c5d9214cb06306cd9a925315025be81ea680de12911ae41c3376b3.out"
+      }
+    },
+    "modules_avail": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "766906d7806c0bed14d26c0d6be18a1d772ece0654bc459ddce360638eabbdcf",
+          "count": 34
+        },
+        "cmd": [
+          "bash",
+          "-lc",
+          "module avail"
+        ],
+        "out_hash": "70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26.out"
+      }
+    },
+    "gcc_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)",
+        "cmd": [
+          "gcc",
+          "--version"
+        ],
+        "out_hash": "0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23.out"
+      }
+    },
+    "icx_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "icx_version: exit 127"
+      }
+    },
+    "openmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpirun_version: exit 127; ompi_info_version: exit 127"
+      }
+    },
+    "intelmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpiexec_version: exit 127"
+      }
+    },
+    "mpi_cuda_aware": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "ompi_info_parsable: exit 127"
+      }
+    },
+    "cmmse_stack": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "module_avail: sin dato"
+      }
+    },
+    "slurm_features": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": [
+          "192GB_RAM",
+          "3.10GHz",
+          "6254",
+          "CPU_CascadeLake",
+          "Infiniband_EDR"
+        ],
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acc117"
+        ],
+        "out_hash": "405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0.out"
+      }
+    },
+    "slurm_gres": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": "(null)",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acc117"
+        ],
+        "out_hash": "405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0.out"
+      }
+    },
+    "lustre_version": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "lfs 2.17.0",
+        "cmd": [
+          "lfs",
+          "--version"
+        ],
+        "out_hash": "485d6665429178fe15167e8004ceea26216561719cf420b20ffce4b9fc03e797",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/485d6665429178fe15167e8004ceea26216561719cf420b20ffce4b9fc03e797.out"
+      }
+    },
+    "mounts": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "TARGET    SOURCE                                            FSTYPE OPTIONS\n/ws       <ip>@o2ib:<ip>@o2ib:/cetafs2/ws    lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose\n/home     <ip>@o2ib:<ip>@o2ib:/cetafs2/homes lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose\n/opt/apps <ip>@o2ib:<ip>@o2ib:/cetafs2/apps  lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose",
+        "cmd": [
+          "findmnt",
+          "-t",
+          "lustre,nfs,gpfs"
+        ],
+        "out_hash": "f2beb8642f510bf330610de39edc2efb4ed702f743fea54f4b96d632861ad744",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/f2beb8642f510bf330610de39edc2efb4ed702f743fea54f4b96d632861ad744.out"
+      }
+    },
+    "lustre_errors": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "[Thu Apr 30 20:26:50 2026] Lustre: Lustre: Build Version: 2.17.0\n[Thu Apr 30 20:26:53 2026] Lustre: Mounted cetafs2-client\n[Thu Apr 30 20:26:53 2026] Lustre: Skipped 2 previous similar messages\n[Mon Jun  1 09:19:36 2026] Lustre: 2018:0:(client.c:2472:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1780297739/real 1780297739]  req@000000000039fbfd x1863921207175424/t0(0) o101->cetafs2-MDT0000-mdc-ffff9f24893f7000@<ip>@o2ib:12/10 lens 576/1152 e 9 to 1 dl 1780298344 ref 2 fl Rpc:XQr/600/ffffffff rc 0/-1 job:'' uid:0 gid:0 projid:0\n[Mon Jun  1 09:19:36 2026] Lustre: cetafs2-MDT0000-mdc-ffff9f24893f7000: Connection to cetafs2-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Jun  1 09:19:36 2026] Lustre: cetafs2-MDT0000-mdc-ffff9f24893f7000: Connection restored to <ip>@o2ib (at <ip>@o2ib)",
+        "cmd": [
+          "bash",
+          "-c",
+          "dmesg -T | grep -iE 'lustre|LustreError'"
+        ],
+        "out_hash": "829cdf12c167a239dc76271c3c7ae89b92af625b79e71c87fee3a6d384daf27d",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/829cdf12c167a239dc76271c3c7ae89b92af625b79e71c87fee3a6d384daf27d.out"
+      }
+    },
+    "gpu_list": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_L: exit 127"
+      },
+      "declared": {
+        "observable": true,
+        "value": "(null)",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "acc117"
+        ],
+        "out_hash": "405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0",
+        "out_path": "<scratch>/discovery/cpu36c/outputs/405f5d2422b46c000c05184181578190c36298ec51ac12dfb08e524b6a40d0f0.out"
+      }
+    },
+    "gpu_driver_cuda": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi: exit 127"
+      }
+    },
+    "gpu_topology": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_topo: exit 127"
+      }
+    },
+    "gpu_settings": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_q: exit 127"
+      }
+    }
+  }
+}

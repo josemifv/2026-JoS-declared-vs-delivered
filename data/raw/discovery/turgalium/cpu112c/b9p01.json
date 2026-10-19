@@ -1,0 +1,808 @@
+{
+  "schema_version": 1,
+  "cluster": "turgalium",
+  "node": "b9p01",
+  "role": "node",
+  "partition": "cpu112c",
+  "collected_at": "2026-09-25T22:01:24Z",
+  "run_id": "disc-turgalium-20260925T220118Z-3871628",
+  "collector": {
+    "wrapper": "<home>/instrumentation/cmdlog.sh",
+    "dry_run": false
+  },
+  "fingerprint": "45693c3713d2230738e3a0c46f6f9e70012d0e211eb27ea5bfb1317d23733d23",
+  "fingerprint_attrs": [
+    "cpu_model",
+    "sockets",
+    "cores_per_socket",
+    "threads_per_core",
+    "logical_cpus_online",
+    "microcode",
+    "scaling_governor",
+    "no_turbo",
+    "freq_min_khz",
+    "freq_max_khz",
+    "numa_nodes",
+    "memory_total_kb",
+    "dimm_population",
+    "thp_enabled",
+    "numa_balancing",
+    "os",
+    "kernel",
+    "bios_version",
+    "bios_date",
+    "package_hash",
+    "hca_model",
+    "hca_firmware",
+    "port_state",
+    "port_rate",
+    "ofed_version",
+    "ucx_version",
+    "ucx_transports",
+    "libfabric_version",
+    "libfabric_providers",
+    "gcc_version",
+    "icx_version",
+    "openmpi_version",
+    "intelmpi_version",
+    "gpu_list",
+    "gpu_driver_cuda",
+    "gpu_topology",
+    "gpu_settings"
+  ],
+  "fingerprint_values": {
+    "cpu_model": "Intel(R) Xeon(R) Platinum 8480+",
+    "sockets": 2,
+    "cores_per_socket": 56,
+    "threads_per_core": 1,
+    "logical_cpus_online": 112,
+    "microcode": "0x2b000639",
+    "scaling_governor": [
+      "performance"
+    ],
+    "no_turbo": 0,
+    "freq_min_khz": 800000,
+    "freq_max_khz": 3800000,
+    "numa_nodes": 2,
+    "memory_total_kb": 1056475104,
+    "dimm_population": null,
+    "thp_enabled": "always",
+    "numa_balancing": 1,
+    "os": "rocky-9.5",
+    "kernel": "5.14.0-611.34.1.el9_7.x86_64",
+    "bios_version": "R14",
+    "bios_date": "04/21/2025",
+    "package_hash": {
+      "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+      "count": 890
+    },
+    "hca_model": "MT4123",
+    "hca_firmware": [
+      "20.37.1014"
+    ],
+    "port_state": [
+      "Active"
+    ],
+    "port_rate": [
+      200
+    ],
+    "ofed_version": "OFED-internal-25.10-1.2.8:",
+    "ucx_version": "# Library version: 1.20.0",
+    "ucx_transports": [
+      "cma",
+      "dc_mlx5",
+      "knem",
+      "posix",
+      "rc_mlx5",
+      "rc_verbs",
+      "self",
+      "sysv",
+      "tcp",
+      "ud_mlx5",
+      "ud_verbs",
+      "xpmem"
+    ],
+    "libfabric_version": "fi_info: 1.18.0",
+    "libfabric_providers": [
+      "off_coll:",
+      "ofi_hook_debug:",
+      "ofi_hook_dmabuf_peer_mem:",
+      "ofi_hook_hmem:",
+      "ofi_hook_noop:",
+      "ofi_hook_perf:",
+      "ofi_hook_trace:",
+      "ofi_mrail:",
+      "ofi_rxd:",
+      "ofi_rxm:",
+      "opx:",
+      "psm2:",
+      "psm3:",
+      "shm:",
+      "sockets:",
+      "tcp:",
+      "udp:",
+      "usnic:",
+      "verbs:",
+      "version: 1.0",
+      "version: 118.0",
+      "version: 304.1010"
+    ],
+    "gcc_version": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)",
+    "icx_version": null,
+    "openmpi_version": null,
+    "intelmpi_version": null,
+    "gpu_list": null,
+    "gpu_driver_cuda": null,
+    "gpu_topology": null,
+    "gpu_settings": null
+  },
+  "attributes": {
+    "cpu_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "Intel(R) Xeon(R) Platinum 8480+",
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc.out"
+      }
+    },
+    "sockets": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p01"
+        ],
+        "out_hash": "a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd.out"
+      }
+    },
+    "cores_per_socket": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 56,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 56,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p01"
+        ],
+        "out_hash": "a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd.out"
+      }
+    },
+    "threads_per_core": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p01"
+        ],
+        "out_hash": "a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd.out"
+      }
+    },
+    "logical_cpus_online": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 112,
+        "cmd": [
+          "nproc",
+          "--all"
+        ],
+        "out_hash": "f7dbab4769334b25f2b4c0606fef276da29bc7477cc15f51f0967a6e477e7c94",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/f7dbab4769334b25f2b4c0606fef276da29bc7477cc15f51f0967a6e477e7c94.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 112,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p01"
+        ],
+        "out_hash": "a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd.out"
+      }
+    },
+    "microcode": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "0x2b000639",
+        "cmd": [
+          "cat",
+          "/proc/cpuinfo"
+        ],
+        "out_hash": "ebf9831c4a48141ddaa010761cefa3fdf4ab29fd5577f6b458662ded36e3b70f",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/ebf9831c4a48141ddaa010761cefa3fdf4ab29fd5577f6b458662ded36e3b70f.out"
+      }
+    },
+    "scaling_governor": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "performance"
+        ],
+        "cmd": [
+          "bash",
+          "-c",
+          "grep -H . /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
+        ],
+        "out_hash": "bbc1cbfb493a3a9ca4f311c17f180e577e74cde958107c06bbf0c20e7ff9530e",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/bbc1cbfb493a3a9ca4f311c17f180e577e74cde958107c06bbf0c20e7ff9530e.out"
+      }
+    },
+    "no_turbo": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 0,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/intel_pstate/no_turbo"
+        ],
+        "out_hash": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa.out"
+      }
+    },
+    "freq_min_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 800000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq"
+        ],
+        "out_hash": "20906f772bf0b93e695828b6019fcd7284341cbe95ee2865a6e86b8e400551ed",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/20906f772bf0b93e695828b6019fcd7284341cbe95ee2865a6e86b8e400551ed.out"
+      }
+    },
+    "freq_max_khz": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 3800000,
+        "cmd": [
+          "cat",
+          "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq"
+        ],
+        "out_hash": "54eb4724ea802bde85274ac5e3d37a778219365aa36c15be3e0f81fcad1f75a1",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/54eb4724ea802bde85274ac5e3d37a778219365aa36c15be3e0f81fcad1f75a1.out"
+      }
+    },
+    "numa_nodes": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 2,
+        "cmd": [
+          "lscpu"
+        ],
+        "out_hash": "65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/65ef1c01a573e0dfa210ad403a0fbfd0c8cf971fa076683cb2126148db53dbbc.out"
+      }
+    },
+    "memory_total_kb": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1056475104,
+        "cmd": [
+          "cat",
+          "/proc/meminfo"
+        ],
+        "out_hash": "8d196082dde81bbbdbf4fde7236a94edbddab88f6d0250c4174cc2ec08863973",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/8d196082dde81bbbdbf4fde7236a94edbddab88f6d0250c4174cc2ec08863973.out"
+      },
+      "declared": {
+        "observable": true,
+        "value": 1024000000,
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p01"
+        ],
+        "out_hash": "a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd.out"
+      }
+    },
+    "dimm_population": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "dmidecode_mem: exit 1"
+      }
+    },
+    "thp_enabled": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "always",
+        "cmd": [
+          "cat",
+          "/sys/kernel/mm/transparent_hugepage/enabled"
+        ],
+        "out_hash": "092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/092d84607a0a488f54fe63a5a1ec15e36b307b64c402b1a1d0cae514df659e4d.out"
+      }
+    },
+    "numa_balancing": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": 1,
+        "cmd": [
+          "cat",
+          "/proc/sys/kernel/numa_balancing"
+        ],
+        "out_hash": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865.out"
+      }
+    },
+    "os": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "rocky-9.5",
+        "cmd": [
+          "cat",
+          "/etc/os-release"
+        ],
+        "out_hash": "cdf4bbbd4451e30dfa6893e0550a27f2863d98bc611565a7af0202610754b972",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/cdf4bbbd4451e30dfa6893e0550a27f2863d98bc611565a7af0202610754b972.out"
+      }
+    },
+    "kernel": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "5.14.0-611.34.1.el9_7.x86_64",
+        "cmd": [
+          "uname",
+          "-r"
+        ],
+        "out_hash": "353653b514f1011efbd3cbd4dbdbf2a8e65c633b62e922649d3695cd5f7b0a68",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/353653b514f1011efbd3cbd4dbdbf2a8e65c633b62e922649d3695cd5f7b0a68.out"
+      }
+    },
+    "bios_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "R14",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_version"
+        ],
+        "out_hash": "266280d851572166626e34edbf4126d1d07a81bf509adfbc12083e3fbc442526",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/266280d851572166626e34edbf4126d1d07a81bf509adfbc12083e3fbc442526.out"
+      }
+    },
+    "bios_date": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "04/21/2025",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/bios_date"
+        ],
+        "out_hash": "cf178c2f63ceafdfc1399eff66e0bab77601e85c674d2e387d546dfad93139ac",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/cf178c2f63ceafdfc1399eff66e0bab77601e85c674d2e387d546dfad93139ac.out"
+      }
+    },
+    "server_model": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "X440-E7 2U4N2S",
+        "cmd": [
+          "cat",
+          "/sys/class/dmi/id/product_name"
+        ],
+        "out_hash": "7754e783a0b7034f613c53065e6b327965bc69d910cd7d28acfb89be3d7b9431",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/7754e783a0b7034f613c53065e6b327965bc69d910cd7d28acfb89be3d7b9431.out"
+      }
+    },
+    "package_hash": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "64bb168056ae068bda9783d78785ec249347c27e86d46aefcc33b4e00908c5ba",
+          "count": 890
+        },
+        "cmd": [
+          "rpm",
+          "-qa",
+          "--qf",
+          "%{NAME}-%{VERSION}-%{RELEASE}\\n"
+        ],
+        "out_hash": "c0ac2d7dd54d790cd91aea05b76963af7434a901234dd898f8a47ec0a322d0f8",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/c0ac2d7dd54d790cd91aea05b76963af7434a901234dd898f8a47ec0a322d0f8.out"
+      }
+    },
+    "hca_model": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "MT4123",
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "e089342edb9dafa1b11e4f6415c8cde47c35218df71ab2e0bb706eb2a743daa6",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/e089342edb9dafa1b11e4f6415c8cde47c35218df71ab2e0bb706eb2a743daa6.out"
+      }
+    },
+    "hca_firmware": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "20.37.1014"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "e089342edb9dafa1b11e4f6415c8cde47c35218df71ab2e0bb706eb2a743daa6",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/e089342edb9dafa1b11e4f6415c8cde47c35218df71ab2e0bb706eb2a743daa6.out"
+      }
+    },
+    "port_state": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "Active"
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "e089342edb9dafa1b11e4f6415c8cde47c35218df71ab2e0bb706eb2a743daa6",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/e089342edb9dafa1b11e4f6415c8cde47c35218df71ab2e0bb706eb2a743daa6.out"
+      }
+    },
+    "port_rate": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          200
+        ],
+        "cmd": [
+          "ibstat"
+        ],
+        "out_hash": "e089342edb9dafa1b11e4f6415c8cde47c35218df71ab2e0bb706eb2a743daa6",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/e089342edb9dafa1b11e4f6415c8cde47c35218df71ab2e0bb706eb2a743daa6.out"
+      }
+    },
+    "ofed_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "OFED-internal-25.10-1.2.8:",
+        "cmd": [
+          "ofed_info",
+          "-s"
+        ],
+        "out_hash": "20ba5052018928ea8762a1f162d72ab319f8330446b41a2a732d53c4f467b0aa",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/20ba5052018928ea8762a1f162d72ab319f8330446b41a2a732d53c4f467b0aa.out"
+      }
+    },
+    "ucx_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "# Library version: 1.20.0",
+        "cmd": [
+          "ucx_info",
+          "-v"
+        ],
+        "out_hash": "d1db0a26261881f2392a567de0b5c07c3c185b8bd5f95355869c56fd82e3385a",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/d1db0a26261881f2392a567de0b5c07c3c185b8bd5f95355869c56fd82e3385a.out"
+      }
+    },
+    "ucx_transports": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "cma",
+          "dc_mlx5",
+          "knem",
+          "posix",
+          "rc_mlx5",
+          "rc_verbs",
+          "self",
+          "sysv",
+          "tcp",
+          "ud_mlx5",
+          "ud_verbs",
+          "xpmem"
+        ],
+        "cmd": [
+          "ucx_info",
+          "-d"
+        ],
+        "out_hash": "1e151bde498b2162ce9f98f2d80319d15e100fded2caffa012cd5718c57cb5a5",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/1e151bde498b2162ce9f98f2d80319d15e100fded2caffa012cd5718c57cb5a5.out"
+      }
+    },
+    "libfabric_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "fi_info: 1.18.0",
+        "cmd": [
+          "fi_info",
+          "--version"
+        ],
+        "out_hash": "4e38ec6d420997cff4151247a9a8b4682eea71ee8c769f171b6fdcf3157c2357",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/4e38ec6d420997cff4151247a9a8b4682eea71ee8c769f171b6fdcf3157c2357.out"
+      }
+    },
+    "libfabric_providers": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": [
+          "off_coll:",
+          "ofi_hook_debug:",
+          "ofi_hook_dmabuf_peer_mem:",
+          "ofi_hook_hmem:",
+          "ofi_hook_noop:",
+          "ofi_hook_perf:",
+          "ofi_hook_trace:",
+          "ofi_mrail:",
+          "ofi_rxd:",
+          "ofi_rxm:",
+          "opx:",
+          "psm2:",
+          "psm3:",
+          "shm:",
+          "sockets:",
+          "tcp:",
+          "udp:",
+          "usnic:",
+          "verbs:",
+          "version: 1.0",
+          "version: 118.0",
+          "version: 304.1010"
+        ],
+        "cmd": [
+          "fi_info",
+          "-l"
+        ],
+        "out_hash": "e46f0bae86c5d9214cb06306cd9a925315025be81ea680de12911ae41c3376b3",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/e46f0bae86c5d9214cb06306cd9a925315025be81ea680de12911ae41c3376b3.out"
+      }
+    },
+    "modules_avail": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "766906d7806c0bed14d26c0d6be18a1d772ece0654bc459ddce360638eabbdcf",
+          "count": 34
+        },
+        "cmd": [
+          "bash",
+          "-lc",
+          "module avail"
+        ],
+        "out_hash": "70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26.out"
+      }
+    },
+    "gcc_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)",
+        "cmd": [
+          "gcc",
+          "--version"
+        ],
+        "out_hash": "0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/0639acf2c98f1100d274cc38957c049546aa304a92d2a4d753572cd78245ce23.out"
+      }
+    },
+    "icx_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "icx_version: exit 127"
+      }
+    },
+    "openmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpirun_version: exit 127; ompi_info_version: exit 127"
+      }
+    },
+    "intelmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpiexec_version: exit 127"
+      }
+    },
+    "mpi_cuda_aware": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "ompi_info_parsable: exit 127"
+      }
+    },
+    "cmmse_stack": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "module_avail: sin dato"
+      }
+    },
+    "slurm_features": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": [
+          "1TB_RAM",
+          "3.80GHz",
+          "8084+",
+          "CPU_Sapphire_Rapids",
+          "Infiniband_HDR"
+        ],
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p01"
+        ],
+        "out_hash": "a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd.out"
+      }
+    },
+    "slurm_gres": {
+      "F": false,
+      "declared": {
+        "observable": true,
+        "value": "(null)",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p01"
+        ],
+        "out_hash": "a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd.out"
+      }
+    },
+    "lustre_version": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "lfs 2.17.0",
+        "cmd": [
+          "lfs",
+          "--version"
+        ],
+        "out_hash": "485d6665429178fe15167e8004ceea26216561719cf420b20ffce4b9fc03e797",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/485d6665429178fe15167e8004ceea26216561719cf420b20ffce4b9fc03e797.out"
+      }
+    },
+    "mounts": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "TARGET    SOURCE                                            FSTYPE OPTIONS\n/opt/apps <ip>@o2ib:<ip>@o2ib:/cetafs2/apps  lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose\n/home     <ip>@o2ib:<ip>@o2ib:/cetafs2/homes lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose\n/ws       <ip>@o2ib:<ip>@o2ib:/cetafs2/ws    lustre rw,checksum,encrypt,noflock,localflock,lruresize,nolock,statfs_project,nouser_fid2path,nouser_xattr,verbose",
+        "cmd": [
+          "findmnt",
+          "-t",
+          "lustre,nfs,gpfs"
+        ],
+        "out_hash": "a2543cb54b2605902143f1823d73e22a4b806caafa5bd0b90c5225a50cacc53d",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/a2543cb54b2605902143f1823d73e22a4b806caafa5bd0b90c5225a50cacc53d.out"
+      }
+    },
+    "lustre_errors": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": "[Thu Apr 30 20:40:35 2026] Lustre: Lustre: Build Version: 2.17.0\n[Thu Apr 30 20:40:39 2026] Lustre: Mounted cetafs2-client\n[Thu Apr 30 20:40:39 2026] Lustre: Skipped 2 previous similar messages\n[Fri May  1 13:45:10 2026] LustreError: 904:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri May  1 15:41:08 2026] LustreError: 9400:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri May  1 15:41:08 2026] LustreError: 9400:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 453 previous similar messages\n[Mon May 11 13:55:15 2026] Lustre: 2841:0:(client.c:2472:ptlrpc_expire_one_request()) @@@ Request sent has timed out for sent delay: [sent 1778500449/real 0]  req@000000000671cf34 x1863923440635520/t0(0) o4->cetafs2-OST0008-osc-ff1f20a559b7a000@<ip>@o2ib:6/4 lens 7640/448 e 0 to 1 dl 1778500465 ref 3 fl Rpc:Xr/600/ffffffff rc 0/-1 job:'' uid:1359 gid:752 projid:0\n[Mon May 11 13:55:15 2026] Lustre: cetafs2-OST0008-osc-ff1f20a559b7a000: Connection to cetafs2-OST0008 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon May 11 13:55:15 2026] Lustre: 2841:0:(client.c:2472:ptlrpc_expire_one_request()) Skipped 1 previous similar message\n[Mon Jun  1 09:19:59 2026] Lustre: 41774:0:(client.c:2472:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1780297739/real 1780297739]  req@000000006924f350 x1863924014170112/t0(0) o101->cetafs2-MDT0000-mdc-ff1f20a5d5a1e000@<ip>@o2ib:12/10 lens 576/1152 e 16 to 1 dl 1780298344 ref 2 fl Rpc:XQr/600/ffffffff rc 0/-1 job:'' uid:0 gid:0 projid:0\n[Mon Jun  1 09:19:59 2026] Lustre: cetafs2-MDT0000-mdc-ff1f20a5d5a1e000: Connection to cetafs2-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete\n[Mon Jun  1 09:19:59 2026] Lustre: cetafs2-MDT0000-mdc-ff1f20a5d5a1e000: Connection restored to <ip>@o2ib (at <ip>@o2ib)\n[Fri Jun  5 09:48:39 2026] LustreError: 335846:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 09:48:39 2026] LustreError: 335846:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1562 previous similar messages\n[Fri Jun  5 09:51:39 2026] LustreError: 278848:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 09:51:39 2026] LustreError: 278848:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun  5 09:52:32 2026] LustreError: 835798:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 09:52:32 2026] LustreError: 835798:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun  5 09:53:39 2026] LustreError: 553359:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 09:53:39 2026] LustreError: 553359:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun  5 10:26:38 2026] LustreError: 594273:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 10:26:38 2026] LustreError: 594273:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Fri Jun  5 10:27:17 2026] LustreError: 594273:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 10:27:17 2026] LustreError: 594273:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun  5 10:27:42 2026] LustreError: 599163:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 10:27:42 2026] LustreError: 599163:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Fri Jun  5 10:52:21 2026] LustreError: 599163:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 10:52:21 2026] LustreError: 599163:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun  5 10:56:28 2026] LustreError: 553024:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 10:56:28 2026] LustreError: 553024:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun  5 10:56:55 2026] LustreError: 594273:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 10:56:55 2026] LustreError: 594273:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Fri Jun  5 11:04:19 2026] LustreError: 836650:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 11:04:19 2026] LustreError: 836650:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun  5 11:05:28 2026] LustreError: 837024:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 11:05:28 2026] LustreError: 837024:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun  5 11:06:43 2026] LustreError: 278839:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 11:06:43 2026] LustreError: 278839:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Fri Jun  5 11:07:33 2026] LustreError: 909:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 11:07:33 2026] LustreError: 909:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Fri Jun  5 11:12:09 2026] LustreError: 278845:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 11:12:09 2026] LustreError: 278845:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun  5 11:44:03 2026] LustreError: 837398:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 11:44:03 2026] LustreError: 837398:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun  5 11:46:37 2026] LustreError: 552366:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 11:46:37 2026] LustreError: 552366:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun  5 12:01:47 2026] LustreError: 553024:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 12:01:47 2026] LustreError: 553024:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Fri Jun  5 12:04:43 2026] LustreError: 594273:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Jun  5 12:04:43 2026] LustreError: 594273:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Thu Jul  2 09:07:06 2026] LustreError: 2871195:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul  2 09:07:06 2026] LustreError: 2871195:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Wed Jul  8 16:35:41 2026] LustreError: 256801:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Wed Jul  8 16:41:14 2026] LustreError: 256803:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Thu Jul 16 13:04:32 2026] LustreError: 1656270:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul 16 13:04:32 2026] LustreError: 1656270:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Thu Jul 16 13:04:32 2026] LustreError: 1351778:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul 16 13:04:32 2026] LustreError: 1351778:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Thu Jul 16 13:04:33 2026] LustreError: 1659522:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul 16 13:04:33 2026] LustreError: 1659522:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 15 previous similar messages\n[Thu Jul 16 13:13:42 2026] LustreError: 3141426:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul 16 13:13:42 2026] LustreError: 3141426:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages\n[Thu Jul 16 13:14:34 2026] LustreError: 1659522:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul 16 13:14:34 2026] LustreError: 1659522:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Thu Jul 16 13:27:12 2026] LustreError: 1653919:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul 16 14:20:59 2026] LustreError: 197789:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Thu Jul 16 14:20:59 2026] LustreError: 197789:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages\n[Fri Jul 17 08:45:59 2026] LustreError: 1704345:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Fri Jul 17 08:54:05 2026] LustreError: 1704357:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Fri Jul 17 08:54:05 2026] LustreError: 1704357:0:(statahead.c:2456:start_statahead_thread()) Skipped 1 previous similar message\n[Fri Jul 17 10:33:44 2026] LustreError: 1704339:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Fri Jul 17 10:33:44 2026] LustreError: 1704339:0:(statahead.c:2456:start_statahead_thread()) Skipped 1 previous similar message\n[Fri Jul 17 10:52:10 2026] LustreError: 1704344:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Fri Jul 17 10:52:10 2026] LustreError: 1704344:0:(statahead.c:2456:start_statahead_thread()) Skipped 2 previous similar messages\n[Fri Jul 17 14:53:09 2026] LustreError: 1704345:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Fri Jul 17 15:26:09 2026] LustreError: 1704357:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Fri Jul 17 17:37:28 2026] LustreError: 1704312:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Fri Jul 17 19:55:21 2026] LustreError: 1704354:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Sat Jul 18 04:56:07 2026] LustreError: 1704356:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Sat Jul 18 10:08:50 2026] LustreError: 1704305:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Tue Jul 21 16:11:04 2026] LustreError: 1922551:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Tue Jul 21 16:11:04 2026] LustreError: 1922551:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Tue Jul 21 16:14:55 2026] LustreError: 3155162:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Tue Jul 21 16:14:55 2026] LustreError: 3155162:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages\n[Mon Aug 17 16:50:38 2026] LustreError: 3840455:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Mon Aug 17 18:50:43 2026] LustreError: 3840436:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Mon Aug 17 22:51:19 2026] LustreError: 3840437:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Tue Aug 18 08:31:32 2026] LustreError: 3840437:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Tue Aug 18 08:48:28 2026] LustreError: 3840436:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Tue Aug 18 09:23:32 2026] LustreError: 3840437:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Tue Aug 18 20:56:43 2026] LustreError: 3840424:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Wed Aug 19 07:57:32 2026] LustreError: 3840455:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Wed Aug 19 08:28:52 2026] LustreError: 3840455:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Wed Aug 19 09:18:03 2026] LustreError: 3840451:0:(statahead.c:2408:start_statahead_thread()) cetafs2: invalid pattern 0X0.\n[Wed Aug 19 09:18:03 2026] LustreError: 3840451:0:(statahead.c:2408:start_statahead_thread()) Skipped 1 previous similar message\n[Wed Aug 19 09:57:51 2026] LustreError: 3840455:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Wed Aug 19 09:57:51 2026] LustreError: 3840455:0:(statahead.c:2456:start_statahead_thread()) Skipped 1 previous similar message\n[Wed Aug 19 11:04:42 2026] LustreError: 3840424:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Wed Aug 19 19:23:10 2026] LustreError: 3840424:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Wed Aug 19 19:23:10 2026] LustreError: 3840424:0:(statahead.c:2456:start_statahead_thread()) Skipped 1 previous similar message\n[Wed Aug 19 22:12:09 2026] LustreError: 3840436:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Thu Aug 20 08:56:29 2026] LustreError: 3840424:0:(statahead.c:2456:start_statahead_thread()) cetafs2: unsupported statahead pattern 0X0.\n[Fri Aug 28 03:31:55 2026] LustreError: 718285:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14\n[Fri Aug 28 03:31:55 2026] LustreError: 718285:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message\n[Tue Sep  8 11:04:12 2026] LustreError: 1510056:0:(file.c:6120:ll_inode_revalidate_fini()) cetafs2: revalidate FID [0x200002344:0x1:0x0] error: rc = -4\n[Tue Sep  8 11:04:12 2026] LustreError: 1510056:0:(file.c:6120:ll_inode_revalidate_fini()) Skipped 58 previous similar messages\n[Sat Sep 12 15:06:09 2026] LustreError: 1590102:0:(statahead.c:1172:ll_start_agl()) cetafs2: cannot start ll_agl_1590102 thread for 'processor77': rc=-4",
+        "cmd": [
+          "bash",
+          "-c",
+          "dmesg -T | grep -iE 'lustre|LustreError'"
+        ],
+        "out_hash": "c5538bf6ba3e8a627c530b8872754327f63fd7269b272ef628d82026f8d61a4b",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/c5538bf6ba3e8a627c530b8872754327f63fd7269b272ef628d82026f8d61a4b.out"
+      }
+    },
+    "gpu_list": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_L: exit 127"
+      },
+      "declared": {
+        "observable": true,
+        "value": "(null)",
+        "cmd": [
+          "scontrol",
+          "show",
+          "node",
+          "b9p01"
+        ],
+        "out_hash": "a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/a4056b9674434007268652f469c6f3609f828d4ec2e010cfd56baa1aaa0c41fd.out"
+      }
+    },
+    "gpu_driver_cuda": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi: exit 127"
+      }
+    },
+    "gpu_topology": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_topo: exit 127"
+      }
+    },
+    "gpu_settings": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "nvidia_smi_q: exit 127"
+      }
+    }
+  }
+}

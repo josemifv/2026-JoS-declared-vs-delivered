@@ -1,0 +1,19 @@
+== job 84458 grupo=hpcg rondas=1..1 inicia 2026-10-08T22:17:33+02:00
+== script: /var/lib/slurmd/job84458/slurm_script
+== sha256(script): e23dd72335325bf59ada8f0acdec0fbd16fb28edfbf406738f1a0bbb89d80d37
+== commit(repo):  c5581fc13afdb83c566e76edb6f5eb8605f59742
+== nodos asignados (fijos dentro de la asignación):
+b9p07 b9p08 b9p09 b9p10 b9p11 b9p13 b9p14 b9p15 
+--- control D-B (inicio): osu_allreduce -m 65536 (512 ranks, gcc por defecto)
+--- map-check humo-intel-mlx-8n (pedido: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 en 8n)
+512
+--- map-check humo-intelc-mlx-8n (pedido: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 en 8n)
+512
+== RONDA 1 2026-10-08T22:17:36+02:00
+--- RUN hpcg-8n par=intel/mlx ronda=1 ranks=512 2026-10-08T22:17:36+02:00
+    -> exit=0 verif=VALID transporte=libfabric provider: mlx
+--- RUN hpcg-8n par=intelc/mlx ronda=1 ranks=512 2026-10-08T22:19:58+02:00
+    -> exit=0 verif=VALID transporte=libfabric provider: mlx
+--- control D-B (fin): osu_allreduce -m 65536 (512 ranks, gcc por defecto)
+== fase B hpcg (1..1) terminada (job 84458) 2026-10-08T22:22:22+02:00
+== manifiesto: <scratch>/cc/raw/phaseB/faseB-hpcg-84458/manifest.csv

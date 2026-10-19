@@ -1,0 +1,38 @@
+=== librerias PMI disponibles en el sistema ===
+/usr/lib64/libpmix.so.2.2.33
+/usr/lib64/libpmix.so.2
+/usr/lib64/libpmi2.so.0.0.0
+/usr/lib64/libpmi2.so.0
+/usr/lib64/libpmi2.so
+=== srun pmi2 con I_MPI_PMI_LIBRARY=/usr/lib64/libpmi2.so ===
+No PMIx server was reachable, but a PMI1/2 was detected.
+If srun is being used to launch application,  128 singletons will be started.
+This test requires at least two processes
+This test requires at least two processes
+This test requires at least two processes
+=== srun pmi2 con I_MPI_PMI_LIBRARY=/usr/lib64/libpmi.so ===
+No PMIx server was reachable, but a PMI1/2 was detected.
+If srun is being used to launch application,  128 singletons will be started.
+This test requires at least two processes
+This test requires at least two processes
+This test requires at least two processes
+=== con la que funcione: osu_alltoall 128 ranks ===
+No PMIx server was reachable, but a PMI1/2 was detected.
+If srun is being used to launch application,  128 singletons will be started.
+This test requires at least two processes
+This test requires at least two processes
+This test requires at least two processes
+This test requires at least two processes
+This test requires at least two processes
+This test requires at least two processes
+alltoall exit=0
+=== openmpi: osu_alltoall 128 ranks (misterio de la tanda 2) ===
+
+# OSU MPI All-to-All Personalized Exchange Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                      79.51
+2                      20.74
+4                      21.29
+8                      22.36
+openmpi alltoall exit=0

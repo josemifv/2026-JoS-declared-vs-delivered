@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "cluster": "turgalium",
+  "node": "turgalium",
+  "role": "login",
+  "partition": null,
+  "collected_at": "2026-09-25T23:30:23Z",
+  "run_id": "turgalium-64b7d787",
+  "collector": {
+    "wrapper": "<home>/instrumentation/cmdlog.sh",
+    "dry_run": false
+  },
+  "fingerprint": "1136cfd021f1952a8effbe0904af65a94fdb7e87d98034b8f61eb4d35a5ce951",
+  "fingerprint_attrs": [
+    "gcc_version",
+    "icx_version",
+    "openmpi_version",
+    "intelmpi_version"
+  ],
+  "fingerprint_values": {
+    "gcc_version": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-14)",
+    "icx_version": null,
+    "openmpi_version": null,
+    "intelmpi_version": null
+  },
+  "attributes": {
+    "modules_avail": {
+      "F": false,
+      "real": {
+        "observable": true,
+        "value": {
+          "sha256": "766906d7806c0bed14d26c0d6be18a1d772ece0654bc459ddce360638eabbdcf",
+          "count": 34
+        },
+        "cmd": [
+          "bash",
+          "-lc",
+          "module avail"
+        ],
+        "out_hash": "70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/70706c82b81d39c73f8c823f7529a595e802e105b8968ee6648eb3477cd83f26.out"
+      }
+    },
+    "gcc_version": {
+      "F": true,
+      "real": {
+        "observable": true,
+        "value": "gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-14)",
+        "cmd": [
+          "gcc",
+          "--version"
+        ],
+        "out_hash": "fd00e11585995e1a29ac81f3fb25347cc61ae17f924e135727f8961add849de0",
+        "out_path": "<scratch>/discovery/cpu112c/outputs/fd00e11585995e1a29ac81f3fb25347cc61ae17f924e135727f8961add849de0.out"
+      }
+    },
+    "icx_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "icx_version: exit 127"
+      }
+    },
+    "openmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpirun_version: exit 127; ompi_info_version: exit 127"
+      }
+    },
+    "intelmpi_version": {
+      "F": true,
+      "real": {
+        "observable": false,
+        "reason": "mpiexec_version: exit 127"
+      }
+    },
+    "mpi_cuda_aware": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "ompi_info_parsable: exit 127"
+      }
+    },
+    "cmmse_stack": {
+      "F": false,
+      "real": {
+        "observable": false,
+        "reason": "module_avail: sin dato"
+      }
+    }
+  }
+}

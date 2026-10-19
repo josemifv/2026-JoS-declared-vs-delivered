@@ -1,0 +1,25 @@
+== infrautil job=83871 b9p-off nodo=b9p03 SMT=1 hilo(s)/core sha=0135c1b20b33cedd7be1f2ba51f0afaf4604dc0f0d7158439f805f2e8781c8f2 2026-10-06T14:39:58+02:00
+== commit(desplegado): 035467745317ea559e62fccaa152fa2cfa7a54be
+level1 start: run_id=83871 node=b9p03 mode=unprivileged estado=<home>/.level1_state/83871
+level1 pre: contadores IB capturados (unprivileged)
+--- RUN stream gcc ranks=16 binding=default ronda=1 (calentamiento)
+--- RUN stream gcc ranks=16 binding=explicit ronda=1 (calentamiento)
+--- RUN stream gcc ranks=32 binding=default ronda=1 (calentamiento)
+--- RUN stream gcc ranks=32 binding=explicit ronda=1 (calentamiento)
+--- RUN stream gcc ranks=56 binding=default ronda=1 (calentamiento)
+--- RUN stream gcc ranks=56 binding=explicit ronda=1 (calentamiento)
+--- RUN stream gcc ranks=64 binding=default ronda=1 (calentamiento)
+--- RUN stream gcc ranks=64 binding=explicit ronda=1 (calentamiento)
+--- map-check gcc/ft/16/default
+    ranks con cpus=: 16
+--- RUN ft gcc ranks=16 binding=default ronda=1 (calentamiento)
+--- map-check gcc/ft/16/explicit
+    ranks con cpus=: 16
+--- RUN ft gcc ranks=16 binding=explicit ronda=1 (calentamiento)
+--- map-check gcc/ft/32/default
+    ranks con cpus=: 32
+--- RUN ft gcc ranks=32 binding=default ronda=1 (calentamiento)
+--- map-check gcc/ft/32/explicit
+    ranks con cpus=: 32
+--- RUN ft gcc ranks=32 binding=explicit ronda=1 (calentamiento)
+slurmstepd: error: *** JOB 83871 ON b9p03 CANCELLED AT 2026-10-06T15:54:08 ***

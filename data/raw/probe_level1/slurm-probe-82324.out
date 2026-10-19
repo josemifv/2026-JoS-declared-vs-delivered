@@ -1,0 +1,33 @@
+== identidad ==
+<u>
+== A. turbostat ==
+== B. RAPL por sysfs (sin privilegios) ==
+cat: '/sys/class/powercap/intel-rapl:0/energy_uj': Permission denied
+cat: '/sys/class/powercap/intel-rapl:0/energy_uj': Permission denied
+== C. frecuencias por cpufreq ==
+3045812
+affected_cpus
+base_frequency
+cpuinfo_avg_freq
+cpuinfo_max_freq
+cpuinfo_min_freq
+cpuinfo_transition_latency
+energy_performance_available_preferences
+energy_performance_preference
+related_cpus
+scaling_available_governors
+scaling_cur_freq
+scaling_driver
+scaling_governor
+scaling_max_freq
+scaling_min_freq
+scaling_setspeed
+== D. contadores IB por sysfs ==
+fichero: /sys/class/infiniband/mlx5_0/ports/1/counters/port_xmit_data
+76149301574443
+== E. perfquery ==
+/usr/sbin/perfquery
+ibwarn: [112024] get_smi_gsi_pair: Can't open GSI UMAD port (Input/output error) (mlx5_0:1)
+ibwarn: [112024] mad_rpc_open_port2: can't open UMAD port ((null):0)
+perfquery: iberror: failed: Failed to open '(null)' port '0'
+== fin de sonda ==

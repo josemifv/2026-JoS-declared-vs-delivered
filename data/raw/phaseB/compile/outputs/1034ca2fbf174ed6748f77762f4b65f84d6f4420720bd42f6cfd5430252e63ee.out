@@ -1,0 +1,33 @@
+mpiicpx -c -DHPCG_NO_OPENMP -I./src -I./src/phaseB_intel-icpx  -O3 -xSAPPHIRERAPIDS -I./src src/main.cpp -o src/main.o
+mpiicpx -c -DHPCG_NO_OPENMP -I./src -I./src/phaseB_intel-icpx  -O3 -xSAPPHIRERAPIDS -I./src src/CG.cpp -o src/CG.o
+mpiicpx -c -DHPCG_NO_OPENMP -I./src -I./src/phaseB_intel-icpx  -O3 -xSAPPHIRERAPIDS -I./src src/CG_ref.cpp -o src/CG_ref.o
+mpiicpx -c -DHPCG_NO_OPENMP -I./src -I./src/phaseB_intel-icpx  -O3 -xSAPPHIRERAPIDS -I./src src/TestCG.cpp -o src/TestCG.o
+mpiicpx -c -DHPCG_NO_OPENMP -I./src -I./src/phaseB_intel-icpx  -O3 -xSAPPHIRERAPIDS -I./src src/ComputeResidual.cpp -o src/ComputeResidual.o
+mpiicpx -c -DHPCG_NO_OPENMP -I./src -I./src/phaseB_intel-icpx  -O3 -xSAPPHIRERAPIDS -I./src src/ExchangeHalo.cpp -o src/ExchangeHalo.o
+mpiicpx -c -DHPCG_NO_OPENMP -I./src -I./src/phaseB_intel-icpx  -O3 -xSAPPHIRERAPIDS -I./src src/GenerateGeometry.cpp -o src/GenerateGeometry.o
+mpiicpx -c -DHPCG_NO_OPENMP -I./src -I./src/phaseB_intel-icpx  -O3 -xSAPPHIRERAPIDS -I./src src/GenerateProblem.cpp -o src/GenerateProblem.o
+g++: error: language SAPPHIRERAPIDS not recognized
+g++: error: language SAPPHIRERAPIDS not recognized
+make: *** [Makefile:64: src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+g++: error: language SAPPHIRERAPIDS not recognized
+g++: error: language SAPPHIRERAPIDS not recognized
+make: *** [Makefile:67: src/CG.o] Error 1
+g++: error: language SAPPHIRERAPIDS not recognized
+g++: error: language SAPPHIRERAPIDS not recognized
+make: *** [Makefile:70: src/CG_ref.o] Error 1
+g++: error: language SAPPHIRERAPIDS not recognized
+g++: error: language SAPPHIRERAPIDS not recognized
+make: *** [Makefile:73: src/TestCG.o] Error 1
+g++: error: language SAPPHIRERAPIDS not recognized
+g++: error: language SAPPHIRERAPIDS not recognized
+make: *** [Makefile:76: src/ComputeResidual.o] Error 1
+g++: error: language SAPPHIRERAPIDS not recognized
+g++: error: language SAPPHIRERAPIDS not recognized
+make: *** [Makefile:79: src/ExchangeHalo.o] Error 1
+g++: error: language SAPPHIRERAPIDS not recognized
+g++: error: language SAPPHIRERAPIDS not recognized
+make: *** [Makefile:82: src/GenerateGeometry.o] Error 1
+g++: error: language SAPPHIRERAPIDS not recognized
+g++: error: language SAPPHIRERAPIDS not recognized
+make: *** [Makefile:85: src/GenerateProblem.o] Error 1

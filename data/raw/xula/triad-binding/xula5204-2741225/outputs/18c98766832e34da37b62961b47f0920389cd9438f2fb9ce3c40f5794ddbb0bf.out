@@ -1,0 +1,145 @@
+thread=0 cpus=0,112
+thread=1 cpus=0,112
+thread=2 cpus=1,113
+thread=3 cpus=1,113
+thread=4 cpus=2,114
+thread=5 cpus=2,114
+thread=6 cpus=3,115
+thread=7 cpus=3,115
+thread=8 cpus=4,116
+thread=9 cpus=4,116
+thread=10 cpus=5,117
+thread=11 cpus=5,117
+thread=12 cpus=6,118
+thread=13 cpus=6,118
+thread=14 cpus=7,119
+thread=15 cpus=7,119
+thread=16 cpus=8,120
+thread=17 cpus=8,120
+thread=18 cpus=9,121
+thread=19 cpus=9,121
+thread=20 cpus=10,122
+thread=21 cpus=10,122
+thread=22 cpus=11,123
+thread=23 cpus=11,123
+thread=24 cpus=12,124
+thread=25 cpus=12,124
+thread=26 cpus=13,125
+thread=27 cpus=13,125
+thread=28 cpus=14,126
+thread=29 cpus=14,126
+thread=30 cpus=15,127
+thread=31 cpus=15,127
+thread=32 cpus=16,128
+thread=33 cpus=16,128
+thread=34 cpus=17,129
+thread=35 cpus=17,129
+thread=36 cpus=18,130
+thread=37 cpus=18,130
+thread=38 cpus=19,131
+thread=39 cpus=19,131
+thread=40 cpus=20,132
+thread=41 cpus=20,132
+thread=42 cpus=21,133
+thread=43 cpus=21,133
+thread=44 cpus=22,134
+thread=45 cpus=22,134
+thread=46 cpus=23,135
+thread=47 cpus=23,135
+thread=48 cpus=24,136
+thread=49 cpus=24,136
+thread=50 cpus=25,137
+thread=51 cpus=25,137
+thread=52 cpus=26,138
+thread=53 cpus=26,138
+thread=54 cpus=27,139
+thread=55 cpus=27,139
+thread=56 cpus=28,140
+thread=57 cpus=28,140
+thread=58 cpus=29,141
+thread=59 cpus=29,141
+thread=60 cpus=30,142
+thread=61 cpus=30,142
+thread=62 cpus=31,143
+thread=63 cpus=31,143
+thread=64 cpus=32,144
+thread=65 cpus=32,144
+thread=66 cpus=33,145
+thread=67 cpus=33,145
+thread=68 cpus=34,146
+thread=69 cpus=34,146
+thread=70 cpus=35,147
+thread=71 cpus=35,147
+thread=72 cpus=36,148
+thread=73 cpus=36,148
+thread=74 cpus=37,149
+thread=75 cpus=37,149
+thread=76 cpus=38,150
+thread=77 cpus=38,150
+thread=78 cpus=39,151
+thread=79 cpus=39,151
+thread=80 cpus=40,152
+thread=81 cpus=40,152
+thread=82 cpus=41,153
+thread=83 cpus=41,153
+thread=84 cpus=42,154
+thread=85 cpus=42,154
+thread=86 cpus=43,155
+thread=87 cpus=43,155
+thread=88 cpus=44,156
+thread=89 cpus=44,156
+thread=90 cpus=45,157
+thread=91 cpus=45,157
+thread=92 cpus=46,158
+thread=93 cpus=46,158
+thread=94 cpus=47,159
+thread=95 cpus=47,159
+thread=96 cpus=48,160
+thread=97 cpus=48,160
+thread=98 cpus=49,161
+thread=99 cpus=49,161
+thread=100 cpus=50,162
+thread=101 cpus=50,162
+thread=102 cpus=51,163
+thread=103 cpus=51,163
+thread=104 cpus=52,164
+thread=105 cpus=52,164
+thread=106 cpus=53,165
+thread=107 cpus=53,165
+thread=108 cpus=54,166
+thread=109 cpus=54,166
+thread=110 cpus=55,167
+thread=111 cpus=55,167
+-------------------------------------------------------------
+STREAM version $Revision: 5.10 $
+-------------------------------------------------------------
+This system uses 8 bytes per array element.
+-------------------------------------------------------------
+Array size = 40000000 (elements), Offset = 0 (elements)
+Memory per array = 305.2 MiB (= 0.3 GiB).
+Total memory required = 915.5 MiB (= 0.9 GiB).
+Each kernel will be executed 10 times.
+ The *best* time for each kernel (excluding the first iteration)
+ will be used to compute the reported bandwidth.
+-------------------------------------------------------------
+Number of Threads requested = 112
+Number of Threads counted = 112
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 2586 microseconds.
+   (= 2586 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:          214405.3     0.003014     0.002985     0.003104
+Scale:         237932.5     0.002696     0.002690     0.002708
+Add:           233978.3     0.004116     0.004103     0.004129
+Triad:         239460.7     0.004021     0.004009     0.004043
+-------------------------------------------------------------
+Solution Validates: avg error less than 1.000000e-13 on all three arrays
+-------------------------------------------------------------

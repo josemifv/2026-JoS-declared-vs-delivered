@@ -1,0 +1,58 @@
+[Thu Apr 30 14:00:16 2026] Lustre: Lustre: Build Version: 2.17.0
+[Thu Apr 30 14:00:20 2026] Lustre: Mounted cetafs2-client
+[Thu Apr 30 14:00:20 2026] Lustre: Skipped 2 previous similar messages
+[Fri May  8 12:56:29 2026] LustreError: 262500:0:(file.c:6120:ll_inode_revalidate_fini()) cetafs2: revalidate FID [0x200002344:0x1:0x0] error: rc = -4
+[Fri May  8 12:56:29 2026] LustreError: 262500:0:(file.c:6120:ll_inode_revalidate_fini()) Skipped 1 previous similar message
+[Mon Jun  1 09:19:49 2026] Lustre: 1756:0:(client.c:2472:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1780297739/real 1780297739]  req@000000007e82e89d x1863898873109888/t0(0) o101->cetafs2-MDT0000-mdc-ffff9d6723a53800@<ip>@o2ib:12/10 lens 576/1152 e 16 to 1 dl 1780298344 ref 2 fl Rpc:XQr/600/ffffffff rc 0/-1 job:'' uid:0 gid:0 projid:0
+[Mon Jun  1 09:19:49 2026] Lustre: cetafs2-MDT0000-mdc-ffff9d6723a53800: Connection to cetafs2-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Jun  1 09:19:49 2026] Lustre: cetafs2-MDT0000-mdc-ffff9d6723a53800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Wed Jun 10 11:00:33 2026] LustreError: 1960369:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:00:47 2026] LustreError: 1960369:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:01:00 2026] LustreError: 1430641:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:01:13 2026] LustreError: 330584:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:01:26 2026] LustreError: 1960369:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:01:40 2026] LustreError: 329995:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:02:05 2026] LustreError: 1430641:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:02:05 2026] LustreError: 1430641:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Wed Jun 10 11:02:45 2026] LustreError: 330562:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:02:45 2026] LustreError: 330562:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages
+[Wed Jun 10 11:03:50 2026] LustreError: 330566:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:03:50 2026] LustreError: 330566:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 4 previous similar messages
+[Wed Jun 10 11:06:02 2026] LustreError: 330414:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:06:02 2026] LustreError: 330414:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 9 previous similar messages
+[Wed Jun 10 11:10:25 2026] LustreError: 2004696:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:10:25 2026] LustreError: 2004696:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 19 previous similar messages
+[Wed Jun 10 11:18:59 2026] LustreError: 329995:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:18:59 2026] LustreError: 329995:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 38 previous similar messages
+[Wed Jun 10 11:29:09 2026] LustreError: 330566:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:29:09 2026] LustreError: 330566:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 45 previous similar messages
+[Wed Jun 10 11:39:18 2026] LustreError: 1430641:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:39:18 2026] LustreError: 1430641:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 45 previous similar messages
+[Wed Jun 10 11:49:29 2026] LustreError: 330562:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:49:29 2026] LustreError: 330562:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 45 previous similar messages
+[Wed Jun 10 11:59:40 2026] LustreError: 2136608:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 11:59:40 2026] LustreError: 2136608:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 45 previous similar messages
+[Wed Jun 10 12:09:54 2026] LustreError: 47488:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 12:09:54 2026] LustreError: 47488:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 45 previous similar messages
+[Wed Jun 10 12:20:04 2026] LustreError: 2258778:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Wed Jun 10 12:20:04 2026] LustreError: 2258778:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 45 previous similar messages
+[Thu Jun 18 15:27:24 2026] LustreError: 330595:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jun 18 15:27:24 2026] LustreError: 330595:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 42 previous similar messages
+[Sat Jun 20 19:54:24 2026] LustreError: 2432232:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Jun 20 19:54:24 2026] LustreError: 2432232:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 2 previous similar messages
+[Tue Jun 23 19:35:07 2026] LustreError: 2432226:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Fri Jul 10 13:21:25 2026] LustreError: 2821210:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul 16 15:34:19 2026] LustreError: 2683637:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul 16 15:34:19 2026] LustreError: 2683637:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul 16 15:34:20 2026] LustreError: 2433528:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul 16 15:34:20 2026] LustreError: 2433528:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul 16 15:35:48 2026] LustreError: 2432232:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul 16 15:35:48 2026] LustreError: 2432232:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul 23 13:01:32 2026] LustreError: 3070911:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul 23 13:01:32 2026] LustreError: 3070911:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul 23 13:02:53 2026] LustreError: 3081023:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul 23 13:02:53 2026] LustreError: 3081023:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul 23 14:44:52 2026] LustreError: 3069747:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Thu Jul 23 14:44:52 2026] LustreError: 3069747:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Thu Jul 23 14:57:31 2026] LustreError: 3069749:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Tue Sep  8 16:45:32 2026] LustreError: 3741016:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14

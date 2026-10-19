@@ -1,0 +1,19 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.4      =
+   =      MPI/Fortran/C                    =
+   =========================================
+
+cd EP; make CLASS=D
+make[1]: Entering directory '<scratch>/src/intelc/npb-intelc-clx/EP'
+make[2]: Entering directory '<scratch>/src/intelc/npb-intelc-clx/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '<scratch>/src/intelc/npb-intelc-clx/sys'
+../sys/setparams ep D 
+mpiifx -march=cascadelake -c  -O3 -march=cascadelake ep_data.f90
+ifx: command line warning #10121: overriding '-march=cascadelake' with '-march=cascadelake'
+mpiifx -march=cascadelake -c  -O3 -march=cascadelake mpinpb.f90
+ifx: command line warning #10121: overriding '-march=cascadelake' with '-march=cascadelake'
+mpiifx -march=cascadelake -c  -O3 -march=cascadelake ep.f90
+ifx: command line warning #10121: overriding '-march=cascadelake' with '-march=cascadelake'
+mpiifx -march=cascadelake  -o ../bin/ep.D.x ep.o ep_data.o mpinpb.o ../common/print_results.o ../common/randi8.o ../common/timers.o 
+make[1]: Leaving directory '<scratch>/src/intelc/npb-intelc-clx/EP'

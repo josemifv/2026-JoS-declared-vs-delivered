@@ -1,0 +1,62 @@
+== host b9p01  gfortran: /usr/bin/gfortran  GNU Fortran (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+== ifx: /opt/apps/intel/2025.3.2/compiler/latest/bin/ifx
+== NPB gcc / spr
+   mpif90 -> /opt/apps/openmpi_gcc/5.0.5/bin/mpif90 (gfortran -I/opt/apps/openmpi_gcc/5.0.5/include -I/opt/apps/openmpi_gcc/5.0.5/lib -L/opt/apps/openmpi_gcc/5.0.5/lib -Wl,-rpath -Wl,/opt/apps/openmpi_gcc/5.0.5/lib -Wl,--enable-new-dtags -lmpi_usempif08 -lmpi_usempi_ignore_tkr -lmpi_mpifh -lmpi)
+make[1]: Leaving directory '<scratch>/src/phaseB/npb-gcc-spr/EP'
+   ok ep.D.x
+make[1]: Leaving directory '<scratch>/src/phaseB/npb-gcc-spr/CG'
+   ok cg.D.x
+make[1]: Leaving directory '<scratch>/src/phaseB/npb-gcc-spr/MG'
+   ok mg.D.x
+== NPB intel / spr
+   mpif90 -> /opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 (gfortran -fallow-argument-mismatch -I"/opt/apps/intel/2025.3.2/mpi/latest/include/mpi/gfortran/11.1.0" -I"/opt/apps/intel/2025.3.2/mpi/latest/include" -I"/opt/apps/intel/2025.3.2/mpi/latest/include/mpi" -L"/opt/apps/intel/2025.3.2/mpi/latest/lib" -L"/opt/apps/intel/2025.3.2/mpi/latest/lib" -Xlinker --enable-new-dtags -Xlinker -rpath -Xlinker "/opt/apps/intel/2025.3.2/mpi/latest/lib" -Xlinker -rpath -Xlinker "/opt/apps/intel/2025.3.2/mpi/latest/lib" -lmpifort -lmpi -lrt -lpthread -Wl,-z,now -Wl,-z,relro -Wl,-z,noexecstack -Xlinker --enable-new-dtags -ldl)
+make[1]: Leaving directory '<scratch>/src/phaseB/npb-intel-spr/EP'
+   ok ep.D.x
+make[1]: Leaving directory '<scratch>/src/phaseB/npb-intel-spr/CG'
+   ok cg.D.x
+make[1]: Leaving directory '<scratch>/src/phaseB/npb-intel-spr/MG'
+   ok mg.D.x
+== HPCG gcc (mpicxx -march=sapphirerapids)
+cp: './setup/Make.phaseB_gcc' and 'setup/Make.phaseB_gcc' are the same file
+mpicxx -c -DHPCG_NO_OPENMP -I./src -I./src/phaseB_gcc  -O3 -march=sapphirerapids -I./src src/finalize.cpp -o src/finalize.o
+mpicxx -DHPCG_NO_OPENMP -I./src -I./src/phaseB_gcc  -O3 -march=sapphirerapids src/main.o src/CG.o src/CG_ref.o src/TestCG.o src/ComputeResidual.o src/ExchangeHalo.o src/GenerateGeometry.o src/GenerateProblem.o src/GenerateProblem_ref.o src/CheckProblem.o src/MixedBaseCounter.o src/OptimizeProblem.o src/ReadHpcgDat.o src/ReportResults.o src/SetupHalo.o src/SetupHalo_ref.o src/TestSymmetry.o src/TestNorms.o src/WriteProblem.o src/YAML_Doc.o src/YAML_Element.o src/ComputeDotProduct.o src/ComputeDotProduct_ref.o src/mytimer.o src/ComputeOptimalShapeXYZ.o src/ComputeSPMV.o src/ComputeSPMV_ref.o src/ComputeSYMGS.o src/ComputeSYMGS_ref.o src/ComputeWAXPBY.o src/ComputeWAXPBY_ref.o src/ComputeMG_ref.o src/ComputeMG.o src/ComputeProlongation_ref.o src/ComputeRestriction_ref.o src/CheckAspectRatio.o src/OutputFile.o src/GenerateCoarseProblem.o src/init.o src/finalize.o  -o bin/xhpcg
+   ok xhpcg (gcc)
+	libmpi.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi.so.40 (0x00007ff13a3a2000)
+	libopen-pal.so.80 => /opt/apps/openmpi_gcc/5.0.5/lib/libopen-pal.so.80 (0x00007ff139d6e000)
+	libucp.so.0 => /lib64/libucp.so.0 (0x00007ff139c8a000)
+== HPCG intel (mpiicpx -xSAPPHIRERAPIDS)
+cp: './setup/Make.phaseB_intel' and 'setup/Make.phaseB_intel' are the same file
+mpiicpx -c -DHPCG_NO_OPENMP -I./src -I./src/phaseB_intel  -O3 -xSAPPHIRERAPIDS -I./src src/finalize.cpp -o src/finalize.o
+mpiicpx -DHPCG_NO_OPENMP -I./src -I./src/phaseB_intel  -O3 -xSAPPHIRERAPIDS src/main.o src/CG.o src/CG_ref.o src/TestCG.o src/ComputeResidual.o src/ExchangeHalo.o src/GenerateGeometry.o src/GenerateProblem.o src/GenerateProblem_ref.o src/CheckProblem.o src/MixedBaseCounter.o src/OptimizeProblem.o src/ReadHpcgDat.o src/ReportResults.o src/SetupHalo.o src/SetupHalo_ref.o src/TestSymmetry.o src/TestNorms.o src/WriteProblem.o src/YAML_Doc.o src/YAML_Element.o src/ComputeDotProduct.o src/ComputeDotProduct_ref.o src/mytimer.o src/ComputeOptimalShapeXYZ.o src/ComputeSPMV.o src/ComputeSPMV_ref.o src/ComputeSYMGS.o src/ComputeSYMGS_ref.o src/ComputeWAXPBY.o src/ComputeWAXPBY_ref.o src/ComputeMG_ref.o src/ComputeMG.o src/ComputeProlongation_ref.o src/ComputeRestriction_ref.o src/CheckAspectRatio.o src/OutputFile.o src/GenerateCoarseProblem.o src/init.o src/finalize.o  -o bin/xhpcg
+   ok xhpcg (intel)
+	libmpicxx.so.12 => /opt/apps/intel/2025.3.2/mpi/latest/lib/libmpicxx.so.12 (0x00007ffb2090e000)
+	libmpifort.so.12 => /opt/apps/intel/2025.3.2/mpi/latest/lib/libmpifort.so.12 (0x00007ffb20512000)
+	libmpi.so.12 => /opt/apps/intel/2025.3.2/mpi/latest/lib/libmpi.so.12 (0x00007ffb16451000)
+== resultado ==
+<scratch>/benchmarks/npb/gcc/spr/:
+drwxr-xr-x 2 <u> <account>   4096 Oct  4 13:47 .
+drwxr-xr-x 5 <u> <account>   4096 Sep 30 17:42 ..
+-rwxr-xr-x 1 <u> <account>  55952 Oct  4 13:47 cg.D.x
+-rwxr-xr-x 1 <u> <account>  24600 Oct  4 13:47 ep.D.x
+-rwxr-xr-x 1 <u> <account>  77584 Sep 30 17:42 ft.B.x
+-rwxr-xr-x 1 <u> <account>  77584 Sep 30 17:42 ft.C.x
+-rwxr-xr-x 1 <u> <account>  77584 Sep 30 17:42 ft.D.x
+-rwxr-xr-x 1 <u> <account> 101760 Oct  4 13:47 mg.D.x
+<scratch>/benchmarks/npb/intel/spr/:
+drwxr-xr-x 2 <u> <account>   4096 Oct  4 13:47 .
+drwxr-xr-x 5 <u> <account>   4096 Sep 30 17:42 ..
+-rwxr-xr-x 1 <u> <account>  55296 Oct  4 13:47 cg.D.x
+-rwxr-xr-x 1 <u> <account>  24008 Oct  4 13:47 ep.D.x
+-rwxr-xr-x 1 <u> <account>  76904 Sep 30 17:42 ft.B.x
+-rwxr-xr-x 1 <u> <account>  76904 Sep 30 17:42 ft.C.x
+-rwxr-xr-x 1 <u> <account>  76904 Sep 30 17:42 ft.D.x
+-rwxr-xr-x 1 <u> <account> 101072 Oct  4 13:47 mg.D.x
+<scratch>/benchmarks/phaseB/hpcg/gcc/:
+drwxr-xr-x 2 <u> <account>   4096 Oct  4 13:30 .
+drwxr-xr-x 4 <u> <account>   4096 Oct  4 13:25 ..
+-rwxr-xr-x 1 <u> <account> 194104 Oct  4 13:48 xhpcg
+<scratch>/benchmarks/phaseB/hpcg/intel/:
+drwxr-xr-x 2 <u> <account>   4096 Oct  4 13:30 .
+drwxr-xr-x 4 <u> <account>   4096 Oct  4 13:25 ..
+-rwxr-xr-x 1 <u> <account> 251160 Oct  4 13:48 xhpcg
+== fin compilación fase B (job 83227) ==

@@ -1,0 +1,39 @@
+== interfaz tcp fijada: ib0 (igual en ambas pilas; fase_a.sh:125-127)
+== verif112 job=85914 sha256=c72705ae107f3c912d1c295b351e27e13f963cf9a76c02a16ece5f00f9ed72ce nodos asignados:
+b9p03 b9p04 
+pin-pedido: host=b9p03 hca_numa=0 core=0 origen=sysfs(node0)
+pin-pedido: host=b9p04 hca_numa=0 core=0 origen=sysfs(node0)
+pin-real: host=b9p04 cpus=0
+pin-real: host=b9p03 cpus=0
+   map-check gcc/64: 128 ranks
+   map-check gcc/64: 128 ranks
+   map-check gcc/64: 128 ranks
+   map-check gcc/64: 128 ranks
+   map-check intel/64: 128 ranks
+   map-check intel/64: 128 ranks
+   map-check intel/64: 128 ranks
+== resultado: 7/7 OK — veredictos en <scratch>/cc/config/ligero112-verif.csv
+pila,transporte,probe_exit,transporte_observado,coincide,veredicto
+gcc,rc,0,tag(rc_mlx5/mlx5_0 ,si,OK
+gcc,dc,0,tag(dc_mlx5/mlx5_0 ,si,OK
+gcc,ud,0,tag(ud_mlx5/mlx5_0 ,si,OK
+gcc,tcp,0,tag(tcp/ib0 ,si,OK
+intel,mlx,0,libfabric provider: mlx,si,OK
+intel,verbs;ofi_rxm,0,libfabric provider: verbs;ofi_rxm,si,OK
+intel,tcp,0,libfabric provider: tcp,si,OK
+VALIDADOR DE JOB
+job: config
+manifiesto: <scratch>/cc/config/ligero112-verif.csv
+CELDAS VALIDAS: 7
+RUTAS VALIDAS:
+- <scratch>/cc/config/ligero112-verif.csv
+- <scratch>/cc/config/ligero112-verif.csv
+- <scratch>/cc/config/ligero112-verif.csv
+- <scratch>/cc/config/ligero112-verif.csv
+- <scratch>/cc/config/ligero112-verif.csv
+- <scratch>/cc/config/ligero112-verif.csv
+- <scratch>/cc/config/ligero112-verif.csv
+CELDAS REVISAR: 0
+CELDAS TOTAL: 7
+CELDAS SALTADAS: 0
+VEREDICTO: OK

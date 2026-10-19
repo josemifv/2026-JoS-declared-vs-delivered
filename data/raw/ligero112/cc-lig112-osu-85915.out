@@ -1,0 +1,53 @@
+== interfaz tcp fijada: ib0 (igual en ambas pilas; fase_a.sh:125-127)
+== osu112 job=85915 grupo=coll-b9p[03-04,10-11,13-16] rondas=1..1 sha256=922af9bf220d848bef0f97fb3e190466122d1b953716e4bde8922fc019e5ac0d 2026-10-14T18:49:11+02:00
+== nodos asignados (fijos dentro de la asignación):
+b9p03 b9p04 b9p10 b9p11 b9p13 b9p14 b9p15 b9p16 
+--- control D-B (inicio): osu_allreduce -m 65536 (512 ranks, gcc por defecto)
+   map-check gcc/rc: 512 ranks
+   map-check gcc/dc: 512 ranks
+   map-check gcc/ud: 512 ranks
+   map-check gcc/tcp: 512 ranks
+   map-check intel/mlx: 512 ranks
+   map-check intel/verbs;ofi_rxm: 512 ranks
+   map-check intel/tcp: 512 ranks
+== RONDA 1 2026-10-14T18:49:18+02:00
+--- RUN allreduce par=gcc/rc ronda=1 ranks=512 2026-10-14T18:49:18+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/rc ronda=1 ranks=512 2026-10-14T18:49:20+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/dc ronda=1 ranks=512 2026-10-14T18:53:36+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/dc ronda=1 ranks=512 2026-10-14T18:53:38+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/ud ronda=1 ranks=512 2026-10-14T18:57:03+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/ud ronda=1 ranks=512 2026-10-14T18:57:06+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/tcp ronda=1 ranks=512 2026-10-14T18:59:45+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN alltoall par=gcc/tcp ronda=1 ranks=512 SALTADA-declarada (E40) 2026-10-14T18:59:52+02:00
+--- RUN allreduce par=intel/mlx ronda=1 ranks=512 2026-10-14T18:59:52+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN alltoall par=intel/mlx ronda=1 ranks=512 2026-10-14T18:59:55+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN allreduce par=intel/verbs;ofi_rxm ronda=1 ranks=512 2026-10-14T19:03:54+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: verbs;ofi_rxm
+--- RUN alltoall par=intel/verbs;ofi_rxm ronda=1 ranks=512 2026-10-14T19:03:58+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: verbs;ofi_rxm
+--- RUN allreduce par=intel/tcp ronda=1 ranks=512 2026-10-14T19:07:00+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+--- RUN alltoall par=intel/tcp ronda=1 ranks=512 2026-10-14T19:07:04+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+--- control D-B (fin): osu_allreduce -m 65536 (512 ranks, gcc por defecto)
+== osu112 coll-b9p[03-04,10-11,13-16] (1..1) terminado (job 85915) 2026-10-14T19:12:04+02:00
+== manifiesto: <scratch>/cc/raw/ligero112/osu112-coll-85915/manifest.csv
+VALIDADOR DE JOB
+job: osu112-coll-85915
+manifiesto: <scratch>/cc/raw/ligero112/osu112-coll-85915/manifest.csv
+CELDAS VALIDAS: 0
+RUTAS VALIDAS:
+CELDAS REVISAR: 14
+CELDAS TOTAL: 14
+CELDAS SALTADAS: 0
+VEREDICTO: REVISAR
+VEREDICTO: REVISAR

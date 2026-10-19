@@ -1,0 +1,34 @@
+[1791034614.837735] [b9p04:3438526:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791034614.850134] [b9p05:594804:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791034614.857457] [b9p04:3438526:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_NET_DEVICES=ib0 UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791034614.870287] [b9p05:594804:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_NET_DEVICES=ib0 UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791034614.871140] [b9p05:594804:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+[1791034614.871069] [b9p04:3438526:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+
+# OSU MPI Bandwidth Test v7.4
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+[1791034614.872997] [b9p05:594804:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791034614.873132] [b9p04:3438526:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791034614.881135] [b9p04:3438526:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0x1c045f0: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+[1791034614.881339] [b9p05:594804:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0x2103f60: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+8                       5.05
+16                     12.21
+32                     22.81
+64                     36.42
+128                   111.99
+256                   232.35
+512                   413.77
+1024                  882.13
+2048                 1327.85
+4096                 2157.50
+8192                 3137.94
+16384                3998.17
+32768                4074.32
+65536                4266.44
+131072               4953.57
+262144               4392.56
+524288               5197.25
+1048576              5611.13
+2097152              5158.28
+4194304              5345.29

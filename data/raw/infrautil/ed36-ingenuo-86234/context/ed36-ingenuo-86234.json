@@ -1,0 +1,170 @@
+{
+  "schema": "level1/1",
+  "run_id": "ed36-ingenuo-86234",
+  "started_at": "2026-10-15T00:14:56Z",
+  "node": "aac103",
+  "cluster": "turgalium",
+  "dry_run": false,
+  "mode": {
+    "level1": "unprivileged",
+    "source": "env"
+  },
+  "interval_s": 1.0,
+  "capabilities": {
+    "turbostat": false,
+    "perfquery": true,
+    "taskset": true,
+    "sysfs_cpufreq": true,
+    "sysfs_rapl": false,
+    "sysfs_infiniband": true
+  },
+  "affinity": {
+    "cpus_allowed_list": "0-35",
+    "taskset": "pid 1307905's current affinity list: 0-35",
+    "observable": true
+  },
+  "fingerprint": {
+    "observable": false,
+    "node": "aac103",
+    "reason": "sin fichero de descubrimiento"
+  },
+  "env": {},
+  "modules": {
+    "observable": true,
+    "list": "\nCurrently Loaded Modules:\n  1) openmpi_gcc/5.0.5   2) ucx/1.9.0\n\n \n\n"
+  },
+  "transport_log": {
+    "env_vars": {},
+    "log_path": null,
+    "observable": false
+  },
+  "mpip": {
+    "available": false,
+    "lib": null,
+    "reason": "MPIP_LIB no definido o inexistente"
+  },
+  "stopped_at": "2026-10-15T00:15:44Z",
+  "job_log": {
+    "observable": false
+  },
+  "ib_counters": {
+    "settle_s": 2.0,
+    "source": "sysfs",
+    "observable": true,
+    "pre": {
+      "ts": "2026-10-15T00:14:56Z",
+      "source": "sysfs",
+      "observable": true,
+      "devices": {
+        "mlx5_0": {
+          "1": {
+            "VL15_dropped": 0,
+            "excessive_buffer_overrun_errors": 0,
+            "link_downed": 0,
+            "link_error_recovery": 0,
+            "local_link_integrity_errors": 0,
+            "multicast_rcv_packets": 24813849,
+            "multicast_xmit_packets": 17,
+            "port_rcv_constraint_errors": 0,
+            "port_rcv_data": 137987116590424,
+            "port_rcv_errors": 0,
+            "port_rcv_packets": 594973002934,
+            "port_rcv_remote_physical_errors": 0,
+            "port_rcv_switch_relay_errors": 0,
+            "port_xmit_constraint_errors": 0,
+            "port_xmit_data": 137544865725600,
+            "port_xmit_discards": 0,
+            "port_xmit_packets": 590768945309,
+            "port_xmit_wait": 4294967295,
+            "symbol_error": 0,
+            "unicast_rcv_packets": 594948189085,
+            "unicast_xmit_packets": 590768945292
+          }
+        }
+      },
+      "raw": null
+    },
+    "post": {
+      "ts": "2026-10-15T00:15:43Z",
+      "source": "sysfs",
+      "observable": true,
+      "devices": {
+        "mlx5_0": {
+          "1": {
+            "VL15_dropped": 0,
+            "excessive_buffer_overrun_errors": 0,
+            "link_downed": 0,
+            "link_error_recovery": 0,
+            "local_link_integrity_errors": 0,
+            "multicast_rcv_packets": 24813849,
+            "multicast_xmit_packets": 17,
+            "port_rcv_constraint_errors": 0,
+            "port_rcv_data": 138012717448546,
+            "port_rcv_errors": 0,
+            "port_rcv_packets": 595000743761,
+            "port_rcv_remote_physical_errors": 0,
+            "port_rcv_switch_relay_errors": 0,
+            "port_xmit_constraint_errors": 0,
+            "port_xmit_data": 137570464553691,
+            "port_xmit_discards": 0,
+            "port_xmit_packets": 590796693885,
+            "port_xmit_wait": 4294967295,
+            "symbol_error": 0,
+            "unicast_rcv_packets": 594975929912,
+            "unicast_xmit_packets": 590796693868
+          }
+        }
+      },
+      "raw": null
+    },
+    "delta": {
+      "mlx5_0": {
+        "1": {
+          "VL15_dropped": 0,
+          "excessive_buffer_overrun_errors": 0,
+          "link_downed": 0,
+          "link_error_recovery": 0,
+          "local_link_integrity_errors": 0,
+          "multicast_rcv_packets": 0,
+          "multicast_xmit_packets": 0,
+          "port_rcv_constraint_errors": 0,
+          "port_rcv_data": 25600858122,
+          "port_rcv_errors": 0,
+          "port_rcv_packets": 27740827,
+          "port_rcv_remote_physical_errors": 0,
+          "port_rcv_switch_relay_errors": 0,
+          "port_xmit_constraint_errors": 0,
+          "port_xmit_data": 25598828091,
+          "port_xmit_discards": 0,
+          "port_xmit_packets": 27748576,
+          "port_xmit_wait": 0,
+          "symbol_error": 0,
+          "unicast_rcv_packets": 27740827,
+          "unicast_xmit_packets": 27748576
+        }
+      }
+    }
+  },
+  "sampling": {
+    "interval_s": 1.0,
+    "n_samples": 47,
+    "freq_khz": {
+      "observable": true,
+      "min": 1199636,
+      "max": 4000000,
+      "median": 3634604.0,
+      "n": 1692
+    },
+    "energy_uj": {
+      "observable": false
+    },
+    "samples_path": "<scratch>/cc/raw/infrautil/ed36-ingenuo-86234/context/ed36-ingenuo-86234.freq.jsonl",
+    "samples_sha256": "86a4f012ed4c38425c02bf3d9bd558f74c0c52eef079a270ca6ada2c82e849f5"
+  },
+  "not_observable": [
+    "fingerprint",
+    "transport_log",
+    "mpip",
+    "energy_uj"
+  ]
+}

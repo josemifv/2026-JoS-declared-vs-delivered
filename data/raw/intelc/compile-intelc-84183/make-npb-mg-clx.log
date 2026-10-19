@@ -1,0 +1,19 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.4      =
+   =      MPI/Fortran/C                    =
+   =========================================
+
+cd MG; make CLASS=D
+make[1]: Entering directory '<scratch>/src/intelc/npb-intelc-clx/MG'
+make[2]: Entering directory '<scratch>/src/intelc/npb-intelc-clx/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '<scratch>/src/intelc/npb-intelc-clx/sys'
+../sys/setparams mg D 
+mpiifx -march=cascadelake -c  -O3 -march=cascadelake mpinpb.f90
+ifx: command line warning #10121: overriding '-march=cascadelake' with '-march=cascadelake'
+mpiifx -march=cascadelake -c  -O3 -march=cascadelake mg_data.f90
+ifx: command line warning #10121: overriding '-march=cascadelake' with '-march=cascadelake'
+mpiifx -march=cascadelake -c  -O3 -march=cascadelake mg.f90
+ifx: command line warning #10121: overriding '-march=cascadelake' with '-march=cascadelake'
+mpiifx -march=cascadelake  -o ../bin/mg.D.x mg.o mg_data.o mpinpb.o ../common/print_results.o ../common/get_active_nprocs.o ../common/randi8.o ../common/timers.o 
+make[1]: Leaving directory '<scratch>/src/intelc/npb-intelc-clx/MG'

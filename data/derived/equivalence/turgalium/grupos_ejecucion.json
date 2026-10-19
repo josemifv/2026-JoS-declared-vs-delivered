@@ -1,0 +1,177 @@
+{
+  "cluster": "turgalium",
+  "generated_at": "2026-10-12T19:30:35Z",
+  "criterio": "DEVIATIONS 2026-09-26 (grupos de ejecución); R1 sobre STREAM Triad, lat 8B, bw 4MiB en modo usuario",
+  "partitions": {
+    "cpu112c": {
+      "execution_groups": [
+        [
+          "b9p01",
+          "b9p03",
+          "b9p04",
+          "b9p05",
+          "b9p06",
+          "b9p08",
+          "b9p09",
+          "b9p10",
+          "b9p11",
+          "b9p13",
+          "b9p14",
+          "b9p15",
+          "b9p16"
+        ],
+        [
+          "b9p02",
+          "b9p12"
+        ]
+      ],
+      "exclusion": [
+        {
+          "node": "b9p07",
+          "r1": {
+            "triad": false,
+            "lat": false,
+            "bw": true
+          },
+          "difference_pct": {
+            "triad": -0.047095,
+            "lat": 1.0,
+            "bw": -39.292084
+          }
+        }
+      ],
+      "no_probados": []
+    },
+    "cpu36c": {
+      "execution_groups": [
+        [
+          "aac101",
+          "aac102",
+          "aac103",
+          "aac104",
+          "aac105",
+          "aac106",
+          "aac107",
+          "aac109",
+          "aac110",
+          "aac112",
+          "aac113",
+          "aac114",
+          "aac115",
+          "aac116",
+          "aac117",
+          "aac118",
+          "aac119",
+          "aac120",
+          "acc105",
+          "acc120"
+        ],
+        [
+          "acc101",
+          "acc102",
+          "acc103",
+          "acc104",
+          "acc106",
+          "acc107",
+          "acc108",
+          "acc109",
+          "acc110",
+          "acc112",
+          "acc113",
+          "acc114",
+          "acc115",
+          "acc116",
+          "acc117",
+          "acc118",
+          "acc119"
+        ]
+      ],
+      "exclusion": [
+        {
+          "nodes": [
+            "aac108"
+          ],
+          "r1": {
+            "triad": false,
+            "lat": true,
+            "bw": true
+          },
+          "difference_pct": {
+            "triad": 0.445807,
+            "lat": 13.043478,
+            "bw": -20.05209
+          }
+        },
+        {
+          "node": "aac111",
+          "r1": {
+            "triad": true,
+            "lat": false,
+            "bw": false
+          },
+          "difference_pct": {
+            "triad": -17.05949,
+            "lat": 0.0,
+            "bw": 0.002155
+          }
+        },
+        {
+          "node": "acc111",
+          "r1": {
+            "triad": true,
+            "lat": false,
+            "bw": false
+          },
+          "difference_pct": {
+            "triad": -17.047826,
+            "lat": 0.0,
+            "bw": 0.004891
+          }
+        }
+      ],
+      "no_probados": []
+    },
+    "volta": {
+      "execution_groups": [
+        [
+          "acp03"
+        ],
+        [
+          "aap04"
+        ],
+        [
+          "aap01"
+        ],
+        [
+          "aap03"
+        ],
+        [
+          "acp04"
+        ],
+        [
+          "aap02"
+        ],
+        [
+          "acp02"
+        ],
+        [
+          "acp01"
+        ]
+      ],
+      "exclusion": [],
+      "nota": "sin mayoría: caracterización solo 1 nodo por subpartición; OSU pt2pt omitido y declarado"
+    },
+    "h100": {
+      "execution_groups": [
+        [
+          "b9p18"
+        ],
+        [
+          "b9p17"
+        ]
+      ],
+      "exclusion": [],
+      "nota": "sin mayoría: caracterización solo 1 nodo por subpartición; OSU pt2pt omitido y declarado"
+    }
+  }
+}

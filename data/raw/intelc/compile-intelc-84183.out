@@ -1,0 +1,42 @@
+== ifx: /opt/apps/intel/2025.3.2/compiler/latest/bin/ifx
+ifx (IFX) 2025.3.2 20260112
+Copyright (C) 1985-2026 Intel Corporation. All rights reserved.
+== icx: /opt/apps/intel/2025.3.2/compiler/latest/bin/icx
+Intel(R) oneAPI DPC++/C++ Compiler 2025.3.2 (2025.3.2.20260112)
+Target: x86_64-unknown-linux-gnu
+== icpx: /opt/apps/intel/2025.3.2/compiler/latest/bin/icpx
+Intel(R) oneAPI DPC++/C++ Compiler 2025.3.2 (2025.3.2.20260112)
+Target: x86_64-unknown-linux-gnu
+== mpiifx: /opt/apps/intel/2025.3.2/mpi/latest/bin/mpiifx
+ifx (IFX) 2025.3.2 20260112
+Copyright (C) 1985-2026 Intel Corporation. All rights reserved.
+== mpiicx: /opt/apps/intel/2025.3.2/mpi/latest/bin/mpiicx
+Intel(R) oneAPI DPC++/C++ Compiler 2025.3.2 (2025.3.2.20260112)
+Target: x86_64-unknown-linux-gnu
+== mpiicpx: /opt/apps/intel/2025.3.2/mpi/latest/bin/mpiicpx
+Intel(R) oneAPI DPC++/C++ Compiler 2025.3.2 (2025.3.2.20260112)
+Target: x86_64-unknown-linux-gnu
+== NPB intelc/clx: make ft CLASS=D (mpiifx, -march=cascadelake)
+   ok ft.D.x
+== NPB intelc/clx: make ep CLASS=D (mpiifx, -march=cascadelake)
+   ok ep.D.x
+== NPB intelc/clx: make cg CLASS=D (mpiifx, -march=cascadelake)
+   ok cg.D.x
+== NPB intelc/clx: make mg CLASS=D (mpiifx, -march=cascadelake)
+   ok mg.D.x
+== ldd y sha256 de los 4 NPB correctos (<scratch>/cc/raw/intelc/compile-intelc-84183/sha256-binarios-clx.txt)
+== humo NPB ft intelc/clx: 32 ranks, pin 0-15,18-33, mlx 2026-10-07T19:23:30+02:00
+   -> exit=0 verif=SUCCESSFUL  Class = D  Size : 2048x1024x1024 (class D)
+== humo NPB ep intelc/clx: 32 ranks, pin 0-15,18-33, mlx 2026-10-07T19:26:10+02:00
+   -> exit=0 verif=SUCCESSFUL  Class = D  Size = 137438953472
+== humo NPB cg intelc/clx: 32 ranks, pin 0-15,18-33, mlx 2026-10-07T19:26:28+02:00
+   -> exit=0 verif=SUCCESSFUL  Class = D  Size: 1500000 (class D)
+== humo NPB mg intelc/clx: 32 ranks, pin 0-15,18-33, mlx 2026-10-07T19:31:35+02:00
+   -> exit=0 verif=SUCCESSFUL  Class = D  Size: 1024x1024x1024 (class D)
+binario,ranks,exit_code,verificacion,class,size,runlog
+ft.D.x,32,0,SUCCESSFUL, Class = D, Size : 2048x1024x1024 (class D),<scratch>/cc/raw/intelc/compile-intelc-84183/humo-ft-clx/run.log
+ep.D.x,32,0,SUCCESSFUL, Class = D, Size = 137438953472,<scratch>/cc/raw/intelc/compile-intelc-84183/humo-ep-clx/run.log
+cg.D.x,32,0,SUCCESSFUL, Class = D, Size: 1500000 (class D),<scratch>/cc/raw/intelc/compile-intelc-84183/humo-cg-clx/run.log
+mg.D.x,32,0,SUCCESSFUL, Class = D, Size: 1024x1024x1024 (class D),<scratch>/cc/raw/intelc/compile-intelc-84183/humo-mg-clx/run.log
+== fin compilación + humo intelc (clx, job 84183) 2026-10-07T19:32:35+02:00
+== binarios: <scratch>/benchmarks/npb/intelc/clx (y <scratch>/benchmarks/phaseB/hpcg/intelc/xhpcg en spr); sha256 en <scratch>/cc/raw/intelc/compile-intelc-84183/sha256-binarios-clx.txt

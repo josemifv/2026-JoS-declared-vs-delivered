@@ -1,0 +1,49 @@
+thread=0 cpus=0,16
+thread=1 cpus=0,16
+thread=2 cpus=1,17
+thread=3 cpus=1,17
+thread=4 cpus=2,18
+thread=5 cpus=2,18
+thread=6 cpus=3,19
+thread=7 cpus=3,19
+thread=8 cpus=4,20
+thread=9 cpus=4,20
+thread=10 cpus=5,21
+thread=11 cpus=5,21
+thread=12 cpus=6,22
+thread=13 cpus=6,22
+thread=14 cpus=7,23
+thread=15 cpus=7,23
+-------------------------------------------------------------
+STREAM version $Revision: 5.10 $
+-------------------------------------------------------------
+This system uses 8 bytes per array element.
+-------------------------------------------------------------
+Array size = 40000000 (elements), Offset = 0 (elements)
+Memory per array = 305.2 MiB (= 0.3 GiB).
+Total memory required = 915.5 MiB (= 0.9 GiB).
+Each kernel will be executed 10 times.
+ The *best* time for each kernel (excluding the first iteration)
+ will be used to compute the reported bandwidth.
+-------------------------------------------------------------
+Number of Threads requested = 16
+Number of Threads counted = 16
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 23433 microseconds.
+   (= 23433 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           23105.5     0.030042     0.027699     0.032077
+Scale:          23494.0     0.033171     0.027241     0.057693
+Add:            25456.0     0.044967     0.037712     0.072380
+Triad:          27806.8     0.040564     0.034524     0.048542
+-------------------------------------------------------------
+Solution Validates: avg error less than 1.000000e-13 on all three arrays
+-------------------------------------------------------------

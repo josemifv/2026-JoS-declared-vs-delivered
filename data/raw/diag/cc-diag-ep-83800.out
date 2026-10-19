@@ -1,0 +1,40 @@
+== compilación ep.C.x gcc (diagnóstico, árbol limpio)
+make[1]: Leaving directory '<scratch>/src/diag-ep-gcc/EP'
+== ok: <scratch>/cc/raw/diag/ep-intel-83800/ep.C.gcc.x
+== compilación ep.C.x intel (diagnóstico, árbol limpio)
+make[1]: Leaving directory '<scratch>/src/diag-ep-intel/EP'
+== ok: <scratch>/cc/raw/diag/ep-intel-83800/ep.C.intel.x
+== diagnóstico EP/intel job=83800 nodo=b9p06 sha256=fb3a2dc4e326d6fbe66b167c8c9475e3cb1a3b7cd72374d0f1f7fbf9c68cd2bc 2026-10-06T09:51:13+02:00
+== commit(desplegado): ea9eaad2f865265d9fa93434351728b06d073113
+--- PILA gcc EP cC ranks=1
+rank=0 pid=3502701 exit=0 threads=2 affinity=0 utime_ticks=2 utime_children=0m0.000s
+    ... 1 ranks registrados |  Time in seconds =                    44.53 |  Mop/s total     =                   192.90
+--- PILA intel EP cC ranks=1
+rank=? pid=3502900 exit=0 threads=1 affinity=0-111 utime_ticks=0 utime_children=0m0.000s
+    ... 1 ranks registrados |  Time in seconds =                    45.55 |  Mop/s total     =                   188.59
+--- PILA gcc EP cC ranks=64
+rank=62 pid=3503321 exit=0 threads=2 affinity=62 utime_ticks=2 utime_children=0m0.000s
+rank=57 pid=3503311 exit=0 threads=2 affinity=57 utime_ticks=2 utime_children=0m0.000s
+rank=58 pid=3503313 exit=0 threads=2 affinity=58 utime_ticks=2 utime_children=0m0.000s
+rank=63 pid=3503323 exit=0 threads=2 affinity=63 utime_ticks=1 utime_children=0m0.000s
+    ... 64 ranks registrados |  Time in seconds =                     0.96 |  Mop/s total     =                  8910.64
+--- PILA intel EP cC ranks=64
+rank=? pid=3504694 exit=0 threads=1 affinity=62,63 utime_ticks=0 utime_children=0m0.000s
+rank=? pid=3504707 exit=0 threads=1 affinity=76,77 utime_ticks=0 utime_children=0m0.000s
+rank=? pid=3504713 exit=0 threads=1 affinity=80,81 utime_ticks=0 utime_children=0m0.000s
+rank=? pid=3504723 exit=0 threads=1 affinity=94,95 utime_ticks=0 utime_children=0m0.000s
+    ... 64 ranks registrados |  Time in seconds =                     1.51 |  Mop/s total     =                  5674.38
+--- PILA gcc EP cD ranks=64
+rank=57 pid=3505992 exit=0 threads=2 affinity=57 utime_ticks=2 utime_children=0m0.000s
+rank=62 pid=3505984 exit=0 threads=2 affinity=62 utime_ticks=1 utime_children=0m0.000s
+rank=63 pid=3505986 exit=0 threads=2 affinity=63 utime_ticks=2 utime_children=0m0.000s
+rank=59 pid=3505978 exit=0 threads=2 affinity=59 utime_ticks=2 utime_children=0m0.000s
+    ... 64 ranks registrados |  Time in seconds =                    16.55 |  Mop/s total     =                  8305.99
+--- PILA intel EP cD ranks=64
+rank=? pid=3507395 exit=0 threads=1 affinity=100,101 utime_ticks=0 utime_children=0m0.000s
+rank=? pid=3507356 exit=0 threads=1 affinity=60,61 utime_ticks=0 utime_children=0m0.000s
+rank=? pid=3507323 exit=0 threads=1 affinity=32,33 utime_ticks=0 utime_children=0m0.000s
+rank=? pid=3507338 exit=0 threads=1 affinity=48 utime_ticks=0 utime_children=0m0.000s
+    ... 64 ranks registrados |  Time in seconds =                    22.49 |  Mop/s total     =                  6110.71
+== fin diagnóstico (job 83800) 2026-10-06T09:53:34+02:00 — <scratch>/cc/raw/diag/ep-intel-83800
+NOTA: diagnóstico de NIVEL 2 (R7): solo la celda EP anomalía; no entra en fichas ni rankings.

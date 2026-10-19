@@ -1,0 +1,26 @@
+== verif36 job=83362 sha256=9cd3d53bb25cf22a1d39342502695c8a0fa429e9486bedac1a8824c347c12538 nodos asignados:
+aac102 acc101 
+pin-pedido: host=aac102 hca_numa=0 core=0 origen=sysfs(node0)
+pin-pedido: host=acc101 hca_numa=0 core=0 origen=sysfs(node0)
+pin-real: host=aac102 cpus=0
+pin-real: host=acc101 cpus=0
+   map-check gcc/36: 72 ranks
+   map-check gcc/32: 64 ranks
+   map-check gcc/36: 72 ranks
+   map-check gcc/32: 64 ranks
+   map-check gcc/36: 72 ranks
+   map-check gcc/32: 64 ranks
+   map-check gcc/36: 72 ranks
+   map-check gcc/32: 64 ranks
+   map-check intel/36: 72 ranks
+   map-check intel/32: 64 ranks
+   map-check intel/36: 72 ranks
+   map-check intel/32: 64 ranks
+== resultado: 6/6 OK — veredictos en <scratch>/cc/config/ligero36-verif.csv
+pila,transporte,probe_exit,transporte_observado,coincide,veredicto
+gcc,rc,0,tag(rc_mlx5/mlx5_0 ,si,OK
+gcc,dc,0,tag(dc_mlx5/mlx5_0 ,si,OK
+gcc,ud,0,tag(ud_mlx5/mlx5_0 ,si,OK
+gcc,tcp,0,tag(tcp/ib0 ,si,OK
+intel,mlx,0,libfabric provider: mlx,si,OK
+intel,tcp,0,libfabric provider: tcp,si,OK

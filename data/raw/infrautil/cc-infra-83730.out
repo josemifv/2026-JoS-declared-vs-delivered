@@ -1,0 +1,8 @@
+== infrautil job=83730 c36-off nodo=aac102 SMT=1 hilo(s)/core sha=fe4a32ab8aa10b47c93ca77fb3798f7bcc6eef8a799251e3587e820090b241cb 2026-10-05T22:46:31+02:00
+== commit(desplegado): fd9c7366075a6298af032067d6e0ec80a21f0841
+level1 start: run_id=83730 node=aac102 mode=unprivileged estado=<home>/.level1_state/83730
+level1 pre: contadores IB capturados (unprivileged)
+--- RUN stream gcc ranks=16 binding=default ronda=1 (calentamiento)
+--- RUN stream gcc ranks=16 binding=explicit ronda=1 (calentamiento)
+--- RUN stream gcc ranks=32 binding=default ronda=1 (calentamiento)
+slurmstepd: error: *** JOB 83730 ON aac102 CANCELLED AT 2026-10-05T22:46:49 ***

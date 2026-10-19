@@ -1,0 +1,160 @@
+pin-pedido: host=xula5102 rank=0 core=28 origen=sysfs(node2)
+pin-pedido: host=xula5103 rank=1 core=28 origen=sysfs(node2)
+pin-real: host=xula5102 rank=0 cpus=28
+pin-real: host=xula5103 rank=1 cpus=28
+	linux-vdso.so.1 (0x00007ffe5d11b000)
+	libmpicxx.so.12 => <home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/libmpicxx.so.12 (0x000014f0a1c16000)
+	libmpifort.so.12 => <home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/libmpifort.so.12 (0x000014f0a1862000)
+	libmpi.so.12 => <home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release/libmpi.so.12 (0x000014f09ff17000)
+	librt.so.1 => /lib64/librt.so.1 (0x000014f09fd0f000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x000014f09faef000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x000014f09f8eb000)
+	libstdc++.so.6 => <home>/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/gcc-13.1.0-ueufrruyi45xmyinkjueyhg7oeywfaf7/lib64/libstdc++.so.6 (0x000014f09f488000)
+	libm.so.6 => /lib64/libm.so.6 (0x000014f09f106000)
+	libgcc_s.so.1 => <home>/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/gcc-13.1.0-ueufrruyi45xmyinkjueyhg7oeywfaf7/lib64/libgcc_s.so.1 (0x000014f09eee2000)
+	libc.so.6 => /lib64/libc.so.6 (0x000014f09eb1d000)
+	/lib64/ld-linux-x86-64.so.2 (0x000014f0a1e36000)
+	linux-vdso.so.1 (0x00007ffc359fb000)
+	libmpicxx.so.12 => <home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/libmpicxx.so.12 (0x0000151b65354000)
+	libmpifort.so.12 => <home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/libmpifort.so.12 (0x0000151b64fa0000)
+	libmpi.so.12 => <home>/spack/opt/spack/linux-rocky8-icelake/oneapi-2023.1.0/intel-oneapi-mpi-2021.9.0-alz6lstmpi2dfpkk3trayc2xqpj54hi6/mpi/2021.9.0/lib/release/libmpi.so.12 (0x0000151b63655000)
+	librt.so.1 => /lib64/librt.so.1 (0x0000151b6344d000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x0000151b6322d000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x0000151b63029000)
+	libstdc++.so.6 => <home>/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/gcc-13.1.0-ueufrruyi45xmyinkjueyhg7oeywfaf7/lib64/libstdc++.so.6 (0x0000151b62bc6000)
+	libm.so.6 => /lib64/libm.so.6 (0x0000151b62844000)
+	libgcc_s.so.1 => <home>/spack/opt/spack/linux-rocky8-icelake/gcc-8.5.0/gcc-13.1.0-ueufrruyi45xmyinkjueyhg7oeywfaf7/lib64/libgcc_s.so.1 (0x0000151b62620000)
+	libc.so.6 => /lib64/libc.so.6 (0x0000151b6225b000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000151b65574000)
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.9  Build 20230307 (id: d82b3071db)
+[0] MPI startup(): Copyright (C) 2003-2023 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.13.2rc1-impi
+libfabric:1789299:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:1789299:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:1789299:core:core:ze_hmem_dl_init():422<warn> Failed to dlopen libze_loader.so
+libfabric:1789299:core:core:ofi_hmem_init():214<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:1789299:core:mr:ofi_default_cache_size():78<info> default cache size=4829648969
+libfabric:1789299:core:core:ofi_register_provider():474<info> registering provider: verbs (113.20)
+libfabric:1789299:core:core:ofi_register_provider():502<info> "verbs" filtered by provider include/exclude list, skipping
+libfabric:1789299:core:core:ofi_register_provider():474<info> registering provider: tcp (113.20)
+libfabric:1789299:core:core:ofi_register_provider():502<info> "tcp" filtered by provider include/exclude list, skipping
+libfabric:2214891:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:2214891:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:1789299:core:core:ofi_register_provider():474<info> registering provider: sockets (113.20)
+libfabric:1789299:core:core:ofi_register_provider():502<info> "sockets" filtered by provider include/exclude list, skipping
+libfabric:1789299:core:core:ofi_hmem_init():249<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:1789299:core:core:ofi_hmem_init():249<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:1789299:core:core:ofi_hmem_init():249<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:1789299:core:core:ofi_hmem_init():249<info> Hmem iface Unknown not supported
+libfabric:1789299:core:core:ofi_hmem_init():249<info> Hmem iface Unknown not supported
+libfabric:1789299:core:core:ofi_register_provider():474<info> registering provider: shm (116.10)
+libfabric:1789299:core:core:ofi_register_provider():502<info> "shm" filtered by provider include/exclude list, skipping
+libfabric:1789299:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:1789299:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:1789299:core:core:ze_hmem_dl_init():422<warn> Failed to dlopen libze_loader.so
+libfabric:1789299:core:core:ofi_hmem_init():214<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:1789299:core:core:ofi_register_provider():474<info> registering provider: ofi_rxm (113.20)
+libfabric:2214891:core:core:ze_hmem_dl_init():422<warn> Failed to dlopen libze_loader.so
+libfabric:2214891:core:core:ofi_hmem_init():214<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:2214891:core:mr:ofi_default_cache_size():78<info> default cache size=4829648932
+libfabric:2214891:core:core:ofi_register_provider():474<info> registering provider: verbs (113.20)
+libfabric:2214891:core:core:ofi_register_provider():502<info> "verbs" filtered by provider include/exclude list, skipping
+libfabric:2214891:core:core:ofi_register_provider():474<info> registering provider: tcp (113.20)
+libfabric:2214891:core:core:ofi_register_provider():502<info> "tcp" filtered by provider include/exclude list, skipping
+libfabric:2214891:core:core:ofi_register_provider():474<info> registering provider: sockets (113.20)
+libfabric:2214891:core:core:ofi_register_provider():502<info> "sockets" filtered by provider include/exclude list, skipping
+libfabric:2214891:core:core:ofi_hmem_init():249<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:2214891:core:core:ofi_hmem_init():249<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:2214891:core:core:ofi_hmem_init():249<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:2214891:core:core:ofi_hmem_init():249<info> Hmem iface Unknown not supported
+libfabric:2214891:core:core:ofi_hmem_init():249<info> Hmem iface Unknown not supported
+libfabric:2214891:core:core:ofi_register_provider():474<info> registering provider: shm (116.10)
+libfabric:2214891:core:core:ofi_register_provider():502<info> "shm" filtered by provider include/exclude list, skipping
+libfabric:2214891:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:2214891:core:core:ofi_hmem_init():209<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:2214891:core:core:ze_hmem_dl_init():422<warn> Failed to dlopen libze_loader.so
+libfabric:2214891:core:core:ofi_hmem_init():214<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:2214891:core:core:ofi_register_provider():474<info> registering provider: ofi_rxm (113.20)
+libfabric:1789299:psm3:core:fi_prov_ini():915<info> xula5102:rank0: build options: VERSION=1104.1000=11.4.1.0, HAVE_PSM3_SRC=1, PSM3_CUDA=0
+libfabric:1789299:psm3:core:psmx3_param_get_bool():92<info> xula5102:rank0: variable FI_PSM3_NAME_SERVER=<not set>
+libfabric:1789299:psm3:core:psmx3_param_get_bool():92<info> xula5102:rank0: variable FI_PSM3_TAGGED_RMA=<not set>
+libfabric:1789299:psm3:core:psmx3_param_get_str():126<info> xula5102:rank0: read string var FI_PSM3_UUID=5c4d1b00-c47e-ceae-a95d-06001c6eba16
+libfabric:1789299:psm3:core:psmx3_param_get_int():111<info> xula5102:rank0: read int var FI_PSM3_DELAY=0
+libfabric:1789299:psm3:core:psmx3_param_get_int():107<info> xula5102:rank0: variable FI_PSM3_TIMEOUT=<not set>
+libfabric:1789299:psm3:core:psmx3_param_get_int():107<info> xula5102:rank0: variable FI_PSM3_PROG_INTERVAL=<not set>
+libfabric:1789299:psm3:core:psmx3_param_get_str():122<info> xula5102:rank0: variable FI_PSM3_PROG_AFFINITY=<not set>
+libfabric:1789299:psm3:core:psmx3_param_get_int():111<info> xula5102:rank0: read int var FI_PSM3_INJECT_SIZE=32768
+libfabric:1789299:psm3:core:psmx3_param_get_int():111<info> xula5102:rank0: read int var FI_PSM3_LOCK_LEVEL=0
+libfabric:1789299:psm3:core:psmx3_param_get_bool():92<info> xula5102:rank0: variable FI_PSM3_LAZY_CONN=<not set>
+libfabric:1789299:psm3:core:psmx3_param_get_int():107<info> xula5102:rank0: variable FI_PSM3_CONN_TIMEOUT=<not set>
+libfabric:1789299:psm3:core:psmx3_param_get_bool():92<info> xula5102:rank0: variable FI_PSM3_DISCONNECT=<not set>
+libfabric:1789299:psm3:core:psmx3_param_get_str():122<info> xula5102:rank0: variable FI_PSM3_TAG_LAYOUT=<not set>
+libfabric:1789299:core:core:ofi_register_provider():474<info> registering provider: psm3 (1104.1000)
+libfabric:1789299:core:core:ofi_register_provider():502<info> "psm3" filtered by provider include/exclude list, skipping
+libfabric:1789299:core:core:ofi_register_provider():474<info> registering provider: mlx (1.4)
+libfabric:1789299:core:core:ofi_register_provider():474<info> registering provider: ofi_hook_noop (113.20)
+libfabric:1789299:core:core:fi_getinfo_():1141<info> Found provider with the highest priority mlx, must_use_util_prov = 0
+libfabric:1789299:mlx:core:mlx_getinfo():211<info> primary detected device: mlx5_0 
+libfabric:1789299:mlx:core:mlx_getinfo():254<info> used inject size = 1024 
+libfabric:1789299:mlx:core:mlx_getinfo():301<info> Loaded MLX version 1.8.0
+libfabric:1789299:mlx:core:mlx_getinfo():348<warn> MLX: spawn support 0 
+libfabric:1789299:core:core:fi_getinfo_():1141<info> Found provider with the highest priority mlx, must_use_util_prov = 0
+libfabric:1789299:mlx:core:mlx_getinfo():211<info> primary detected device: mlx5_0 
+libfabric:1789299:mlx:core:mlx_getinfo():254<info> used inject size = 1024 
+libfabric:1789299:mlx:core:mlx_getinfo():301<info> Loaded MLX version 1.8.0
+libfabric:1789299:mlx:core:mlx_getinfo():348<warn> MLX: spawn support 0 
+[0] MPI startup(): libfabric provider: mlx
+libfabric:1789299:mlx:core:mlx_fabric_open():172<info> 
+libfabric:1789299:core:core:fi_fabric_():1426<info> Opened fabric: mlx
+libfabric:1789299:mlx:core:ofi_check_rx_attr():786<info> Tx only caps ignored in Rx caps
+libfabric:1789299:mlx:core:ofi_check_tx_attr():884<info> Rx only caps ignored in Tx caps
+libfabric:1789299:mlx:core:ofi_check_rx_attr():786<info> Tx only caps ignored in Rx caps
+libfabric:1789299:mlx:core:ofi_check_tx_attr():884<info> Rx only caps ignored in Tx caps
+libfabric:1789299:mlx:core:mlx_cm_getname_mlx_format():73<info> Loaded UCP address: [144]...
+libfabric:2214891:psm3:core:fi_prov_ini():915<info> xula5103:rank1: build options: VERSION=1104.1000=11.4.1.0, HAVE_PSM3_SRC=1, PSM3_CUDA=0
+libfabric:2214891:psm3:core:psmx3_param_get_bool():92<info> xula5103:rank1: variable FI_PSM3_NAME_SERVER=<not set>
+libfabric:2214891:psm3:core:psmx3_param_get_bool():92<info> xula5103:rank1: variable FI_PSM3_TAGGED_RMA=<not set>
+libfabric:2214891:psm3:core:psmx3_param_get_str():126<info> xula5103:rank1: read string var FI_PSM3_UUID=5c4d1b00-c47e-ceae-a95d-06001c6eba16
+libfabric:2214891:psm3:core:psmx3_param_get_int():111<info> xula5103:rank1: read int var FI_PSM3_DELAY=0
+libfabric:2214891:psm3:core:psmx3_param_get_int():107<info> xula5103:rank1: variable FI_PSM3_TIMEOUT=<not set>
+libfabric:2214891:psm3:core:psmx3_param_get_int():107<info> xula5103:rank1: variable FI_PSM3_PROG_INTERVAL=<not set>
+libfabric:2214891:psm3:core:psmx3_param_get_str():122<info> xula5103:rank1: variable FI_PSM3_PROG_AFFINITY=<not set>
+libfabric:2214891:psm3:core:psmx3_param_get_int():111<info> xula5103:rank1: read int var FI_PSM3_INJECT_SIZE=32768
+libfabric:2214891:psm3:core:psmx3_param_get_int():111<info> xula5103:rank1: read int var FI_PSM3_LOCK_LEVEL=0
+libfabric:2214891:psm3:core:psmx3_param_get_bool():92<info> xula5103:rank1: variable FI_PSM3_LAZY_CONN=<not set>
+libfabric:2214891:psm3:core:psmx3_param_get_int():107<info> xula5103:rank1: variable FI_PSM3_CONN_TIMEOUT=<not set>
+libfabric:2214891:psm3:core:psmx3_param_get_bool():92<info> xula5103:rank1: variable FI_PSM3_DISCONNECT=<not set>
+libfabric:2214891:psm3:core:psmx3_param_get_str():122<info> xula5103:rank1: variable FI_PSM3_TAG_LAYOUT=<not set>
+libfabric:2214891:core:core:ofi_register_provider():474<info> registering provider: psm3 (1104.1000)
+libfabric:2214891:core:core:ofi_register_provider():502<info> "psm3" filtered by provider include/exclude list, skipping
+libfabric:2214891:core:core:ofi_register_provider():474<info> registering provider: mlx (1.4)
+libfabric:2214891:core:core:ofi_register_provider():474<info> registering provider: ofi_hook_noop (113.20)
+libfabric:2214891:core:core:fi_getinfo_():1141<info> Found provider with the highest priority mlx, must_use_util_prov = 0
+libfabric:2214891:mlx:core:mlx_getinfo():211<info> primary detected device: mlx5_0 
+libfabric:2214891:mlx:core:mlx_getinfo():254<info> used inject size = 1024 
+libfabric:2214891:mlx:core:mlx_getinfo():301<info> Loaded MLX version 1.8.0
+libfabric:2214891:mlx:core:mlx_getinfo():348<warn> MLX: spawn support 0 
+libfabric:2214891:core:core:fi_getinfo_():1141<info> Found provider with the highest priority mlx, must_use_util_prov = 0
+libfabric:2214891:mlx:core:mlx_getinfo():211<info> primary detected device: mlx5_0 
+libfabric:2214891:mlx:core:mlx_getinfo():254<info> used inject size = 1024 
+libfabric:2214891:mlx:core:mlx_getinfo():301<info> Loaded MLX version 1.8.0
+libfabric:2214891:mlx:core:mlx_getinfo():348<warn> MLX: spawn support 0 
+libfabric:2214891:mlx:core:mlx_fabric_open():172<info> 
+libfabric:2214891:core:core:fi_fabric_():1426<info> Opened fabric: mlx
+libfabric:2214891:mlx:core:ofi_check_rx_attr():786<info> Tx only caps ignored in Rx caps
+libfabric:2214891:mlx:core:ofi_check_tx_attr():884<info> Rx only caps ignored in Tx caps
+libfabric:2214891:mlx:core:ofi_check_rx_attr():786<info> Tx only caps ignored in Rx caps
+libfabric:2214891:mlx:core:ofi_check_tx_attr():884<info> Rx only caps ignored in Tx caps
+libfabric:2214891:mlx:core:mlx_cm_getname_mlx_format():73<info> Loaded UCP address: [144]...
+libfabric:1789299:mlx:core:mlx_av_insert():179<warn> Try to insert address #0, offset=0 (size=2) fi_addr=0x7f2000113800 
+libfabric:2214891:mlx:core:mlx_av_insert():179<warn> Try to insert address #0, offset=0 (size=2) fi_addr=0x7f200016e200 
+[1791833224.451337] [xula5103:2214891:0]         select.c:434  UCX  ERROR no active messages transport to <no debug data>: posix/memory - Destination is unreachable, sysv/memory - Destination is unreachable, self/memory - Destination is unreachable, sockcm/sockaddr - no am bcopy, cma/memory - no am bcopy
+libfabric:1789299:mlx:core:mlx_av_insert():189<warn> address inserted
+libfabric:1789299:mlx:core:mlx_av_insert():179<warn> Try to insert address #1, offset=1024 (size=2) fi_addr=0x7f2000113800 
+[1791833224.452302] [xula5102:1789299:0]         select.c:434  UCX  ERROR no active messages transport to <no debug data>: posix/memory - Destination is unreachable, sysv/memory - Destination is unreachable, self/memory - Destination is unreachable, sockcm/sockaddr - no am bcopy, cma/memory - no am bcopy
+Abort(1615247) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Init: Other MPI error, error stack:
+MPIR_Init_thread(176)............: 
+MPID_Init(1546)..................: 
+MPIDI_OFI_mpi_init_hook(1608)....: 
+insert_addr_table_roots_only(450): OFI get address vector map failed

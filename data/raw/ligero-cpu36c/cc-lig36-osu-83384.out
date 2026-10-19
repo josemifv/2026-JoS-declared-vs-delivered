@@ -1,0 +1,163 @@
+== osu36 job=83384 grupo=coll-aac[112-119] rondas=1..6 sha256=f42d2548ae86b4005d17a307b08f4f5fd101831a7cbb8e29e30957c842158481 2026-10-04T21:02:26+02:00
+== nodos asignados (fijos dentro de la asignación):
+aac112 aac113 aac114 aac115 aac116 aac117 aac118 aac119 
+--- control D-B (inicio): osu_allreduce -m 65536 (256 ranks, gcc por defecto)
+   map-check gcc/rc: 256 ranks
+   map-check gcc/dc: 256 ranks
+   map-check gcc/ud: 256 ranks
+   map-check gcc/tcp: 256 ranks
+   map-check intel/mlx: 256 ranks
+   map-check intel/tcp: 256 ranks
+== RONDA 1 2026-10-04T21:02:31+02:00
+--- RUN allreduce par=gcc/rc ronda=1 ranks=256 2026-10-04T21:02:31+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/rc ronda=1 ranks=256 2026-10-04T21:02:33+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/dc ronda=1 ranks=256 2026-10-04T21:03:50+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/dc ronda=1 ranks=256 2026-10-04T21:03:51+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/ud ronda=1 ranks=256 2026-10-04T21:05:02+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/ud ronda=1 ranks=256 2026-10-04T21:05:04+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/tcp ronda=1 ranks=256 2026-10-04T21:05:58+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN alltoall par=gcc/tcp ronda=1 ranks=256 2026-10-04T21:06:04+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN allreduce par=intel/mlx ronda=1 ranks=256 2026-10-04T21:07:31+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN alltoall par=intel/mlx ronda=1 ranks=256 2026-10-04T21:07:36+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN allreduce par=intel/tcp ronda=1 ranks=256 2026-10-04T21:08:44+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+--- RUN alltoall par=intel/tcp ronda=1 ranks=256 2026-10-04T21:08:48+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+== RONDA 2 2026-10-04T21:11:04+02:00
+--- RUN allreduce par=gcc/rc ronda=2 ranks=256 2026-10-04T21:11:04+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/rc ronda=2 ranks=256 2026-10-04T21:11:06+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/dc ronda=2 ranks=256 2026-10-04T21:12:23+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/dc ronda=2 ranks=256 2026-10-04T21:12:24+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/ud ronda=2 ranks=256 2026-10-04T21:13:35+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/ud ronda=2 ranks=256 2026-10-04T21:13:37+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/tcp ronda=2 ranks=256 2026-10-04T21:14:31+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN alltoall par=gcc/tcp ronda=2 ranks=256 2026-10-04T21:14:37+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN allreduce par=intel/mlx ronda=2 ranks=256 2026-10-04T21:16:04+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN alltoall par=intel/mlx ronda=2 ranks=256 2026-10-04T21:16:10+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN allreduce par=intel/tcp ronda=2 ranks=256 2026-10-04T21:17:18+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+--- RUN alltoall par=intel/tcp ronda=2 ranks=256 2026-10-04T21:17:22+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+== RONDA 3 2026-10-04T21:19:38+02:00
+--- RUN allreduce par=gcc/rc ronda=3 ranks=256 2026-10-04T21:19:38+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/rc ronda=3 ranks=256 2026-10-04T21:19:40+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/dc ronda=3 ranks=256 2026-10-04T21:20:57+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/dc ronda=3 ranks=256 2026-10-04T21:20:59+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/ud ronda=3 ranks=256 2026-10-04T21:22:10+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/ud ronda=3 ranks=256 2026-10-04T21:22:12+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/tcp ronda=3 ranks=256 2026-10-04T21:23:05+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN alltoall par=gcc/tcp ronda=3 ranks=256 2026-10-04T21:23:12+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN allreduce par=intel/mlx ronda=3 ranks=256 2026-10-04T21:24:39+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN alltoall par=intel/mlx ronda=3 ranks=256 2026-10-04T21:24:45+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN allreduce par=intel/tcp ronda=3 ranks=256 2026-10-04T21:25:52+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+--- RUN alltoall par=intel/tcp ronda=3 ranks=256 2026-10-04T21:25:56+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+== RONDA 4 2026-10-04T21:28:13+02:00
+--- RUN allreduce par=gcc/rc ronda=4 ranks=256 2026-10-04T21:28:13+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/rc ronda=4 ranks=256 2026-10-04T21:28:15+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/dc ronda=4 ranks=256 2026-10-04T21:29:32+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/dc ronda=4 ranks=256 2026-10-04T21:29:34+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/ud ronda=4 ranks=256 2026-10-04T21:30:46+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/ud ronda=4 ranks=256 2026-10-04T21:30:48+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/tcp ronda=4 ranks=256 2026-10-04T21:31:41+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN alltoall par=gcc/tcp ronda=4 ranks=256 2026-10-04T21:31:58+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN allreduce par=intel/mlx ronda=4 ranks=256 2026-10-04T21:33:22+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN alltoall par=intel/mlx ronda=4 ranks=256 2026-10-04T21:33:28+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN allreduce par=intel/tcp ronda=4 ranks=256 2026-10-04T21:34:35+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+--- RUN alltoall par=intel/tcp ronda=4 ranks=256 2026-10-04T21:34:39+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+== RONDA 5 2026-10-04T21:36:56+02:00
+--- RUN allreduce par=gcc/rc ronda=5 ranks=256 2026-10-04T21:36:56+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/rc ronda=5 ranks=256 2026-10-04T21:36:58+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/dc ronda=5 ranks=256 2026-10-04T21:38:14+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/dc ronda=5 ranks=256 2026-10-04T21:38:16+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/ud ronda=5 ranks=256 2026-10-04T21:39:29+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/ud ronda=5 ranks=256 2026-10-04T21:39:30+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/tcp ronda=5 ranks=256 2026-10-04T21:40:24+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN alltoall par=gcc/tcp ronda=5 ranks=256 2026-10-04T21:40:30+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN allreduce par=intel/mlx ronda=5 ranks=256 2026-10-04T21:41:58+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN alltoall par=intel/mlx ronda=5 ranks=256 2026-10-04T21:42:03+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN allreduce par=intel/tcp ronda=5 ranks=256 2026-10-04T21:43:11+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+--- RUN alltoall par=intel/tcp ronda=5 ranks=256 2026-10-04T21:43:15+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+== RONDA 6 2026-10-04T21:45:32+02:00
+--- RUN allreduce par=gcc/rc ronda=6 ranks=256 2026-10-04T21:45:32+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/rc ronda=6 ranks=256 2026-10-04T21:45:34+02:00
+    -> exit=0 verif=OK transporte=tag(rc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/dc ronda=6 ranks=256 2026-10-04T21:46:51+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/dc ronda=6 ranks=256 2026-10-04T21:46:52+02:00
+    -> exit=0 verif=OK transporte=tag(dc_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/ud ronda=6 ranks=256 2026-10-04T21:48:04+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN alltoall par=gcc/ud ronda=6 ranks=256 2026-10-04T21:48:05+02:00
+    -> exit=0 verif=OK transporte=tag(ud_mlx5/mlx5_0 
+--- RUN allreduce par=gcc/tcp ronda=6 ranks=256 2026-10-04T21:48:59+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN alltoall par=gcc/tcp ronda=6 ranks=256 2026-10-04T21:49:05+02:00
+    -> exit=0 verif=OK transporte=tag(tcp/ib0 
+--- RUN allreduce par=intel/mlx ronda=6 ranks=256 2026-10-04T21:50:30+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN alltoall par=intel/mlx ronda=6 ranks=256 2026-10-04T21:50:36+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: mlx
+--- RUN allreduce par=intel/tcp ronda=6 ranks=256 2026-10-04T21:51:43+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+--- RUN alltoall par=intel/tcp ronda=6 ranks=256 2026-10-04T21:51:47+02:00
+    -> exit=0 verif=OK transporte=libfabric provider: tcp
+--- control D-B (fin): osu_allreduce -m 65536 (256 ranks, gcc por defecto)
+== osu36 coll-aac[112-119] (1..6) terminado (job 83384) 2026-10-04T21:54:07+02:00
+== manifiesto: <scratch>/cc/raw/ligero/osu36-coll-83384/manifest.csv

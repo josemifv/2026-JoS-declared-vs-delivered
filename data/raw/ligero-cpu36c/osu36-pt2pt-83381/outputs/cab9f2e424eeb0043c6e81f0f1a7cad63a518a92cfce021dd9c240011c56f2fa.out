@@ -1,0 +1,38 @@
+pin-pedido: host=aac102 hca_numa=0 core=0 origen=sysfs(node0)
+pin-real: host=aac102 cpus=0
+pin-pedido: host=aac103 hca_numa=0 core=0 origen=sysfs(node0)
+pin-real: host=aac103 cpus=0
+[1791139499.079417] [aac102:1937559:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791139499.093451] [aac103:1215471:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791139499.181516] [aac102:1937559:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791139499.196113] [aac103:1215471:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=tcp,sm,self UCX_LOG_LEVEL=info
+[1791139499.197622] [aac102:1937559:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+[1791139499.197487] [aac103:1215471:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+
+# OSU MPI Bandwidth Test v7.4
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+[1791139499.200445] [aac103:1215471:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791139499.201994] [aac102:1937559:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(tcp/ib0)
+[1791139499.212773] [aac103:1215471:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0x1e15630: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+[1791139499.213112] [aac102:1937559:0]          tcp_ep.c:620  UCX  DIAG    tcp_iface 0x1c5d6c0: net.ipv4.conf.ib0.rp_filter is set to strict mode (1), connections may fail
+8                       3.51
+16                      9.12
+32                     25.94
+64                     38.41
+128                    76.25
+256                   123.85
+512                   288.02
+1024                  888.16
+2048                  944.87
+4096                 1654.55
+8192                 2709.12
+16384                3747.32
+32768                4927.74
+65536                5069.37
+131072               4872.20
+262144               4883.10
+524288               5404.96
+1048576              5024.73
+2097152              4766.78
+4194304              4638.74

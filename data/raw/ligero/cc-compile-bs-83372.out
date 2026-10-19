@@ -1,0 +1,16 @@
+== compile_babelstream sm70 job=83372 nodo=aap01 sha256=9b0690c4d9ee69202f73838ed0b0dc39c754bbe814e19aa168aa20033c48f273 2026-10-04T20:17:43+02:00
+Lmod has detected the following error: The following module(s) are unknown:
+"gcc/7.5.0"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "gcc/7.5.0"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+While processing the following module(s):
+    Module fullname  Module Filename
+    ---------------  ---------------
+    cmake/3.18.2     /opt/apps/modulefiles/cmake/3.18.2.lua
+

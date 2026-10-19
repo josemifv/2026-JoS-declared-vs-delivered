@@ -1,0 +1,244 @@
+== interfaz tcp fijada: ib0 (igual en ambas pilas)
+== nodo b9p10
+  HCA mlx5_0 numa_node=0 rate=200 Gb/sec (4X HDR)
+  IFACE lo 127.0.0.1/8
+  IFACE eth0 <ip>/23
+  IFACE ib0 <ip>/24
+== nodo b9p11
+  HCA mlx5_0 numa_node=0 rate=200 Gb/sec (4X HDR)
+  IFACE lo 127.0.0.1/8
+  IFACE eth0 <ip>/23
+  IFACE ib0 <ip>/24
+== core pt2pt (primer core del dominio NUMA del HCA): 0
+### par gcc/rc
+--- mapa pedido = map_cpu:0 ; mapa real por rank:
+srun: error: Couldn't find the specified plugin name for mpi/pmix looking at all files
+srun: error: cannot find mpi plugin for mpi/pmix
+srun: error: MPI: Cannot create context for mpi/pmix
+srun: error: MPI: Unable to load any plugin
+srun: error: Invalid MPI type 'pmix', --mpi=list for acceptable types
+!! mapa-check FALLO gcc/rc
+--- prueba OSU: osu_latency 
+srun: error: Couldn't find the specified plugin name for mpi/pmix looking at all files
+srun: error: cannot find mpi plugin for mpi/pmix
+srun: error: MPI: Cannot create context for mpi/pmix
+srun: error: MPI: Unable to load any plugin
+srun: error: Invalid MPI type 'pmix', --mpi=list for acceptable types
+!! FALLO gcc/rc
+### par gcc/dc
+--- mapa pedido = map_cpu:0 ; mapa real por rank:
+srun: error: Couldn't find the specified plugin name for mpi/pmix looking at all files
+srun: error: cannot find mpi plugin for mpi/pmix
+srun: error: MPI: Cannot create context for mpi/pmix
+srun: error: MPI: Unable to load any plugin
+srun: error: Invalid MPI type 'pmix', --mpi=list for acceptable types
+!! mapa-check FALLO gcc/dc
+--- prueba OSU: osu_latency 
+srun: error: Couldn't find the specified plugin name for mpi/pmix looking at all files
+srun: error: cannot find mpi plugin for mpi/pmix
+srun: error: MPI: Cannot create context for mpi/pmix
+srun: error: MPI: Unable to load any plugin
+srun: error: Invalid MPI type 'pmix', --mpi=list for acceptable types
+!! FALLO gcc/dc
+### par gcc/ud
+--- mapa pedido = map_cpu:0 ; mapa real por rank:
+srun: error: Couldn't find the specified plugin name for mpi/pmix looking at all files
+srun: error: cannot find mpi plugin for mpi/pmix
+srun: error: MPI: Cannot create context for mpi/pmix
+srun: error: MPI: Unable to load any plugin
+srun: error: Invalid MPI type 'pmix', --mpi=list for acceptable types
+!! mapa-check FALLO gcc/ud
+--- prueba OSU: osu_latency 
+srun: error: Couldn't find the specified plugin name for mpi/pmix looking at all files
+srun: error: cannot find mpi plugin for mpi/pmix
+srun: error: MPI: Cannot create context for mpi/pmix
+srun: error: MPI: Unable to load any plugin
+srun: error: Invalid MPI type 'pmix', --mpi=list for acceptable types
+!! FALLO gcc/ud
+### par gcc/tcp
+--- mapa pedido = map_cpu:0 ; mapa real por rank:
+srun: error: Couldn't find the specified plugin name for mpi/pmix looking at all files
+srun: error: cannot find mpi plugin for mpi/pmix
+srun: error: MPI: Cannot create context for mpi/pmix
+srun: error: MPI: Unable to load any plugin
+srun: error: Invalid MPI type 'pmix', --mpi=list for acceptable types
+!! mapa-check FALLO gcc/tcp
+--- prueba OSU: osu_latency 
+srun: error: Couldn't find the specified plugin name for mpi/pmix looking at all files
+srun: error: cannot find mpi plugin for mpi/pmix
+srun: error: MPI: Cannot create context for mpi/pmix
+srun: error: MPI: Unable to load any plugin
+srun: error: Invalid MPI type 'pmix', --mpi=list for acceptable types
+!! FALLO gcc/tcp
+### par intel/mlx
+--- mapa pedido = map_cpu:0 ; mapa real por rank:
+b9p10 rank=0 lr=0 cpus=0-111
+b9p11 rank=1 lr=0 cpus=0-111
+--- prueba OSU: osu_latency 
+[0] MPI startup(): PMI API: pmi2
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.17  Build 20251215 (id: 2ac2f63)
+[0] MPI startup(): Copyright (C) 2003-2025 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 2.2.0-impi_2021.17.2
+[0] MPI startup(): libfabric provider: mlx
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_skx_ofi_mlx_200_x1.dat" not found
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_skx_ofi_mlx_200.dat" not found
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_skx_ofi_mlx.dat" not found
+[0] MPI startup(): Load tuning file: "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_skx_ofi.dat"
+[0] MPI startup(): Number of NICs:  1 
+[0] MPI startup(): ===== NIC pinning on b9p10 =====
+[0] MPI startup(): Rank    Thread id  Pin nic
+[0] MPI startup(): 0       0          mlx
+[0] MPI startup(): ===== CPU pinning =====
+[0] MPI startup(): Rank    Pid      Node name  Pin cpu
+[0] MPI startup(): 0       170752   b9p10      {0-111}
+[0] MPI startup(): 1       232126   b9p11      {0-111}
+[0] MPI startup(): I_MPI_ROOT=/opt/apps/intel/2025.3.2/mpi/latest
+[0] MPI startup(): ONEAPI_ROOT=/opt/apps/intel/2025.3.2
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS=--external-launcher
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP=slurm
+[0] MPI startup(): I_MPI_FABRICS=ofi
+[0] MPI startup(): I_MPI_DEBUG=5
+[0] MPI startup(): I_MPI_PMI_LIBRARY=/usr/lib64/libpmi2.so
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       1.21
+2                       1.22
+4                       1.22
+8                       1.24
+16                      1.25
+32                      1.43
+64                      1.58
+128                     1.61
+256                     2.00
+512                     2.01
+1024                    2.07
+2048                    2.49
+4096                    2.81
+8192                    3.17
+16384                   4.75
+32768                   5.55
+65536                   6.87
+131072                  9.55
+262144                 14.86
+524288                 25.53
+1048576                47.28
+2097152                89.81
+4194304               174.67
+### par intel/verbs
+--- mapa pedido = map_cpu:0 ; mapa real por rank:
+b9p10 rank=0 lr=0 cpus=0-111
+b9p11 rank=1 lr=0 cpus=0-111
+--- prueba OSU: osu_latency 
+[0] MPI startup(): PMI API: pmi2
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.17  Build 20251215 (id: 2ac2f63)
+[0] MPI startup(): Copyright (C) 2003-2025 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 2.2.0-impi_2021.17.2
+[0] MPI startup(): libfabric provider: verbs;ofi_rxm
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_skx_ofi_verbs-ofi-rxm_200_x1.dat" not found
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_skx_ofi_verbs-ofi-rxm_200.dat" not found
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_skx_ofi_verbs-ofi-rxm.dat" not found
+[0] MPI startup(): Load tuning file: "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_skx_ofi.dat"
+[0] MPI startup(): Number of NICs:  1 
+[0] MPI startup(): ===== NIC pinning on b9p10 =====
+[0] MPI startup(): Rank    Thread id  Pin nic
+[0] MPI startup(): 0       0          mlx5_0
+[0] MPI startup(): ===== CPU pinning =====
+[0] MPI startup(): Rank    Pid      Node name  Pin cpu
+[0] MPI startup(): 0       170935   b9p10      {0-111}
+[0] MPI startup(): 1       232184   b9p11      {0-111}
+[0] MPI startup(): I_MPI_ROOT=/opt/apps/intel/2025.3.2/mpi/latest
+[0] MPI startup(): ONEAPI_ROOT=/opt/apps/intel/2025.3.2
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS=--external-launcher
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP=slurm
+[0] MPI startup(): I_MPI_FABRICS=ofi
+[0] MPI startup(): I_MPI_DEBUG=5
+[0] MPI startup(): I_MPI_PMI_LIBRARY=/usr/lib64/libpmi2.so
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                       1.60
+2                       1.60
+4                       1.61
+8                       1.60
+16                      1.59
+32                      1.70
+64                      1.75
+128                     1.77
+256                     2.43
+512                     2.55
+1024                    2.71
+2048                    3.02
+4096                    3.58
+8192                    4.46
+16384                   6.10
+32768                   8.22
+65536                  10.77
+131072                 15.51
+262144                 17.16
+524288                 28.03
+1048576                49.63
+2097152                92.14
+4194304               177.04
+### par intel/tcp
+--- mapa pedido = map_cpu:0 ; mapa real por rank:
+b9p10 rank=0 lr=0 cpus=0-111
+b9p11 rank=1 lr=0 cpus=0-111
+--- prueba OSU: osu_latency 
+[0] MPI startup(): PMI API: pmi2
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.17  Build 20251215 (id: 2ac2f63)
+[0] MPI startup(): Copyright (C) 2003-2025 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 2.2.0-impi_2021.17.2
+[0] MPI startup(): libfabric provider: tcp
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_skx_ofi_tcp_200_x1.dat" not found
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_skx_ofi_tcp_200.dat" not found
+[0] MPI startup(): File "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_skx_ofi_tcp.dat" not found
+[0] MPI startup(): Load tuning file: "/opt/apps/intel/2025.3.2/mpi/latest/opt/mpi/etc/tuning_skx_ofi.dat"
+[0] MPI startup(): Number of NICs:  1 
+[0] MPI startup(): ===== NIC pinning on b9p10 =====
+[0] MPI startup(): Rank    Thread id  Pin nic
+[0] MPI startup(): 0       0          ib0
+[0] MPI startup(): ===== CPU pinning =====
+[0] MPI startup(): Rank    Pid      Node name  Pin cpu
+[0] MPI startup(): 0       171117   b9p10      {0-111}
+[0] MPI startup(): 1       232243   b9p11      {0-111}
+[0] MPI startup(): I_MPI_ROOT=/opt/apps/intel/2025.3.2/mpi/latest
+[0] MPI startup(): ONEAPI_ROOT=/opt/apps/intel/2025.3.2
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP_EXEC_EXTRA_ARGS=--external-launcher
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP=slurm
+[0] MPI startup(): I_MPI_FABRICS=ofi
+[0] MPI startup(): I_MPI_DEBUG=5
+[0] MPI startup(): I_MPI_PMI_LIBRARY=/usr/lib64/libpmi2.so
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                      13.42
+2                      13.17
+4                      13.29
+8                      13.29
+16                     13.35
+32                     13.33
+64                     13.45
+128                    13.50
+256                    13.52
+512                    13.89
+1024                   13.67
+2048                   15.48
+4096                   15.45
+8192                   16.90
+16384                  25.23
+32768                  50.65
+65536                  63.32
+131072                 87.42
+262144                118.96
+524288                196.67
+1048576               348.70
+2097152               674.76
+4194304              1267.64
+== humo pt2pt terminado (job 83153); registro en <scratch>/cc/raw/phaseA/humos-pt2pt-83153

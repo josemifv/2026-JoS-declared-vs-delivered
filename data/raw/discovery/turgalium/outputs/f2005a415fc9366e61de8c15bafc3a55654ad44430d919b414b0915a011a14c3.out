@@ -1,0 +1,11 @@
+[Mon May  4 10:16:55 2026] Lustre: Lustre: Build Version: 2.17.0
+[Mon May  4 10:16:58 2026] Lustre: Mounted cetafs2-client
+[Mon May  4 10:16:58 2026] Lustre: Skipped 2 previous similar messages
+[Wed May 20 12:05:25 2026] LustreError: 228172:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Fri May 22 12:56:38 2026] LustreError: 353565:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Fri May 22 12:56:38 2026] LustreError: 353565:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 453 previous similar messages
+[Fri May 22 14:50:17 2026] LustreError: 369429:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Fri May 22 14:50:17 2026] LustreError: 369429:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 853 previous similar messages
+[Mon Jun  1 09:19:45 2026] Lustre: 395936:0:(client.c:2472:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1780297739/real 1780297739]  req@000000009422de7b x1864246326170880/t0(0) o101->cetafs2-MDT0000-mdc-ff1a2e3a19563800@<ip>@o2ib:12/10 lens 576/1152 e 16 to 1 dl 1780298344 ref 2 fl Rpc:XQr/600/ffffffff rc 0/-1 job:'' uid:0 gid:0 projid:0
+[Mon Jun  1 09:19:45 2026] Lustre: cetafs2-MDT0000-mdc-ff1a2e3a19563800: Connection to cetafs2-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Jun  1 09:19:45 2026] Lustre: cetafs2-MDT0000-mdc-ff1a2e3a19563800: Connection restored to <ip>@o2ib (at <ip>@o2ib)

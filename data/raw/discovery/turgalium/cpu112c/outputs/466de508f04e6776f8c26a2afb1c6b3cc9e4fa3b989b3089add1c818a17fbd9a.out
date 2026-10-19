@@ -1,0 +1,23 @@
+[Thu Apr 30 21:07:42 2026] Lustre: Lustre: Build Version: 2.17.0
+[Thu Apr 30 21:07:45 2026] Lustre: Mounted cetafs2-client
+[Thu Apr 30 21:07:45 2026] Lustre: Skipped 2 previous similar messages
+[Mon Jun  1 09:19:58 2026] Lustre: 43695:0:(client.c:2472:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1780297739/real 1780297739]  req@00000000537467da x1863969756713216/t0(0) o101->cetafs2-MDT0000-mdc-ff403bed95275800@<ip>@o2ib:12/10 lens 576/1152 e 9 to 1 dl 1780298344 ref 2 fl Rpc:XQr/600/ffffffff rc 0/-1 job:'' uid:0 gid:0 projid:0
+[Mon Jun  1 09:19:58 2026] Lustre: cetafs2-MDT0000-mdc-ff403bed95275800: Connection to cetafs2-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Jun  1 09:19:58 2026] Lustre: cetafs2-MDT0000-mdc-ff403bed95275800: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Sat Aug 29 01:28:28 2026] LustreError: 3489734:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Aug 29 01:28:34 2026] LustreError: 3489732:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Aug 29 01:28:34 2026] LustreError: 3489732:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Sat Aug 29 01:29:09 2026] LustreError: 3489732:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Aug 29 01:29:09 2026] LustreError: 3489732:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 3 previous similar messages
+[Sat Aug 29 01:31:16 2026] LustreError: 3489745:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Aug 29 01:31:16 2026] LustreError: 3489745:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Sat Aug 29 01:31:30 2026] LustreError: 3989114:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Aug 29 01:31:30 2026] LustreError: 3989114:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Sat Aug 29 01:31:40 2026] LustreError: 3957286:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Aug 29 01:31:40 2026] LustreError: 3957286:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 1 previous similar message
+[Sat Aug 29 22:12:08 2026] LustreError: 3489703:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Sat Aug 29 22:12:08 2026] LustreError: 3489703:0:(osc_cache.c:2226:osc_check_rpcs()) Skipped 5 previous similar messages
+[Mon Aug 31 14:00:32 2026] Lustre: cetafs2-OST0006-osc-ff403bed95275800: Connection to cetafs2-OST0006 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Aug 31 14:00:32 2026] Lustre: Skipped 1 previous similar message
+[Mon Aug 31 14:10:32 2026]  cl_sync_file_range+0x2a8/0x370 [lustre]
+[Mon Aug 31 14:10:32 2026]  ll_writepages+0x1d8/0x290 [lustre]

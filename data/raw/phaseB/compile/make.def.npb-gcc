@@ -1,0 +1,13 @@
+CC = mpicc -march=sapphirerapids
+MPICC = mpicc -march=sapphirerapids
+FC = /opt/apps/openmpi_gcc/5.0.5/bin/mpif90 -march=sapphirerapids
+MPIFC = /opt/apps/openmpi_gcc/5.0.5/bin/mpif90 -march=sapphirerapids
+FLINK = $(FC)
+CCFLAGS = -O3
+FFLAGS = -O3 -march=sapphirerapids -fallow-argument-mismatch -fallow-invalid-boz
+FLINKFLAGS =
+RAND = randi8
+RANDPAR = randi8
+# make enlaza desde el subdirectorio del kernel (EP/, CG/, MG/): ../bin = bin/ del build
+BINDIR = ../bin
+WTIME = wtime_ompi.c

@@ -1,0 +1,186 @@
+provider: psm3
+    fabric: IB/OPA-0xfe80000000000000
+    domain: mlx4_0
+    version: 705.1000
+    type: FI_EP_RDM
+    protocol: FI_PROTO_PSMX3
+provider: psm3
+    fabric: IB/OPA-0xfe80000000000000
+    domain: mlx4_0
+    version: 705.1000
+    type: FI_EP_RDM
+    protocol: FI_PROTO_PSMX3
+provider: psm3
+    fabric: IB/OPA-0xfe80000000000000
+    domain: mlx4_0
+    version: 705.1000
+    type: FI_EP_RDM
+    protocol: FI_PROTO_PSMX3
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_RDMA_CM_IB_RC
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_RDMA_CM_IB_RC
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_RDMA_CM_IB_RC
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_RDMA_CM_IB_RC
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_RDMA_CM_IB_RC
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_RDMA_CM_IB_RC
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0-xrc
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_RDMA_CM_IB_XRC
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0-xrc
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_RDMA_CM_IB_XRC
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0-xrc
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_RDMA_CM_IB_XRC
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0-xrc
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_RDMA_CM_IB_XRC
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0-xrc
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_RDMA_CM_IB_XRC
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0-xrc
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_RDMA_CM_IB_XRC
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0-dgram
+    version: 118.10
+    type: FI_EP_DGRAM
+    protocol: FI_PROTO_IB_UD
+provider: verbs
+    fabric: IB-0xfe80000000000000
+    domain: mlx4_0-dgram
+    version: 118.10
+    type: FI_EP_DGRAM
+    protocol: FI_PROTO_IB_UD
+provider: tcp
+    fabric: <ip>/16
+    domain: ib0
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_SOCK_TCP
+provider: tcp
+    fabric: <ip>/16
+    domain: eth0
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_SOCK_TCP
+provider: tcp
+    fabric: 127.0.0.1/32
+    domain: lo
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_SOCK_TCP
+provider: tcp
+    fabric: ::1/128
+    domain: lo
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_SOCK_TCP
+provider: tcp
+    fabric: <ip>/16
+    domain: ib0
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_SOCK_TCP
+provider: tcp
+    fabric: <ip>/16
+    domain: eth0
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_SOCK_TCP
+provider: tcp
+    fabric: 127.0.0.1/32
+    domain: lo
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_SOCK_TCP
+provider: tcp
+    fabric: ::1/128
+    domain: lo
+    version: 118.10
+    type: FI_EP_MSG
+    protocol: FI_PROTO_SOCK_TCP
+provider: shm
+    fabric: shm
+    domain: shm
+    version: 118.20
+    type: FI_EP_RDM
+    protocol: FI_PROTO_SHM
+provider: shm
+    fabric: shm
+    domain: shm
+    version: 118.20
+    type: FI_EP_RDM
+    protocol: FI_PROTO_SHM
+provider: tcp
+    fabric: <ip>/16
+    domain: ib0
+    version: 118.10
+    type: FI_EP_RDM
+    protocol: FI_PROTO_XNET
+provider: tcp
+    fabric: <ip>/16
+    domain: eth0
+    version: 118.10
+    type: FI_EP_RDM
+    protocol: FI_PROTO_XNET
+provider: tcp
+    fabric: 127.0.0.1/32
+    domain: lo
+    version: 118.10
+    type: FI_EP_RDM
+    protocol: FI_PROTO_XNET
+provider: tcp
+    fabric: ::1/128
+    domain: lo
+    version: 118.10
+    type: FI_EP_RDM
+    protocol: FI_PROTO_XNET

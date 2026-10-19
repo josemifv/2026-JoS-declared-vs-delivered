@@ -1,0 +1,98 @@
+EQUIV_MAP host=xula5504 rank=0 cpus=0
+[xula5504:2502284] mca: base: components_register: registering framework btl components
+[xula5504:2502284] mca: base: components_register: found loaded component self
+[xula5504:2502284] mca: base: components_register: component self register function successful
+[xula5504:2502284] mca: base: components_register: found loaded component sm
+[xula5504:2502284] mca: base: components_register: found loaded component tcp
+[xula5504:2502284] mca: base: components_register: component tcp register function successful
+[xula5504:2502284] mca: base: components_register: found loaded component vader
+[xula5504:2502284] mca: base: components_register: component vader register function successful
+[xula5504:2502284] mca: base: components_open: opening btl components
+[xula5504:2502284] mca: base: components_open: found loaded component self
+[xula5504:2502284] mca: base: components_open: component self open function successful
+[xula5504:2502284] mca: base: components_open: found loaded component tcp
+[xula5504:2502284] mca: base: components_open: component tcp open function successful
+[xula5504:2502284] mca: base: components_open: found loaded component vader
+[xula5504:2502284] mca: base: components_open: component vader open function successful
+[xula5504:2502284] select: initializing btl component self
+[xula5504:2502284] select: init of component self returned success
+[xula5504:2502284] select: initializing btl component tcp
+[xula5504:2502284] select: init of component tcp returned success
+[xula5504:2502284] select: initializing btl component vader
+[xula5504:2502284] select: init of component vader returned failure
+[xula5504:2502284] mca: base: close: component vader closed
+[xula5504:2502284] mca: base: close: unloading component vader
+[xula5504:2502284] mca: base: components_register: registering framework pml components
+[xula5504:2502284] mca: base: components_register: found loaded component cm
+[xula5504:2502284] mca: base: components_register: component cm register function successful
+[xula5504:2502284] mca: base: components_register: found loaded component ob1
+[xula5504:2502284] mca: base: components_register: component ob1 register function successful
+[xula5504:2502284] mca: base: components_register: found loaded component ucx
+[xula5504:2502284] mca: base: components_register: component ucx register function successful
+[xula5504:2502284] mca: base: components_register: found loaded component v
+[xula5504:2502284] mca: base: components_register: component v register function successful
+[xula5504:2502284] mca: base: components_open: opening pml components
+[xula5504:2502284] mca: base: components_open: found loaded component cm
+[xula5504:2502284] mca: base: close: component cm closed
+[xula5504:2502284] mca: base: close: unloading component cm
+[xula5504:2502284] mca: base: components_open: found loaded component ob1
+[xula5504:2502284] mca: base: components_open: component ob1 open function successful
+[xula5504:2502284] mca: base: components_open: found loaded component ucx
+[xula5504:2502284] mca: base: components_open: component ucx open function successful
+[xula5504:2502284] mca: base: components_open: found loaded component v
+[xula5504:2502284] mca: base: components_open: component v open function successful
+[xula5504:2502284] select: initializing pml component ob1
+[xula5504:2502284] select: init returned priority 20
+[xula5504:2502284] select: initializing pml component ucx
+[xula5504:2502284] select: init returned failure for component ucx
+[xula5504:2502284] select: component v not in the include list
+[xula5504:2502284] selected ob1 best priority 20
+[xula5504:2502284] select: component ob1 selected
+[xula5504:2502284] mca: base: close: component ucx closed
+[xula5504:2502284] mca: base: close: unloading component ucx
+[xula5504:2502284] mca: base: close: component v closed
+[xula5504:2502284] mca: base: close: unloading component v
+[xula5504:2502284] check:select: PML check not necessary on self
+[xula5504:2502284] mca: bml: Using self btl for send to [[56836,1],0] on node xula5504
+[1792020103.663037] [xula5504:2502284:0]     ucp_context.c:1969 UCX  INFO  Version 1.14.0 (loaded from <home>/spack/opt/spack/linux-rocky8-icelake/gcc-13.1.0/ucx-1.14.0-4t6t2iw6xsr5lpn7zl6urb7nos5ei2wm/lib/libucp.so.0)
+[1792020103.675410] [xula5504:2502284:0]     ucp_context.c:1969 UCX  INFO  Version 1.14.0 (loaded from <home>/spack/opt/spack/linux-rocky8-icelake/gcc-13.1.0/ucx-1.14.0-4t6t2iw6xsr5lpn7zl6urb7nos5ei2wm/lib/libucp.so.0)
+
+# OSU MPI Bandwidth Test v7.4
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+[xula5504:2502284] mca: bml: Using tcp btl for send to [[56836,1],1] on node xula5601
+[xula5504:2502284] mca: bml: Using tcp btl for send to [[56836,1],1] on node xula5601
+[xula5504:2502284] btl: tcp: attempting to connect() to [[56836,1],1] address <ip> on port 1030
+[xula5504:2502284] btl:tcp: now connected to <ip>, process [[56836,1],1]
+[xula5504:2502284] btl:tcp: connect() to <ip>:1030 completed (complete_connect), sending connect ACK
+1                       0.73
+2                       1.44
+4                       2.86
+8                       5.78
+16                     11.57
+32                     22.73
+64                     46.22
+128                    96.23
+256                   172.15
+512                   316.80
+1024                  557.42
+2048                 1075.73
+4096                 1762.03
+8192                 2313.84
+16384                2612.53
+32768                2771.30
+[xula5504:2502284] btl: tcp: attempting to connect() to [[56836,1],1] address <ip> on port 1030
+[xula5504:2502284] btl:tcp: connect() to <ip>:1030 completed (complete_connect), sending connect ACK
+65536                3754.59
+131072               4535.97
+262144               4104.39
+524288               5103.12
+1048576              5076.15
+2097152              5122.63
+4194304              5148.11
+[xula5504:2502284] mca: base: close: component ob1 closed
+[xula5504:2502284] mca: base: close: unloading component ob1
+[xula5504:2502284] mca: base: close: component self closed
+[xula5504:2502284] mca: base: close: unloading component self
+[xula5504:2502284] mca: base: close: component tcp closed
+[xula5504:2502284] mca: base: close: unloading component tcp

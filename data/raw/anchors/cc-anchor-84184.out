@@ -1,0 +1,86 @@
+== ancla HPCG job=84184 (una sesión: cmmse vs actual, 11 rondas intercaladas) sha256=4460866ff2a11d37765b471c6dcb27ad0b42c8a98f98c0b577df7c53189f7e7f 2026-10-07T19:06:50+02:00
+== commit(desplegado): 512b8dd8e17bca65a6de25e23f3b37e4a121a92b
+== nodos asignados (R4.5: nodos del CMMSE no identificados — se declara):
+b9p03 SMT=1 b9p04 SMT=1 b9p10 SMT=1 b9p11 SMT=1 b9p13 SMT=1 b9p14 SMT=1 b9p15 SMT=1 b9p16 SMT=1 
+== hpcg.dat del CMMSE: sha256=090341b7f686066be1429c16edca19bff1dee614647b18e94b7fb68ff6bc0d82
+level1 start: run_id=84184 node=b9p03 mode=unprivileged estado=<home>/.level1_state/84184
+level1 pre: contadores IB capturados (unprivileged)
+--- control D-B (inicio): osu_allreduce -m 65536 (512 ranks, gcc por defecto)
+--- celda cmmse-gcc: module list + ldd + map-check
+	libmpi.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi.so.40 (0x00007fc32b7f1000)
+	libucp.so.0 => /lib64/libucp.so.0 (0x00007fc32b0d9000)
+   map-check cmmse-gcc: 448 ranks
+--- celda actual-gcc: module list + ldd + map-check
+	libmpi.so.40 => /opt/apps/openmpi_gcc/5.0.5/lib/libmpi.so.40 (0x00007fad8c245000)
+	libucp.so.0 => /lib64/libucp.so.0 (0x00007fad8bb2d000)
+   map-check actual-gcc: 448 ranks
+--- celda cmmse-intel: module list + ldd + map-check
+	libmpicxx.so.12 => /opt/apps/intel/2025.3.2/mpi/latest/lib/libmpicxx.so.12 (0x00007f4499e3e000)
+	libmpifort.so.12 => /opt/apps/intel/2025.3.2/mpi/latest/lib/libmpifort.so.12 (0x00007f4499a42000)
+	libmpi.so.12 => /opt/apps/intel/2025.3.2/mpi/latest/lib/libmpi.so.12 (0x00007f448f981000)
+   map-check cmmse-intel: 448 ranks
+--- celda actual-intel: module list + ldd + map-check
+	libmpicxx.so.12 => /opt/apps/intel/2025.3.2/mpi/latest/lib/libmpicxx.so.12 (0x00007f1d06795000)
+	libmpifort.so.12 => /opt/apps/intel/2025.3.2/mpi/latest/lib/libmpifort.so.12 (0x00007f1d06399000)
+	libmpi.so.12 => /opt/apps/intel/2025.3.2/mpi/latest/lib/libmpi.so.12 (0x00007f1cfc2d8000)
+   map-check actual-intel: 448 ranks
+== RONDA 1 (orden: cmmse-gcc actual-gcc cmmse-intel actual-intel) 2026-10-07T19:06:56+02:00  (calentamiento: ambas pilas)
+    -> cmmse-gcc exit=0 verif=VALID gflops=241.599 comp=gfortran (gcc/11.2.0 CMMSE; módulo desaparecido, runtime sistema)
+    -> actual-gcc exit=0 verif=VALID gflops=238.476 comp=gfortran (fase B)
+    -> cmmse-intel exit=0 verif=VALID gflops=413.228 comp=icx+MKL (CMMSE)
+    -> actual-intel exit=0 verif=VALID gflops=414.665 comp=g++ vía Intel MPI (fase B)
+== RONDA 2 (orden: actual-intel cmmse-intel actual-gcc cmmse-gcc) 2026-10-07T19:17:10+02:00
+    -> actual-intel exit=0 verif=VALID gflops=415.74 comp=g++ vía Intel MPI (fase B)
+    -> cmmse-intel exit=0 verif=VALID gflops=414.434 comp=icx+MKL (CMMSE)
+    -> actual-gcc exit=0 verif=VALID gflops=238.483 comp=gfortran (fase B)
+    -> cmmse-gcc exit=0 verif=VALID gflops=239.582 comp=gfortran (gcc/11.2.0 CMMSE; módulo desaparecido, runtime sistema)
+== RONDA 3 (orden: cmmse-gcc actual-gcc cmmse-intel actual-intel) 2026-10-07T19:27:25+02:00
+    -> cmmse-gcc exit=0 verif=VALID gflops=240.826 comp=gfortran (gcc/11.2.0 CMMSE; módulo desaparecido, runtime sistema)
+    -> actual-gcc exit=0 verif=VALID gflops=238.133 comp=gfortran (fase B)
+    -> cmmse-intel exit=0 verif=VALID gflops=407.766 comp=icx+MKL (CMMSE)
+    -> actual-intel exit=0 verif=VALID gflops=410.054 comp=g++ vía Intel MPI (fase B)
+== RONDA 4 (orden: actual-intel cmmse-intel actual-gcc cmmse-gcc) 2026-10-07T19:37:44+02:00
+    -> actual-intel exit=0 verif=VALID gflops=412.14 comp=g++ vía Intel MPI (fase B)
+    -> cmmse-intel exit=0 verif=VALID gflops=413.512 comp=icx+MKL (CMMSE)
+    -> actual-gcc exit=0 verif=VALID gflops=238.278 comp=gfortran (fase B)
+    -> cmmse-gcc exit=0 verif=VALID gflops=239.219 comp=gfortran (gcc/11.2.0 CMMSE; módulo desaparecido, runtime sistema)
+== RONDA 5 (orden: cmmse-gcc actual-gcc cmmse-intel actual-intel) 2026-10-07T19:48:01+02:00
+    -> cmmse-gcc exit=0 verif=VALID gflops=240.728 comp=gfortran (gcc/11.2.0 CMMSE; módulo desaparecido, runtime sistema)
+    -> actual-gcc exit=0 verif=VALID gflops=238.207 comp=gfortran (fase B)
+    -> cmmse-intel exit=0 verif=VALID gflops=411.935 comp=icx+MKL (CMMSE)
+    -> actual-intel exit=0 verif=VALID gflops=416.132 comp=g++ vía Intel MPI (fase B)
+== RONDA 6 (orden: actual-intel cmmse-intel actual-gcc cmmse-gcc) 2026-10-07T19:58:15+02:00
+    -> actual-intel exit=0 verif=VALID gflops=416.347 comp=g++ vía Intel MPI (fase B)
+    -> cmmse-intel exit=0 verif=VALID gflops=416.542 comp=icx+MKL (CMMSE)
+    -> actual-gcc exit=0 verif=VALID gflops=238.657 comp=gfortran (fase B)
+    -> cmmse-gcc exit=0 verif=VALID gflops=239.99 comp=gfortran (gcc/11.2.0 CMMSE; módulo desaparecido, runtime sistema)
+== RONDA 7 (orden: cmmse-gcc actual-gcc cmmse-intel actual-intel) 2026-10-07T20:08:30+02:00
+    -> cmmse-gcc exit=0 verif=VALID gflops=241.205 comp=gfortran (gcc/11.2.0 CMMSE; módulo desaparecido, runtime sistema)
+    -> actual-gcc exit=0 verif=VALID gflops=234.714 comp=gfortran (fase B)
+    -> cmmse-intel exit=0 verif=VALID gflops=411.565 comp=icx+MKL (CMMSE)
+    -> actual-intel exit=0 verif=VALID gflops=408.048 comp=g++ vía Intel MPI (fase B)
+== RONDA 8 (orden: actual-intel cmmse-intel actual-gcc cmmse-gcc) 2026-10-07T20:18:52+02:00
+    -> actual-intel exit=0 verif=VALID gflops=408.126 comp=g++ vía Intel MPI (fase B)
+    -> cmmse-intel exit=0 verif=VALID gflops=416.796 comp=icx+MKL (CMMSE)
+    -> actual-gcc exit=0 verif=VALID gflops=238.649 comp=gfortran (fase B)
+    -> cmmse-gcc exit=0 verif=VALID gflops=240.665 comp=gfortran (gcc/11.2.0 CMMSE; módulo desaparecido, runtime sistema)
+== RONDA 9 (orden: cmmse-gcc actual-gcc cmmse-intel actual-intel) 2026-10-07T20:29:09+02:00
+    -> cmmse-gcc exit=0 verif=VALID gflops=241.076 comp=gfortran (gcc/11.2.0 CMMSE; módulo desaparecido, runtime sistema)
+    -> actual-gcc exit=0 verif=VALID gflops=238.701 comp=gfortran (fase B)
+    -> cmmse-intel exit=0 verif=VALID gflops=415.144 comp=icx+MKL (CMMSE)
+    -> actual-intel exit=0 verif=VALID gflops=408.256 comp=g++ vía Intel MPI (fase B)
+== RONDA 10 (orden: actual-intel cmmse-intel actual-gcc cmmse-gcc) 2026-10-07T20:39:26+02:00
+    -> actual-intel exit=0 verif=VALID gflops=414.161 comp=g++ vía Intel MPI (fase B)
+    -> cmmse-intel exit=0 verif=VALID gflops=415.254 comp=icx+MKL (CMMSE)
+    -> actual-gcc exit=0 verif=VALID gflops=237.911 comp=gfortran (fase B)
+    -> cmmse-gcc exit=0 verif=VALID gflops=241.234 comp=gfortran (gcc/11.2.0 CMMSE; módulo desaparecido, runtime sistema)
+== RONDA 11 (orden: cmmse-gcc actual-gcc cmmse-intel actual-intel) 2026-10-07T20:49:43+02:00
+    -> cmmse-gcc exit=0 verif=VALID gflops=240.623 comp=gfortran (gcc/11.2.0 CMMSE; módulo desaparecido, runtime sistema)
+    -> actual-gcc exit=0 verif=VALID gflops=239.517 comp=gfortran (fase B)
+    -> cmmse-intel exit=0 verif=VALID gflops=417.825 comp=icx+MKL (CMMSE)
+    -> actual-intel exit=0 verif=VALID gflops=415.531 comp=g++ vía Intel MPI (fase B)
+--- control D-B (fin): osu_allreduce -m 65536 (512 ranks, gcc por defecto)
+level1 post: contadores IB capturados tras 2 s
+data/raw/context/84184.json
+level1 stop: contexto escrito en data/raw/context/84184.json
+== ancla HPCG (rondas 1-11 de 11; medida) terminada (job 84184) 2026-10-07T21:00:02+02:00 — <scratch>/cc/raw/anchors/anchor-hpcg-84184/manifest.csv

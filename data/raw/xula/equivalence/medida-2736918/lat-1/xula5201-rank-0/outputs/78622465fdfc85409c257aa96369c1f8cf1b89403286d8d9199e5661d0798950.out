@@ -1,0 +1,97 @@
+[xula5201:3444212] mca: base: components_register: registering framework btl components
+[xula5201:3444212] mca: base: components_register: found loaded component self
+[xula5201:3444212] mca: base: components_register: component self register function successful
+[xula5201:3444212] mca: base: components_register: found loaded component sm
+[xula5201:3444212] mca: base: components_register: found loaded component tcp
+[xula5201:3444212] mca: base: components_register: component tcp register function successful
+[xula5201:3444212] mca: base: components_register: found loaded component vader
+[xula5201:3444212] mca: base: components_register: component vader register function successful
+[xula5201:3444212] mca: base: components_open: opening btl components
+[xula5201:3444212] mca: base: components_open: found loaded component self
+[xula5201:3444212] mca: base: components_open: component self open function successful
+[xula5201:3444212] mca: base: components_open: found loaded component tcp
+[xula5201:3444212] mca: base: components_open: component tcp open function successful
+[xula5201:3444212] mca: base: components_open: found loaded component vader
+[xula5201:3444212] mca: base: components_open: component vader open function successful
+[xula5201:3444212] select: initializing btl component self
+[xula5201:3444212] select: init of component self returned success
+[xula5201:3444212] select: initializing btl component tcp
+[xula5201:3444212] select: init of component tcp returned success
+[xula5201:3444212] select: initializing btl component vader
+[xula5201:3444212] select: init of component vader returned failure
+[xula5201:3444212] mca: base: close: component vader closed
+[xula5201:3444212] mca: base: close: unloading component vader
+[xula5201:3444212] mca: base: components_register: registering framework pml components
+[xula5201:3444212] mca: base: components_register: found loaded component cm
+[xula5201:3444212] mca: base: components_register: component cm register function successful
+[xula5201:3444212] mca: base: components_register: found loaded component ob1
+[xula5201:3444212] mca: base: components_register: component ob1 register function successful
+[xula5201:3444212] mca: base: components_register: found loaded component ucx
+[xula5201:3444212] mca: base: components_register: component ucx register function successful
+[xula5201:3444212] mca: base: components_register: found loaded component v
+[xula5201:3444212] mca: base: components_register: component v register function successful
+[xula5201:3444212] mca: base: components_open: opening pml components
+[xula5201:3444212] mca: base: components_open: found loaded component cm
+[xula5201:3444212] mca: base: close: component cm closed
+[xula5201:3444212] mca: base: close: unloading component cm
+[xula5201:3444212] mca: base: components_open: found loaded component ob1
+[xula5201:3444212] mca: base: components_open: component ob1 open function successful
+[xula5201:3444212] mca: base: components_open: found loaded component ucx
+[xula5201:3444212] mca: base: components_open: component ucx open function successful
+[xula5201:3444212] mca: base: components_open: found loaded component v
+[xula5201:3444212] mca: base: components_open: component v open function successful
+[xula5201:3444212] select: initializing pml component ob1
+[xula5201:3444212] select: init returned priority 20
+[xula5201:3444212] select: initializing pml component ucx
+[xula5201:3444212] select: init returned failure for component ucx
+[xula5201:3444212] select: component v not in the include list
+[xula5201:3444212] selected ob1 best priority 20
+[xula5201:3444212] select: component ob1 selected
+[xula5201:3444212] mca: base: close: component ucx closed
+[xula5201:3444212] mca: base: close: unloading component ucx
+[xula5201:3444212] mca: base: close: component v closed
+[xula5201:3444212] mca: base: close: unloading component v
+[xula5201:3444212] check:select: PML check not necessary on self
+[xula5201:3444212] mca: bml: Using self btl for send to [[60477,1],0] on node xula5201
+[1792075448.313532] [xula5201:3444212:0]     ucp_context.c:1969 UCX  INFO  Version 1.14.0 (loaded from <home>/spack/opt/spack/linux-rocky8-icelake/gcc-13.1.0/ucx-1.14.0-4t6t2iw6xsr5lpn7zl6urb7nos5ei2wm/lib/libucp.so.0)
+[1792075448.317344] [xula5201:3444212:0]     ucp_context.c:1969 UCX  INFO  Version 1.14.0 (loaded from <home>/spack/opt/spack/linux-rocky8-icelake/gcc-13.1.0/ucx-1.14.0-4t6t2iw6xsr5lpn7zl6urb7nos5ei2wm/lib/libucp.so.0)
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+[xula5201:3444212] mca: bml: Using tcp btl for send to [[60477,1],1] on node xula5504
+[xula5201:3444212] mca: bml: Using tcp btl for send to [[60477,1],1] on node xula5504
+[xula5201:3444212] btl: tcp: attempting to connect() to [[60477,1],1] address <ip> on port 1024
+[xula5201:3444212] btl:tcp: connect() to <ip>:1024 completed (complete_connect), sending connect ACK
+[xula5201:3444212] btl:tcp: now connected to <ip>, process [[60477,1],1]
+1                      12.30
+2                      12.32
+4                      12.27
+8                      12.28
+16                     12.30
+32                     12.49
+64                     12.52
+128                    12.64
+256                    13.42
+512                    13.69
+1024                   14.24
+2048                   20.91
+4096                   22.07
+8192                   29.78
+16384                  36.77
+32768                  41.22
+[xula5201:3444212] btl: tcp: attempting to connect() to [[60477,1],1] address <ip> on port 1024
+[xula5201:3444212] btl:tcp: connect() to <ip>:1024 completed (complete_connect), sending connect ACK
+65536                  69.97
+131072                 91.17
+262144                144.20
+524288                217.17
+1048576               391.83
+2097152               669.10
+4194304              1171.19
+[xula5201:3444212] mca: base: close: component ob1 closed
+[xula5201:3444212] mca: base: close: unloading component ob1
+[xula5201:3444212] mca: base: close: component self closed
+[xula5201:3444212] mca: base: close: unloading component self
+[xula5201:3444212] mca: base: close: component tcp closed
+[xula5201:3444212] mca: base: close: unloading component tcp

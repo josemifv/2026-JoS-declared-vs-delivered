@@ -1,0 +1,32 @@
+[1791034874.872490] [b9p04:3452332:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791034874.884739] [b9p05:598931:0]     ucp_context.c:2431 UCX  INFO  Version 1.20.0 (loaded from /lib64/libucp.so.0)
+[1791034874.894176] [b9p04:3452332:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=ud,sm,self UCX_LOG_LEVEL=info
+[1791034874.907164] [b9p05:598931:0]          parser.c:2368 UCX  INFO  UCX_* env variables: UCX_TLS=ud,sm,self UCX_LOG_LEVEL=info
+[1791034874.907784] [b9p04:3452332:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+[1791034874.908085] [b9p05:598931:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 self cfg#0 tag(self/memory knem/memory)
+
+# OSU MPI Bi-Directional Bandwidth Test v7.4
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+[1791034874.909586] [b9p04:3452332:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(ud_mlx5/mlx5_0:1)
+[1791034874.909747] [b9p05:598931:0]      ucp_worker.c:1912 UCX  INFO    ucp_context_0 inter-node cfg#1 tag(ud_mlx5/mlx5_0:1)
+8                      66.33
+16                    127.64
+32                    281.63
+64                    452.63
+128                   595.11
+256                  1606.19
+512                  3870.05
+1024                 7152.52
+2048                12758.60
+4096                13324.21
+8192                16933.48
+16384               20084.33
+32768               21296.98
+65536               21794.42
+131072              22381.19
+262144              22305.34
+524288              22524.64
+1048576             19517.16
+2097152             16913.57
+4194304             17093.89

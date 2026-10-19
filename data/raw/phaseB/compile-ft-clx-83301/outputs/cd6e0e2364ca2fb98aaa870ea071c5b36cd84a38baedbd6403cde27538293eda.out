@@ -1,0 +1,14 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.4      =
+   =      MPI/Fortran/C                    =
+   =========================================
+
+cd FT; make CLASS=D
+make[1]: Entering directory '<scratch>/src/phaseB/npb-intel-clx/FT'
+make[2]: Entering directory '<scratch>/src/phaseB/npb-intel-clx/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '<scratch>/src/phaseB/npb-intel-clx/sys'
+../sys/setparams ft D 
+/opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 -march=cascadelake -c  -O3 -march=cascadelake -fallow-argument-mismatch -fallow-invalid-boz ft_data.f90
+/opt/apps/intel/2025.3.2/mpi/latest/bin/mpif90 -march=cascadelake  -o ../bin/ft.D.x ft.o ft_data.o mpinpb.o ../common/get_active_nprocs.o ../common/randi8.o ../common/print_results.o ../common/timers.o 
+make[1]: Leaving directory '<scratch>/src/phaseB/npb-intel-clx/FT'

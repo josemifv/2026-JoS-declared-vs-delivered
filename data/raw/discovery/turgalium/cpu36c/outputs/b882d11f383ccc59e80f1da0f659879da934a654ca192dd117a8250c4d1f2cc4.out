@@ -1,0 +1,15 @@
+[Thu Apr 30 16:39:47 2026] Lustre: Lustre: Build Version: 2.17.0
+[Thu Apr 30 16:39:50 2026] Lustre: Mounted cetafs2-client
+[Thu Apr 30 16:39:50 2026] Lustre: Skipped 2 previous similar messages
+[Mon Jun  1 09:19:49 2026] Lustre: 6757:0:(client.c:2472:ptlrpc_expire_one_request()) @@@ Request sent has timed out for slow reply: [sent 1780297739/real 1780297739]  req@00000000e90cc734 x1863908227336320/t0(0) o101->cetafs2-MDT0000-mdc-ffffa051d8395000@<ip>@o2ib:12/10 lens 576/1152 e 9 to 1 dl 1780298344 ref 2 fl Rpc:XQr/600/ffffffff rc 0/-1 job:'' uid:0 gid:0 projid:0
+[Mon Jun  1 09:19:49 2026] Lustre: cetafs2-MDT0000-mdc-ffffa051d8395000: Connection to cetafs2-MDT0000 (at <ip>@o2ib) was lost; in progress operations using this service will wait for recovery to complete
+[Mon Jun  1 09:19:49 2026] Lustre: cetafs2-MDT0000-mdc-ffffa051d8395000: Connection restored to <ip>@o2ib (at <ip>@o2ib)
+[Wed Jul 29 13:40:34 2026] LustreError: 4060732:0:(osc_cache.c:2226:osc_check_rpcs()) Write request failed with -14
+[Fri Aug 14 14:41:36 2026]  ? __pfx_ll_put_link+0x10/0x10 [lustre]
+[Tue Sep 15 23:32:38 2026] LustreError: 325605:0:(file.c:6120:ll_inode_revalidate_fini()) cetafs2: revalidate FID [0x200002344:0x1:0x0] error: rc = -4
+[Tue Sep 15 23:32:38 2026] LustreError: 325605:0:(file.c:6120:ll_inode_revalidate_fini()) Skipped 4 previous similar messages
+[Tue Sep 22 10:11:44 2026] Lustre: cetafs2-MDT0000-mdc-ffffa051c94e7000: Force grant RPC slot (1 current) to proc with flag: 208840.
+[Tue Sep 22 10:11:45 2026] Lustre: cetafs2-MDT0000-mdc-ffffa051c94e7000: Force grant RPC slot (1 current) to proc with flag: 208840.
+[Tue Sep 22 10:11:45 2026] Lustre: Skipped 996 previous similar messages
+[Tue Sep 22 10:15:04 2026] Lustre: cetafs2-MDT0000-mdc-ffffa051c94e7000: Force grant RPC slot (1 current) to proc with flag: 208840.
+[Tue Sep 22 10:15:04 2026] Lustre: Skipped 128 previous similar messages

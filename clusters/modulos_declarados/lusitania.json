@@ -1,0 +1,18 @@
+{
+  "cluster": "lusitania",
+  "nota": "Fuente declarativa: module -t avail, informes/tareas/T23/R08.txt; espejo de clusters/lusitania.md. Solo módulos anunciados, sin cargarlos. Pilas candidatas, no seleccionadas ni verificadas. attr_sufijo vacío: aún no hay descubrimiento ni combo @modN medido.",
+  "pilas": {
+    "gcc": {
+      "modulos": ["gcc/gcc-11.2.0", "openmpi/openmpi-4.1.2-gcc11.2.0", "ucx/ucx-1.12.0"],
+      "attr_sufijo": "",
+      "versiones_declaradas": {"openmpi": "4.1.2", "ucx": "1.12.0", "gcc": "11.2.0"},
+      "notas": "Versiones del nombre del módulo (R08), no del binario ejecutado. Compatibilidad y soporte UCX de Open MPI no comprobados; module spider no reconocido (R09/R12/R13)."
+    },
+    "oneapi": {
+      "modulos": ["intel-oneapi-24/compiler", "intel-oneapi-24/mpi"],
+      "attr_sufijo": "",
+      "versiones_declaradas": {"intelmpi": null, "libfabric": null, "icx": null},
+      "notas": "R08 anuncia familias 22/23/24 y también intel16; el sufijo 24 no establece una versión exacta de compilador, MPI o libfabric. module spider no reconocido (R10/R11)."
+    }
+  }
+}

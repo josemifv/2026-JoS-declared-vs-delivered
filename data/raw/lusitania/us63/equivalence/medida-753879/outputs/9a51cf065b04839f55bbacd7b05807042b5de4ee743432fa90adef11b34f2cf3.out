@@ -1,0 +1,67 @@
+	linux-vdso.so.1 (0x00007ffd12b4f000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f2082b09000)
+	libmpi.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libmpi.so.40 (0x00007f20829cc000)
+	libgomp.so.1 => /lusitania_apps/gcc-11.2.0/lib64/libgomp.so.1 (0x00007f2082789000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f208256c000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f20821c8000)
+	libopen-rte.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-rte.so.40 (0x00007f208210c000)
+	libopen-pal.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-pal.so.40 (0x00007f2081ffe000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f2081df9000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f2081bf1000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007f20819ee000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f20817d7000)
+	/lib64/ld-linux-x86-64.so.2 (0x000055e351561000)
+level1 start: run_id=stream-753879-s02r2b01-0 node=s02r2b01 mode=unprivileged estado=<scratch>/cc/raw/lusitania/us63/equivalence/medida-753879/stream-s02r2b01-6/s02r2b01-rank-0/state/stream-753879-s02r2b01-0
+level1 pre: contadores IB capturados (unprivileged)
+thread=0 cpus=0-7,16-23
+thread=1 cpus=0-7,16-23
+thread=2 cpus=0-7,16-23
+thread=3 cpus=0-7,16-23
+thread=4 cpus=0-7,16-23
+thread=5 cpus=0-7,16-23
+thread=6 cpus=0-7,16-23
+thread=7 cpus=0-7,16-23
+thread=8 cpus=0-7,16-23
+thread=9 cpus=0-7,16-23
+thread=10 cpus=0-7,16-23
+thread=11 cpus=0-7,16-23
+thread=12 cpus=0-7,16-23
+thread=13 cpus=0-7,16-23
+thread=14 cpus=0-7,16-23
+thread=15 cpus=0-7,16-23
+-------------------------------------------------------------
+STREAM version $Revision: 5.10 $
+-------------------------------------------------------------
+This system uses 8 bytes per array element.
+-------------------------------------------------------------
+Array size = 40000000 (elements), Offset = 0 (elements)
+Memory per array = 305.2 MiB (= 0.3 GiB).
+Total memory required = 915.5 MiB (= 0.9 GiB).
+Each kernel will be executed 10 times.
+ The *best* time for each kernel (excluding the first iteration)
+ will be used to compute the reported bandwidth.
+-------------------------------------------------------------
+Number of Threads requested = 16
+Number of Threads counted = 16
+-------------------------------------------------------------
+Your clock granularity/precision appears to be 1 microseconds.
+Each test below will take on the order of 19856 microseconds.
+   (= 19856 clock ticks)
+Increase the size of the arrays if this shows that
+you are not getting at least 20 clock ticks per test.
+-------------------------------------------------------------
+WARNING -- The above is only a rough guideline.
+For best results, please be sure you know the
+precision of your system timer.
+-------------------------------------------------------------
+Function    Best Rate MB/s  Avg time     Min time     Max time
+Copy:           24334.6     0.028060     0.026300     0.028893
+Scale:          23261.7     0.028763     0.027513     0.030348
+Add:            27692.0     0.036804     0.034667     0.040106
+Triad:          27438.8     0.037317     0.034987     0.041186
+-------------------------------------------------------------
+Solution Validates: avg error less than 1.000000e-13 on all three arrays
+-------------------------------------------------------------
+level1 post: contadores IB capturados tras 2 s
+<scratch>/cc/raw/lusitania/us63/equivalence/medida-753879/stream-s02r2b01-6/s02r2b01-rank-0/context/stream-753879-s02r2b01-0.json
+level1 stop: contexto escrito en <scratch>/cc/raw/lusitania/us63/equivalence/medida-753879/stream-s02r2b01-6/s02r2b01-rank-0/context/stream-753879-s02r2b01-0.json

@@ -1,0 +1,37 @@
+== ft8n112 job=85916 pares=gcc rc intel mlx gcc dc intel verbs;ofi_rxm intelc mlx rondas=1..1 sha256=ffb5a795a4af2a77f1a6d23d486b69516ab2232883f6c22c682c8fab6d2a66e7 2026-10-15T03:14:12+02:00
+== nodos asignados (fijos dentro de la asignación):
+b9p04 b9p08 b9p09 b9p10 b9p13 b9p14 b9p15 b9p16 
+--- control D-B (inicio): osu_allreduce -m 65536 (512 ranks, gcc por defecto)
+   map-check gcc/rc: 512 ranks
+   map-check intel/mlx: 512 ranks
+   map-check gcc/dc: 512 ranks
+   map-check intel/verbs;ofi_rxm: 512 ranks
+   map-check intelc/mlx: 512 ranks
+== RONDA 1 2026-10-15T03:14:18+02:00
+--- RUN ft.D par=gcc/rc ronda=1 ranks=512 2026-10-15T03:14:18+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=tag(rc_mlx5/mlx5_0 
+--- RUN ft.D par=intel/mlx ronda=1 ranks=512 2026-10-15T03:14:50+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN ft.D par=gcc/dc ronda=1 ranks=512 2026-10-15T03:15:07+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=tag(dc_mlx5/mlx5_0 
+--- RUN ft.D par=intel/verbs;ofi_rxm ronda=1 ranks=512 2026-10-15T03:15:25+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: verbs;ofi_rxm
+--- RUN ft.D par=intelc/mlx ronda=1 ranks=512 2026-10-15T03:15:52+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- control D-B (fin): osu_allreduce -m 65536 (512 ranks, gcc por defecto)
+== ft8n112 (1..1) terminado (job 85916) 2026-10-15T03:16:09+02:00
+== manifiesto: <scratch>/cc/raw/ligero112/ft8n112-85916/manifest.csv
+VALIDADOR DE JOB
+job: ft8n112-85916
+manifiesto: <scratch>/cc/raw/ligero112/ft8n112-85916/manifest.csv
+CELDAS VALIDAS: 5
+RUTAS VALIDAS:
+- <scratch>/cc/raw/ligero112/ft8n112-85916/ft-gcc-rc-r1/run.log
+- <scratch>/cc/raw/ligero112/ft8n112-85916/ft-intel-mlx-r1/run.log
+- <scratch>/cc/raw/ligero112/ft8n112-85916/ft-gcc-dc-r1/run.log
+- <scratch>/cc/raw/ligero112/ft8n112-85916/ft-intel-verbs;ofi_rxm-r1/run.log
+- <scratch>/cc/raw/ligero112/ft8n112-85916/ft-intelc-mlx-r1/run.log
+CELDAS REVISAR: 0
+CELDAS TOTAL: 5
+CELDAS SALTADAS: 0
+VEREDICTO: OK

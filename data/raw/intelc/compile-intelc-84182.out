@@ -1,0 +1,30 @@
+== ifx: /opt/apps/intel/2025.3.2/compiler/latest/bin/ifx
+ifx (IFX) 2025.3.2 20260112
+Copyright (C) 1985-2026 Intel Corporation. All rights reserved.
+== icx: /opt/apps/intel/2025.3.2/compiler/latest/bin/icx
+Intel(R) oneAPI DPC++/C++ Compiler 2025.3.2 (2025.3.2.20260112)
+Target: x86_64-unknown-linux-gnu
+== icpx: /opt/apps/intel/2025.3.2/compiler/latest/bin/icpx
+Intel(R) oneAPI DPC++/C++ Compiler 2025.3.2 (2025.3.2.20260112)
+Target: x86_64-unknown-linux-gnu
+== mpiifx: /opt/apps/intel/2025.3.2/mpi/latest/bin/mpiifx
+ifx (IFX) 2025.3.2 20260112
+Copyright (C) 1985-2026 Intel Corporation. All rights reserved.
+== mpiicx: /opt/apps/intel/2025.3.2/mpi/latest/bin/mpiicx
+Intel(R) oneAPI DPC++/C++ Compiler 2025.3.2 (2025.3.2.20260112)
+Target: x86_64-unknown-linux-gnu
+== mpiicpx: /opt/apps/intel/2025.3.2/mpi/latest/bin/mpiicpx
+Intel(R) oneAPI DPC++/C++ Compiler 2025.3.2 (2025.3.2.20260112)
+Target: x86_64-unknown-linux-gnu
+== NPB intelc/spr: make ft CLASS=D (mpiifx, -march=sapphirerapids)
+   ok ft.D.x
+== NPB intelc/spr: make ep CLASS=D (mpiifx, -march=sapphirerapids)
+   ok ep.D.x
+== NPB intelc/spr: make cg CLASS=D (mpiifx, -march=sapphirerapids)
+   ok cg.D.x
+== NPB intelc/spr: make mg CLASS=D (mpiifx, -march=sapphirerapids)
+   ok mg.D.x
+== ldd y sha256 de los 4 NPB correctos (<scratch>/cc/raw/intelc/compile-intelc-84182/sha256-binarios-spr.txt)
+== HPCG intelc/spr: configure + make (mpiicpx, -DHPCG_NO_OPENMP -O3 -march=sapphirerapids)
+cp: './setup/Make.intelc' and 'setup/Make.intelc' are the same file
+!! configure HPCG falló

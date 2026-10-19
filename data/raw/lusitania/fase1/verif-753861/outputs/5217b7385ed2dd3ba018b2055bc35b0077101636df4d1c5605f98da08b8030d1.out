@@ -1,0 +1,54 @@
+pin-pedido: host=s02r1b01 rank=0 core=0 origen=sysfs(node0)
+pin-pedido: host=s02r1b02 rank=1 core=0 origen=sysfs(node0)
+pin-real: host=s02r1b02 rank=1 cpus=0
+	linux-vdso.so.1 (0x00007ffcb3df3000)
+	libmpi.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libmpi.so.40 (0x00007f66bbc00000)
+	libstdc++.so.6 => /lusitania_apps/gcc-11.2.0/lib64/libstdc++.so.6 (0x00007f66bb7f0000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f66bb4e3000)
+	libgcc_s.so.1 => /lusitania_apps/gcc-11.2.0/lib64/libgcc_s.so.1 (0x00007f66bb2ca000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f66bb0ac000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f66bad09000)
+	libopen-rte.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-rte.so.40 (0x00007f66bac4d000)
+	libopen-pal.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-pal.so.40 (0x00007f66bab3e000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f66ba93a000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f66ba732000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007f66ba52e000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f66ba318000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000556a84261000)
+--------------------------------------------------------------------------
+WARNING: There is at least non-excluded one OpenFabrics device found,
+but there are no active ports detected (or Open MPI was unable to use
+them).  This is most certainly not what you wanted.  Check your
+cables, subnet manager configuration, etc.  The openib BTL will be
+ignored for this job.
+
+  Local host: s02r1b02
+--------------------------------------------------------------------------
+[1792102641.708393] [s02r1b02:10546:0]     ucp_context.c:1778 UCX  INFO  UCP version is 1.12 (release 0)
+pin-real: host=s02r1b01 rank=0 cpus=0
+	linux-vdso.so.1 (0x00007ffd05dd1000)
+	libmpi.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libmpi.so.40 (0x00007f4d28981000)
+	libstdc++.so.6 => /lusitania_apps/gcc-11.2.0/lib64/libstdc++.so.6 (0x00007f4d28571000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f4d28264000)
+	libgcc_s.so.1 => /lusitania_apps/gcc-11.2.0/lib64/libgcc_s.so.1 (0x00007f4d2804b000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f4d27e2d000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f4d27a8a000)
+	libopen-rte.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-rte.so.40 (0x00007f4d279ce000)
+	libopen-pal.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-pal.so.40 (0x00007f4d278bf000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f4d276bb000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f4d274b3000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007f4d272af000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f4d27099000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000562306c58000)
+--------------------------------------------------------------------------
+No components were able to be opened in the pml framework.
+
+This typically means that either no components of this type were
+installed, or none of the installed components can be loaded.
+Sometimes this means that shared libraries required by these
+components are unable to be found/loaded.
+
+  Host:      s02r1b02
+  Framework: pml
+--------------------------------------------------------------------------
+[s02r1b02:10546] PML ucx cannot be selected

@@ -1,0 +1,44 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.4      =
+   =      MPI/Fortran/C                    =
+   =========================================
+
+cd FT; make CLASS=C
+make[1]: Entering directory '<scratch>/src/npb-gnu-xula4-2734470/FT'
+make[2]: Entering directory '<scratch>/src/npb-gnu-xula4-2734470/sys'
+mpicc -march=native  -o setparams setparams.c
+make[2]: Leaving directory '<scratch>/src/npb-gnu-xula4-2734470/sys'
+../sys/setparams ft C 
+mpif90 -march=native -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz mpinpb.f90
+mpif90 -march=native -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz ft_data.f90
+mpif90 -march=native -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz ft.f90
+ft.f90:1767:22:
+
+  776 |       call MPI_Reduce(t1, tsum,  t_max+2, MPI_DOUBLE_PRECISION,  &
+      |                      2
+......
+ 1767 |       call MPI_Reduce(chk, allchk, 1, dc_type, MPI_SUM,  &
+      |                      1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
+ft.f90:1767:27:
+
+  776 |       call MPI_Reduce(t1, tsum,  t_max+2, MPI_DOUBLE_PRECISION,  &
+      |                          2 
+......
+ 1767 |       call MPI_Reduce(chk, allchk, 1, dc_type, MPI_SUM,  &
+      |                           1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (COMPLEX(8)/REAL(8)).
+ft.f90:485:21:
+
+  480 |       call MPI_BCAST(np1, 1, MPI_INTEGER, 0, comm_solve, ierr)
+      |                     2
+......
+  485 |       call MPI_BCAST(timers_enabled, 1, MPI_LOGICAL, 0, comm_solve,  &
+      |                     1
+Warning: Type mismatch between actual argument at (1) and actual argument at (2) (LOGICAL(4)/INTEGER(4)).
+cd ../common; mpif90 -march=native -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz get_active_nprocs.f90
+cd ../common; mpif90 -march=native -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz randi8.f90
+cd ../common; mpif90 -march=native -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz print_results.f90
+cd ../common; mpif90 -march=native -c  -O3 -fallow-argument-mismatch -fallow-invalid-boz timers.f90
+mpif90 -march=native  -o ../bin/ft.C.x ft.o ft_data.o mpinpb.o ../common/get_active_nprocs.o ../common/randi8.o ../common/print_results.o ../common/timers.o 
+make[1]: Leaving directory '<scratch>/src/npb-gnu-xula4-2734470/FT'

@@ -1,0 +1,31 @@
+=== A: estilo tanda 1 (-np 128 --map-by ppr:64:node) ===
+      1 	Please refer I_MPI_PIN environment variables family.
+      1 Options -binding/-bind-to/-map-by/-membind are not supported and will be ignored.
+    112 b9p05
+     16 b9p06
+=== A2: osu_allreduce -np 128 (cableado PMI) ===
+Options -binding/-bind-to/-map-by/-membind are not supported and will be ignored.
+	Please refer I_MPI_PIN environment variables family.
+This test requires at least two processes
+This test requires at least two processes
+This test requires at least two processes
+=== B: hydra nativo (-n 128 -ppn 64) ===
+     64 b9p05
+     64 b9p06
+=== B2: osu_allreduce -n 128 -ppn 64 ===
+No PMIx server was reachable, but a PMI1/2 was detected.
+If srun is being used to launch application,  128 singletons will be started.
+This test requires at least two processes
+This test requires at least two processes
+This test requires at least two processes
+=== C: osu_alltoall 128 ranks (silencioso en tanda 2 con 512) ===
+No PMIx server was reachable, but a PMI1/2 was detected.
+If srun is being used to launch application,  128 singletons will be started.
+This test requires at least two processes
+This test requires at least two processes
+This test requires at least two processes
+This test requires at least two processes
+This test requires at least two processes
+This test requires at least two processes
+=== D: exit code de osu_alltoall ===
+exit=255

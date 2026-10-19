@@ -1,0 +1,94 @@
+   =========================================
+   =      NAS Parallel Benchmarks 3.4      =
+   =      MPI/Fortran/C                    =
+   =========================================
+
+cd CG; make CLASS=D
+make[1]: Entering directory '<scratch>/src/phaseB/npb-gcc-spr/CG'
+make[2]: Entering directory '<scratch>/src/phaseB/npb-gcc-spr/sys'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '<scratch>/src/phaseB/npb-gcc-spr/sys'
+../sys/setparams cg D 
+make.def modified. Rebuilding npbparams.h just in case
+rm -f npbparams.h
+../sys/setparams cg D 
+/opt/apps/openmpi_gcc/5.0.5/bin/mpif90 -march=sapphirerapids -c  -O3 -march=sapphirerapids -fallow-argument-mismatch -fallow-invalid-boz cg_data.f90
+/opt/apps/openmpi_gcc/5.0.5/bin/mpif90 -march=sapphirerapids -c  -O3 -march=sapphirerapids -fallow-argument-mismatch -fallow-invalid-boz cg.f90
+cg.f90:897:28:
+
+  819 |          call mpi_irecv( rho,  &
+      |                         2   
+......
+  897 |             call mpi_irecv( q,               &
+      |                            1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+cg.f90:1089:25:
+
+  819 |          call mpi_irecv( rho,  &
+      |                         2
+......
+ 1089 |          call mpi_irecv( r,               &
+      |                         1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+cg.f90:250:28:
+
+  250 |             call mpi_irecv( norm_temp2,  &
+      |                            1
+......
+  819 |          call mpi_irecv( rho,  &
+      |                         2   
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+cg.f90:258:28:
+
+  258 |             call mpi_send(  norm_temp1,  &
+      |                            1
+......
+  827 |          call mpi_send(  sum,  &
+      |                         2   
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+cg.f90:337:28:
+
+  337 |             call mpi_irecv( norm_temp2,  &
+      |                            1
+......
+  819 |          call mpi_irecv( rho,  &
+      |                         2   
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+cg.f90:345:28:
+
+  345 |             call mpi_send(  norm_temp1,  &
+      |                            1
+......
+  827 |          call mpi_send(  sum,  &
+      |                         2   
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+cg.f90:460:22:
+
+  388 |       call mpi_reduce( t,  &
+      |                       2
+......
+  460 |       call MPI_Reduce(t1, tsum,  t_last+2, dp_type, MPI_SUM,  &
+      |                      1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+cg.f90:462:22:
+
+  388 |       call mpi_reduce( t,  &
+      |                       2
+......
+  462 |       call MPI_Reduce(t1, tming, t_last+2, dp_type, MPI_MIN,  &
+      |                      1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+cg.f90:464:22:
+
+  388 |       call mpi_reduce( t,  &
+      |                       2
+......
+  464 |       call MPI_Reduce(t1, tmaxg, t_last+2, dp_type, MPI_MAX,  &
+      |                      1
+Warning: Rank mismatch between actual argument at (1) and actual argument at (2) (scalar and rank-1)
+/opt/apps/openmpi_gcc/5.0.5/bin/mpif90 -march=sapphirerapids  -o bin/cg.D.x cg.o cg_data.o mpinpb.o ../common/print_results.o ../common/get_active_nprocs.o ../common/randi8.o ../common/timers.o 
+/usr/bin/ld: cannot open output file bin/cg.D.x: No such file or directory
+collect2: error: ld returned 1 exit status
+make[1]: *** [Makefile:14: bin/cg.D.x] Error 1
+make[1]: Leaving directory '<scratch>/src/phaseB/npb-gcc-spr/CG'
+make: *** [Makefile:36: cg] Error 2

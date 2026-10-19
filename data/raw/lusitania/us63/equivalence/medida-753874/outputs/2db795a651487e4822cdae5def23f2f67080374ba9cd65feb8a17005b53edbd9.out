@@ -1,0 +1,306 @@
+	linux-vdso.so.1 (0x00007ffe2b3db000)
+	libmpi.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libmpi.so.40 (0x00007f84aab0f000)
+	libstdc++.so.6 => /lusitania_apps/gcc-11.2.0/lib64/libstdc++.so.6 (0x00007f84aa6ff000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f84aa3f2000)
+	libgcc_s.so.1 => /lusitania_apps/gcc-11.2.0/lib64/libgcc_s.so.1 (0x00007f84aa1d9000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f84a9fbb000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f84a9c18000)
+	libopen-rte.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-rte.so.40 (0x00007f84a9b5c000)
+	libopen-pal.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-pal.so.40 (0x00007f84a9a4d000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f84a9849000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f84a9641000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007f84a943d000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f84a9227000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000561f97ca0000)
+[s02r1b09:10094] mca: base: components_register: registering framework btl components
+[s02r1b09:10094] mca: base: components_register: found loaded component tcp
+[s02r1b09:10094] mca: base: components_register: component tcp register function successful
+[s02r1b09:10094] mca: base: components_register: found loaded component sm
+[s02r1b09:10094] mca: base: components_register: found loaded component openib
+[s02r1b09:10094] mca: base: components_register: component openib register function successful
+[s02r1b09:10094] mca: base: components_register: found loaded component self
+[s02r1b09:10094] mca: base: components_register: component self register function successful
+[s02r1b09:10094] mca: base: components_register: found loaded component vader
+[s02r1b09:10094] mca: base: components_register: component vader register function successful
+[s02r1b09:10094] mca: base: components_register: registering framework pml components
+[s02r1b09:10094] mca: base: components_register: found loaded component v
+[s02r1b09:10094] mca: base: components_register: component v register function successful
+[s02r1b09:10094] mca: base: components_register: found loaded component cm
+[s02r1b09:10094] mca: base: components_register: component cm register function successful
+[s02r1b09:10094] mca: base: components_register: found loaded component ucx
+[s02r1b09:10094] mca: base: components_register: component ucx register function successful
+[s02r1b09:10094] mca: base: components_register: found loaded component monitoring
+[s02r1b09:10094] mca: base: components_register: component monitoring register function successful
+[s02r1b09:10094] mca: base: components_register: found loaded component ob1
+[s02r1b09:10094] mca: base: components_register: component ob1 register function successful
+[s02r1b09:10094] mca: base: close: unloading component v
+[s02r1b09:10094] mca: base: close: unloading component cm
+[s02r1b09:10094] mca: base: close: unloading component ucx
+[s02r1b09:10094] mca: base: close: unloading component monitoring
+[s02r1b09:10094] mca: base: close: unloading component ob1
+[s02r1b09:10094] mca: base: close: unloading component tcp
+[s02r1b09:10094] mca: base: close: unloading component openib
+[s02r1b09:10094] mca: base: close: unloading component self
+[s02r1b09:10094] mca: base: close: unloading component vader
+EQUIV_LIB host=s02r1b09 rank=1 ok=yes
+level1 start: run_id=lat-753874-s02r1b09-1 node=s02r1b09 mode=unprivileged estado=<scratch>/cc/raw/lusitania/us63/equivalence/medida-753874/lat-1/s02r1b09-rank-1/state/lat-753874-s02r1b09-1
+level1 pre: contadores IB capturados (unprivileged)
+--------------------------------------------------------------------------
+WARNING: There is at least non-excluded one OpenFabrics device found,
+but there are no active ports detected (or Open MPI was unable to use
+them).  This is most certainly not what you wanted.  Check your
+cables, subnet manager configuration, etc.  The openib BTL will be
+ignored for this job.
+
+  Local host: s02r1b09
+--------------------------------------------------------------------------
+	linux-vdso.so.1 (0x00007ffc885a3000)
+	libmpi.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libmpi.so.40 (0x00007f57c1b61000)
+	libstdc++.so.6 => /lusitania_apps/gcc-11.2.0/lib64/libstdc++.so.6 (0x00007f57c1751000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f57c1444000)
+	libgcc_s.so.1 => /lusitania_apps/gcc-11.2.0/lib64/libgcc_s.so.1 (0x00007f57c122b000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f57c100d000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f57c0c6a000)
+	libopen-rte.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-rte.so.40 (0x00007f57c0bae000)
+	libopen-pal.so.40 => /lusitania_apps/openmpi-4.1.2/lib/libopen-pal.so.40 (0x00007f57c0a9f000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f57c089b000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f57c0693000)
+	libutil.so.1 => /lib64/libutil.so.1 (0x00007f57c048f000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007f57c0279000)
+	/lib64/ld-linux-x86-64.so.2 (0x000055dababe1000)
+[s02r1b01:10210] mca: base: components_register: registering framework btl components
+[s02r1b01:10210] mca: base: components_register: found loaded component tcp
+[s02r1b01:10210] mca: base: components_register: component tcp register function successful
+[s02r1b01:10210] mca: base: components_register: found loaded component sm
+[s02r1b01:10210] mca: base: components_register: found loaded component openib
+[s02r1b01:10210] mca: base: components_register: component openib register function successful
+[s02r1b01:10210] mca: base: components_register: found loaded component self
+[s02r1b01:10210] mca: base: components_register: component self register function successful
+[s02r1b01:10210] mca: base: components_register: found loaded component vader
+[s02r1b01:10210] mca: base: components_register: component vader register function successful
+[s02r1b01:10210] mca: base: components_register: registering framework pml components
+[s02r1b01:10210] mca: base: components_register: found loaded component v
+[s02r1b01:10210] mca: base: components_register: component v register function successful
+[s02r1b01:10210] mca: base: components_register: found loaded component cm
+[s02r1b01:10210] mca: base: components_register: component cm register function successful
+[s02r1b01:10210] mca: base: components_register: found loaded component ucx
+[s02r1b01:10210] mca: base: components_register: component ucx register function successful
+[s02r1b01:10210] mca: base: components_register: found loaded component monitoring
+[s02r1b01:10210] mca: base: components_register: component monitoring register function successful
+[s02r1b01:10210] mca: base: components_register: found loaded component ob1
+[s02r1b01:10210] mca: base: components_register: component ob1 register function successful
+[s02r1b01:10210] mca: base: close: unloading component v
+[s02r1b01:10210] mca: base: close: unloading component cm
+[s02r1b01:10210] mca: base: close: unloading component ucx
+[s02r1b01:10210] mca: base: close: unloading component monitoring
+[s02r1b01:10210] mca: base: close: unloading component ob1
+[s02r1b01:10210] mca: base: close: unloading component tcp
+[s02r1b01:10210] mca: base: close: unloading component openib
+[s02r1b01:10210] mca: base: close: unloading component self
+[s02r1b01:10210] mca: base: close: unloading component vader
+EQUIV_LIB host=s02r1b01 rank=0 ok=yes
+level1 start: run_id=lat-753874-s02r1b01-0 node=s02r1b01 mode=unprivileged estado=<scratch>/cc/raw/lusitania/us63/equivalence/medida-753874/lat-1/s02r1b01-rank-0/state/lat-753874-s02r1b01-0
+level1 pre: contadores IB capturados (unprivileged)
+[s02r1b01:10152] 1 more process has sent help message help-mpi-btl-openib.txt / no active ports found
+[s02r1b01:10152] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[s02r1b09:10198] mca: base: components_register: registering framework btl components
+[s02r1b09:10198] mca: base: components_register: found loaded component tcp
+[s02r1b09:10198] mca: base: components_register: component tcp register function successful
+[s02r1b09:10198] mca: base: components_register: found loaded component sm
+[s02r1b09:10198] mca: base: components_register: found loaded component openib
+[s02r1b09:10198] mca: base: components_register: component openib register function successful
+[s02r1b09:10198] mca: base: components_register: found loaded component self
+[s02r1b09:10198] mca: base: components_register: component self register function successful
+[s02r1b09:10198] mca: base: components_register: found loaded component vader
+[s02r1b09:10198] mca: base: components_register: component vader register function successful
+[s02r1b09:10198] mca: base: components_open: opening btl components
+[s02r1b09:10198] mca: base: components_open: found loaded component tcp
+[s02r1b09:10198] mca: base: components_open: component tcp open function successful
+[s02r1b09:10198] mca: base: components_open: found loaded component openib
+[s02r1b09:10198] mca: base: components_open: component openib open function successful
+[s02r1b09:10198] mca: base: components_open: found loaded component self
+[s02r1b09:10198] mca: base: components_open: component self open function successful
+[s02r1b09:10198] mca: base: components_open: found loaded component vader
+[s02r1b09:10198] mca: base: components_open: component vader open function successful
+[s02r1b09:10198] select: initializing btl component tcp
+[s02r1b09:10198] select: init of component tcp returned success
+[s02r1b09:10198] select: initializing btl component openib
+[s02r1b09:10198] Checking distance from this process to device=mlx4_0
+[s02r1b09:10198] hwloc_distances->nbobjs=2
+[s02r1b09:10198] hwloc_distances->values[0]=10
+[s02r1b09:10198] hwloc_distances->values[1]=11
+[s02r1b09:10198] Process is bound: distance to device is 0.000000
+[s02r1b09:10198] select: init of component openib returned failure
+[s02r1b09:10198] mca: base: close: component openib closed
+[s02r1b09:10198] mca: base: close: unloading component openib
+[s02r1b09:10198] select: initializing btl component self
+[s02r1b09:10198] select: init of component self returned success
+[s02r1b09:10198] select: initializing btl component vader
+[s02r1b09:10198] select: init of component vader returned failure
+[s02r1b09:10198] mca: base: close: component vader closed
+[s02r1b09:10198] mca: base: close: unloading component vader
+[s02r1b09:10198] mca: base: components_register: registering framework pml components
+[s02r1b09:10198] mca: base: components_register: found loaded component v
+[s02r1b09:10198] mca: base: components_register: component v register function successful
+[s02r1b09:10198] mca: base: components_register: found loaded component cm
+[s02r1b09:10198] mca: base: components_register: component cm register function successful
+[s02r1b09:10198] mca: base: components_register: found loaded component ucx
+[s02r1b09:10198] mca: base: components_register: component ucx register function successful
+[s02r1b09:10198] mca: base: components_register: found loaded component monitoring
+[s02r1b09:10198] mca: base: components_register: component monitoring register function successful
+[s02r1b09:10198] mca: base: components_register: found loaded component ob1
+[s02r1b09:10198] mca: base: components_register: component ob1 register function successful
+[s02r1b09:10198] mca: base: components_open: opening pml components
+[s02r1b09:10198] mca: base: components_open: found loaded component v
+[s02r1b09:10198] mca: base: components_open: component v open function successful
+[s02r1b09:10198] mca: base: components_open: found loaded component cm
+[s02r1b09:10198] mca: base: close: component cm closed
+[s02r1b09:10198] mca: base: close: unloading component cm
+[s02r1b09:10198] mca: base: components_open: found loaded component ucx
+[s02r1b09:10198] mca: base: components_open: component ucx open function successful
+[s02r1b09:10198] mca: base: components_open: found loaded component monitoring
+[s02r1b09:10198] mca: base: components_open: component monitoring open function successful
+[s02r1b09:10198] mca: base: components_open: found loaded component ob1
+[s02r1b09:10198] mca: base: components_open: component ob1 open function successful
+[s02r1b09:10198] select: component v not in the include list
+[s02r1b09:10198] select: initializing pml component ucx
+[s02r1b09:10198] select: init returned priority 51
+[s02r1b09:10198] select: component monitoring not in the include list
+[s02r1b09:10198] select: initializing pml component ob1
+[s02r1b09:10198] select: init returned priority 20
+[s02r1b09:10198] selected ucx best priority 51
+[s02r1b09:10198] select: component ucx selected
+[s02r1b09:10198] select: component ob1 not selected / finalized
+[s02r1b09:10198] mca: base: close: component v closed
+[s02r1b09:10198] mca: base: close: unloading component v
+[s02r1b09:10198] mca: base: close: component monitoring closed
+[s02r1b09:10198] mca: base: close: unloading component monitoring
+[s02r1b09:10198] mca: base: close: component ob1 closed
+[s02r1b09:10198] mca: base: close: unloading component ob1
+[1792103137.212511] [s02r1b09:10198:0]     ucp_context.c:1778 UCX  INFO  UCP version is 1.12 (release 0)
+[1792103137.316001] [s02r1b09:10198:0]          parser.c:1914 UCX  INFO  UCX_* env variable: UCX_LOG_LEVEL=info
+[1792103208.559581] [s02r1b09:10198:0]      ucp_worker.c:1866 UCX  INFO    ep_cfg[0]: tag(self/memory0 cma/memory rc_verbs/mlx4_0:1); 
+[s02r1b09:10198] mca: base: close: component ucx closed
+[s02r1b09:10198] mca: base: close: unloading component ucx
+[s02r1b09:10198] mca: base: close: component tcp closed
+[s02r1b09:10198] mca: base: close: unloading component tcp
+[s02r1b09:10198] mca: base: close: component self closed
+[s02r1b09:10198] mca: base: close: unloading component self
+[1792103208.676428] [s02r1b09:10198:0]      ucp_worker.c:1866 UCX  INFO    ep_cfg[1]: tag(rc_verbs/mlx4_0:1); 
+level1 post: contadores IB capturados tras 2 s
+<scratch>/cc/raw/lusitania/us63/equivalence/medida-753874/lat-1/s02r1b09-rank-1/context/lat-753874-s02r1b09-1.json
+level1 stop: contexto escrito en <scratch>/cc/raw/lusitania/us63/equivalence/medida-753874/lat-1/s02r1b09-rank-1/context/lat-753874-s02r1b09-1.json
+[s02r1b01:10332] mca: base: components_register: registering framework btl components
+[s02r1b01:10332] mca: base: components_register: found loaded component tcp
+[s02r1b01:10332] mca: base: components_register: component tcp register function successful
+[s02r1b01:10332] mca: base: components_register: found loaded component sm
+[s02r1b01:10332] mca: base: components_register: found loaded component openib
+[s02r1b01:10332] mca: base: components_register: component openib register function successful
+[s02r1b01:10332] mca: base: components_register: found loaded component self
+[s02r1b01:10332] mca: base: components_register: component self register function successful
+[s02r1b01:10332] mca: base: components_register: found loaded component vader
+[s02r1b01:10332] mca: base: components_register: component vader register function successful
+[s02r1b01:10332] mca: base: components_open: opening btl components
+[s02r1b01:10332] mca: base: components_open: found loaded component tcp
+[s02r1b01:10332] mca: base: components_open: component tcp open function successful
+[s02r1b01:10332] mca: base: components_open: found loaded component openib
+[s02r1b01:10332] mca: base: components_open: component openib open function successful
+[s02r1b01:10332] mca: base: components_open: found loaded component self
+[s02r1b01:10332] mca: base: components_open: component self open function successful
+[s02r1b01:10332] mca: base: components_open: found loaded component vader
+[s02r1b01:10332] mca: base: components_open: component vader open function successful
+[s02r1b01:10332] select: initializing btl component tcp
+[s02r1b01:10332] select: init of component tcp returned success
+[s02r1b01:10332] select: initializing btl component openib
+[s02r1b01:10332] Checking distance from this process to device=mlx4_0
+[s02r1b01:10332] hwloc_distances->nbobjs=2
+[s02r1b01:10332] hwloc_distances->values[0]=10
+[s02r1b01:10332] hwloc_distances->values[1]=11
+[s02r1b01:10332] Process is bound: distance to device is 0.000000
+[s02r1b01:10332] select: init of component openib returned failure
+[s02r1b01:10332] mca: base: close: component openib closed
+[s02r1b01:10332] mca: base: close: unloading component openib
+[s02r1b01:10332] select: initializing btl component self
+[s02r1b01:10332] select: init of component self returned success
+[s02r1b01:10332] select: initializing btl component vader
+[s02r1b01:10332] select: init of component vader returned failure
+[s02r1b01:10332] mca: base: close: component vader closed
+[s02r1b01:10332] mca: base: close: unloading component vader
+[s02r1b01:10332] mca: base: components_register: registering framework pml components
+[s02r1b01:10332] mca: base: components_register: found loaded component v
+[s02r1b01:10332] mca: base: components_register: component v register function successful
+[s02r1b01:10332] mca: base: components_register: found loaded component cm
+[s02r1b01:10332] mca: base: components_register: component cm register function successful
+[s02r1b01:10332] mca: base: components_register: found loaded component ucx
+[s02r1b01:10332] mca: base: components_register: component ucx register function successful
+[s02r1b01:10332] mca: base: components_register: found loaded component monitoring
+[s02r1b01:10332] mca: base: components_register: component monitoring register function successful
+[s02r1b01:10332] mca: base: components_register: found loaded component ob1
+[s02r1b01:10332] mca: base: components_register: component ob1 register function successful
+[s02r1b01:10332] mca: base: components_open: opening pml components
+[s02r1b01:10332] mca: base: components_open: found loaded component v
+[s02r1b01:10332] mca: base: components_open: component v open function successful
+[s02r1b01:10332] mca: base: components_open: found loaded component cm
+[s02r1b01:10332] mca: base: close: component cm closed
+[s02r1b01:10332] mca: base: close: unloading component cm
+[s02r1b01:10332] mca: base: components_open: found loaded component ucx
+[s02r1b01:10332] mca: base: components_open: component ucx open function successful
+[s02r1b01:10332] mca: base: components_open: found loaded component monitoring
+[s02r1b01:10332] mca: base: components_open: component monitoring open function successful
+[s02r1b01:10332] mca: base: components_open: found loaded component ob1
+[s02r1b01:10332] mca: base: components_open: component ob1 open function successful
+[s02r1b01:10332] select: component v not in the include list
+[s02r1b01:10332] select: initializing pml component ucx
+[s02r1b01:10332] select: init returned priority 51
+[s02r1b01:10332] select: component monitoring not in the include list
+[s02r1b01:10332] select: initializing pml component ob1
+[s02r1b01:10332] select: init returned priority 20
+[s02r1b01:10332] selected ucx best priority 51
+[s02r1b01:10332] select: component ucx selected
+[s02r1b01:10332] select: component ob1 not selected / finalized
+[s02r1b01:10332] mca: base: close: component v closed
+[s02r1b01:10332] mca: base: close: unloading component v
+[s02r1b01:10332] mca: base: close: component monitoring closed
+[s02r1b01:10332] mca: base: close: unloading component monitoring
+[s02r1b01:10332] mca: base: close: component ob1 closed
+[s02r1b01:10332] mca: base: close: unloading component ob1
+[1792103206.511289] [s02r1b01:10332:0]     ucp_context.c:1778 UCX  INFO  UCP version is 1.12 (release 0)
+[1792103207.353063] [s02r1b01:10332:0]          parser.c:1914 UCX  INFO  UCX_* env variable: UCX_LOG_LEVEL=info
+[1792103207.356226] [s02r1b01:10332:0]      ucp_worker.c:1866 UCX  INFO    ep_cfg[0]: tag(self/memory0 cma/memory rc_verbs/mlx4_0:1); 
+[1792103207.558092] [s02r1b01:10332:a]      ucp_worker.c:1866 UCX  INFO    ep_cfg[1]: tag(rc_verbs/mlx4_0:1); 
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                      35.77
+2                      79.31
+4                      48.07
+8                      55.02
+16                     53.64
+32                     48.69
+64                     60.63
+128                    64.28
+256                    86.64
+512                    66.03
+1024                   94.88
+2048                  106.18
+4096                  134.97
+8192                  173.77
+16384                  69.64
+32768                 389.60
+65536                 640.78
+131072                839.87
+262144               2022.16
+524288               3426.11
+1048576              6860.03
+2097152             13668.30
+4194304             26335.65
+[s02r1b01:10332] mca: base: close: component ucx closed
+[s02r1b01:10332] mca: base: close: unloading component ucx
+[s02r1b01:10332] mca: base: close: component tcp closed
+[s02r1b01:10332] mca: base: close: unloading component tcp
+[s02r1b01:10332] mca: base: close: component self closed
+[s02r1b01:10332] mca: base: close: unloading component self
+level1 post: contadores IB capturados tras 2 s
+<scratch>/cc/raw/lusitania/us63/equivalence/medida-753874/lat-1/s02r1b01-rank-0/context/lat-753874-s02r1b01-0.json
+level1 stop: contexto escrito en <scratch>/cc/raw/lusitania/us63/equivalence/medida-753874/lat-1/s02r1b01-rank-0/context/lat-753874-s02r1b01-0.json

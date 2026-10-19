@@ -1,0 +1,59 @@
+== job 83693 grupo=ep_ft rondas=1..1 inicia 2026-10-05T17:04:37+02:00
+== script: /var/lib/slurmd/job83693/slurm_script
+== sha256(script): 6c14c3e7df5cd05c5cecde1290f308e942fd01d92c6d4555ef75a58517d0aabb
+== commit(repo):  c6792af
+== nodos asignados (fijos dentro de la asignación):
+b9p13 b9p14 
+--- control D-B (inicio): osu_allreduce -m 65536 (128 ranks, gcc por defecto)
+--- map-check humo-intel-mlx-2n (pedido: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 en 2n)
+128
+--- map-check humo-gcc-rc-2n (pedido: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 en 2n)
+128
+--- map-check humo-gcc-dc-2n (pedido: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 en 2n)
+128
+--- map-check humo-gcc-ud-2n (pedido: 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87 en 2n)
+128
+== RONDA 1 2026-10-05T17:04:41+02:00
+!! SALTADA ep-1n/intel ronda 1: la celda pide 64 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ft-1n/intel ronda 1: la celda pide 64 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ep-1n/gcc ronda 1: la celda pide 64 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ft-1n/gcc ronda 1: la celda pide 64 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ep-1n/gcc ronda 1: la celda pide 64 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ft-1n/gcc ronda 1: la celda pide 64 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ep-1n/gcc ronda 1: la celda pide 64 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ft-1n/gcc ronda 1: la celda pide 64 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+--- RUN ep-2n par=intel/mlx ronda=1 ranks=128 2026-10-05T17:04:41+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN ft-2n par=intel/mlx ronda=1 ranks=128 2026-10-05T17:04:56+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=libfabric provider: mlx
+--- RUN ep-2n par=gcc/rc ronda=1 ranks=128 2026-10-05T17:05:51+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=tag(rc_mlx5/mlx5_0 
+--- RUN ft-2n par=gcc/rc ronda=1 ranks=128 2026-10-05T17:05:58+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=tag(rc_mlx5/mlx5_0 
+--- RUN ep-2n par=gcc/dc ronda=1 ranks=128 2026-10-05T17:06:52+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=tag(dc_mlx5/mlx5_0 
+--- RUN ft-2n par=gcc/dc ronda=1 ranks=128 2026-10-05T17:06:59+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=tag(dc_mlx5/mlx5_0 
+--- RUN ep-2n par=gcc/ud ronda=1 ranks=128 2026-10-05T17:07:51+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=tag(ud_mlx5/mlx5_0 
+--- RUN ft-2n par=gcc/ud ronda=1 ranks=128 2026-10-05T17:08:01+02:00
+    -> exit=0 verif=SUCCESSFUL transporte=tag(ud_mlx5/mlx5_0 
+!! SALTADA ep-4n/intel ronda 1: la celda pide 256 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ft-4n/intel ronda 1: la celda pide 256 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ep-4n/gcc ronda 1: la celda pide 256 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ft-4n/gcc ronda 1: la celda pide 256 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ep-4n/gcc ronda 1: la celda pide 256 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ft-4n/gcc ronda 1: la celda pide 256 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ep-4n/gcc ronda 1: la celda pide 256 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ft-4n/gcc ronda 1: la celda pide 256 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ep-8n/intel ronda 1: la celda pide 512 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ft-8n/intel ronda 1: la celda pide 512 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ep-8n/gcc ronda 1: la celda pide 512 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ft-8n/gcc ronda 1: la celda pide 512 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ep-8n/gcc ronda 1: la celda pide 512 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ft-8n/gcc ronda 1: la celda pide 512 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ep-8n/gcc ronda 1: la celda pide 512 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+!! SALTADA ft-8n/gcc ronda 1: la celda pide 512 ranks y la asignación da 128 (rpn=NPN fijo; la asignación debe ser del tamaño de la celda, v5)
+--- control D-B (fin): osu_allreduce -m 65536 (128 ranks, gcc por defecto)
+== fase B ep_ft (1..1) terminada (job 83693) 2026-10-05T17:08:57+02:00
+== manifiesto: <scratch>/cc/raw/phaseB/faseB-ep_ft-83693/manifest.csv

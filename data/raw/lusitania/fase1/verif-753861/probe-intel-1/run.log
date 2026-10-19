@@ -1,0 +1,240 @@
+pin-pedido: host=s02r1b02 rank=1 core=0 origen=sysfs(node0)
+pin-real: host=s02r1b02 rank=1 cpus=0
+	linux-vdso.so.1 (0x00007ffe8c3ae000)
+	libmpicxx.so.12 => /lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/lib/libmpicxx.so.12 (0x00007f75b4eaf000)
+	libmpifort.so.12 => /lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/lib/libmpifort.so.12 (0x00007f75b4af8000)
+	libmpi.so.12 => /lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/lib/libmpi.so.12 (0x00007f75b2fc0000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f75b2da7000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f75b2b8a000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f75b2986000)
+	libstdc++.so.6 => /lusitania_apps/gcc-11.2.0/lib64/libstdc++.so.6 (0x00007f75b2576000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f75b2279000)
+	libgcc_s.so.1 => /lusitania_apps/gcc-11.2.0/lib64/libgcc_s.so.1 (0x00007f75b2060000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f75b1cbc000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000563613391000)
+pin-pedido: host=s02r1b01 rank=0 core=0 origen=sysfs(node0)
+pin-real: host=s02r1b01 rank=0 cpus=0
+	linux-vdso.so.1 (0x00007ffcbe9b7000)
+	libmpicxx.so.12 => /lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/lib/libmpicxx.so.12 (0x00007f32d438c000)
+	libmpifort.so.12 => /lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/lib/libmpifort.so.12 (0x00007f32d3fd5000)
+	libmpi.so.12 => /lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/lib/libmpi.so.12 (0x00007f32d249d000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007f32d2284000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007f32d2067000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007f32d1e63000)
+	libstdc++.so.6 => /lusitania_apps/gcc-11.2.0/lib64/libstdc++.so.6 (0x00007f32d1a53000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f32d1756000)
+	libgcc_s.so.1 => /lusitania_apps/gcc-11.2.0/lib64/libgcc_s.so.1 (0x00007f32d153d000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f32d1199000)
+	/lib64/ld-linux-x86-64.so.2 (0x00005581ff0b9000)
+[0] MPI startup(): Intel(R) MPI Library, Version 2021.11  Build 20231005 (id: 74c4a23)
+[0] MPI startup(): Copyright (C) 2003-2023 Intel Corporation.  All rights reserved.
+[0] MPI startup(): library kind: release
+[0] MPI startup(): libfabric version: 1.18.1-impi
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:5351:1792102802::core:core:ze_hmem_dl_init():497<warn> Failed to dlopen libze_loader.so
+libfabric:5351:1792102802::core:core:ofi_hmem_init():421<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:5351:1792102802::core:mr:ofi_default_cache_size():79<info> default cache size=2110325248
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:5351:1792102802::core:mr:ofi_default_cache_size():79<info> default cache size=2110325248
+libfabric:5351:1792102802::core:core:ofi_register_provider():476<info> registering provider: verbs (118.10)
+libfabric:5351:1792102802::core:core:ofi_register_provider():503<info> "verbs" filtered by provider include/exclude list, skipping
+libfabric:5351:1792102802::core:core:ofi_register_provider():476<info> registering provider: tcp (118.10)
+libfabric:5351:1792102802::core:core:ofi_register_provider():503<info> "tcp" filtered by provider include/exclude list, skipping
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:5351:1792102802::core:core:ofi_register_provider():476<info> registering provider: shm (118.20)
+libfabric:5351:1792102802::core:core:ofi_register_provider():503<info> "shm" filtered by provider include/exclude list, skipping
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:5351:1792102802::core:core:ze_hmem_dl_init():497<warn> Failed to dlopen libze_loader.so
+libfabric:5351:1792102802::core:core:ofi_hmem_init():421<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:5351:1792102802::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:5351:1792102802::core:core:ofi_register_provider():476<info> registering provider: ofi_rxm (118.10)
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:11025:1792102803::core:core:ze_hmem_dl_init():497<warn> Failed to dlopen libze_loader.so
+libfabric:11025:1792102803::core:core:ofi_hmem_init():421<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:11025:1792102803::core:mr:ofi_default_cache_size():79<info> default cache size=1055128640
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:11025:1792102803::core:mr:ofi_default_cache_size():79<info> default cache size=1055128640
+libfabric:11025:1792102803::core:core:ofi_register_provider():476<info> registering provider: verbs (118.10)
+libfabric:11025:1792102803::core:core:ofi_register_provider():503<info> "verbs" filtered by provider include/exclude list, skipping
+libfabric:11025:1792102803::core:core:ofi_register_provider():476<info> registering provider: tcp (118.10)
+libfabric:11025:1792102803::core:core:ofi_register_provider():503<info> "tcp" filtered by provider include/exclude list, skipping
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:11025:1792102803::core:core:ofi_register_provider():476<info> registering provider: shm (118.20)
+libfabric:11025:1792102803::core:core:ofi_register_provider():503<info> "shm" filtered by provider include/exclude list, skipping
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_CUDA not supported
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:11025:1792102803::core:core:ze_hmem_dl_init():497<warn> Failed to dlopen libze_loader.so
+libfabric:11025:1792102803::core:core:ofi_hmem_init():421<warn> Failed to initialize hmem iface FI_HMEM_ZE: No data available
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:11025:1792102803::core:core:ofi_hmem_init():416<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:11025:1792102803::core:core:ofi_register_provider():476<info> registering provider: ofi_rxm (118.10)
+libfabric:11025:1792102803::psm3:core:fi_prov_ini():921<info> s02r1b02:rank1: build options: VERSION=705.1000=7.5.1.0, HAVE_PSM3_SRC=1, PSM3_CUDA=0
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_bool():94<info> s02r1b02:rank1: variable FI_PSM3_NAME_SERVER=<not set>
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_bool():94<info> s02r1b02:rank1: variable FI_PSM3_TAGGED_RMA=<not set>
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_str():128<info> s02r1b02:rank1: read string var FI_PSM3_UUID=d2140000-b7ca-cb72-e85d-0600b78fb758
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_int():113<info> s02r1b02:rank1: read int var FI_PSM3_DELAY=0
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_int():109<info> s02r1b02:rank1: variable FI_PSM3_TIMEOUT=<not set>
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_int():109<info> s02r1b02:rank1: variable FI_PSM3_PROG_INTERVAL=<not set>
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_str():124<info> s02r1b02:rank1: variable FI_PSM3_PROG_AFFINITY=<not set>
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_int():113<info> s02r1b02:rank1: read int var FI_PSM3_INJECT_SIZE=32768
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_int():113<info> s02r1b02:rank1: read int var FI_PSM3_LOCK_LEVEL=0
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_bool():94<info> s02r1b02:rank1: variable FI_PSM3_LAZY_CONN=<not set>
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_int():109<info> s02r1b02:rank1: variable FI_PSM3_CONN_TIMEOUT=<not set>
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_bool():94<info> s02r1b02:rank1: variable FI_PSM3_DISCONNECT=<not set>
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_str():124<info> s02r1b02:rank1: variable FI_PSM3_TAG_LAYOUT=<not set>
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_bool():94<info> s02r1b02:rank1: variable FI_PSM3_YIELD_MODE=<not set>
+libfabric:11025:1792102803::core:core:ofi_register_provider():476<info> registering provider: psm3 (705.1000)
+libfabric:11025:1792102803::core:core:ofi_register_provider():476<info> registering provider: ofi_hook_noop (118.10)
+libfabric:11025:1792102803::core:core:ofi_register_provider():476<info> registering provider: off_coll (118.10)
+libfabric:11025:1792102803::core:core:fi_getinfo_():1318<info> Found provider with the highest priority psm3, must_use_util_prov = 0
+libfabric:11025:1792102803::psm3:core:psmx3_getinfo():714<info> s02r1b02:rank1: 
+libfabric:11025:1792102803::psm3:core:psmx3_init_prov_info():396<info> s02r1b02:rank1: RMA only instance included
+libfabric:11025:1792102803::psm3:core:psmx3_init_prov_info():410<info> s02r1b02:rank1: TAG60 instance included
+libfabric:11025:1792102803::psm3:core:psmx3_init_prov_info():423<info> s02r1b02:rank1: TAG64 instance included
+libfabric:11025:1792102803::psm3:core:psmx3_init_lib():375<info> s02r1b02:rank1: PSM3 header version = (3, 0)
+libfabric:11025:1792102803::psm3:core:psmx3_init_lib():377<info> s02r1b02:rank1: PSM3 library version = (3, 0)
+libfabric:11025:1792102803::psm3:core:psmx3_init_lib():382<info> s02r1b02:rank1: PSM3 multi-ep feature not available or disabled.
+libfabric:11025:1792102803::psm3:core:psmx3_update_hfi_info():560<info> s02r1b02:rank1: hfi1 units: total 1, reported 1, active 1; hfi1 contexts: total 1024, free 1024
+libfabric:11025:1792102803::psm3:core:psmx3_update_hfi_info():572<info> s02r1b02:rank1: Tx/Rx contexts: 1 in total, 1 available.
+libfabric:11025:1792102803::psm3:core:psmx3_alter_prov_info():694<info> s02r1b02:rank1: 3 instances available, 2 with CQ data flag set
+libfabric:11025:1792102803::core:core:fi_getinfo_():1318<info> Found provider with the highest priority psm3, must_use_util_prov = 0
+libfabric:11025:1792102803::psm3:core:psmx3_getinfo():714<info> s02r1b02:rank1: 
+libfabric:11025:1792102803::psm3:core:psmx3_init_prov_info():410<info> s02r1b02:rank1: TAG60 instance included
+libfabric:5351:1792102803::psm3:core:fi_prov_ini():921<info> s02r1b01:rank0: build options: VERSION=705.1000=7.5.1.0, HAVE_PSM3_SRC=1, PSM3_CUDA=0
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_bool():94<info> s02r1b01:rank0: variable FI_PSM3_NAME_SERVER=<not set>
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_bool():94<info> s02r1b01:rank0: variable FI_PSM3_TAGGED_RMA=<not set>
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_str():128<info> s02r1b01:rank0: read string var FI_PSM3_UUID=d2140000-b7ca-cb72-e85d-0600b78fb758
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_int():113<info> s02r1b01:rank0: read int var FI_PSM3_DELAY=0
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_int():109<info> s02r1b01:rank0: variable FI_PSM3_TIMEOUT=<not set>
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_int():109<info> s02r1b01:rank0: variable FI_PSM3_PROG_INTERVAL=<not set>
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_str():124<info> s02r1b01:rank0: variable FI_PSM3_PROG_AFFINITY=<not set>
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_int():113<info> s02r1b01:rank0: read int var FI_PSM3_INJECT_SIZE=32768
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_int():113<info> s02r1b01:rank0: read int var FI_PSM3_LOCK_LEVEL=0
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_bool():94<info> s02r1b01:rank0: variable FI_PSM3_LAZY_CONN=<not set>
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_int():109<info> s02r1b01:rank0: variable FI_PSM3_CONN_TIMEOUT=<not set>
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_bool():94<info> s02r1b01:rank0: variable FI_PSM3_DISCONNECT=<not set>
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_str():124<info> s02r1b01:rank0: variable FI_PSM3_TAG_LAYOUT=<not set>
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_bool():94<info> s02r1b01:rank0: variable FI_PSM3_YIELD_MODE=<not set>
+libfabric:5351:1792102803::core:core:ofi_register_provider():476<info> registering provider: psm3 (705.1000)
+libfabric:5351:1792102803::core:core:ofi_register_provider():476<info> registering provider: ofi_hook_noop (118.10)
+libfabric:5351:1792102803::core:core:ofi_register_provider():476<info> registering provider: off_coll (118.10)
+libfabric:5351:1792102803::core:core:fi_getinfo_():1318<info> Found provider with the highest priority psm3, must_use_util_prov = 0
+libfabric:5351:1792102803::psm3:core:psmx3_getinfo():714<info> s02r1b01:rank0: 
+libfabric:5351:1792102803::psm3:core:psmx3_init_prov_info():396<info> s02r1b01:rank0: RMA only instance included
+libfabric:5351:1792102803::psm3:core:psmx3_init_prov_info():410<info> s02r1b01:rank0: TAG60 instance included
+libfabric:5351:1792102803::psm3:core:psmx3_init_prov_info():423<info> s02r1b01:rank0: TAG64 instance included
+libfabric:5351:1792102803::psm3:core:psmx3_init_lib():375<info> s02r1b01:rank0: PSM3 header version = (3, 0)
+libfabric:5351:1792102803::psm3:core:psmx3_init_lib():377<info> s02r1b01:rank0: PSM3 library version = (3, 0)
+libfabric:5351:1792102803::psm3:core:psmx3_init_lib():382<info> s02r1b01:rank0: PSM3 multi-ep feature not available or disabled.
+libfabric:5351:1792102803::psm3:core:psmx3_update_hfi_info():560<info> s02r1b01:rank0: hfi1 units: total 1, reported 1, active 1; hfi1 contexts: total 1024, free 1024
+libfabric:5351:1792102803::psm3:core:psmx3_update_hfi_info():572<info> s02r1b01:rank0: Tx/Rx contexts: 1 in total, 1 available.
+libfabric:5351:1792102803::psm3:core:psmx3_alter_prov_info():694<info> s02r1b01:rank0: 3 instances available, 2 with CQ data flag set
+libfabric:5351:1792102803::core:core:fi_getinfo_():1318<info> Found provider with the highest priority psm3, must_use_util_prov = 0
+libfabric:5351:1792102803::psm3:core:psmx3_getinfo():714<info> s02r1b01:rank0: 
+libfabric:5351:1792102803::psm3:core:psmx3_init_prov_info():410<info> s02r1b01:rank0: TAG60 instance included
+libfabric:11025:1792102803::psm3:core:psmx3_alter_prov_info():694<info> s02r1b02:rank1: 1 instances available, 1 with CQ data flag set
+libfabric:5351:1792102803::psm3:core:psmx3_alter_prov_info():694<info> s02r1b01:rank0: 1 instances available, 1 with CQ data flag set
+[0] MPI startup(): libfabric provider: psm3
+libfabric:11025:1792102803::psm3:core:psmx3_fabric():89<info> s02r1b02:rank1: 
+libfabric:5351:1792102803::psm3:core:psmx3_fabric():89<info> s02r1b01:rank0: 
+libfabric:11025:1792102803::core:core:fi_fabric_():1611<info> Opened fabric: IB/OPA-0xfe80000000000000
+libfabric:5351:1792102803::core:core:fi_fabric_():1611<info> Opened fabric: IB/OPA-0xfe80000000000000
+libfabric:11025:1792102803::psm3:domain:psmx3_domain_open():307<info> s02r1b02:rank1: 
+libfabric:5351:1792102803::psm3:domain:psmx3_domain_open():307<info> s02r1b01:rank0: 
+libfabric:11025:1792102803::psm3:core:psmx3_param_get_int():113<info> s02r1b02:rank1: read int var FI_PSM3_LOCK_LEVEL=0
+libfabric:5351:1792102803::psm3:core:psmx3_param_get_int():113<info> s02r1b01:rank0: read int var FI_PSM3_LOCK_LEVEL=0
+libfabric:11025:1792102803::psm3:core:psmx3_init_tag_layout():316<info> s02r1b02:rank1: use tag60: tag_mask: 0FFFFFFFFFFFFFFF, data_mask: FFFFFFFF
+libfabric:5351:1792102803::psm3:core:psmx3_init_tag_layout():316<info> s02r1b01:rank0: use tag60: tag_mask: 0FFFFFFFFFFFFFFF, data_mask: FFFFFFFF
+libfabric:5351:1792102803::psm3:av:psmx3_av_open():995<info> s02r1b01:rank0: FI_AV_MAP asked, but force FI_AV_TABLE for shared AV
+libfabric:5351:1792102803::core:core:ofi_shm_map():173<warn> shm_open failed
+libfabric:5351:1792102803::psm3:av:psmx3_av_open():1050<warn> s02r1b01:rank0: failed to map shared AV: FI_NAMED_AV_0
+
+libfabric:5351:1792102803::psm3:av:psmx3_av_open():998<info> s02r1b01:rank0: FI_AV_MAP asked, and granted
+libfabric:11025:1792102803::psm3:av:psmx3_av_open():995<info> s02r1b02:rank1: FI_AV_MAP asked, but force FI_AV_TABLE for shared AV
+libfabric:11025:1792102803::core:core:ofi_shm_map():173<warn> shm_open failed
+libfabric:11025:1792102803::psm3:av:psmx3_av_open():1050<warn> s02r1b02:rank1: failed to map shared AV: FI_NAMED_AV_0
+
+libfabric:11025:1792102803::psm3:av:psmx3_av_open():998<info> s02r1b02:rank1: FI_AV_MAP asked, and granted
+libfabric:5351:1792102803::psm3:core:psmx3_trx_ctxt_alloc():301<info> s02r1b01:rank0: uuid: D2140000-B7CA-CB72-E85D-0600B78FB758
+libfabric:5351:1792102803::psm3:core:psmx3_trx_ctxt_alloc():315<info> s02r1b01:rank0: ep_open_opts: unit=0 port=0 addr_index=0
+libfabric:11025:1792102803::psm3:core:psmx3_trx_ctxt_alloc():301<info> s02r1b02:rank1: uuid: D2140000-B7CA-CB72-E85D-0600B78FB758
+libfabric:11025:1792102803::psm3:core:psmx3_trx_ctxt_alloc():315<info> s02r1b02:rank1: ep_open_opts: unit=0 port=0 addr_index=0
+libfabric:11025:1792102803::psm3:core:psmx3_trx_ctxt_alloc():327<info> s02r1b02:rank1: epid: 0x2000034703:fe80000000000000:500507005b0002f9 (tx+rx)
+libfabric:11025:1792102803::psm3:core:psmx3_am_init():66<info> s02r1b02:rank1: epid 0x2000034703:fe80000000000000:500507005b0002f9
+libfabric:11025:1792102803::psm3:ep_data:psmx3_ep_optimize_ops():92<info> s02r1b02:rank1: tagged ops optimized for op_flags=0 and directed receive
+libfabric:11025:1792102803::psm3:ep_ctrl:psmx3_ep_open_internal():577<info> s02r1b02:rank1: skip initialization of op context list.
+libfabric:11025:1792102803::core:core:ofi_ns_add_local_name():372<warn> Cannot add local name - name server uninitialized
+libfabric:11025:1792102803::psm3:ep_data:psmx3_ep_optimize_ops():87<info> s02r1b02:rank1: tagged ops optimized for op_flags=0 and directed receive and av map
+libfabric:11025:1792102803::psm3:ep_data:psmx3_ep_optimize_ops():87<info> s02r1b02:rank1: tagged ops optimized for op_flags=0 and directed receive and av map
+libfabric:5351:1792102803::psm3:core:psmx3_trx_ctxt_alloc():327<info> s02r1b01:rank0: epid: 0x3300034303:fe80000000000000:500507005b00031d (tx+rx)
+libfabric:5351:1792102803::psm3:core:psmx3_am_init():66<info> s02r1b01:rank0: epid 0x3300034303:fe80000000000000:500507005b00031d
+libfabric:5351:1792102803::psm3:ep_data:psmx3_ep_optimize_ops():92<info> s02r1b01:rank0: tagged ops optimized for op_flags=0 and directed receive
+libfabric:5351:1792102803::psm3:ep_ctrl:psmx3_ep_open_internal():577<info> s02r1b01:rank0: skip initialization of op context list.
+libfabric:5351:1792102803::core:core:ofi_ns_add_local_name():372<warn> Cannot add local name - name server uninitialized
+libfabric:5351:1792102803::psm3:ep_data:psmx3_ep_optimize_ops():87<info> s02r1b01:rank0: tagged ops optimized for op_flags=0 and directed receive and av map
+libfabric:5351:1792102803::psm3:ep_data:psmx3_ep_optimize_ops():87<info> s02r1b01:rank0: tagged ops optimized for op_flags=0 and directed receive and av map
+[0] MPI startup(): File "/lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/opt/mpi/etc/tuning_skx_ofi_psm3_40.dat" not found
+[0] MPI startup(): Load tuning file: "/lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest/opt/mpi/etc/tuning_skx_ofi_psm3.dat"
+[0] MPI startup(): ===== Nic pinning on s02r1b01 =====
+[0] MPI startup(): Rank	Pin nic
+[0] MPI startup(): 0	mlx4_0
+[0] MPI startup(): I_MPI_ROOT=/lustre/lusitania_apps/intel_oneAPI-2024.0.1/mpi/latest
+[0] MPI startup(): I_MPI_MPIRUN=mpirun
+[0] MPI startup(): I_MPI_BIND_WIN_ALLOCATE=localalloc
+[0] MPI startup(): I_MPI_HYDRA_TOPOLIB=hwloc
+[0] MPI startup(): I_MPI_HYDRA_BOOTSTRAP=slurm
+[0] MPI startup(): I_MPI_RETURN_WIN_MEM_NUMA=0
+[0] MPI startup(): I_MPI_PIN=0
+[0] MPI startup(): I_MPI_INTERNAL_MEM_POLICY=default
+[0] MPI startup(): I_MPI_FABRICS=ofi
+[0] MPI startup(): I_MPI_DEBUG=5
+
+# OSU MPI Latency Test v7.4
+# Datatype: MPI_CHAR.
+# Size       Avg Latency(us)
+1                      55.45
+2                      57.47
+4                      64.53
+8                      81.91
+16                     65.22
+32                     74.27
+64                     85.03
+128                    86.95
+256                    92.44
+512                    96.77
+1024                  115.27
+2048                  137.02
+4096                  168.57
+8192                  206.17
+libfabric:5351:1792102832::psm3:core:psmx3_trx_ctxt_free():194<info> s02r1b01:rank0: epid: 0x3300034303:fe80000000000000:500507005b00031d (tx+rx)
+libfabric:11025:1792102832::psm3:core:psmx3_trx_ctxt_free():194<info> s02r1b02:rank1: epid: 0x2000034703:fe80000000000000:500507005b0002f9 (tx+rx)
+libfabric:11025:1792102832::psm3:domain:psmx3_domain_close():185<info> s02r1b02:rank1: refcnt=0
+libfabric:11025:1792102832::psm3:core:psmx3_fabric_close():48<info> s02r1b02:rank1: refcnt=0
+libfabric:11025:1792102832::psm3:core:psmx3_fini():875<info> s02r1b02:rank1: 
+libfabric:5351:1792102832::psm3:domain:psmx3_domain_close():185<info> s02r1b01:rank0: refcnt=0
+libfabric:5351:1792102832::psm3:core:psmx3_fabric_close():48<info> s02r1b01:rank0: refcnt=0
+libfabric:5351:1792102832::psm3:core:psmx3_fini():875<info> s02r1b01:rank0: 
